@@ -1,0 +1,734 @@
+# ENCODED ARCHIVAL CONTEXT-CORPORATE BODIES, PERSONS, AND FAMILIES (EAC-CPF) SCHEMA
+# 
+# SCHEMA TYPE: Relax NG Schema Compact
+# 
+# VERSION: 2010
+# 
+# DATE: 20100301
+# 
+# EDITORS: Society of American Archivists Encoded Archival Context Working Group (EACWG)
+# 
+# PUBLISHER: Society of American Archivists in collaboration with the Staatsbibliothek zu Berlin
+# 
+# FUNDING: The Gladys Krieble Delmas Foundation
+# 
+# PURPOSE: The EAC-CPF Schema is a communication standard for the description of corporate bodies,
+# persons, and families. It is based on the International Council of Archives' International Standard 
+# Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
+# documentation on the use of the standard, see the EAC-CPF Tag Library
+# (http://eac.staatsbibliothek-berlin.de/eac-cpf-schema/tag-library.html).
+# 
+# **********
+# RELEASE NOTES: The current release of the EAC-CPF is version 2010. 
+# ********** 
+# 
+# **********
+# Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
+# the EACWG (katherine.wisser@simmons.edu)
+# 
+# with subject line: Schema Comment
+# **********
+# 
+# EACWG MEMBERS:
+# 
+# Anila Angjeli, Bibliothèque nationale de France (National Library of France)
+# Lina (Vasiliki) Bountouri, Laboratory on Digital Libraries and Electronic Publishing, 
+#   Ionian University
+# Karin Bredenberg, Riksarkivet (National Archives of Sweden)
+# Basil Dewhurst, National Library of Australia
+# Wendy Duff, University of Toronto, Faculty of Information
+# Hans-Joerg Lieder, Staatsbibliothek zu Berlin (Berlin State Library, Germany) 
+# Dennis Meissner, Minnesota Historical Society 
+# Victoria Peters, University of Strathclyde
+# Daniel Pitti, University of Virginia, Institute for Advanced Technology in the Humanities
+# Chris Prom, University of Illinois at Urbana-Champaign
+# Jennifer Schaffner, OCLC Research and the RLG Partnership  
+# Bill Stockting, British Library (UK) 
+# Stefano Vitali, Soprintendenza archivistica per l'Emilia Romagna (Bologna) 
+# Kathy Wisser, Simmons College, Graduate School of Library and Information Science (Chair)
+# 
+# SUPPORT:
+# 
+# The work of the EACWG has been supported by the Society of American Archivists, Staatsbibliothek 
+# zu Berlin, Archivio di Stato di Bologna, Istituto per i Beni Artistici, Culturali e Naturali 
+# della Regione Emilia-Romagna, and by generous funding from the Delmas Foundation.
+#
+
+default namespace = "urn:isbn:1-931666-33-4"
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+start = e.eac-cpf
+e.eac-cpf =
+  [ a:id = "eac-cpf" ]
+  element eac-cpf {
+    id?,
+    lang?,
+    base?,
+    e.control,
+    (e.cpfDescription | e.multipleIdentities)
+  }
+e.cpfDescription =
+  [ a:id = "cpfDescription" ]
+  element cpfDescription {
+    id?,
+    lang?,
+    base?,
+    e.identity,
+    e.description?,
+    e.relations?,
+    e.alternativeSet?
+  }
+e.multipleIdentities =
+  [ a:id = "multipleIdentities" ]
+  element multipleIdentities {
+    id?, lang?, base?, e.cpfDescription, e.cpfDescription+
+  }
+[ a:documentation = "Control" ]
+div {
+  e.control =
+    [ a:id = "control" ]
+    element control {
+      id?,
+      lang?,
+      base?,
+      [ a:id = "recordId" ] element recordId { id?, xsd:NMTOKEN },
+      [ a:id = "otherRecordId" ] element otherRecordId { id?, m.id }*,
+      [ a:id = "maintenanceStatus" ]
+      element maintenanceStatus {
+        id?,
+        ("revised"
+         | "deleted"
+         | "new"
+         | "deletedSplit"
+         | "deletedReplaced"
+         | "cancelled"
+         | "derived")
+      },
+      [ a:id = "publicationStatus" ]
+      element publicationStatus { id?, ("inProcess" | "approved") }?,
+      e.maintenanceAgency,
+      e.languageDeclaration?,
+      e.conventionDeclaration*,
+      e.localTypeDeclaration*,
+      e.localControl*,
+      e.maintenanceHistory,
+      e.sources?
+    }
+  e.maintenanceAgency =
+    [ a:id = "maintenanceAgency" ]
+    element maintenanceAgency {
+      id?,
+      [ a:id = "agencyCode" ]
+      element agencyCode { id?, m.data.standardRepository }?,
+      [ a:id = "otherAgencyCode" ]
+      element otherAgencyCode { id?, a.localType, xsd:NMTOKEN }*,
+      [ a:id = "agencyName" ] element agencyName { id?, lang?, text },
+      e.descriptiveNote?
+    }
+  e.maintenanceHistory =
+    [ a:id = "maintenanceHistory" ]
+    element maintenanceHistory {
+      id?,
+      lang?,
+      [ a:id = "maintenanceEvent" ]
+      element maintenanceEvent {
+        id?,
+        lang?,
+        [ a:id = "eventType" ]
+        element eventType {
+          id?,
+          ("created"
+           | "revised"
+           | "deleted"
+           | "cancelled"
+           | "derived"
+           | "updated")
+        },
+        [ a:id = "eventDateTime" ]
+        element eventDateTime {
+          id?,
+          lang?,
+          [ a:id = "standardDateTime" ]
+          attribute standardDateTime { m.data.standardDateTime }?,
+          text
+        },
+        [ a:id = "agentType" ]
+        element agentType { id?, ("human" | "machine") },
+        [ a:id = "agent" ] element agent { id?, lang?, text },
+        [ a:id = "eventDesccription" ]
+        element eventDescription { id?, lang?, text }?
+      }+
+    }
+  e.languageDeclaration =
+    [ a:id = "languageDeclaration" ]
+    element languageDeclaration {
+      id?, lang?, e.language, e.script, e.descriptiveNote?
+    }
+  e.conventionDeclaration =
+    [ a:id = "conventionDeclaration" ]
+    element conventionDeclaration {
+      id?, lang?, e.abbreviation?, e.citation, e.descriptiveNote?
+    }
+  e.localTypeDeclaration =
+    [ a:id = "localTypeDeclaration" ]
+    element localTypeDeclaration {
+      id?, lang?, e.abbreviation?, e.citation, e.descriptiveNote?
+    }
+  e.abbreviation =
+    [ a:id = "abbreviation" ] element abbreviation { id?, xsd:token }
+  e.localControl =
+    [ a:id = "localControl" ]
+    element localControl {
+      id?, lang?, a.localType, e.term?, (e.dateSingle | e.dateRange)?
+    }
+  e.sources =
+    [ a:id = "sources" ]
+    element sources {
+      id?,
+      lang?,
+      base?,
+      [ a:id = "source" ]
+      element source {
+        id?,
+        a.lastDateTimeVerified?,
+        simpleLink?,
+        [ a:id = "sourceEntry" ]
+        element sourceEntry { id?, m.entryLanguageAttributes?, text }?,
+        (e.objectXMLWrap | e.objectBinWrap)?,
+        e.descriptiveNote?
+      }+
+    }
+}
+[ a:documentation = "Identity" ]
+div {
+  e.identity =
+    [ a:id = "identity" ]
+    element identity {
+      id?,
+      lang?,
+      base?,
+      a.localType?,
+      [ a:id = "identityType" ]
+      attribute identityType { "given" | "acquired" }?,
+      [ a:id = "entityId" ] element entityId { id?, m.id }*,
+      [ a:id = "entityType" ]
+      element entityType {
+        id?, ("person" | "corporateBody" | "family")
+      },
+      (e.nameEntryParallel
+       | [ a:id = "nameEntry" ]
+         element nameEntry {
+           id?,
+           m.entryLanguageAttributes,
+           a.localType?,
+           e.part+,
+           e.useDates?,
+           m.nameEntryAuthorizedorAlternative
+         })+,
+      e.descriptiveNote?
+    }
+  e.part =
+    [ a:id = "part" ] element part { id?, lang?, a.localType?, text }
+  e.useDates =
+    [ a:id = "useDates" ] element useDates { id?, lang?, m.dates }
+  e.nameEntryParallel =
+    [ a:id = "nameEntryParallel" ]
+    element nameEntryParallel {
+      id?,
+      a.localType?,
+      m.nameEntryInParallel,
+      m.nameEntryInParallel+,
+      e.useDates?,
+      m.nameEntryAuthorizedorAlternative
+    }
+  m.nameEntryInParallel =
+    [ a:id = "nameEntryInParallel" ]
+    element nameEntry {
+      id?,
+      m.entryLanguageAttributes,
+      a.localType?,
+      e.part+,
+      [ a:id = "preferredForm" ]
+      element preferredForm { id?, xsd:NMTOKEN }*
+    }
+  m.nameEntryAuthorizedorAlternative =
+    ([ a:id = "authorizedForm" ]
+     element authorizedForm { id?, xsd:NMTOKEN }
+     | [ a:id = "alternativeForm" ]
+       element alternativeForm { id?, xsd:NMTOKEN })*
+}
+[ a:documentation = "Description" ]
+div {
+  e.description =
+    [ a:id = "description" ]
+    element description {
+      id?,
+      lang?,
+      base?,
+      e.existDates?,
+      (e.places
+       | e.place
+       | e.localDescription
+       | e.localDescriptions
+       | e.legalStatus
+       | e.legalStatuses
+       | e.function
+       | e.functions
+       | e.languageUsed
+       | e.languagesUsed
+       | e.occupation
+       | e.occupations
+       | e.mandate
+       | e.mandates
+       | e.structureOrGenealogy
+       | e.generalContext)*,
+      e.biogHist*
+    }
+  e.existDates =
+    [ a:id = "existDates" ]
+    element existDates {
+      id?, lang?, a.localType?, m.dates, e.descriptiveNote?
+    }
+  [ a:documentation = "Plural Versions" ]
+  div {
+    e.places =
+      [ a:id = "places" ]
+      element places {
+        id?,
+        lang?,
+        a.localType?,
+        ((e.place+, e.descriptiveNote?) | m.discursiveSet*)
+      }
+    e.localDescriptions =
+      [ a:id = "localDescriptions" ]
+      element localDescriptions {
+        id?,
+        lang?,
+        a.localType,
+        ((e.localDescription+, e.descriptiveNote?) | m.discursiveSet*)
+      }
+    e.languagesUsed =
+      [ a:id = "languagesUsed" ]
+      element languagesUsed {
+        id?, lang?, a.localType?, e.languageUsed+, e.descriptiveNote?
+      }
+    e.legalStatuses =
+      [ a:id = "legalStatuses" ]
+      element legalStatuses {
+        id?,
+        lang?,
+        a.localType?,
+        ((e.legalStatus+, e.descriptiveNote?) | m.discursiveSet*)
+      }
+    e.occupations =
+      [ a:id = "occupations" ]
+      element occupations {
+        id?,
+        lang?,
+        a.localType?,
+        ((e.occupation+, e.descriptiveNote?) | m.discursiveSet*)
+      }
+    e.functions =
+      [ a:id = "functions" ]
+      element functions {
+        id?,
+        lang?,
+        a.localType?,
+        ((e.function+, e.descriptiveNote?) | m.discursiveSet*)
+      }
+    e.mandates =
+      [ a:id = "mandates" ]
+      element mandates {
+        id?,
+        lang?,
+        a.localType?,
+        ((e.mandate+, e.descriptiveNote?) | m.discursiveSet*)
+      }
+    m.discursiveSet = e.p | e.outline | e.list | e.citation
+  }
+  [ a:documentation = "Singular Version" ]
+  div {
+    e.place =
+      [ a:id = "place" ]
+      element place {
+        #  Note that place uses the same model as m.simpleDescription except for the insertion of 
+        # address
+        id?,
+        lang?,
+        a.localType?,
+        e.placeRole?,
+        e.placeEntry*,
+        [ a:id = "address" ]
+        element address {
+          id?,
+          lang?,
+          a.localType?,
+          [ a:id = "addressLine" ]
+          element addressLine { id?, lang?, a.localType?, text }+
+        }?,
+        m.dates?,
+        e.citation?,
+        e.descriptiveNote?
+      }
+    e.placeEntry =
+      [ a:id = "placeEntry" ]
+      element placeEntry {
+        id?,
+        m.entryLanguageAttributes?,
+        a.localType?,
+        [ a:id = "countryCode" ]
+        attribute countryCode {
+          xsd:string { pattern = "[A-Z]{2}" }
+          | xsd:string { pattern = "[A-Z]{4}" }
+        }?,
+        a.vocabularySource?,
+        [ a:id = "accuracy" ] attribute accuarcy { text }?,
+        m.geographicalCoordinates?,
+        text
+      }
+    e.localDescription =
+      [ a:id = "localDescription" ]
+      element localDescription {
+        id?, lang?, a.localType, m.simpleDescription
+      }
+    e.languageUsed =
+      [ a:id = "languageUsed" ]
+      element languageUsed {
+        id?,
+        lang?,
+        a.localType?,
+        e.language,
+        e.script,
+        e.descriptiveNote?
+      }
+    e.legalStatus =
+      [ a:id = "legalStatus" ]
+      element legalStatus {
+        id?, lang?, a.localType?, m.simpleDescription
+      }
+    e.occupation =
+      [ a:id = "occupation" ]
+      element occupation {
+        id?, lang?, a.localType?, m.simpleDescription
+      }
+    e.function =
+      [ a:id = "function" ]
+      element function { id?, lang?, a.localType?, m.simpleDescription }
+    e.mandate =
+      [ a:id = "mandate" ]
+      element mandate { id?, lang?, a.localType?, m.simpleDescription }
+    m.simpleDescription =
+      e.term?, e.placeEntry*, m.dates?, e.citation?, e.descriptiveNote?
+    e.placeRole =
+      [ a:id = "placeRole" ]
+      element placeRole {
+        id?,
+        m.entryLanguageAttributes?,
+        a.lastDateTimeVerified?,
+        a.vocabularySource?,
+        text
+      }
+  }
+  e.structureOrGenealogy =
+    [ a:id = "structureOrGenealogy" ]
+    element structureOrGenealogy {
+      id?, lang?, a.localType?, m.discursiveSet*
+    }
+  e.generalContext =
+    [ a:id = "generalContext" ]
+    element generalContext {
+      id?, lang?, a.localType?, m.discursiveSet*
+    }
+  e.biogHist =
+    [ a:id = "biogHist" ]
+    element biogHist {
+      id?,
+      lang?,
+      a.localType?,
+      e.abstract?,
+      (e.chronList | e.list | e.p | e.outline | e.citation)*
+    }
+  e.abstract =
+    [ a:id = "abstract" ]
+    element abstract { id?, lang?, a.localType?, m.mixedContent }
+}
+[ a:documentation = "Relations" ]
+div {
+  e.relations =
+    [ a:id = "relations" ]
+    element relations {
+      id?,
+      lang?,
+      base?,
+      e.cpfRelation*,
+      e.resourceRelation*,
+      e.functionRelation*
+    }
+  e.relationEntry =
+    [ a:id = "relationEntry" ]
+    element relationEntry {
+      id?, a.localType?, m.entryLanguageAttributes?, text
+    }
+  e.objectXMLWrap =
+    [ a:id = "objectXMLWrap" ] element objectXMLWrap { id?, e.anyName }
+  e.objectBinWrap =
+    [ a:id = "objectBinWrap" ]
+    element objectBinWrap { id?, xsd:base64Binary }
+  m.relationBody =
+    a.lastDateTimeVerified?,
+    simpleLink?,
+    e.relationEntry*,
+    (e.objectXMLWrap | e.objectBinWrap)?,
+    m.dates?,
+    e.placeEntry?,
+    e.descriptiveNote?
+  e.cpfRelation =
+    [ a:id = "cpfRelation" ]
+    element cpfRelation {
+      id?,
+      lang?,
+      [ a:id = "cpfRelationType" ]
+      attribute cpfRelationType {
+        "identity"
+        | "hierarchical"
+        | "hierarchical-parent"
+        | "hierarchical-child"
+        | "temporal"
+        | "temporal-earlier"
+        | "temporal-later"
+        | "family"
+        | "associative"
+      }?,
+      m.relationBody
+    }
+  e.resourceRelation =
+    [ a:id = "resourceRelation" ]
+    element resourceRelation {
+      id?,
+      lang?,
+      [ a:id = "resourceRelationType" ]
+      attribute resourceRelationType {
+        "creatorOf" | "subjectOf" | "other"
+      }?,
+      m.relationBody
+    }
+  e.functionRelation =
+    [ a:id = "functionRelation" ]
+    element functionRelation {
+      id?,
+      lang?,
+      [ a:id = "functionRelationType" ]
+      attribute functionRelationType {
+        "controls" | "owns" | "performs"
+      }?,
+      m.relationBody
+    }
+}
+[ a:documentation = "alternativeSet" ]
+div {
+  e.alternativeSet =
+    [ a:id = "alternativeSet" ]
+    element alternativeSet {
+      id?,
+      lang?,
+      base?,
+      [ a:id = "setComponent" ]
+      element setComponent {
+        id?,
+        lang?,
+        a.lastDateTimeVerified?,
+        # Here down overlaps with m.relationBody
+        simpleLink?,
+        [ a:id = "componentEntry" ]
+        element componentEntry {
+          id?, a.localType?, m.entryLanguageAttributes?, text
+        }*,
+        (e.objectXMLWrap | e.objectBinWrap)?,
+        e.descriptiveNote?
+      }+
+    }
+}
+[ a:documentation = "Shared" ]
+div {
+  e.anyName = [ a:id = "e.anyName" ] element * { m.anything }
+  m.anything =
+    [ a:id = "a.anyName" ] attribute * { text }*,
+    (e.anyName | text)*
+  [ a:documentation = "Dates" ]
+  div {
+    a.lastDateTimeVerified =
+      [ a:id = "lastDateTimeVerified" ]
+      attribute lastDateTimeVerified { m.data.standardDateTime }
+    m.data.standardDateTime =
+      xsd:date { maxInclusive = "2099-12-31" }
+      | xsd:gYear { maxInclusive = "2099" }
+      | xsd:gYearMonth { maxInclusive = "2099-12" }
+      | xsd:dateTime { maxInclusive = "2099-12-31T23:59:59" }
+    m.data.standardDate =
+      xsd:date { maxInclusive = "2099-12-31" }
+      | xsd:gYear { maxInclusive = "2099" }
+      | xsd:gYearMonth { maxInclusive = "2099-12" }
+    e.dateSingle =
+      [ a:id = "date" ]
+      element date { id?, lang?, a.localType?, m.dateSingle }
+    m.dateSingle =
+      [ a:id = "standardDate" ]
+      attribute standardDate { m.data.standardDate }?,
+      [ a:id = "notBefore" ]
+      attribute notBefore { m.data.standardDate }?,
+      [ a:id = "notAfter" ] attribute notAfter { m.data.standardDate }?,
+      text
+    e.dateRange =
+      [ a:id = "dateRange" ]
+      element dateRange {
+        id?,
+        lang?,
+        a.localType?,
+        [ a:id = "fromDate" ]
+        element fromDate { id?, lang?, m.dateSingle }?,
+        [ a:id = "toDate" ] element toDate { id?, lang?, m.dateSingle }?
+      }
+    e.dateSet =
+      [ a:id = "dateSet" ]
+      element dateSet {
+        id?,
+        lang?,
+        a.localType?,
+        (e.dateSingle | e.dateRange),
+        (e.dateSingle | e.dateRange)+
+      }
+    m.dates = e.dateSingle | e.dateRange | e.dateSet
+  }
+  [ a:documentation = "Language" ]
+  div {
+    e.language =
+      [ a:id = "language" ]
+      element language {
+        id?,
+        lang?,
+        [ a:id = "languageCode" ]
+        attribute languageCode {
+          xsd:string { pattern = "[a-z]{3}" }
+        },
+        text
+      }
+    e.script =
+      [ a:id = "script" ]
+      element script { id?, lang?, a.scriptCode, text }
+    a.scriptCode =
+      [ a:id = "scriptCode" ]
+      attribute scriptCode {
+        xsd:string { pattern = "[A-Z][a-z]{3}" }
+      }
+    a.transliteration =
+      [ a:id = "transliteration" ]
+      attribute transliteration { xsd:NMTOKEN }
+    m.entryLanguageAttributes = a.scriptCode?, lang?, a.transliteration?
+  }
+  m.data.standardRepository =
+    
+    ## This pattern represents the character pattern requirements of ISIL (ISO
+    ##						15511). Values that conform to the pattern are not, strictly speaking, conformant to ISIL, as
+    ##						all repository codes must be registered with a national authority and the national authority
+    ##						must be registered wth the official ISIL registering authority, the Royal Library of Belgium
+    ##						(http://biblstandard.dk/isil/).
+    xsd:token {
+      pattern =
+        "(([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})"
+    }
+  e.term =
+    [ a:id = "term" ]
+    element term {
+      id?,
+      m.entryLanguageAttributes?,
+      a.lastDateTimeVerified?,
+      a.vocabularySource?,
+      text
+    }
+  e.descriptiveNote =
+    [ a:id = "descriptiveNote" ]
+    element descriptiveNote { id?, lang?, e.p+ }
+  e.citation =
+    [ a:id = "citation" ]
+    element citation {
+      id?, lang?, simpleLink?, a.lastDateTimeVerified?, m.mixedContent
+    }
+  m.id = a.localType?, text
+  e.p = [ a:id = "p" ] element p { id?, lang?, m.mixedContent }
+  m.mixedContent = (text | e.span)*
+  e.chronList =
+    [ a:id = "chronList" ]
+    element chronList {
+      id?,
+      lang?,
+      a.localType?,
+      [ a:id = "chronItem" ]
+      element chronItem {
+        id?,
+        lang?,
+        a.localType?,
+        (e.dateSingle | e.dateRange),
+        e.placeEntry?,
+        [ a:id = "event" ]
+        element event { id?, lang?, a.localType?, text }
+      }+
+    }
+  e.list =
+    [ a:id = "list" ] element list { id?, lang?, a.localType?, e.item+ }
+  e.item =
+    [ a:id = "item" ]
+    element item { id?, lang?, a.localType?, m.mixedContent }
+  e.outline =
+    [ a:id = "outline" ]
+    element outline { id?, lang?, a.localType?, e.level+ }
+  e.level =
+    [ a:id = "level" ]
+    element level { id?, lang?, a.localType?, e.item, e.level* }
+  e.span =
+    [ a:id = "span" ]
+    element span { id?, lang?, a.localType?, a.style?, text }?
+  a.localType =
+    [ a:id = "localType" ] attribute localType { xsd:anyURI }
+  a.vocabularySource =
+    [ a:id = "vocabularySource" ]
+    attribute vocabularySource { xsd:anyURI }
+  a.style = [ a:id = "style" ] attribute style { text }
+  m.geographicalCoordinates =
+    [ a:id = "longitude" ] attribute longitude { xsd:NMTOKEN },
+    [ a:id = "latitude" ] attribute latitude { xsd:NMTOKEN },
+    [ a:id = "altitude" ] attribute altitude { xsd:NMTOKEN }?
+  [ a:documentation = "XML Special Attributes" ]
+  div {
+    lang = [ a:id = "xmlLang" ] attribute xml:lang { xsd:language | "" }
+    base = [ a:id = "xmlBase" ] attribute xml:base { xsd:anyURI }
+    id = [ a:id = "xmlID" ] attribute xml:id { xsd:NCName }
+  }
+  [ a:documentation = "XLINK" ]
+  div {
+    simpleLink =
+      [ a:defaultValue = "simple" a:id = "xlinkType" ]
+      attribute xlink:type { "simple" },
+      href?,
+      role?,
+      arcrole?,
+      title?,
+      show?,
+      actuate?
+    href = [ a:id = "xlinkHref" ] attribute xlink:href { xsd:anyURI }
+    role = [ a:id = "xlinkRole" ] attribute xlink:role { xsd:anyURI }
+    arcrole =
+      [ a:id = "xlinkArcrole" ] attribute xlink:arcrole { xsd:anyURI }
+    title = [ a:id = "xlinkTitle" ] attribute xlink:title { text }
+    show =
+      [ a:id = "xlinkShow" ]
+      attribute xlink:show {
+        "new" | "replace" | "embed" | "other" | "none"
+      }
+    actuate =
+      [ a:id = "xlinkActuate" ]
+      attribute xlink:actuate {
+        "onLoad" | "onRequest" | "other" | "none"
+      }
+  }
+}
