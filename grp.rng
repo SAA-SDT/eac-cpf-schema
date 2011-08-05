@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    ns="http://eacgrp.staatsbibliothek-berlin.de"
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:eac-cpf="urn:isbn:1-931666-33-4"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <!-- Schema for grouping several cpf-s in one file. -->
+    <start combine="choice">
+        <ref name="e.eac-cpf-grp"/>
+    </start>
+    
+    <include href="cpf.rng"/>
+    
+    <define name="e.eac-cpf-grp">
+        <element name="eac-cpf-grp">
+            <ref name="e.control"/>
+            <oneOrMore>
+                <ref name="e.eac-cpf"/>
+            </oneOrMore>
+        </element>
+    </define>
+</grammar>

@@ -1,0 +1,8 @@
+default namespace = "http://eacgrp.staatsbibliothek-berlin.de"
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace eac-cpf = "urn:isbn:1-931666-33-4"
+
+# Schema for grouping several cpf-s in one file.
+start |= e.eac-cpf-grp
+include "cpf.rnc"
+e.eac-cpf-grp = element eac-cpf-grp { e.control, e.eac-cpf+ }
