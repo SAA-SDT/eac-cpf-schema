@@ -956,7 +956,7 @@
 						<ref name="a.vocabularySource"/>
 					</optional>
 					<optional>
-						<attribute a:id="accuracy" name="accuarcy">
+						<attribute a:id="accuracy" name="accuracy">
 							<text/>
 						</attribute>
 					</optional>

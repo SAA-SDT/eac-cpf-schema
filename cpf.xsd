@@ -697,7 +697,7 @@
 				</xs:simpleType>
 			</xs:attribute>
 			<xs:attribute name="vocabularySource" type="xs:anyURI"/>
-			<xs:attribute name="accuarcy"/>
+			<xs:attribute name="accuracy"/>
 			<xs:attribute name="longitude" type="xs:NMTOKEN"/>
 			<xs:attribute name="latitude" type="xs:NMTOKEN"/>
 			<xs:attribute name="altitude" type="xs:NMTOKEN"/>
