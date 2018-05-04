@@ -197,6 +197,9 @@
 					<ref name="e.conventionDeclaration"/>
 				</zeroOrMore>
 				<zeroOrMore>
+					<ref name="e.rightsDeclaration"/>
+				</zeroOrMore>
+				<zeroOrMore>
 					<ref name="e.localTypeDeclaration"/>
 				</zeroOrMore>
 				<zeroOrMore>
@@ -346,6 +349,27 @@
 				</optional>
 				<optional>
 					<ref name="lang"/>
+				</optional>
+				<optional>
+					<ref name="e.abbreviation"/>
+				</optional>
+				<ref name="e.citation"/>
+				<optional>
+					<ref name="e.descriptiveNote"/>
+				</optional>
+			</element>
+		</define>
+			
+		<define name="e.rightsDeclaration">
+			<element a:id="rightsDeclaration" name="rightsDeclaration">
+				<optional>
+					<ref name="id"/>
+				</optional>
+				<optional>
+					<ref name="lang"/>
+				</optional>
+				<optional>
+					<ref name="a.localType"/>
 				</optional>
 				<optional>
 					<ref name="e.abbreviation"/>
