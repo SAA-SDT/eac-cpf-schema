@@ -1251,9 +1251,9 @@
 			<optional>
 				<ref name="m.dates"/>
 			</optional>
-			<optional>
+			<zeroOrMore>
 				<ref name="e.placeEntry"/>
-			</optional>
+			</zeroOrMore>
 			<optional>
 				<ref name="e.descriptiveNote"/>
 			</optional>
