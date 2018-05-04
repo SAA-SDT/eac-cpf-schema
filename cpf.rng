@@ -588,10 +588,7 @@
 						<optional>
 							<ref name="id"/>
 						</optional>
-						<data type="NMTOKEN">
-							<!-- NMTOKEN instead of maintenance agency code constraints because the 
-								code may be a non-conforming, i.e. otherAgencyCode -->
-						</data>
+						<data type="token"/>
 					</element>
 				</zeroOrMore>
 			</element>
@@ -1423,32 +1420,18 @@
 
 			<define name="m.data.standardDateTime">
 				<choice>
-					<data type="date">
-						<param name="maxInclusive">2099-12-31</param>
-					</data>
-					<data type="gYear">
-						<param name="maxInclusive">2099</param>
-					</data>
-					<data type="gYearMonth">
-						<param name="maxInclusive">2099-12</param>
-					</data>
-					<data type="dateTime">
-						<param name="maxInclusive">2099-12-31T23:59:59</param>
-					</data>
+					<data type="date"/>
+					<data type="gYear"/>
+					<data type="gYearMonth"/>
+					<data type="dateTime"/>
 				</choice>
 			</define>
 
 			<define name="m.data.standardDate">
 				<choice>
-					<data type="date">
-						<param name="maxInclusive">2099-12-31</param>
-					</data>
-					<data type="gYear">
-						<param name="maxInclusive">2099</param>
-					</data>
-					<data type="gYearMonth">
-						<param name="maxInclusive">2099-12</param>
-					</data>
+					<data type="date"/>
+					<data type="gYear"/>
+					<data type="gYearMonth"/>
 				</choice>
 			</define>
 
@@ -1505,6 +1488,9 @@
 							<optional>
 								<ref name="lang"/>
 							</optional>
+							<optional>
+								<ref name="a.localType"/>
+							</optional>
 							<ref name="m.dateSingle"/>
 						</element>
 					</optional>
@@ -1515,6 +1501,9 @@
 							</optional>
 							<optional>
 								<ref name="lang"/>
+							</optional>
+							<optional>
+								<ref name="a.localType"/>
 							</optional>
 							<ref name="m.dateSingle"/>
 						</element>
