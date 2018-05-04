@@ -586,10 +586,7 @@
 						<optional>
 							<ref name="id"/>
 						</optional>
-						<data type="NMTOKEN">
-							<!-- NMTOKEN instead of maintenance agency code constraints because the 
-								code may be a non-conforming, i.e. otherAgencyCode -->
-						</data>
+						<data type="token"/>
 					</element>
 				</zeroOrMore>
 			</element>
