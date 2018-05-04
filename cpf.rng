@@ -1503,6 +1503,9 @@
 							<optional>
 								<ref name="lang"/>
 							</optional>
+							<optional>
+								<ref name="a.localType"/>
+							</optional>
 							<ref name="m.dateSingle"/>
 						</element>
 					</optional>
@@ -1513,6 +1516,9 @@
 							</optional>
 							<optional>
 								<ref name="lang"/>
+							</optional>
+							<optional>
+								<ref name="a.localType"/>
 							</optional>
 							<ref name="m.dateSingle"/>
 						</element>
