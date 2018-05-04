@@ -190,9 +190,9 @@
 					</element>
 				</optional>
 				<ref name="e.maintenanceAgency"/>
-				<optional>
+				<zeroOrMore>
 					<ref name="e.languageDeclaration"/>
-				</optional>
+				</zeroOrMore>
 				<zeroOrMore>
 					<ref name="e.conventionDeclaration"/>
 				</zeroOrMore>
@@ -231,15 +231,17 @@
 						<data type="NMTOKEN"/>
 					</element>
 				</zeroOrMore>
-				<element a:id="agencyName" name="agencyName">
-					<optional>
-						<ref name="id"/>
-					</optional>
-					<optional>
-						<ref name="lang"/>
-					</optional>
-					<text/>
-				</element>
+				<oneOrMore>
+					<element a:id="agencyName" name="agencyName">
+						<optional>
+							<ref name="id"/>
+						</optional>
+						<optional>
+							<ref name="lang"/>
+						</optional>
+						<text/>
+					</element>
+				</oneOrMore>
 				<optional>
 					<ref name="e.descriptiveNote"/>
 				</optional>
@@ -307,7 +309,7 @@
 							</optional>
 							<text/>
 						</element>
-						<optional>
+						<zeroOrMore>
 							<element a:id="eventDesccription" name="eventDescription">
 								<optional>
 									<ref name="id"/>
@@ -317,7 +319,7 @@
 								</optional>
 								<text/>
 							</element>
-						</optional>
+						</zeroOrMore>
 					</element>
 				</oneOrMore>
 			</element>
@@ -427,7 +429,7 @@
 						<optional>
 							<ref name="simpleLink"/>
 						</optional>
-						<optional>
+						<zeroOrMore>
 							<element a:id="sourceEntry" name="sourceEntry">
 								<optional>
 									<ref name="id"/>
@@ -437,7 +439,7 @@
 								</optional>
 								<text/>
 							</element>
-						</optional>
+						</zeroOrMore>
 						<optional>
 							<choice>
 								<ref name="e.objectXMLWrap"/>
