@@ -1421,32 +1421,18 @@
 
 			<define name="m.data.standardDateTime">
 				<choice>
-					<data type="date">
-						<param name="maxInclusive">2099-12-31</param>
-					</data>
-					<data type="gYear">
-						<param name="maxInclusive">2099</param>
-					</data>
-					<data type="gYearMonth">
-						<param name="maxInclusive">2099-12</param>
-					</data>
-					<data type="dateTime">
-						<param name="maxInclusive">2099-12-31T23:59:59</param>
-					</data>
+					<data type="date"/>
+					<data type="gYear"/>
+					<data type="gYearMonth"/>
+					<data type="dateTime"/>
 				</choice>
 			</define>
 
 			<define name="m.data.standardDate">
 				<choice>
-					<data type="date">
-						<param name="maxInclusive">2099-12-31</param>
-					</data>
-					<data type="gYear">
-						<param name="maxInclusive">2099</param>
-					</data>
-					<data type="gYearMonth">
-						<param name="maxInclusive">2099-12</param>
-					</data>
+					<data type="date"/>
+					<data type="gYear"/>
+					<data type="gYearMonth"/>
 				</choice>
 			</define>
 
