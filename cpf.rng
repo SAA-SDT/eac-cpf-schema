@@ -56,10 +56,12 @@
 	della Regione Emilia-Romagna, and by generous funding from the Delmas Foundation.
 	
 -->
-<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="urn:isbn:1-931666-33-4"
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+    ns="urn:isbn:1-931666-33-4"
 	xmlns="http://relaxng.org/ns/structure/1.0"
 	xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace">
 
 	<!-- 
  
@@ -1400,7 +1402,14 @@
 		<define name="m.anything">
 			<zeroOrMore>
 				<attribute a:id="a.anyName">
-					<anyName/>
+					<anyName>
+					    <!-- adding this so that we can actually set the xml:id attribute to a datatype of ID. 
+					        (not sure that the current construction is needed for this, though, so a rewrite might be in order)
+					        (mdc) -->
+					    <except>
+					        <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+					    </except>
+					</anyName>
 				</attribute>
 			</zeroOrMore>
 			<zeroOrMore>
@@ -1888,12 +1897,12 @@
 			</define>
 
 			<define name="id" ns="http://www.w3.org/XML/1998/namespace">
-				<attribute a:id="xmlID" name="xml:id">
-					<data type="NCName">
-						<!-- Because of restrictions in Relax NG, the expression of this attribute is NCName. 
-							This is not strictly conformant to the xml:id specification, though necessary in order for
-							to validate. The XML Schema version of this attribute should be defined as ID -->
-					</data>
+			    <attribute a:id="xmlID" name="xml:id">
+			        <!-- this was previously set to NMToken, making the rng version of EAC not a good choice!
+			            the XSD version, however, did not have that issue prevously.
+			        Anyhow, now that the xml:id is set to ID for its datatype, that difference between the RNG and XSD
+			        no longer exsit. (mdc) -->
+					<data type="ID"/>
 				</attribute>
 			</define>
 
