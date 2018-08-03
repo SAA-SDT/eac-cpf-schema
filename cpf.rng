@@ -1,60 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-	ENCODED ARCHIVAL CONTEXT-CORPORATE BODIES, PERSONS, AND FAMILIES (EAC-CPF) SCHEMA
-	
-	SCHEMA TYPE: Relax NG Schema XML
-	
-	VERSION: 2018 revision
-	
-	DATE: 20180505
-	
-	EDITORS: Society of American Archivists Encoded Archival Context Working Group (EACWG)
-	
-	PUBLISHER: Society of American Archivists in collaboration with the Staatsbibliothek zu Berlin
-	
-	FUNDING: The Gladys Krieble Delmas Foundation
-	
-	PURPOSE: The EAC-CPF Schema is a communication standard for the description of corporate bodies,
-	persons, and families. It is based on the International Council of Archives' International Standard 
-	Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
-	documentation on the use of the standard, see the EAC-CPF Tag Library
-	(http://eac.staatsbibliothek-berlin.de/eac-cpf-schema/tag-library.html).
-	
-	**********
-	RELEASE NOTES: The current release of the EAC-CPF is version 2010. 
-	********** 
-	
-	**********
-	Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
-	the EACWG (katherine.wisser@simmons.edu)
-	
-	with subject line: Schema Comment
-	**********
-	
-	EACWG MEMBERS:
-	
-	Anila Angjeli, Bibliothèque nationale de France (National Library of France)
-	Lina (Vasiliki) Bountouri, Laboratory on Digital Libraries and Electronic Publishing, 
-	  Ionian University
-	Karin Bredenberg, Riksarkivet (National Archives of Sweden)
-	Basil Dewhurst, National Library of Australia
-	Wendy Duff, University of Toronto, Faculty of Information
-	Hans-Joerg Lieder, Staatsbibliothek zu Berlin (Berlin State Library, Germany) 
-	Dennis Meissner, Minnesota Historical Society 
-	Victoria Peters, University of Strathclyde
-	Daniel Pitti, University of Virginia, Institute for Advanced Technology in the Humanities
-	Chris Prom, University of Illinois at Urbana-Champaign
-	Jennifer Schaffner, OCLC Research and the RLG Partnership
-	Bill Stockting, British Library (UK) 
-	Stefano Vitali, Soprintendenza archivistica per l'Emilia Romagna (Bologna) 
-	Kathy Wisser, Simmons College, Graduate School of Library and Information Science (Chair)
-	
-	SUPPORT:
-	
-	The work of the EACWG has been supported by the Society of American Archivists, Staatsbibliothek 
-	zu Berlin, Archivio di Stato di Bologna, Istituto per i Beni Artistici, Culturali e Naturali 
-	della Regione Emilia-Romagna, and by generous funding from the Delmas Foundation.
-	
+<!--
+  ENCODED ARCHIVAL CONTEXT-CORPORATE BODIES, PERSONS, AND FAMILIES (EAC-CPF) SCHEMA
+  
+  SCHEMA TYPE: RELAX NG Schema
+  
+  VERSION: 2010_revised
+  
+  DATE: 20180505
+  
+  EDITORS: Society of American Archivists Technical Subcommittee on Encoded Archival Standards (TS-EAS)
+  
+  PUBLISHER: Society of American Archivists in collaboration with the Staatsbibliothek zu Berlin
+  
+  PURPOSE: The EAC-CPF Schema is a communication standard for the description of corporate bodies,
+  persons, and families. It is based on the International Council of Archives' International Standard 
+  Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
+  documentation on the use of the standard, see the EAC-CPF Tag Library
+  (http://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/).
+  
+  Lead schema maintainer: Mark Custer
+  
+  **********
+  RELEASE NOTES: The current release of the EAC-CPF is version 2010. 
+  
+  Changes in Version 2010_revised:
+  
+  1. The @accuracy attribute was corrected for the typo (@accuarcy).
+           See https://github.com/SAA-SDT/eac-cpf-schema/issues/1
+           (bug fix)
+
+  2. The elements languageDeclaration, agencyName, eventDescription and sourceEntry are now repeatable.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/10
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/11
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/12
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/13
+              
+  3. The placeEntry element is now repeatable within each of the relation elements.
+           See https:https://github.com/SAA-SDT/eac-cpf-schema/issues/17
+           
+  4. The new element rightsDeclaration has been added to the control section.
+           See https://github.com/SAA-SDT/eac-cpf-schema/issues/46
+           (new element)
+  
+  5. The data type for the attributes @otherAgencyCode and @preferredForm has been changed from xs:nmtoken to xs:token.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/16
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/19
+              
+  6. The @localType attribute has been added to the elements fromDate and toDate.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/31
+  
+  7. The maximum value restriction on the attributes @standardDate and @standardDateTime has been removed, years greater than 2999 are now possible.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/33
+          
+  8. New value 'unknown' is now available for @eventType and @agentType attributes.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/47
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/48
+             
+  9. New content is now available for the following elements:
+          'published' for pucblicationStatus element
+          'deletedMerged' for maintenanceStatus element
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/49
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/50
+  
+  Please note that this revision does not fix an issue in the RNG EAC schema
+  where the xml:id attribute is restricted to NCName rather than the xsd:ID datatype.
+  If you rely on the xml:id attribute in your EAC records, then you should validate your documents against the cpf.xsd W3C schema for the time being.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/52 
+  
+  	
+  **********
+  Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
+  the TS-EAS (katherine.wisser@simmons.edu)
+  
+  with subject line: Schema Comment
+  **********
+    
 -->
 <grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="urn:isbn:1-931666-33-4"
 	xmlns="http://relaxng.org/ns/structure/1.0"
