@@ -1,60 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-	ENCODED ARCHIVAL CONTEXT-CORPORATE BODIES, PERSONS, AND FAMILIES (EAC-CPF) SCHEMA
-	
-	SCHEMA TYPE: Relax NG Schema XML
-	
-	VERSION: 2010
-	
-	DATE: 20100301
-	
-	EDITORS: Society of American Archivists Encoded Archival Context Working Group (EACWG)
-	
-	PUBLISHER: Society of American Archivists in collaboration with the Staatsbibliothek zu Berlin
-	
-	FUNDING: The Gladys Krieble Delmas Foundation
-	
-	PURPOSE: The EAC-CPF Schema is a communication standard for the description of corporate bodies,
-	persons, and families. It is based on the International Council of Archives' International Standard 
-	Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
-	documentation on the use of the standard, see the EAC-CPF Tag Library
-	(http://eac.staatsbibliothek-berlin.de/eac-cpf-schema/tag-library.html).
-	
-	**********
-	RELEASE NOTES: The current release of the EAC-CPF is version 2010. 
-	********** 
-	
-	**********
-	Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
-	the EACWG (katherine.wisser@simmons.edu)
-	
-	with subject line: Schema Comment
-	**********
-	
-	EACWG MEMBERS:
-	
-	Anila Angjeli, Bibliothèque nationale de France (National Library of France)
-	Lina (Vasiliki) Bountouri, Laboratory on Digital Libraries and Electronic Publishing, 
-	  Ionian University
-	Karin Bredenberg, Riksarkivet (National Archives of Sweden)
-	Basil Dewhurst, National Library of Australia
-	Wendy Duff, University of Toronto, Faculty of Information
-	Hans-Joerg Lieder, Staatsbibliothek zu Berlin (Berlin State Library, Germany) 
-	Dennis Meissner, Minnesota Historical Society 
-	Victoria Peters, University of Strathclyde
-	Daniel Pitti, University of Virginia, Institute for Advanced Technology in the Humanities
-	Chris Prom, University of Illinois at Urbana-Champaign
-	Jennifer Schaffner, OCLC Research and the RLG Partnership
-	Bill Stockting, British Library (UK) 
-	Stefano Vitali, Soprintendenza archivistica per l'Emilia Romagna (Bologna) 
-	Kathy Wisser, Simmons College, Graduate School of Library and Information Science (Chair)
-	
-	SUPPORT:
-	
-	The work of the EACWG has been supported by the Society of American Archivists, Staatsbibliothek 
-	zu Berlin, Archivio di Stato di Bologna, Istituto per i Beni Artistici, Culturali e Naturali 
-	della Regione Emilia-Romagna, and by generous funding from the Delmas Foundation.
-	
+<!--
+  ENCODED ARCHIVAL CONTEXT-CORPORATE BODIES, PERSONS, AND FAMILIES (EAC-CPF) SCHEMA
+  
+  SCHEMA TYPE: RELAX NG Schema
+  
+  VERSION: 2010_revised
+  
+  DATE: 20180505
+  
+  EDITORS: Society of American Archivists Technical Subcommittee on Encoded Archival Standards (TS-EAS)
+  
+  PUBLISHER: Society of American Archivists in collaboration with the Staatsbibliothek zu Berlin
+  
+  PURPOSE: The EAC-CPF Schema is a communication standard for the description of corporate bodies,
+  persons, and families. It is based on the International Council of Archives' International Standard 
+  Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
+  documentation on the use of the standard, see the EAC-CPF Tag Library
+  (http://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/).
+  
+  Lead schema maintainer: Mark Custer
+  
+  **********
+  RELEASE NOTES: The current release of the EAC-CPF is version 2010. 
+  
+  Changes in Version 2010_revised:
+  
+  1. The @accuracy attribute was corrected for the typo (@accuarcy).
+           See https://github.com/SAA-SDT/eac-cpf-schema/issues/1
+           (bug fix)
+
+  2. The elements languageDeclaration, agencyName, eventDescription and sourceEntry are now repeatable.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/10
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/11
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/12
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/13
+              
+  3. The placeEntry element is now repeatable within each of the relation elements.
+           See https:https://github.com/SAA-SDT/eac-cpf-schema/issues/17
+           
+  4. The new element rightsDeclaration has been added to the control section.
+           See https://github.com/SAA-SDT/eac-cpf-schema/issues/46
+           (new element)
+  
+  5. The data type for the attributes @otherAgencyCode and @preferredForm has been changed from xs:nmtoken to xs:token.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/16
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/19
+              
+  6. The @localType attribute has been added to the elements fromDate and toDate.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/31
+  
+  7. The maximum value restriction on the attributes @standardDate and @standardDateTime has been removed, years greater than 2999 are now possible.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/33
+          
+  8. New value 'unknown' is now available for @eventType and @agentType attributes.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/47
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/48
+             
+  9. New content is now available for the following elements:
+          'published' for pucblicationStatus element
+          'deletedMerged' for maintenanceStatus element
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/49
+              https://github.com/SAA-SDT/eac-cpf-schema/issues/50
+  
+  Please note that this revision does not fix an issue in the RNG EAC schema
+  where the xml:id attribute is restricted to NCName rather than the xsd:ID datatype.
+  If you rely on the xml:id attribute in your EAC records, then you should validate your documents against the cpf.xsd W3C schema for the time being.
+          See https://github.com/SAA-SDT/eac-cpf-schema/issues/52 
+  
+  	
+  **********
+  Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
+  the TS-EAS (katherine.wisser@simmons.edu)
+  
+  with subject line: Schema Comment
+  **********
+    
 -->
 <grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="urn:isbn:1-931666-33-4"
 	xmlns="http://relaxng.org/ns/structure/1.0"
@@ -174,6 +194,7 @@
 						<value>new</value>
 						<value>deletedSplit</value>
 						<value>deletedReplaced</value>
+						<value>deletedMerged</value>
 						<value>cancelled</value>
 						<value>derived</value>
 					</choice>
@@ -186,15 +207,19 @@
 						<choice>
 							<value>inProcess</value>
 							<value>approved</value>
+							<value>published</value>
 						</choice>
 					</element>
 				</optional>
 				<ref name="e.maintenanceAgency"/>
-				<optional>
+				<zeroOrMore>
 					<ref name="e.languageDeclaration"/>
-				</optional>
+				</zeroOrMore>
 				<zeroOrMore>
 					<ref name="e.conventionDeclaration"/>
+				</zeroOrMore>
+				<zeroOrMore>
+					<ref name="e.rightsDeclaration"/>
 				</zeroOrMore>
 				<zeroOrMore>
 					<ref name="e.localTypeDeclaration"/>
@@ -228,18 +253,20 @@
 							<ref name="id"/>
 						</optional>
 						<ref name="a.localType"/>
-						<data type="NMTOKEN"/>
+						<data type="token"/>
 					</element>
 				</zeroOrMore>
-				<element a:id="agencyName" name="agencyName">
-					<optional>
-						<ref name="id"/>
-					</optional>
-					<optional>
-						<ref name="lang"/>
-					</optional>
-					<text/>
-				</element>
+				<oneOrMore>
+					<element a:id="agencyName" name="agencyName">
+						<optional>
+							<ref name="id"/>
+						</optional>
+						<optional>
+							<ref name="lang"/>
+						</optional>
+						<text/>
+					</element>
+				</oneOrMore>
 				<optional>
 					<ref name="e.descriptiveNote"/>
 				</optional>
@@ -273,6 +300,7 @@
 								<value>cancelled</value>
 								<value>derived</value>
 								<value>updated</value>
+								<value>unknown</value>
 							</choice>
 						</element>
 						<element a:id="eventDateTime" name="eventDateTime">
@@ -296,6 +324,7 @@
 							<choice>
 								<value>human</value>
 								<value>machine</value>
+								<value>unknown</value>
 							</choice>
 						</element>
 						<element a:id="agent" name="agent">
@@ -307,7 +336,7 @@
 							</optional>
 							<text/>
 						</element>
-						<optional>
+						<zeroOrMore>
 							<element a:id="eventDesccription" name="eventDescription">
 								<optional>
 									<ref name="id"/>
@@ -317,7 +346,7 @@
 								</optional>
 								<text/>
 							</element>
-						</optional>
+						</zeroOrMore>
 					</element>
 				</oneOrMore>
 			</element>
@@ -346,6 +375,27 @@
 				</optional>
 				<optional>
 					<ref name="lang"/>
+				</optional>
+				<optional>
+					<ref name="e.abbreviation"/>
+				</optional>
+				<ref name="e.citation"/>
+				<optional>
+					<ref name="e.descriptiveNote"/>
+				</optional>
+			</element>
+		</define>
+			
+		<define name="e.rightsDeclaration">
+			<element a:id="rightsDeclaration" name="rightsDeclaration">
+				<optional>
+					<ref name="id"/>
+				</optional>
+				<optional>
+					<ref name="lang"/>
+				</optional>
+				<optional>
+					<ref name="a.localType"/>
 				</optional>
 				<optional>
 					<ref name="e.abbreviation"/>
@@ -427,7 +477,7 @@
 						<optional>
 							<ref name="simpleLink"/>
 						</optional>
-						<optional>
+						<zeroOrMore>
 							<element a:id="sourceEntry" name="sourceEntry">
 								<optional>
 									<ref name="id"/>
@@ -437,7 +487,7 @@
 								</optional>
 								<text/>
 							</element>
-						</optional>
+						</zeroOrMore>
 						<optional>
 							<choice>
 								<ref name="e.objectXMLWrap"/>
@@ -586,10 +636,7 @@
 						<optional>
 							<ref name="id"/>
 						</optional>
-						<data type="NMTOKEN">
-							<!-- NMTOKEN instead of maintenance agency code constraints because the 
-								code may be a non-conforming, i.e. otherAgencyCode -->
-						</data>
+						<data type="token"/>
 					</element>
 				</zeroOrMore>
 			</element>
@@ -956,7 +1003,7 @@
 						<ref name="a.vocabularySource"/>
 					</optional>
 					<optional>
-						<attribute a:id="accuracy" name="accuarcy">
+						<attribute a:id="accuracy" name="accuracy">
 							<text/>
 						</attribute>
 					</optional>
@@ -1251,9 +1298,9 @@
 			<optional>
 				<ref name="m.dates"/>
 			</optional>
-			<optional>
+			<zeroOrMore>
 				<ref name="e.placeEntry"/>
-			</optional>
+			</zeroOrMore>
 			<optional>
 				<ref name="e.descriptiveNote"/>
 			</optional>
@@ -1421,32 +1468,18 @@
 
 			<define name="m.data.standardDateTime">
 				<choice>
-					<data type="date">
-						<param name="maxInclusive">2099-12-31</param>
-					</data>
-					<data type="gYear">
-						<param name="maxInclusive">2099</param>
-					</data>
-					<data type="gYearMonth">
-						<param name="maxInclusive">2099-12</param>
-					</data>
-					<data type="dateTime">
-						<param name="maxInclusive">2099-12-31T23:59:59</param>
-					</data>
+					<data type="date"/>
+					<data type="gYear"/>
+					<data type="gYearMonth"/>
+					<data type="dateTime"/>
 				</choice>
 			</define>
 
 			<define name="m.data.standardDate">
 				<choice>
-					<data type="date">
-						<param name="maxInclusive">2099-12-31</param>
-					</data>
-					<data type="gYear">
-						<param name="maxInclusive">2099</param>
-					</data>
-					<data type="gYearMonth">
-						<param name="maxInclusive">2099-12</param>
-					</data>
+					<data type="date"/>
+					<data type="gYear"/>
+					<data type="gYearMonth"/>
 				</choice>
 			</define>
 
@@ -1503,6 +1536,9 @@
 							<optional>
 								<ref name="lang"/>
 							</optional>
+							<optional>
+								<ref name="a.localType"/>
+							</optional>
 							<ref name="m.dateSingle"/>
 						</element>
 					</optional>
@@ -1513,6 +1549,9 @@
 							</optional>
 							<optional>
 								<ref name="lang"/>
+							</optional>
+							<optional>
+								<ref name="a.localType"/>
 							</optional>
 							<ref name="m.dateSingle"/>
 						</element>
