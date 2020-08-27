@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+    <!-- Most description elements are listed here, aside from shared elements, like "place"
+         which are defined in the 'modes-and-shared-elements.rng' file.
+    -->
+
+    <define name="element.description">
+        <element name="description">
+            <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+            <!-- does order matter, or can we just add at will for once??? -->
+            <interleave>
+                <zeroOrMore>
+                    <!-- defined in other-shared-elements, since we'll port this to EAD -->
+                    <ref name="element.biogHist"/>
+                </zeroOrMore>
+                <!-- this is new... is it okay to repeat? -->
+                <zeroOrMore>
+                    <ref name="element.existDates"/>
+                </zeroOrMore>
+                <optional>
+                    <ref name="element.functions"/>
+                </optional>
+                <zeroOrMore>
+                    <ref name="element.generalContext"/>
+                </zeroOrMore>
+                <optional>
+                    <ref name="element.languagesUsed"/>
+                </optional>
+                <optional>
+                    <ref name="element.legalStatuses"/>
+                </optional>
+                <optional>
+                    <ref name="element.localDescriptions"/>
+                </optional>
+                <optional>
+                    <ref name="element.mandates"/>
+                </optional>
+                <optional>
+                    <ref name="element.occupations"/>
+                </optional>
+                <optional>
+                    <ref name="element.places"/>
+                </optional>
+                <zeroOrMore>
+                    <ref name="element.structureOrGenealogy"/>
+                </zeroOrMore>
+            </interleave>
+        </element>
+    </define>
+    
+    <define name="element.existDates">
+        <element name="existDates">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="model.all-dates.choice"/>
+        </element>
+    </define>
+    
+    <define name="element.functions">
+        <element name="functions">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <element name="function">
+                    <ref name="model.single-element-group"/>
+                </element>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.generalContext">
+        <element name="generalContext">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="model.narrative-group.optional"/>
+        </element>
+    </define>
+
+    <define name="element.languagesUsed">
+        <element name="languagesUsed">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <element name="languageUsed">
+                    <zeroOrMore>
+                        <element name="language">
+                            <text/>
+                        </element>
+                    </zeroOrMore>
+                    <zeroOrMore>
+                        <element name="writingSystem">
+                            <text/>
+                        </element>
+                    </zeroOrMore>
+                    <ref name="element.descriptiveNote.optional"/>
+                </element>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.legalStatuses">
+        <element name="legalStatuses">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <element name="legalStatus">
+                    <ref name="model.single-element-group"/>
+                </element>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <!-- can we axe this??? probably not, but would be nice. -->
+    <define name="element.localDescriptions">
+        <element name="localDescriptions">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <element name="localDescription">
+                    <ref name="model.single-element-group"/>
+                </element>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.mandates">
+        <element name="mandates">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <element name="mandate">
+                    <ref name="model.single-element-group"/>
+                </element>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.occupations">
+        <element name="occupations">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <element name="occupation">
+                    <ref name="model.single-element-group"/>
+                </element>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.places">
+        <element name="places">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <oneOrMore>
+                <!-- defined in other-shared-elements -->
+                <ref name="element.place"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.structureOrGenealogy">
+        <element name="structureOrGenealogy">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="model.narrative-group.optional"/>
+        </element>
+    </define>
+    
+    <define name="model.single-element-group">
+        <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+        <oneOrMore>
+            <ref name="element.term"/>
+        </oneOrMore>
+        <zeroOrMore>
+            <ref name="element.placeName"/>
+        </zeroOrMore>
+        <optional>
+            <ref name="model.all-dates.choice"/>
+        </optional>
+        <optional>
+            <ref name="element.reference"/>
+        </optional>
+        <ref name="element.descriptiveNote.optional"/>  
+    </define>
+
+</grammar>

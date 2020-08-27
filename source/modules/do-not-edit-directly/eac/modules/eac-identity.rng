@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+   <define name="element.identity">
+      <element name="identity">
+         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <optional>
+            <ref name="attribute.localType"/>
+         </optional>
+         <optional>
+            <attribute name="identityType">
+               <choice>
+                  <value>given</value>
+                  <value>acquired</value>
+               </choice>
+            </attribute>
+         </optional>
+         <zeroOrMore>
+            <ref name="element.identityId"/>
+         </zeroOrMore>
+         <group>
+            <element name="entityType">
+               <ref name="attribute-group.global.optional"/>
+               <optional>
+                  <ref name="attribute.localType"/>
+               </optional>
+               <attribute name="value">
+                  <choice>
+                     <value>corporateBody</value>
+                     <value>person</value>
+                     <value>family</value>
+                  </choice>
+               </attribute>
+               <empty/>
+            </element>
+            <optional>
+               <ref name="element.otherEntityTypes"/>
+            </optional>
+         </group>
+         <oneOrMore>
+            <choice>
+               <ref name="element.nameEntry"/>
+               <ref name="element.nameEntrySet"/>
+            </choice>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.identityId">
+      <element name="identityId">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.otherEntityTypes">
+      <element name="otherEntityTypes">
+         <ref name="attribute-group.global.optional"/>
+         <oneOrMore>
+            <ref name="element.otherEntityType"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.otherEntityType">
+      <element name="otherEntityType">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.nameEntry">
+      <element name="nameEntry">
+         <ref name="attribute-group.control-reference.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <optional>
+            <attribute name="preferredForm">
+               <data type="boolean"/>
+            </attribute>
+         </optional>
+         <ref name="attribute.status.optional"/>
+         <oneOrMore>
+            <ref name="element.part"/>
+         </oneOrMore>
+         <optional>
+            <ref name="element.useDates"/>
+         </optional>
+      </element>
+   </define>
+   <define name="element.nameEntrySet">
+      <element name="nameEntrySet">
+         <ref name="attribute-group.global.optional"/>
+         <optional>
+            <ref name="attribute.localType"/>
+         </optional>
+         <ref name="element.nameEntry"/>
+         <oneOrMore>
+            <ref name="element.nameEntry"/>
+         </oneOrMore>
+         <optional>
+            <ref name="element.useDates"/>
+         </optional>
+      </element>
+   </define>
+   <define name="element.useDates">
+      <element name="useDates">
+            <!-- need to add the control-reference attributes here and elsewhere -->
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="model.all-dates.choice"/>
+      </element>
+   </define>
+</grammar>

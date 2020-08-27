@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preambles>
+  <eac>
+  <!--
+ 
+                              An XML Schema:
+  Encoded Archival Context - Corporate Bodies, Persons, and Families (EAC-CPF)
+
+  See: https://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/
+
+  *****************************************************************
+  *                                                               *                
+  *                            EAC-CPF 2.0                        *
+  *                                                               *
+  *                           2020 August 15                      *          
+  *                                                               *
+  *****************************************************************
+
+  *****************************************************************
+  
+   What else???...
+   
+   
+
+   This schema has been generated automatically. 
+   
+   If you would like to contribute to this project, please see:
+   https://github.com/SAA-SDT/eac-cpf-schema/blob/development/CONTRIBUTING.md
+
+  *****************************************************************
+  *****************************************************************
+  
+  -->
+  </eac>
+  <ead>
+    
+  </ead>
+</preambles>

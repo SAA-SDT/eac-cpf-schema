@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    <define xml:id="fileDesc" name="element.fileDesc" a:exclude-from="eac">
+        <element name="fileDesc">
+            <element name="titleStatement">
+                <oneOrMore>
+                    <ref name="element.titleProper"/>
+                </oneOrMore>
+                <zeroOrMore>
+                    <ref name="element.subtitle"/>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <ref name="element.author"/>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <ref name="element.sponsor"/>
+                </zeroOrMore>
+            </element>
+            <optional>
+                <element name="element.editionStatement">
+                    <oneOrMore>
+                        <choice>
+                            <ref name="element.edition"/>
+                            <ref name="element.p"/>
+                        </choice>
+                    </oneOrMore>
+                </element>
+            </optional>
+            <optional>
+                <element name="publicationStatement">
+                    <oneOrMore>
+                        <choice>
+                            <ref name="element.publisher"/>
+                            <ref name="element.date"/>
+                            <ref name="element.address"/>
+                            <ref name="element.num"/>
+                            <ref name="element.p"/>               
+                        </choice>
+                    </oneOrMore>
+                </element>
+            </optional>
+            <optional>
+                <element name="seriesStatement">
+                    <oneOrMore>
+                        <choice>
+                            <ref name="element.titleProper"/>
+                            <ref name="element.num"/>
+                            <ref name="element.p"/>
+                        </choice>
+                    </oneOrMore>
+                </element>
+            </optional>
+            <optional>
+                <element name="noteStatement">
+                    <oneOrMore>
+                        <ref name="element.controlNote"/>
+                    </oneOrMore>
+                </element>
+            </optional>
+        </element>
+    </define>
+    <define name="element.titleProper">
+        <element name="titleProper">
+            <text/>
+        </element>
+    </define>
+    <define name="element.subtitle">
+        <element name="subtitle">
+            <text/>
+        </element>
+    </define>
+    <define name="element.author">
+        <element name="author">
+            <text/>
+        </element>
+    </define>
+    <define name="element.sponsor">
+        <element name="sponsor">
+            <text/>
+        </element>
+    </define>
+    <define name="element.edition">
+        <element name="edition">
+            <text/>
+        </element>
+    </define>
+    <define name="element.publisher">
+        <element name="publisher">
+            <text/>
+        </element>
+    </define>
+    <define name="element.controlNote">
+        <element name="controlNote">
+            <text/>
+        </element>
+    </define>
+    <define name="element.num">
+        <element name="num">
+            <text/>
+        </element>
+    </define>
+</grammar>

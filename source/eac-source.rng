@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    ns="http://www.archivists.org/ns/v2/eac">
+
+    <!-- lots still to determine, like whether we want to add documentiont in the schema
+       xml:ids, etc. 
+    Also need to add the control reference IDs where needed, etc.-->
+
+    <include href="modules/attributes.rng"/>
+    <include href="modules/datatypes.rng"/>
+    <include href="modules/control.rng"/>
+
+    <include href="modules/eac-identity.rng"/>
+    <include href="modules/eac-description.rng"/>
+    <include href="modules/relations.rng/"/>
+    <include href="modules/eac-alternativeSet.rng"/>
+
+    <include href="modules/models-and-shared-elements.rng/"/>
+
+    <start>
+        <element xml:id="eac" name="eac">
+            <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+            <ref name="element.control"/>
+            <choice>
+                <ref name="element.cpfDescription"/>
+                <ref name="element.multipleIdentities"/>
+            </choice>
+        </element>
+    </start>
+    <define name="element.cpfDescription">
+        <element name="cpfDescription">
+            <ref name="attribute-group.global-plus-base.optional"/>
+            <ref name="element.identity"/>
+            <optional>
+                <ref name="element.description"/>
+            </optional>
+            <optional>
+                <ref name="element.relations"/>
+            </optional>
+            <optional>
+                <ref name="element.alternativeSet"/>
+            </optional>
+        </element>
+    </define>
+    <define name="element.multipleIdentities">
+        <element name="multipleIdentities">
+            <ref name="attribute-group.global-plus-base.optional"/>
+            <ref name="element.cpfDescription"/>
+            <oneOrMore>
+                <ref name="element.cpfDescription"/>
+            </oneOrMore>
+        </element>
+    </define>
+</grammar>

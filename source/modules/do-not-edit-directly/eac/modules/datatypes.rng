@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+   <define name="dt.absolute-http-URI">
+      <data type="anyURI">
+         <param name="pattern">http[s]?://.*</param>
+      </data>
+   </define>
+   <define name="dt.any-standard-date">
+      <choice>
+         <data type="gYear"/>
+         <data type="gYearMonth"/>
+         <data type="date"/>
+      </choice>
+   </define>
+   <define name="dt.any-standard-dateTime">
+      <choice>
+         <ref name="dt.any-standard-date"/>
+         <data type="dateTime"/>
+      </choice>
+   </define>
+   <define name="dt.language">
+      <data type="token">
+         <param name="pattern">[a-z]{2}.*</param>
+      </data>
+      <!-- type=language also allows values like "y", which I don't think should be valid.
+        <data type="language"/>
+        -->
+   </define>
+</grammar>

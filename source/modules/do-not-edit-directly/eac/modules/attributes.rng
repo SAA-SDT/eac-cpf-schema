@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    <!-- Here be attribute definitions (if used more than once) and attribute groups.
+        Listed alphabetically, with first the standalone attributes (e.g. attribute.base)
+        then the attribute groups (e.g. attribue-group.global).
+        Note that some attributes (e.g. @id) are only defined as a group (in this case, 'global')
+        since they are used so frequently.
+    -->
+   <define name="attribute.base.optional">
+        <!-- now that we're no longer using XLINK, we should be clear that 
+            base ONLY applys to "href" attributes...  not vocabularySourceURI, valueURI, etc.
+            -->
+      <optional>
+         <attribute name="base">
+            <data type="anyURI"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.countryCode.optional">
+      <optional>
+         <attribute name="countryCode">
+            <data type="token">
+                    <!-- eac previously had a choice of 2 or 4 A-Z characters.  why did it exclude 3 characters?  why include 4? -->
+                    <!-- this requires a pattern of 2-3 charcters, either all A-Z, or all 0-9 -->
+               <param name="pattern">^[A-Z]{2,3}$|^[0-9]{2,3}$</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.lastDateTimeVerified.optional">
+      <optional>
+         <attribute name="lastDateTimeVerified">
+            <ref name="dt.any-standard-dateTime"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.localType">
+      <attribute name="localType">
+         <data type="anyURI"/>
+      </attribute>
+   </define>
+   <define name="attribute.localTypeDeclarationReference">
+      <attribute name="localTypeDeclarationReference">
+         <data type="IDREF"/>
+      </attribute>
+   </define>
+   <define name="attribute.standardDateTime.optional">
+      <optional>
+         <attribute name="standardDateTime">
+            <ref name="dt.any-standard-dateTime"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.status.optional">
+      <optional>
+         <attribute name="status">
+            <choice>
+               <value>authorized</value>
+               <value>alternative</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.style.optional">
+      <optional>
+         <attribute name="style">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.unit.optional">
+      <optional>
+         <attribute name="unit">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <!-- and the attribute groups -->
+   <define name="attribute-group.control-encodings.optional">
+      <optional>
+         <attribute name="languageEncoding">
+            <choice>
+               <value>iso639-1</value>
+               <value>iso639-2b</value>
+               <value>iso639-3</value>
+               <value>otherLanguageEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="scriptEncoding">
+            <choice>
+               <value>iso15924</value>
+               <value>otherScriptEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="dateEncoding">
+            <choice>
+               <value>iso8601</value>
+               <value>otherDateEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="countryEncoding">
+            <choice>
+               <value>iso3166-1</value>
+               <value>otherCountryEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="repositoryEncoding">
+            <choice>
+               <value>iso15511</value>
+               <value>otherRepositoryEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.control-reference.optional" combine="interleave">
+      <optional>
+         <attribute name="conventionDeclarationReference">
+            <data type="IDREF"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.control-reference.optional" combine="interleave">
+      <optional>
+         <ref name="attribute.localTypeDeclarationReference"/>
+      </optional>
+   </define>
+   <define name="attribute-group.control-reference.optional" combine="interleave">
+      <optional>
+         <attribute name="maintenanceStatusReference">
+            <data type="IDREF"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.control-reference.optional" combine="interleave">
+      <optional>
+         <attribute name="sourceReference">
+            <data type="IDREF"/>
+         </attribute>
+      </optional>
+   </define>
+   <!-- 3 global options: id, audience and any attribute in a namespace -->
+   <define name="attribute-group.global.optional" combine="interleave">
+      <optional>
+         <attribute name="id">
+            <data type="ID"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.global.optional" combine="interleave">
+      <optional>
+         <attribute name="audience">
+            <choice>
+               <value>external</value>
+               <value>internal</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.global.optional" combine="interleave">
+      <zeroOrMore>
+         <attribute>
+            <anyName>
+               <except>
+                  <nsName/>
+                  <nsName ns=""/>
+               </except>
+            </anyName>
+         </attribute>
+      </zeroOrMore>
+   </define>
+   <define name="attribute-group.global-plus-base.optional">
+      <ref name="attribute-group.global.optional"/>
+      <ref name="attribute.base.optional"/>
+   </define>
+   <define name="attribute-group.global-plus-base-lang-and-script.optional">
+      <ref name="attribute-group.global-plus-base.optional"/>
+      <ref name="attribute-group.lang-and-script.optional"/>
+   </define>
+   <!-- do we need ot add conventionReferenceDeclaration here, or would it be better to keep transliteration?? -->
+   <define name="attribute-group.global-plus-lang-and-script.optional">
+      <ref name="attribute-group.global.optional"/>
+      <ref name="attribute-group.lang-and-script.optional"/>
+   </define>
+   <!-- redefine this if we will always require localTypeDeclarationReference alongside localType -->
+   <define name="attribute-group.global-plus-lang-and-script-and-localType.optional">
+      <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+      <optional>
+         <ref name="attribute.localType"/>
+      </optional>
+   </define>
+   <define name="attribute-group.lang-and-script.optional" combine="interleave">
+      <optional>
+         <attribute name="languageOfElement">
+            <ref name="dt.language"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.lang-and-script.optional" combine="interleave">
+      <optional>
+         <attribute name="scriptOfElement">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.language-and-script-code" combine="interleave">
+      <attribute name="languageCode">
+         <ref name="dt.language"/>
+      </attribute>
+   </define>
+   <define name="attribute-group.language-and-script-code" combine="interleave">
+        <!-- also, why do we require script code? -->
+        <!--iso15924.  each script gets a 4-letter alpha code, and a 3-digit numeric code. 
+            i assume we should enforce the letter code value only? -->
+        <!-- or better to handle in Schematron? let's use both, why not? -->
+      <attribute name="scriptCode">
+         <data type="token">
+            <param name="pattern">[A-Z]{1}[a-z]{3}</param>
+         </data>
+      </attribute>
+   </define>
+   <!-- should probably rename this group -->
+   <define name="attribute-group.linked-data.optional">
+      <interleave>
+         <optional>
+            <attribute name="vocabularySource">
+               <data type="token"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="vocabularySourceURI">
+               <ref name="dt.absolute-http-URI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="valueURI">
+               <ref name="dt.absolute-http-URI"/>
+            </attribute>
+         </optional>
+      </interleave>
+   </define>
+   <define name="attribute-group.links.optional">
+      <interleave>
+         <optional>
+            <attribute name="href">
+                    <!-- allowing base here?  just curious what base can and cannot be tied to? -->
+                    <!-- in EAC 1.0, that's localType, vocabularySource, and xlink:href.  but really xlink:href
+                    is the only that makes sense, since those are in the same namespace -->
+                    <!-- not available in EAD2002 and earlier. 
+                    in EAD, base can be added to ead and all c levels.-->
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <!-- this has been removed from EAC?
+            <optional>
+                <attribute name="arcRole">
+                    <data type="anyURI"/>
+                </attribute>
+            </optional>
+            -->
+         <optional>
+            <attribute name="linkRole">
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="linkTitle">
+               <data type="token"/>
+            </attribute>
+         </optional>
+      </interleave>
+   </define>
+   <define name="attribute-group.lists.optional">
+      <optional>
+         <attribute name="listType">
+            <choice>
+               <value>deflist</value>
+               <value>ordered</value>
+               <value>unordered</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="mark">
+            <choice>
+               <value>circle</value>
+               <value>disc</value>
+               <value>inherit</value>
+               <value>none</value>
+               <value>square</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="numeration">
+                <!-- seems like it would be better to combine, especially since values like lower-alpha are not "numeration"s -->
+            <choice>
+               <value>decimal</value>
+               <value>decimal-leading-zero</value>
+               <value>lower-roman</value>
+               <value>upper-roman</value>
+               <value>lower-greek</value>
+               <value>lower-latin</value>
+               <value>upper-latin</value>
+               <value>armenian</value>
+               <value>georgian</value>
+               <value>lower-alpha</value>
+               <value>upper-alpha</value>
+               <value>inherit</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.relation-children.optional">
+      <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+      <ref name="attribute-group.linked-data.optional"/>
+      <!-- what else???? -->
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="certainty">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="standardDate">
+            <ref name="dt.any-standard-date"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="fromDate">
+            <ref name="dt.any-standard-date"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="toDate">
+            <ref name="dt.any-standard-date"/>
+         </attribute>
+      </optional>
+   </define>
+</grammar>
