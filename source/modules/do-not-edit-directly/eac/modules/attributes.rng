@@ -137,7 +137,7 @@
    </define>
    <define name="attribute-group.control-reference.optional" combine="interleave">
       <optional>
-         <attribute name="maintenanceStatusReference">
+         <attribute name="maintenanceEventReference">
             <data type="IDREF"/>
          </attribute>
       </optional>
