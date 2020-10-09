@@ -284,9 +284,9 @@
     
     <define name="element.term">
         <element name="term">
-            <ref name="attribute-group.global.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <!-- what kind of issue will this cause, if we remove transliateration from here?
-              do we need to point to conventionDeclaration on localControl/term???
+              do we need to point to conventionDeclaration on localControl/term???  i think the answer is yes.
              -->
             <ref name="attribute.lastDateTimeVerified.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
@@ -354,7 +354,7 @@
         <element>
             <anyName>
                 <except>
-                    <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                    <nsName ns="https://archivists.org/ns/eac/v2"/>
                 </except>
             </anyName>
             <zeroOrMore>

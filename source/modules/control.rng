@@ -126,12 +126,11 @@
                 </element>
             </zeroOrMore>         
             <zeroOrMore>
-                <!-- not sure this element should exist any longer -->
                 <element name="localControl">
-                    <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                    <!-- still required.  if that changes, we can use the "and-localType.optional" ref instead -->
-                    <ref name="attribute.localType"/>
-                    <ref name="element.term"/>
+                    <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+                    <oneOrMore>
+                        <ref name="element.term"/>
+                    </oneOrMore>
                     <optional>
                         <ref name="model.date-dateRange.choice"/> 
                     </optional>

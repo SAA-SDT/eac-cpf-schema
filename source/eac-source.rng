@@ -2,7 +2,7 @@
 <grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
     xmlns="http://relaxng.org/ns/structure/1.0"
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-    ns="http://www.archivists.org/ns/v2/eac">
+    ns="https://archivists.org/ns/eac/v2">
 
     <!-- lots still to determine, like whether we want to add documentiont in the schema
        xml:ids, etc. 
