@@ -167,9 +167,9 @@
     
     <define name="model.single-element-group">
         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-        <optional>
+        <oneOrMore>
             <ref name="element.term"/>
-        </optional>
+        </oneOrMore>
         <zeroOrMore>
             <ref name="element.placeName"/>
         </zeroOrMore>

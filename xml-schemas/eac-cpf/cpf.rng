@@ -3969,9 +3969,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
+            <oneOrMore>
                <ref name="term"/>
-            </optional>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4514,9 +4514,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
+            <oneOrMore>
                <ref name="term"/>
-            </optional>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4598,9 +4598,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
+            <oneOrMore>
                <ref name="term"/>
-            </optional>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4667,9 +4667,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
+            <oneOrMore>
                <ref name="term"/>
-            </optional>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4736,9 +4736,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
+            <oneOrMore>
                <ref name="term"/>
-            </optional>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4805,9 +4805,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
+            <oneOrMore>
                <ref name="term"/>
-            </optional>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>

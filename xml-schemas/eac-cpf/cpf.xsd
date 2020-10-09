@@ -1706,7 +1706,7 @@
    <xs:complexType name="objectXMLWrap"/>
    <xs:complexType name="otherEntityType">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" minOccurs="0"/>
+         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
          <xs:element type="v2:placeName"
                      name="placeName"
                      minOccurs="0"
@@ -1955,7 +1955,7 @@
    </xs:complexType>
    <xs:complexType name="function">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" minOccurs="0"/>
+         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
          <xs:element type="v2:placeName"
                      name="placeName"
                      minOccurs="0"
@@ -2002,7 +2002,7 @@
    </xs:complexType>
    <xs:complexType name="legalStatus">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" minOccurs="0"/>
+         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
          <xs:element type="v2:placeName"
                      name="placeName"
                      minOccurs="0"
@@ -2036,7 +2036,7 @@
    </xs:complexType>
    <xs:complexType name="localDescription">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" minOccurs="0"/>
+         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
          <xs:element type="v2:placeName"
                      name="placeName"
                      minOccurs="0"
@@ -2070,7 +2070,7 @@
    </xs:complexType>
    <xs:complexType name="mandate">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" minOccurs="0"/>
+         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
          <xs:element type="v2:placeName"
                      name="placeName"
                      minOccurs="0"
@@ -2104,7 +2104,7 @@
    </xs:complexType>
    <xs:complexType name="occupation">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" minOccurs="0"/>
+         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
          <xs:element type="v2:placeName"
                      name="placeName"
                      minOccurs="0"
