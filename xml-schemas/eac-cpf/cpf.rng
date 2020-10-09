@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 August 15                      *          
+  *                           2020 October 8                      *          
   *                                                               *
   *****************************************************************
 
@@ -34,7 +34,7 @@
       <ref name="eac"/>
    </start>
    <define name="eac">
-      <element name="eac" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="eac" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -55,7 +55,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -95,7 +95,7 @@
       </element>
    </define>
    <define name="control">
-      <element name="control" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="control" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -116,7 +116,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -224,7 +224,7 @@
       </element>
    </define>
    <define name="cpfDescription">
-      <element name="cpfDescription" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="cpfDescription" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -245,7 +245,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -274,7 +274,7 @@
       </element>
    </define>
    <define name="multipleIdentities">
-      <element name="multipleIdentities" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="multipleIdentities" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -295,7 +295,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -318,7 +318,7 @@
       </element>
    </define>
    <define name="recordId">
-      <element name="recordId" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="recordId" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -339,7 +339,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -375,7 +375,7 @@
       </element>
    </define>
    <define name="otherRecordId">
-      <element name="otherRecordId" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="otherRecordId" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -396,7 +396,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -438,7 +438,7 @@
       </element>
    </define>
    <define name="representation">
-      <element name="representation" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="representation" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -459,7 +459,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -509,7 +509,7 @@
       </element>
    </define>
    <define name="maintenanceStatus">
-      <element name="maintenanceStatus" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="maintenanceStatus" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -530,7 +530,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -555,7 +555,7 @@
       </element>
    </define>
    <define name="maintenanceAgency">
-      <element name="maintenanceAgency" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="maintenanceAgency" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -576,7 +576,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -625,7 +625,7 @@
       </element>
    </define>
    <define name="publicationStatus">
-      <element name="publicationStatus" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="publicationStatus" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -646,7 +646,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -666,7 +666,7 @@
       </element>
    </define>
    <define name="languageDeclaration">
-      <element name="languageDeclaration" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="languageDeclaration" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -687,7 +687,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -717,7 +717,7 @@
       </element>
    </define>
    <define name="conventionDeclaration">
-      <element name="conventionDeclaration" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="conventionDeclaration" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -738,7 +738,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -780,7 +780,7 @@
       </element>
    </define>
    <define name="rightsDeclaration">
-      <element name="rightsDeclaration" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="rightsDeclaration" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -801,7 +801,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -843,7 +843,7 @@
       </element>
    </define>
    <define name="localTypeDeclaration">
-      <element name="localTypeDeclaration" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="localTypeDeclaration" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -864,7 +864,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -906,7 +906,7 @@
       </element>
    </define>
    <define name="localControl">
-      <element name="localControl" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="localControl" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -927,7 +927,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -952,11 +952,15 @@
                   </attribute>
                </optional>
             </interleave>
-            <attribute name="localType" ns="">
-               <data type="anyURI"
-                     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-            </attribute>
-            <ref name="term"/>
+            <optional>
+               <attribute name="localType" ns="">
+                  <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <oneOrMore>
+               <ref name="term"/>
+            </oneOrMore>
             <optional>
                <choice>
                   <ref name="date"/>
@@ -967,7 +971,7 @@
       </element>
    </define>
    <define name="maintenanceHistory">
-      <element name="maintenanceHistory" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="maintenanceHistory" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -988,7 +992,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1020,7 +1024,7 @@
       </element>
    </define>
    <define name="sources">
-      <element name="sources" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="sources" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1041,7 +1045,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1079,7 +1083,7 @@
       </element>
    </define>
    <define name="identity">
-      <element name="identity" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="identity" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1100,7 +1104,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1165,7 +1169,7 @@
       </element>
    </define>
    <define name="description">
-      <element name="description" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="description" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1186,7 +1190,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1256,7 +1260,7 @@
       </element>
    </define>
    <define name="relations">
-      <element name="relations" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="relations" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1277,7 +1281,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1293,7 +1297,7 @@
       </element>
    </define>
    <define name="alternativeSet">
-      <element name="alternativeSet" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="alternativeSet" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1314,7 +1318,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1352,7 +1356,7 @@
       </element>
    </define>
    <define name="agencyCode">
-      <element name="agencyCode" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="agencyCode" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1373,7 +1377,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1411,7 +1415,7 @@
       </element>
    </define>
    <define name="otherAgencyCode">
-      <element name="otherAgencyCode" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="otherAgencyCode" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1432,7 +1436,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1462,7 +1466,7 @@
       </element>
    </define>
    <define name="agencyName">
-      <element name="agencyName" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="agencyName" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1483,7 +1487,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1513,7 +1517,7 @@
       </element>
    </define>
    <define name="descriptiveNote">
-      <element name="descriptiveNote" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="descriptiveNote" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1534,7 +1538,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1566,7 +1570,7 @@
       </element>
    </define>
    <define name="shortCode">
-      <element name="shortCode" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="shortCode" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1587,7 +1591,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1601,7 +1605,7 @@
       </element>
    </define>
    <define name="reference">
-      <element name="reference" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="reference" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1622,7 +1626,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1677,7 +1681,7 @@
       </element>
    </define>
    <define name="term">
-      <element name="term" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="term" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1698,7 +1702,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1706,6 +1710,22 @@
                      <text/>
                   </attribute>
                </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">[a-z]{2}.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
             </interleave>
             <optional>
                <attribute name="lastDateTimeVerified" ns="">
@@ -1750,7 +1770,7 @@
       </element>
    </define>
    <define name="date">
-      <element name="date" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="date" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1771,7 +1791,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1851,7 +1871,7 @@
       </element>
    </define>
    <define name="dateRange">
-      <element name="dateRange" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="dateRange" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1872,7 +1892,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1913,7 +1933,7 @@
       </element>
    </define>
    <define name="maintenanceEvent">
-      <element name="maintenanceEvent" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="maintenanceEvent" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1934,7 +1954,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -1970,7 +1990,7 @@
       </element>
    </define>
    <define name="source">
-      <element name="source" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="source" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -1991,7 +2011,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2064,7 +2084,7 @@
       </element>
    </define>
    <define name="identityId">
-      <element name="identityId" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="identityId" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2085,7 +2105,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2121,7 +2141,7 @@
       </element>
    </define>
    <define name="entityType">
-      <element name="entityType" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="entityType" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2142,7 +2162,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2168,7 +2188,7 @@
       </element>
    </define>
    <define name="otherEntityTypes">
-      <element name="otherEntityTypes" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="otherEntityTypes" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2189,7 +2209,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2208,7 +2228,7 @@
       </element>
    </define>
    <define name="nameEntry">
-      <element name="nameEntry" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="nameEntry" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2255,7 +2275,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2334,7 +2354,7 @@
       </element>
    </define>
    <define name="nameEntrySet">
-      <element name="nameEntrySet" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="nameEntrySet" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2355,7 +2375,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2381,7 +2401,7 @@
       </element>
    </define>
    <define name="biogHist">
-      <element name="biogHist" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="biogHist" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2402,7 +2422,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2457,7 +2477,7 @@
       </element>
    </define>
    <define name="existDates">
-      <element name="existDates" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="existDates" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2478,7 +2498,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2518,7 +2538,7 @@
       </element>
    </define>
    <define name="functions">
-      <element name="functions" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="functions" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2539,7 +2559,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2574,7 +2594,7 @@
       </element>
    </define>
    <define name="generalContext">
-      <element name="generalContext" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="generalContext" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2595,7 +2615,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2641,7 +2661,7 @@
       </element>
    </define>
    <define name="languagesUsed">
-      <element name="languagesUsed" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="languagesUsed" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2662,7 +2682,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2697,7 +2717,7 @@
       </element>
    </define>
    <define name="legalStatuses">
-      <element name="legalStatuses" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="legalStatuses" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2718,7 +2738,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2753,7 +2773,7 @@
       </element>
    </define>
    <define name="localDescriptions">
-      <element name="localDescriptions" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="localDescriptions" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2774,7 +2794,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2809,7 +2829,7 @@
       </element>
    </define>
    <define name="mandates">
-      <element name="mandates" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="mandates" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2830,7 +2850,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2865,7 +2885,7 @@
       </element>
    </define>
    <define name="occupations">
-      <element name="occupations" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="occupations" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2886,7 +2906,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2921,7 +2941,7 @@
       </element>
    </define>
    <define name="places">
-      <element name="places" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="places" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2942,7 +2962,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -2974,7 +2994,7 @@
       </element>
    </define>
    <define name="structureOrGenealogy">
-      <element name="structureOrGenealogy" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="structureOrGenealogy" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -2995,7 +3015,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3041,7 +3061,7 @@
       </element>
    </define>
    <define name="relation">
-      <element name="relation" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="relation" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3062,7 +3082,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3145,7 +3165,7 @@
       </element>
    </define>
    <define name="setComponent">
-      <element name="setComponent" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="setComponent" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3166,7 +3186,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3238,7 +3258,7 @@
       </element>
    </define>
    <define name="p">
-      <element name="p" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="p" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3259,7 +3279,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3295,7 +3315,7 @@
       </element>
    </define>
    <define name="span">
-      <element name="span" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="span" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3316,7 +3336,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3352,7 +3372,7 @@
       </element>
    </define>
    <define name="fromDate">
-      <element name="fromDate" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="fromDate" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3373,7 +3393,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3453,7 +3473,7 @@
       </element>
    </define>
    <define name="toDate">
-      <element name="toDate" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="toDate" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3474,7 +3494,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3554,7 +3574,7 @@
       </element>
    </define>
    <define name="eventType">
-      <element name="eventType" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="eventType" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3575,7 +3595,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3599,7 +3619,7 @@
       </element>
    </define>
    <define name="eventDateTime">
-      <element name="eventDateTime" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="eventDateTime" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3620,7 +3640,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3663,7 +3683,7 @@
       </element>
    </define>
    <define name="agentType">
-      <element name="agentType" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="agentType" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3684,7 +3704,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3704,7 +3724,7 @@
       </element>
    </define>
    <define name="agent">
-      <element name="agent" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="agent" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3725,7 +3745,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3755,7 +3775,7 @@
       </element>
    </define>
    <define name="eventDescription">
-      <element name="eventDescription" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="eventDescription" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3776,7 +3796,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3806,7 +3826,7 @@
       </element>
    </define>
    <define name="sourceEntry">
-      <element name="sourceEntry" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="sourceEntry" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3827,7 +3847,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3857,7 +3877,7 @@
       </element>
    </define>
    <define name="citedRange">
-      <element name="citedRange" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="citedRange" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3878,7 +3898,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3898,12 +3918,12 @@
       </element>
    </define>
    <define name="objectXMLWrap">
-      <element name="objectXMLWrap" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="objectXMLWrap" ns="https://archivists.org/ns/eac/v2">
          <ref name="_1"/>
       </element>
    </define>
    <define name="otherEntityType">
-      <element name="otherEntityType" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="otherEntityType" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3924,7 +3944,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -3949,9 +3969,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <oneOrMore>
+            <optional>
                <ref name="term"/>
-            </oneOrMore>
+            </optional>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -3972,7 +3992,7 @@
       </element>
    </define>
    <define name="part">
-      <element name="part" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="part" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -3993,7 +4013,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4049,7 +4069,7 @@
       </element>
    </define>
    <define name="useDates">
-      <element name="useDates" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="useDates" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4070,7 +4090,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4104,7 +4124,7 @@
       </element>
    </define>
    <define name="abstract">
-      <element name="abstract" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="abstract" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4125,7 +4145,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4167,7 +4187,7 @@
       </element>
    </define>
    <define name="list">
-      <element name="list" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="list" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4188,7 +4208,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4264,7 +4284,7 @@
       </element>
    </define>
    <define name="outline">
-      <element name="outline" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="outline" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4285,7 +4305,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4323,7 +4343,7 @@
       </element>
    </define>
    <define name="chronList">
-      <element name="chronList" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="chronList" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4344,7 +4364,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4382,7 +4402,7 @@
       </element>
    </define>
    <define name="dateSet">
-      <element name="dateSet" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="dateSet" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4403,7 +4423,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4448,7 +4468,7 @@
       </element>
    </define>
    <define name="function">
-      <element name="function" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="function" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4469,7 +4489,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4494,9 +4514,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <oneOrMore>
+            <optional>
                <ref name="term"/>
-            </oneOrMore>
+            </optional>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4517,7 +4537,7 @@
       </element>
    </define>
    <define name="languageUsed">
-      <element name="languageUsed" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="languageUsed" ns="https://archivists.org/ns/eac/v2">
          <group>
             <zeroOrMore>
                <ref name="language"/>
@@ -4532,7 +4552,7 @@
       </element>
    </define>
    <define name="legalStatus">
-      <element name="legalStatus" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="legalStatus" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4553,7 +4573,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4578,9 +4598,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <oneOrMore>
+            <optional>
                <ref name="term"/>
-            </oneOrMore>
+            </optional>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4601,7 +4621,7 @@
       </element>
    </define>
    <define name="localDescription">
-      <element name="localDescription" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="localDescription" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4622,7 +4642,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4647,9 +4667,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <oneOrMore>
+            <optional>
                <ref name="term"/>
-            </oneOrMore>
+            </optional>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4670,7 +4690,7 @@
       </element>
    </define>
    <define name="mandate">
-      <element name="mandate" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="mandate" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4691,7 +4711,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4716,9 +4736,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <oneOrMore>
+            <optional>
                <ref name="term"/>
-            </oneOrMore>
+            </optional>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4739,7 +4759,7 @@
       </element>
    </define>
    <define name="occupation">
-      <element name="occupation" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="occupation" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4760,7 +4780,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4785,9 +4805,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <oneOrMore>
+            <optional>
                <ref name="term"/>
-            </oneOrMore>
+            </optional>
             <zeroOrMore>
                <ref name="placeName"/>
             </zeroOrMore>
@@ -4808,7 +4828,7 @@
       </element>
    </define>
    <define name="place">
-      <element name="place" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="place" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4829,7 +4849,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4889,7 +4909,7 @@
       </element>
    </define>
    <define name="targetEntity">
-      <element name="targetEntity" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="targetEntity" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4910,7 +4930,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -4964,7 +4984,7 @@
       </element>
    </define>
    <define name="relationType">
-      <element name="relationType" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="relationType" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -4985,7 +5005,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5039,7 +5059,7 @@
       </element>
    </define>
    <define name="targetRole">
-      <element name="targetRole" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="targetRole" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5060,7 +5080,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5114,7 +5134,7 @@
       </element>
    </define>
    <define name="componentEntry">
-      <element name="componentEntry" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="componentEntry" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5135,7 +5155,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5174,7 +5194,7 @@
       <element>
          <anyName>
             <except>
-               <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+               <nsName ns="https://archivists.org/ns/eac/v2"/>
             </except>
          </anyName>
          <group>
@@ -5194,7 +5214,7 @@
       </element>
    </define>
    <define name="placeName">
-      <element name="placeName" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="placeName" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5215,7 +5235,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5283,7 +5303,7 @@
       </element>
    </define>
    <define name="item">
-      <element name="item" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="item" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5304,7 +5324,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5346,7 +5366,7 @@
       </element>
    </define>
    <define name="level">
-      <element name="level" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="level" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5367,7 +5387,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5408,7 +5428,7 @@
       </element>
    </define>
    <define name="chronItem">
-      <element name="chronItem" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="chronItem" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5429,7 +5449,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5480,17 +5500,17 @@
       </element>
    </define>
    <define name="language">
-      <element name="language" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="language" ns="https://archivists.org/ns/eac/v2">
          <text/>
       </element>
    </define>
    <define name="writingSystem">
-      <element name="writingSystem" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="writingSystem" ns="https://archivists.org/ns/eac/v2">
          <text/>
       </element>
    </define>
    <define name="placeRole">
-      <element name="placeRole" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="placeRole" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5511,7 +5531,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5579,7 +5599,7 @@
       </element>
    </define>
    <define name="geographicCoordinates">
-      <element name="geographicCoordinates" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="geographicCoordinates" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5600,7 +5620,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5637,7 +5657,7 @@
       </element>
    </define>
    <define name="address">
-      <element name="address" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="address" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5658,7 +5678,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5696,7 +5716,7 @@
       </element>
    </define>
    <define name="event">
-      <element name="event" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="event" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5717,7 +5737,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5753,7 +5773,7 @@
       </element>
    </define>
    <define name="chronItemSet">
-      <element name="chronItemSet" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="chronItemSet" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5774,7 +5794,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
@@ -5809,7 +5829,7 @@
       </element>
    </define>
    <define name="addressLine">
-      <element name="addressLine" ns="http://www.archivists.org/ns/v2/eac">
+      <element name="addressLine" ns="https://archivists.org/ns/eac/v2">
          <group>
             <interleave>
                <optional>
@@ -5830,7 +5850,7 @@
                      <anyName>
                         <except>
                            <choice>
-                              <nsName ns="http://www.archivists.org/ns/v2/eac"/>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
                               <nsName ns=""/>
                            </choice>
                         </except>
