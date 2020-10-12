@@ -20,6 +20,9 @@
     <include href="modules/models-and-shared-elements.rng/"/>
 
     <start>
+        <ref name="element.eac"/>
+    </start>
+    <define name="element.eac">
         <element xml:id="eac" name="eac">
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
             <ref name="element.control"/>
@@ -28,7 +31,7 @@
                 <ref name="element.multipleIdentities"/>
             </choice>
         </element>
-    </start>
+    </define>
     <define name="element.cpfDescription">
         <element name="cpfDescription">
             <ref name="attribute-group.global-plus-base.optional"/>
