@@ -235,12 +235,13 @@
         </optional>
     </define>
     
-    <define name="attribute-group.language-and-script-code" combine="interleave">
+    <define name="attribute.languageCode">
         <attribute name="languageCode">
             <ref name="dt.language"/>
         </attribute>
-    </define>   
-    <define name="attribute-group.language-and-script-code" combine="interleave">
+    </define>
+    
+    <define name="attribute.scriptCode">
         <!-- also, why do we require script code? -->
         <!--iso15924.  each script gets a 4-letter alpha code, and a 3-digit numeric code. 
             i assume we should enforce the letter code value only? -->
@@ -250,6 +251,14 @@
                 <param name="pattern">[A-Z]{1}[a-z]{3}</param>
             </data>
         </attribute>
+    </define>
+    
+    <define name="attribute-group.language-and-script-code" combine="interleave">
+        <ref name="attribute.languageCode"/>
+    </define>  
+    
+    <define name="attribute-group.language-and-script-code" combine="interleave">
+        <ref name="attribute.scriptCode"/>
     </define>
  
     <!-- should probably rename this group -->
