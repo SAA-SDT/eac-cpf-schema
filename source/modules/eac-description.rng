@@ -53,7 +53,7 @@
     
     <define name="element.existDates">
         <element name="existDates">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="model.all-dates.choice"/>
         </element>
     </define>

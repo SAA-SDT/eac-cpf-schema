@@ -50,7 +50,7 @@
     
     <define name="element.identityId">
         <element name="identityId">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <text/>
         </element>
     </define>
@@ -74,7 +74,7 @@
     <define name="element.nameEntry">
         <element name="nameEntry">
             <ref name="attribute-group.control-reference.optional"/>
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
             <optional>
                 <attribute name="preferredForm">

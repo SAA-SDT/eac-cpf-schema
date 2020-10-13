@@ -27,7 +27,7 @@
     
     <define name="element.date">
         <element name="date">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.standard-date-attributes.optional"/>
             <text/>
         </element>
@@ -35,7 +35,7 @@
     
     <define name="element.dateRange">
         <element name="dateRange">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <optional>
                 <ref name="element.fromDate"/>
             </optional>
@@ -47,7 +47,7 @@
     
     <define name="element.dateSet">
         <element name="dateSet">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="model.date-dateRange.choice"/>         
             <oneOrMore>
                 <ref name="model.date-dateRange.choice"/>
@@ -57,7 +57,7 @@
     
     <define name="element.fromDate">
         <element name="fromDate">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.standard-date-attributes.optional"/>
             <text/>
         </element>
@@ -65,7 +65,7 @@
     
     <define name="element.toDate">
         <element name="toDate">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.standard-date-attributes.optional"/>
             <text/>
         </element>
@@ -74,10 +74,10 @@
     <!-- PLACES -->
     <define name="element.address">
         <element name="address">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <oneOrMore>
                 <element name="addressLine">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
                     <text/>
                 </element>
             </oneOrMore>
@@ -86,7 +86,7 @@
 
     <define name="element.place">
         <element name="place">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <oneOrMore>
                 <ref name="element.placeName"/>
             </oneOrMore>
@@ -125,7 +125,7 @@
     <!-- previously placeEntry -->
     <define name="element.placeName">
         <element name="placeName">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
             <ref name="attribute.countryCode.optional"/>
             <text/>
@@ -146,7 +146,7 @@
     <!-- to finish -->
     <define name="element.biogHist">
         <element name="biogHist">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <optional>
                 <ref name="element.abstract"/>
             </optional>
@@ -156,7 +156,7 @@
     
     <define name="element.abstract">
         <element name="abstract">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="model.mixed-content.optional"/>
         </element>
     </define>
@@ -194,7 +194,7 @@
     
     <define name="element.outline">
         <element name="outline">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <oneOrMore>
                 <ref name="element.level"/>
             </oneOrMore>
@@ -203,7 +203,7 @@
     
     <define name="element.level">
         <element name="level">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <!-- this is new, but what's the point of having a level with no text???? -->
             <oneOrMore>
                 <ref name="element.item"/>
@@ -216,10 +216,10 @@
     
     <define name="element.chronList">
         <element name="chronList">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <oneOrMore>
                 <element name="chronItem">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
                     <ref name="model.all-dates.choice"/>
                     <choice>
                         <group>
@@ -247,7 +247,7 @@
     
     <define name="element.event">
         <element name="event">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <text/>
             <!-- note that EAD3 allows a lot of mixed content here, so when we update,
                 we'll need to accomodate something like:
@@ -259,7 +259,7 @@
     
     <define name="element.list">
         <element name="list">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.lists.optional"/>
             <oneOrMore>
                 <ref name="element.item"/>
@@ -269,7 +269,7 @@
     
     <define name="element.item">
         <element name="item">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="model.mixed-content.optional"/>
         </element>
     </define>

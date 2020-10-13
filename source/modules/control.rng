@@ -143,7 +143,7 @@
             </zeroOrMore>         
             <zeroOrMore>
                 <element name="localControl">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
                     <oneOrMore>
                         <ref name="element.term"/>
                     </oneOrMore>
@@ -242,7 +242,7 @@
     
     <!-- reused for all of the *declaration elements, aside from the odd duck, languageDeclaration (which needn't exist, if we used xml:lang) -->
     <define name="model.declaration-group">
-        <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+        <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
         <optional>
             <!-- referenceCode, and then re-use?... identifier, and the same? -->
             <element name="shortCode">
