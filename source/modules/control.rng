@@ -13,6 +13,27 @@
             <!-- is @audience really needed here??? -->
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
             <ref name="attribute-group.control-encodings.optional"/>
+            <attribute name="maintenanceStatus">
+                <choice>
+                    <value>revised</value>
+                    <value>deleted</value>
+                    <value>new</value>
+                    <value>deleted-split</value>
+                    <value>deleted-merged</value>
+                    <value>deleted-replaced</value>
+                    <value>cancelled</value>
+                    <value>derived</value>
+                </choice> 
+            </attribute>
+            <optional>
+                <attribute name="publicationStatus">
+                    <choice>
+                        <value>approved</value>
+                        <value>published</value>
+                        <value>inProcess</value>
+                    </choice>
+                </attribute>
+            </optional>
             <!-- just a note that i'd prefer a new element, like identifier, that could
                 replace recordId, otherRecordId, unitid, etc.-->
             <element name="recordId">
@@ -159,39 +180,33 @@
         <oneOrMore>
             <element name="maintenanceEvent">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <element name="eventType">
-                    <ref name="attribute-group.global.optional"/>
-                    <attribute name="value">
-                        <choice>
-                            <value>cancelled</value>
-                            <value>created</value>
-                            <value>deleted</value>
-                            <value>derived</value>
-                            <value>revised</value>
-                            <value>unknown</value>
-                            <value>updated</value>
-                        </choice>
-                    </attribute>
-                    <empty/>
-                </element>
+                <!-- move these to attribute.rng, perhaps.... or keep here, since they'll only be defined in control.  just depends on how easy we want to make this extensible, i guess.-->
+                <attribute name="maintenanceEventType">
+                    <choice>
+                        <value>cancelled</value>
+                        <value>created</value>
+                        <value>deleted</value>
+                        <value>derived</value>
+                        <value>revised</value>
+                        <value>unknown</value>
+                        <value>updated</value>
+                    </choice>
+                </attribute>
                 <element name="eventDateTime">
                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                     <ref name="attribute.standardDateTime.optional"/>
                 </element>
-                <element name="agentType">
-                    <ref name="attribute-group.global.optional"/>
+                <element name="agent">
+                    <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                    <ref name="attribute-group.linked-data.optional"/>
                     <!-- why not juse use the RiC agent types here? -->
-                    <attribute name="value">
+                    <attribute name="agentType">
                         <choice>
                             <value>human</value>
                             <value>machine</value>
                             <value>unknown</value>
                         </choice>
                     </attribute>
-                    <empty/>
-                </element>
-                <element name="agent">
-                    <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                     <text/>
                 </element>
                 <zeroOrMore>
@@ -207,6 +222,7 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.links.optional"/>
             <ref name="attribute.lastDateTimeVerified.optional"/>
+            <!-- might wind up as reference, but not sure if that's been settled yet -->
             <element name="sourceEntry">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                 <text/>
