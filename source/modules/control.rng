@@ -27,12 +27,7 @@
             <zeroOrMore>
                 <element name="otherRecordId">
                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                    <optional>
-                        <ref name="attribute.localType"/>
-                    </optional>
-                    <optional>
-                        <ref name="attribute.localTypeDeclarationReference"/>
-                    </optional>
+                    <ref name="attribute-group.localType.optional"/>
                     <text/>
                 </element>
             </zeroOrMore>     

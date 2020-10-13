@@ -7,9 +7,7 @@
     <define name="element.identity">
         <element name="identity">
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
-            <optional>
-                <ref name="attribute.localType"/>
-            </optional>
+            <ref name="attribute-group.localType.optional"/>
             <optional>
                 <attribute name="identityType">
                     <choice>
@@ -24,9 +22,7 @@
             <group>
                 <element name="entityType">
                     <ref name="attribute-group.global.optional"/>
-                    <optional>
-                        <ref name="attribute.localType"/>
-                    </optional>
+                    <ref name="attribute-group.localType.optional"/>
                     <attribute name="value">
                         <choice>
                             <value>corporateBody</value>
@@ -96,9 +92,7 @@
     <define name="element.nameEntrySet">
         <element name="nameEntrySet">
             <ref name="attribute-group.global.optional"/>
-            <optional>
-                <ref name="attribute.localType"/>
-            </optional>
+            <ref name="attribute-group.localType.optional"/>
             <ref name="element.nameEntry"/>
             <oneOrMore>
                 <ref name="element.nameEntry"/>

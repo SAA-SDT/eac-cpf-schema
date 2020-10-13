@@ -285,9 +285,6 @@
     <define name="element.term">
         <element name="term">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <!-- what kind of issue will this cause, if we remove transliateration from here?
-              do we need to point to conventionDeclaration on localControl/term???  i think the answer is yes.
-             -->
             <ref name="attribute.lastDateTimeVerified.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
             <text/>
