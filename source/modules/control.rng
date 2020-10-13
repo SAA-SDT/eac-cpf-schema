@@ -82,10 +82,12 @@
                             <text/>
                         </element>
                     </zeroOrMore>
-                    <element name="agencyName">
-                        <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                        <text/>
-                    </element>
+                    <oneOrMore>
+                        <element name="agencyName">
+                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <text/>
+                        </element>
+                    </oneOrMore>
                 </interleave>
                 <ref name="element.descriptiveNote.optional"/>
             </element>          

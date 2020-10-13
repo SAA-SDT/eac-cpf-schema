@@ -587,7 +587,9 @@
                <zeroOrMore>
                   <ref name="otherAgencyCode"/>
                </zeroOrMore>
-               <ref name="agencyName"/>
+               <oneOrMore>
+                  <ref name="agencyName"/>
+               </oneOrMore>
             </interleave>
             <optional>
                <ref name="descriptiveNote"/>
