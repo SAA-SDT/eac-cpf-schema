@@ -343,6 +343,7 @@
     <define name="element.objectXMLWrap.optional">
         <optional>
             <element name="objectXMLWrap">
+                <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
                 <ref name="model.any-element"/>
             </element>
         </optional>
