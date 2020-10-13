@@ -286,7 +286,7 @@
         <element name="term">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute.lastDateTimeVerified.optional"/>
-            <ref name="attribute-group.linked-data.optional"/>
+            <ref name="attribute-group.control-reference.optional"/>
             <text/>
         </element>
     </define>
