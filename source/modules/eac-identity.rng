@@ -51,6 +51,7 @@
     <define name="element.identityId">
         <element name="identityId">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
             <text/>
         </element>
     </define>

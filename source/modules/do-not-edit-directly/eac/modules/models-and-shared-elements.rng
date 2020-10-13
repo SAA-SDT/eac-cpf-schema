@@ -79,6 +79,7 @@
    <define name="element.place">
       <element name="place">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
          <oneOrMore>
             <ref name="element.placeName"/>
          </oneOrMore>
@@ -230,6 +231,7 @@
    <define name="element.event">
       <element name="event">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
          <text/>
          <!-- note that EAD3 allows a lot of mixed content here, so when we update,
                 we'll need to accomodate something like:

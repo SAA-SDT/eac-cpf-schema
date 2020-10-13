@@ -49,6 +49,7 @@
                 <element name="otherRecordId">
                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                     <ref name="attribute-group.localType.optional"/>
+                    <ref name="attribute-group.linked-data.optional"/>
                     <text/>
                 </element>
             </zeroOrMore>     
@@ -67,24 +68,28 @@
             <element name="maintenanceAgency">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                 <ref name="attribute.countryCode.optional"/>
+                <ref name="attribute-group.linked-data.optional"/>
                 <!-- okay to allow any order?  can we do the same for control? -->
                 <interleave>
                     <optional>
                         <element name="agencyCode">
                             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                             <ref name="attribute.status.optional"/>
+                            <ref name="attribute-group.linked-data.optional"/>
                             <text/>
                         </element>
                     </optional>
                     <zeroOrMore>
                         <element name="otherAgencyCode">
                             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <ref name="attribute-group.linked-data.optional"/>
                             <text/>
                         </element>
                     </zeroOrMore>
                     <oneOrMore>
                         <element name="agencyName">
                             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <ref name="attribute-group.linked-data.optional"/>
                             <text/>
                         </element>
                     </oneOrMore>
@@ -117,6 +122,7 @@
             <zeroOrMore>
                 <element name="localControl">
                     <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+                    <ref name="attribute-group.linked-data.optional"/>
                     <oneOrMore>
                         <ref name="element.term"/>
                     </oneOrMore>
@@ -132,6 +138,7 @@
             <optional>
                 <element name="sources">
                     <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+                    <ref name="attribute-group.linked-data.optional"/>
                     <oneOrMore>
                         <ref name="element.source"/>     
                     </oneOrMore>
@@ -197,6 +204,7 @@
             <!-- might wind up as reference, but not sure if that's been settled yet -->
             <element name="sourceEntry">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                <ref name="attribute-group.linked-data.optional"/>
                 <text/>
             </element>
             <zeroOrMore>
@@ -214,6 +222,7 @@
     <!-- reused for all of the *declaration elements, aside from the odd duck, languageDeclaration (which needn't exist, if we used xml:lang) -->
     <define name="model.declaration-group">
         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+        <ref name="attribute-group.linked-data.optional"/>
         <optional>
             <!-- referenceCode, and then re-use?... identifier, and the same? -->
             <element name="shortCode">
