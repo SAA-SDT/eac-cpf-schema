@@ -64,22 +64,6 @@
                 <ref name="element.fileDesc"/>
             </optional>
  
-            <element name="maintenanceStatus">
-                <ref name="attribute-group.global.optional"/>
-                <attribute name="value">
-                    <choice>
-                        <value>revised</value>
-                        <value>deleted</value>
-                        <value>new</value>
-                        <value>deleted-split</value>
-                        <value>deleted-merged</value>
-                        <value>deleted-replaced</value>
-                        <value>cancelled</value>
-                        <value>derived</value>
-                    </choice>
-                </attribute>
-                <empty/>
-            </element>
             <element name="maintenanceAgency">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                 <ref name="attribute.countryCode.optional"/>
@@ -105,19 +89,6 @@
                 </interleave>
                 <ref name="element.descriptiveNote.optional"/>
             </element>          
-            <optional>
-                <element name="publicationStatus">
-                    <ref name="attribute-group.global.optional"/>
-                    <attribute name="value">
-                        <choice>
-                            <value>approved</value>
-                            <value>published</value>
-                            <value>inProcess</value>
-                        </choice>
-                    </attribute>
-                    <empty/>
-                </element>
-            </optional>
             <zeroOrMore>
                 <element name="languageDeclaration">
                     <ref name="attribute-group.global.optional"/>
@@ -152,12 +123,10 @@
                     </optional>
                 </element>
             </zeroOrMore>
-            
             <element name="maintenanceHistory">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                 <ref name="element.maintenanceEvent"/>
             </element>
-            
             <optional>
                 <element name="sources">
                     <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
@@ -196,6 +165,7 @@
                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                     <ref name="attribute.standardDateTime.optional"/>
                 </element>
+                <!-- should add a definition for this, for extension reasons, but will review those issues later on -->
                 <element name="agent">
                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                     <ref name="attribute-group.linked-data.optional"/>
@@ -236,8 +206,7 @@
             </zeroOrMore>
             <ref name="element.objectXMLWrap.optional"/>
             <ref name="element.descriptiveNote.optional"/>
-        </element>
-        
+        </element>  
     </define>
     
     <!-- reused for all of the *declaration elements, aside from the odd duck, languageDeclaration (which needn't exist, if we used xml:lang) -->
