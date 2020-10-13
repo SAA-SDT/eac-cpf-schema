@@ -160,6 +160,29 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceStatus" use="required">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="revised"/>
+               <xs:enumeration value="deleted"/>
+               <xs:enumeration value="new"/>
+               <xs:enumeration value="deleted-split"/>
+               <xs:enumeration value="deleted-merged"/>
+               <xs:enumeration value="deleted-replaced"/>
+               <xs:enumeration value="cancelled"/>
+               <xs:enumeration value="derived"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="publicationStatus">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="approved"/>
+               <xs:enumeration value="published"/>
+               <xs:enumeration value="inProcess"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="cpfDescription">
@@ -401,6 +424,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="rightsDeclaration">
@@ -427,6 +451,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="localTypeDeclaration">
@@ -453,6 +478,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="localControl">
@@ -481,6 +507,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="maintenanceHistory">
@@ -565,6 +592,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="identityType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -800,21 +828,9 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="date" mixed="true">
@@ -836,6 +852,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="certainty" type="xs:token"/>
       <xs:attribute name="standardDate">
          <xs:simpleType>
@@ -877,13 +894,12 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="maintenanceEvent">
       <xs:sequence>
-         <xs:element type="v2:eventType" name="eventType"/>
          <xs:element type="v2:eventDateTime" name="eventDateTime"/>
-         <xs:element type="v2:agentType" name="agentType"/>
          <xs:element type="v2:agent" name="agent"/>
          <xs:element type="v2:eventDescription"
                      name="eventDescription"
@@ -907,6 +923,19 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventType" use="required">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="cancelled"/>
+               <xs:enumeration value="created"/>
+               <xs:enumeration value="deleted"/>
+               <xs:enumeration value="derived"/>
+               <xs:enumeration value="revised"/>
+               <xs:enumeration value="unknown"/>
+               <xs:enumeration value="updated"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="source">
@@ -965,6 +994,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="entityType">
@@ -978,6 +1008,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="value" use="required">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1013,7 +1044,6 @@
          <xs:element type="v2:useDates" name="useDates" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="id" type="xs:ID"/>
@@ -1034,6 +1064,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -1076,6 +1107,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="biogHist">
@@ -1107,6 +1139,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="existDates">
@@ -1133,6 +1166,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="functions">
@@ -1504,6 +1538,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="certainty" type="xs:token"/>
       <xs:attribute name="standardDate">
          <xs:simpleType>
@@ -1541,6 +1576,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="certainty" type="xs:token"/>
       <xs:attribute name="standardDate">
          <xs:simpleType>
@@ -1555,31 +1591,6 @@
       <xs:attribute name="toDate">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
-   <xs:complexType name="eventType">
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="value" use="required">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="cancelled"/>
-               <xs:enumeration value="created"/>
-               <xs:enumeration value="deleted"/>
-               <xs:enumeration value="derived"/>
-               <xs:enumeration value="revised"/>
-               <xs:enumeration value="unknown"/>
-               <xs:enumeration value="updated"/>
-            </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -1609,27 +1620,6 @@
       </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="agentType">
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="value" use="required">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="human"/>
-               <xs:enumeration value="machine"/>
-               <xs:enumeration value="unknown"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
    <xs:complexType name="agent" mixed="true">
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -1648,6 +1638,30 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="vocabularySource" type="xs:token"/>
+      <xs:attribute name="vocabularySourceURI">
+         <xs:simpleType>
+            <xs:restriction base="xs:anyURI">
+               <xs:pattern value="http[s]?://.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="valueURI">
+         <xs:simpleType>
+            <xs:restriction base="xs:anyURI">
+               <xs:pattern value="http[s]?://.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="agentType" use="required">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="human"/>
+               <xs:enumeration value="machine"/>
+               <xs:enumeration value="unknown"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="eventDescription" mixed="true">
@@ -1757,7 +1771,6 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -1810,6 +1823,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="list">
@@ -1834,6 +1848,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="listType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1896,6 +1911,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronList">
@@ -1920,6 +1936,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="dateSet">
@@ -1951,6 +1968,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="function">
@@ -2170,6 +2188,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="targetEntity" mixed="true">
@@ -2296,6 +2315,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="_1">
@@ -2323,6 +2343,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -2370,6 +2391,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="level">
@@ -2398,6 +2420,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronItem">
@@ -2433,6 +2456,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="language">
@@ -2536,6 +2560,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="event" mixed="true">
@@ -2557,6 +2582,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronItemSet">
@@ -2605,6 +2631,7 @@
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
 </xs:schema>

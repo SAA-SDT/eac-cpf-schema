@@ -189,6 +189,27 @@
                   </choice>
                </attribute>
             </optional>
+            <attribute name="maintenanceStatus" ns="">
+               <choice>
+                  <value type="token" datatypeLibrary="" ns="">revised</value>
+                  <value type="token" datatypeLibrary="" ns="">deleted</value>
+                  <value type="token" datatypeLibrary="" ns="">new</value>
+                  <value type="token" datatypeLibrary="" ns="">deleted-split</value>
+                  <value type="token" datatypeLibrary="" ns="">deleted-merged</value>
+                  <value type="token" datatypeLibrary="" ns="">deleted-replaced</value>
+                  <value type="token" datatypeLibrary="" ns="">cancelled</value>
+                  <value type="token" datatypeLibrary="" ns="">derived</value>
+               </choice>
+            </attribute>
+            <optional>
+               <attribute name="publicationStatus" ns="">
+                  <choice>
+                     <value type="token" datatypeLibrary="" ns="">approved</value>
+                     <value type="token" datatypeLibrary="" ns="">published</value>
+                     <value type="token" datatypeLibrary="" ns="">inProcess</value>
+                  </choice>
+               </attribute>
+            </optional>
             <ref name="recordId"/>
             <zeroOrMore>
                <ref name="otherRecordId"/>
@@ -770,6 +791,12 @@
                </attribute>
             </optional>
             <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
                <ref name="shortCode"/>
             </optional>
             <ref name="reference"/>
@@ -829,6 +856,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -896,6 +929,12 @@
                </attribute>
             </optional>
             <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
                <ref name="shortCode"/>
             </optional>
             <ref name="reference"/>
@@ -955,6 +994,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1138,6 +1183,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1743,25 +1794,21 @@
             </optional>
             <interleave>
                <optional>
-                  <attribute name="vocabularySource" ns="">
-                     <data type="token"
+                  <attribute name="conventionDeclarationReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="vocabularySourceURI" ns="">
-                     <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="valueURI" ns="">
-                     <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -1819,6 +1866,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1924,6 +1977,12 @@
                </attribute>
             </optional>
             <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
                <ref name="fromDate"/>
             </optional>
             <optional>
@@ -1979,9 +2038,18 @@
                   </attribute>
                </optional>
             </interleave>
-            <ref name="eventType"/>
+            <attribute name="maintenanceEventType" ns="">
+               <choice>
+                  <value type="token" datatypeLibrary="" ns="">cancelled</value>
+                  <value type="token" datatypeLibrary="" ns="">created</value>
+                  <value type="token" datatypeLibrary="" ns="">deleted</value>
+                  <value type="token" datatypeLibrary="" ns="">derived</value>
+                  <value type="token" datatypeLibrary="" ns="">revised</value>
+                  <value type="token" datatypeLibrary="" ns="">unknown</value>
+                  <value type="token" datatypeLibrary="" ns="">updated</value>
+               </choice>
+            </attribute>
             <ref name="eventDateTime"/>
-            <ref name="agentType"/>
             <ref name="agent"/>
             <zeroOrMore>
                <ref name="eventDescription"/>
@@ -2136,6 +2204,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>
@@ -2174,6 +2248,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2238,12 +2318,6 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="localTypeDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -2303,6 +2377,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2390,6 +2470,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <ref name="nameEntry"/>
             <oneOrMore>
                <ref name="nameEntry"/>
@@ -2450,6 +2536,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2526,6 +2618,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3424,6 +3522,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <interleave>
                <optional>
                   <attribute name="certainty" ns="">
@@ -3525,6 +3629,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <interleave>
                <optional>
                   <attribute name="certainty" ns="">
@@ -3570,51 +3680,6 @@
                </optional>
             </interleave>
             <text/>
-         </group>
-      </element>
-   </define>
-   <define name="eventType">
-      <element name="eventType" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <attribute name="value" ns="">
-               <choice>
-                  <value type="token" datatypeLibrary="" ns="">cancelled</value>
-                  <value type="token" datatypeLibrary="" ns="">created</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted</value>
-                  <value type="token" datatypeLibrary="" ns="">derived</value>
-                  <value type="token" datatypeLibrary="" ns="">revised</value>
-                  <value type="token" datatypeLibrary="" ns="">unknown</value>
-                  <value type="token" datatypeLibrary="" ns="">updated</value>
-               </choice>
-            </attribute>
          </group>
       </element>
    </define>
@@ -3682,47 +3747,6 @@
          </group>
       </element>
    </define>
-   <define name="agentType">
-      <element name="agentType" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <attribute name="value" ns="">
-               <choice>
-                  <value type="token" datatypeLibrary="" ns="">human</value>
-                  <value type="token" datatypeLibrary="" ns="">machine</value>
-                  <value type="token" datatypeLibrary="" ns="">unknown</value>
-               </choice>
-            </attribute>
-         </group>
-      </element>
-   </define>
    <define name="agent">
       <element name="agent" ns="https://archivists.org/ns/eac/v2">
          <group>
@@ -3770,6 +3794,37 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="vocabularySource" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="vocabularySourceURI" ns="">
+                     <data type="anyURI"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">http[s]?://.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="valueURI" ns="">
+                     <data type="anyURI"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">http[s]?://.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+            </interleave>
+            <attribute name="agentType" ns="">
+               <choice>
+                  <value type="token" datatypeLibrary="" ns="">human</value>
+                  <value type="token" datatypeLibrary="" ns="">machine</value>
+                  <value type="token" datatypeLibrary="" ns="">unknown</value>
+               </choice>
+            </attribute>
             <text/>
          </group>
       </element>
@@ -4046,12 +4101,6 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="localTypeDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4176,6 +4225,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <choice>
                   <ref name="reference"/>
@@ -4236,6 +4291,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -4336,6 +4397,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <ref name="level"/>
             </oneOrMore>
@@ -4395,6 +4462,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <ref name="chronItem"/>
             </oneOrMore>
@@ -4451,6 +4524,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -4880,6 +4959,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <ref name="placeName"/>
             </oneOrMore>
@@ -5186,6 +5271,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>
@@ -5263,6 +5354,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5355,6 +5452,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <choice>
                   <ref name="reference"/>
@@ -5418,6 +5521,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <ref name="item"/>
             </oneOrMore>
@@ -5477,6 +5586,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5709,6 +5824,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <oneOrMore>
                <ref name="addressLine"/>
             </oneOrMore>
@@ -5765,6 +5886,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5878,6 +6005,12 @@
             <optional>
                <attribute name="localType" ns="">
                   <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>

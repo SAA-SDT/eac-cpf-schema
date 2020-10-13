@@ -5,9 +5,7 @@
    <define name="element.identity">
       <element name="identity">
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
-         <optional>
-            <ref name="attribute.localType"/>
-         </optional>
+         <ref name="attribute-group.localType.optional"/>
          <optional>
             <attribute name="identityType">
                <choice>
@@ -20,11 +18,11 @@
             <ref name="element.identityId"/>
          </zeroOrMore>
          <group>
+                <!-- what about something like changing this to "entity" and the value attribute to "@entityType"?
+                I don't like value as an attribute name.  Even @cpfType would be preferred :) -->
             <element name="entityType">
                <ref name="attribute-group.global.optional"/>
-               <optional>
-                  <ref name="attribute.localType"/>
-               </optional>
+               <ref name="attribute-group.localType.optional"/>
                <attribute name="value">
                   <choice>
                      <value>corporateBody</value>
@@ -49,7 +47,7 @@
    </define>
    <define name="element.identityId">
       <element name="identityId">
-         <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <text/>
       </element>
    </define>
@@ -70,7 +68,7 @@
    <define name="element.nameEntry">
       <element name="nameEntry">
          <ref name="attribute-group.control-reference.optional"/>
-         <ref name="attribute-group.global-plus-lang-and-script-and-localType.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
          <optional>
             <attribute name="preferredForm">
@@ -89,9 +87,7 @@
    <define name="element.nameEntrySet">
       <element name="nameEntrySet">
          <ref name="attribute-group.global.optional"/>
-         <optional>
-            <ref name="attribute.localType"/>
-         </optional>
+         <ref name="attribute-group.localType.optional"/>
          <ref name="element.nameEntry"/>
          <oneOrMore>
             <ref name="element.nameEntry"/>

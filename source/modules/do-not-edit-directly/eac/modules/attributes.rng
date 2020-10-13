@@ -47,6 +47,15 @@
          <data type="IDREF"/>
       </attribute>
    </define>
+   <!-- should be able to use these two attributes as a pair in all/most cases -->
+   <define name="attribute-group.localType.optional">
+      <optional>
+         <ref name="attribute.localType"/>
+      </optional>
+      <optional>
+         <ref name="attribute.localTypeDeclarationReference"/>
+      </optional>
+   </define>
    <define name="attribute.standardDateTime.optional">
       <optional>
          <attribute name="standardDateTime">
@@ -132,11 +141,6 @@
    </define>
    <define name="attribute-group.control-reference.optional" combine="interleave">
       <optional>
-         <ref name="attribute.localTypeDeclarationReference"/>
-      </optional>
-   </define>
-   <define name="attribute-group.control-reference.optional" combine="interleave">
-      <optional>
          <attribute name="maintenanceEventReference">
             <data type="IDREF"/>
          </attribute>
@@ -192,12 +196,9 @@
       <ref name="attribute-group.global.optional"/>
       <ref name="attribute-group.lang-and-script.optional"/>
    </define>
-   <!-- redefine this if we will always require localTypeDeclarationReference alongside localType -->
-   <define name="attribute-group.global-plus-lang-and-script-and-localType.optional">
+   <define name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional">
       <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-      <optional>
-         <ref name="attribute.localType"/>
-      </optional>
+      <ref name="attribute-group.localType.optional"/>
    </define>
    <define name="attribute-group.lang-and-script.optional" combine="interleave">
       <optional>
