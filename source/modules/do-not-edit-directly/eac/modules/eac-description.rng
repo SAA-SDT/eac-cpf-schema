@@ -164,6 +164,7 @@
    <define name="model.single-element-group">
       <ref name="attribute-group.global-plus-lang-and-script.optional"/>
       <ref name="attribute-group.linked-data.optional"/>
+      <ref name="attribute-group.control-reference.optional"/>
       <oneOrMore>
          <ref name="element.term"/>
       </oneOrMore>

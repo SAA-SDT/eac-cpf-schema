@@ -1919,6 +1919,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="part" mixed="true">
@@ -2187,6 +2190,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="languageUsed">
@@ -2249,6 +2255,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="localDescription">
@@ -2298,6 +2307,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="mandate">
@@ -2347,6 +2359,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="occupation">
@@ -2396,6 +2411,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="place">
