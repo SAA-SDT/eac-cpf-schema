@@ -2433,19 +2433,59 @@
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="language">
-      <xs:simpleContent>
-         <xs:extension base="xs:string">
-            <xs:attribute name="value" type="xs:string"/>
-         </xs:extension>
-      </xs:simpleContent>
+   <xs:complexType name="language" mixed="true">
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="languageOfElement">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[a-z]{2}.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="languageCode">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[a-z]{2}.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="writingSystem">
-      <xs:simpleContent>
-         <xs:extension base="xs:string">
-            <xs:attribute name="value" type="xs:string"/>
-         </xs:extension>
-      </xs:simpleContent>
+   <xs:complexType name="writingSystem" mixed="true">
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="languageOfElement">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[a-z]{2}.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="scriptCode">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[A-Z]{1}[a-z]{3}"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="placeRole" mixed="true">
       <xs:attribute name="id" type="xs:ID"/>

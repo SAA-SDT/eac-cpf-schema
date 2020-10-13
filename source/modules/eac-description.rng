@@ -84,11 +84,19 @@
                 <element name="languageUsed">
                     <zeroOrMore>
                         <element name="language">
+                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <optional>
+                                <ref name="attribute.languageCode"/>
+                            </optional>
                             <text/>
                         </element>
                     </zeroOrMore>
                     <zeroOrMore>
                         <element name="writingSystem">
+                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <optional>
+                                <ref name="attribute.scriptCode"/>
+                            </optional>
                             <text/>
                         </element>
                     </zeroOrMore>

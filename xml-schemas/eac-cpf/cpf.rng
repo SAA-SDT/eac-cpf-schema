@@ -5571,12 +5571,120 @@
    </define>
    <define name="language">
       <element name="language" ns="https://archivists.org/ns/eac/v2">
-         <text/>
+         <group>
+            <interleave>
+               <optional>
+                  <attribute name="id" ns="">
+                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="audience" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">external</value>
+                        <value type="token" datatypeLibrary="" ns="">internal</value>
+                     </choice>
+                  </attribute>
+               </optional>
+               <zeroOrMore>
+                  <attribute>
+                     <anyName>
+                        <except>
+                           <choice>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
+                              <nsName ns=""/>
+                           </choice>
+                        </except>
+                     </anyName>
+                     <text/>
+                  </attribute>
+               </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">[a-z]{2}.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <optional>
+               <attribute name="languageCode" ns="">
+                  <data type="token"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                     <param name="pattern">[a-z]{2}.*</param>
+                  </data>
+               </attribute>
+            </optional>
+            <text/>
+         </group>
       </element>
    </define>
    <define name="writingSystem">
       <element name="writingSystem" ns="https://archivists.org/ns/eac/v2">
-         <text/>
+         <group>
+            <interleave>
+               <optional>
+                  <attribute name="id" ns="">
+                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="audience" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">external</value>
+                        <value type="token" datatypeLibrary="" ns="">internal</value>
+                     </choice>
+                  </attribute>
+               </optional>
+               <zeroOrMore>
+                  <attribute>
+                     <anyName>
+                        <except>
+                           <choice>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
+                              <nsName ns=""/>
+                           </choice>
+                        </except>
+                     </anyName>
+                     <text/>
+                  </attribute>
+               </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">[a-z]{2}.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <optional>
+               <attribute name="scriptCode" ns="">
+                  <data type="token"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                     <param name="pattern">[A-Z]{1}[a-z]{3}</param>
+                  </data>
+               </attribute>
+            </optional>
+            <text/>
+         </group>
       </element>
    </define>
    <define name="placeRole">
