@@ -74,9 +74,7 @@
                      name="representation"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:maintenanceStatus" name="maintenanceStatus"/>
          <xs:element type="v2:maintenanceAgency" name="maintenanceAgency"/>
-         <xs:element type="v2:publicationStatus" name="publicationStatus" minOccurs="0"/>
          <xs:element type="v2:languageDeclaration"
                      name="languageDeclaration"
                      minOccurs="0"
@@ -289,32 +287,6 @@
       <xs:attribute name="linkTitle" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="maintenanceStatus">
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="value" use="required">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="revised"/>
-               <xs:enumeration value="deleted"/>
-               <xs:enumeration value="new"/>
-               <xs:enumeration value="deleted-split"/>
-               <xs:enumeration value="deleted-merged"/>
-               <xs:enumeration value="deleted-replaced"/>
-               <xs:enumeration value="cancelled"/>
-               <xs:enumeration value="derived"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
    <xs:complexType name="maintenanceAgency">
       <xs:sequence>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -345,27 +317,6 @@
          <xs:simpleType>
             <xs:restriction base="xs:token">
                <xs:pattern value="^[A-Z]{2,3}$|^[0-9]{2,3}$"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
-   <xs:complexType name="publicationStatus">
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="value" use="required">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="approved"/>
-               <xs:enumeration value="published"/>
-               <xs:enumeration value="inProcess"/>
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>

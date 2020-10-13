@@ -217,11 +217,7 @@
             <zeroOrMore>
                <ref name="representation"/>
             </zeroOrMore>
-            <ref name="maintenanceStatus"/>
             <ref name="maintenanceAgency"/>
-            <optional>
-               <ref name="publicationStatus"/>
-            </optional>
             <zeroOrMore>
                <ref name="languageDeclaration"/>
             </zeroOrMore>
@@ -529,52 +525,6 @@
          </group>
       </element>
    </define>
-   <define name="maintenanceStatus">
-      <element name="maintenanceStatus" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <attribute name="value" ns="">
-               <choice>
-                  <value type="token" datatypeLibrary="" ns="">revised</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted</value>
-                  <value type="token" datatypeLibrary="" ns="">new</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted-split</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted-merged</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted-replaced</value>
-                  <value type="token" datatypeLibrary="" ns="">cancelled</value>
-                  <value type="token" datatypeLibrary="" ns="">derived</value>
-               </choice>
-            </attribute>
-         </group>
-      </element>
-   </define>
    <define name="maintenanceAgency">
       <element name="maintenanceAgency" ns="https://archivists.org/ns/eac/v2">
          <group>
@@ -642,47 +592,6 @@
             <optional>
                <ref name="descriptiveNote"/>
             </optional>
-         </group>
-      </element>
-   </define>
-   <define name="publicationStatus">
-      <element name="publicationStatus" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <attribute name="value" ns="">
-               <choice>
-                  <value type="token" datatypeLibrary="" ns="">approved</value>
-                  <value type="token" datatypeLibrary="" ns="">published</value>
-                  <value type="token" datatypeLibrary="" ns="">inProcess</value>
-               </choice>
-            </attribute>
          </group>
       </element>
    </define>
