@@ -1668,7 +1668,30 @@
       <xs:attribute name="unit" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="objectXMLWrap"/>
+   <xs:complexType name="objectXMLWrap">
+      <xs:complexContent>
+         <xs:extension base="v2:_1">
+            <xs:attribute name="id" type="xs:ID"/>
+            <xs:attribute name="audience">
+               <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                     <xs:enumeration value="external"/>
+                     <xs:enumeration value="internal"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="languageOfElement">
+               <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                     <xs:pattern value="[a-z]{2}.*"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="scriptOfElement" type="xs:token"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
    <xs:complexType name="otherEntityType">
       <xs:sequence>
          <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
