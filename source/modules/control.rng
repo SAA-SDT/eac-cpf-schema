@@ -18,9 +18,9 @@
                     <value>revised</value>
                     <value>deleted</value>
                     <value>new</value>
-                    <value>deleted-split</value>
-                    <value>deleted-merged</value>
-                    <value>deleted-replaced</value>
+                    <value>deletedSplit</value>
+                    <value>deletedMerged</value>
+                    <value>deletedReplaced</value>
                     <value>cancelled</value>
                     <value>derived</value>
                 </choice> 
