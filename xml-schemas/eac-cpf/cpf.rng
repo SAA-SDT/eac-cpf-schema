@@ -194,9 +194,9 @@
                   <value type="token" datatypeLibrary="" ns="">revised</value>
                   <value type="token" datatypeLibrary="" ns="">deleted</value>
                   <value type="token" datatypeLibrary="" ns="">new</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted-split</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted-merged</value>
-                  <value type="token" datatypeLibrary="" ns="">deleted-replaced</value>
+                  <value type="token" datatypeLibrary="" ns="">deletedSplit</value>
+                  <value type="token" datatypeLibrary="" ns="">deletedMerged</value>
+                  <value type="token" datatypeLibrary="" ns="">deletedReplaced</value>
                   <value type="token" datatypeLibrary="" ns="">cancelled</value>
                   <value type="token" datatypeLibrary="" ns="">derived</value>
                </choice>
