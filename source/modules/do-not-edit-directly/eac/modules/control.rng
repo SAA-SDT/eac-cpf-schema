@@ -64,6 +64,15 @@
             <ref name="attribute-group.linked-data.optional"/>
             <!-- okay to allow any order?  can we do the same for control? -->
             <interleave>
+               <oneOrMore>
+                  <element name="agencyName">
+                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                     <ref name="attribute-group.linked-data.optional"/>
+                     <text/>
+                  </element>
+               </oneOrMore>
+            </interleave>
+            <interleave>
                <optional>
                   <element name="agencyCode">
                      <ref name="attribute-group.global-plus-lang-and-script.optional"/>
@@ -79,13 +88,6 @@
                      <text/>
                   </element>
                </zeroOrMore>
-               <oneOrMore>
-                  <element name="agencyName">
-                     <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                     <ref name="attribute-group.linked-data.optional"/>
-                     <text/>
-                  </element>
-               </oneOrMore>
             </interleave>
             <ref name="element.descriptiveNote.optional"/>
          </element>
