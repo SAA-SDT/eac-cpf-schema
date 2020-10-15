@@ -164,9 +164,9 @@
                <xs:enumeration value="revised"/>
                <xs:enumeration value="deleted"/>
                <xs:enumeration value="new"/>
-               <xs:enumeration value="deleted-split"/>
-               <xs:enumeration value="deleted-merged"/>
-               <xs:enumeration value="deleted-replaced"/>
+               <xs:enumeration value="deletedSplit"/>
+               <xs:enumeration value="deletedMerged"/>
+               <xs:enumeration value="deletedReplaced"/>
                <xs:enumeration value="cancelled"/>
                <xs:enumeration value="derived"/>
             </xs:restriction>
