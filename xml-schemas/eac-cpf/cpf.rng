@@ -601,7 +601,7 @@
                <attribute name="countryCode" ns="">
                   <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                     <param name="pattern">^[A-Z]{2,3}$|^[0-9]{2,3}$</param>
+                     <param name="pattern">[A-Z]{2,3}|[0-9]{2,3}</param>
                   </data>
                </attribute>
             </optional>
@@ -5926,7 +5926,7 @@
                <attribute name="countryCode" ns="">
                   <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                     <param name="pattern">^[A-Z]{2,3}$|^[0-9]{2,3}$</param>
+                     <param name="pattern">[A-Z]{2,3}|[0-9]{2,3}</param>
                   </data>
                </attribute>
             </optional>
