@@ -581,6 +581,7 @@
    <xs:complexType name="sources">
       <xs:sequence>
          <xs:element type="v2:source" name="source" maxOccurs="unbounded"/>
+         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -600,21 +601,6 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
-      <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="identity">
