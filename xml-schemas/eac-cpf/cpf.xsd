@@ -122,6 +122,7 @@
                <xs:enumeration value="iso639-1"/>
                <xs:enumeration value="iso639-2b"/>
                <xs:enumeration value="iso639-3"/>
+               <xs:enumeration value="ietf-bcp-47"/>
                <xs:enumeration value="otherLanguageEncoding"/>
             </xs:restriction>
          </xs:simpleType>

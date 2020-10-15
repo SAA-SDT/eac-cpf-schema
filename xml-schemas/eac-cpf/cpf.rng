@@ -153,6 +153,7 @@
                      <value type="token" datatypeLibrary="" ns="">iso639-1</value>
                      <value type="token" datatypeLibrary="" ns="">iso639-2b</value>
                      <value type="token" datatypeLibrary="" ns="">iso639-3</value>
+                     <value type="token" datatypeLibrary="" ns="">ietf-bcp-47</value>
                      <value type="token" datatypeLibrary="" ns="">otherLanguageEncoding</value>
                   </choice>
                </attribute>

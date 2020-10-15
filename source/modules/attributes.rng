@@ -108,6 +108,7 @@
                     <value>iso639-1</value>
                     <value>iso639-2b</value>
                     <value>iso639-3</value>
+                    <value>ietf-bcp-47</value>
                     <value>otherLanguageEncoding</value>
                 </choice>
             </attribute>
