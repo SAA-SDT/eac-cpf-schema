@@ -117,10 +117,10 @@
          <optional>
             <element name="sources">
                <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
-               <ref name="attribute-group.linked-data.optional"/>
                <oneOrMore>
                   <ref name="element.source"/>
                </oneOrMore>
+               <ref name="element.descriptiveNote.optional"/>
             </element>
          </optional>
       </element>
