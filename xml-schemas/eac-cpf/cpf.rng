@@ -2267,7 +2267,9 @@
                   </choice>
                </attribute>
             </optional>
-            <ref name="sourceEntry"/>
+            <optional>
+               <ref name="reference"/>
+            </optional>
             <zeroOrMore>
                <ref name="citedRange"/>
             </zeroOrMore>
@@ -4026,81 +4028,6 @@
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <text/>
-         </group>
-      </element>
-   </define>
-   <define name="sourceEntry">
-      <element name="sourceEntry" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <interleave>
-               <optional>
-                  <attribute name="languageOfElement" ns="">
-                     <data type="token"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">[a-z]{2}.*</param>
-                     </data>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="scriptOfElement" ns="">
-                     <data type="token"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <interleave>
-               <optional>
-                  <attribute name="vocabularySource" ns="">
-                     <data type="token"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="vocabularySourceURI" ns="">
-                     <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="valueURI" ns="">
-                     <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
                   </attribute>
                </optional>
             </interleave>
