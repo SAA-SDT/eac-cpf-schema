@@ -632,14 +632,12 @@
             <oneOrMore>
                <ref name="agencyName"/>
             </oneOrMore>
-            <interleave>
-               <optional>
-                  <ref name="agencyCode"/>
-               </optional>
-               <zeroOrMore>
-                  <ref name="otherAgencyCode"/>
-               </zeroOrMore>
-            </interleave>
+            <optional>
+               <ref name="agencyCode"/>
+            </optional>
+            <zeroOrMore>
+               <ref name="otherAgencyCode"/>
+            </zeroOrMore>
             <optional>
                <ref name="descriptiveNote"/>
             </optional>

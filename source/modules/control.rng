@@ -69,33 +69,17 @@
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                 <ref name="attribute.countryCode.optional"/>
                 <ref name="attribute-group.linked-data.optional"/>
-                <!-- okay to allow any order?  can we do the same for control? -->
-                <interleave>
-                    <oneOrMore>
-                        <element name="agencyName">
-                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                            <ref name="attribute-group.linked-data.optional"/>
-                            <text/>
-                        </element>
-                    </oneOrMore>
-                </interleave>
-                <interleave>
-                    <optional>
-                        <element name="agencyCode">
-                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                            <ref name="attribute.status.optional"/>
-                            <ref name="attribute-group.linked-data.optional"/>
-                            <text/>
-                        </element>
-                    </optional>
-                    <zeroOrMore>
-                        <element name="otherAgencyCode">
-                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                            <ref name="attribute-group.linked-data.optional"/>
-                            <text/>
-                        </element>
-                    </zeroOrMore>
-                </interleave>
+                <!-- update to enforce the order, which is more compatible with the XSD-creation process for the time being.
+                    also separating out the definitions for potential extensions. should likely do the same for others, like languageDeclaration -->
+                <oneOrMore>
+                    <ref name="element.agencyName"/>
+                </oneOrMore>
+                <optional>
+                    <ref name="element.agencyCode"/>
+                </optional>
+                <zeroOrMore>
+                    <ref name="element.otherAgencyCode"/>
+                </zeroOrMore>
                 <ref name="element.descriptiveNote.optional"/>
             </element>          
             <zeroOrMore>
@@ -146,6 +130,31 @@
                     </oneOrMore>
                 </element>
             </optional>
+        </element>
+    </define>
+    
+    <define name="element.agencyName">
+        <element name="agencyName">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.agencyCode">
+        <element name="agencyCode">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute.status.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.otherAgencyCode">
+        <element name="otherAgencyCode">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
         </element>
     </define>
 

@@ -306,10 +306,11 @@
    <xs:complexType name="maintenanceAgency">
       <xs:sequence>
          <xs:element type="v2:agencyName" name="agencyName" maxOccurs="unbounded"/>
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:agencyCode" name="agencyCode"/>
-            <xs:element type="v2:otherAgencyCode" name="otherAgencyCode"/>
-         </xs:choice>
+         <xs:element type="v2:agencyCode" name="agencyCode" minOccurs="0"/>
+         <xs:element type="v2:otherAgencyCode"
+                     name="otherAgencyCode"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
