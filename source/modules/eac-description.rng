@@ -10,6 +10,7 @@
     <define name="element.description">
         <element name="description">
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <!-- does order matter, or can we just add at will for once??? -->
             <interleave>
                 <zeroOrMore>
@@ -176,7 +177,7 @@
     <define name="model.single-element-group">
         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
         <ref name="attribute-group.linked-data.optional"/>
-        <ref name="attribute-group.control-reference.optional"/>
+        <ref name="attribute-group.assertion-reference.optional"/>
         <oneOrMore>
             <ref name="element.term"/>
         </oneOrMore>

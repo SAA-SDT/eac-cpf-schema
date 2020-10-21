@@ -258,7 +258,7 @@
    <define name="element.part">
       <element name="part">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <ref name="attribute-group.control-reference.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <text/>
       </element>
    </define>
@@ -266,7 +266,7 @@
       <element name="term">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute.lastDateTimeVerified.optional"/>
-         <ref name="attribute-group.control-reference.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <text/>
       </element>
    </define>

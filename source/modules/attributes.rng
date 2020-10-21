@@ -147,21 +147,21 @@
         </optional>
     </define>
 
-    <define name="attribute-group.control-reference.optional" combine="interleave">
+    <define name="attribute-group.assertion-reference.optional" combine="interleave">
         <optional>
             <attribute name="conventionDeclarationReference">
                 <data type="IDREF"/>
             </attribute>
         </optional>
     </define>
-    <define name="attribute-group.control-reference.optional" combine="interleave">
+    <define name="attribute-group.assertion-reference.optional" combine="interleave">
         <optional>
             <attribute name="maintenanceEventReference">
                 <data type="IDREF"/>
             </attribute>
         </optional>
     </define>
-    <define name="attribute-group.control-reference.optional" combine="interleave">
+    <define name="attribute-group.assertion-reference.optional" combine="interleave">
         <optional>
             <attribute name="sourceReference">
                 <data type="IDREF"/>
