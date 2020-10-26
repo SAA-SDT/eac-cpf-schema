@@ -300,8 +300,6 @@
    <define name="element.part">
       <element name="part">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <!-- not sure if conventionDeclarationReference is fully folded into the assertion attributes or not, so just adding for the SNAC use case for the time being -->
-         <ref name="attribute.conventionDeclarationReference.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <text/>
       </element>

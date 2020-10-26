@@ -149,6 +149,10 @@
          </attribute>
       </optional>
    </define>
+   <define name="attribute-group.assertion-reference.optional"
+           combine="interleave">
+      <ref name="attribute.conventionDeclarationReference.optional"/>
+   </define>
    <!-- 3 global options: id, audience and any attribute in a namespace -->
    <define name="attribute-group.global.optional" combine="interleave">
       <optional>
