@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 October 8                      *          
+  *                           2020 October 26                     *          
   *                                                               *
   *****************************************************************
 
@@ -1249,6 +1249,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <attribute name="identityType" ns="">
                   <choice>
@@ -1331,12 +1345,6 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -1418,6 +1426,20 @@
                   </attribute>
                </zeroOrMore>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="relation"/>
             </oneOrMore>
@@ -1473,6 +1495,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1763,6 +1799,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="p"/>
             </oneOrMore>
@@ -1847,6 +1897,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1943,12 +2007,6 @@
             </optional>
             <interleave>
                <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -2024,6 +2082,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <interleave>
                <optional>
                   <attribute name="certainty" ns="">
@@ -2131,6 +2203,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <ref name="fromDate"/>
             </optional>
@@ -2383,6 +2469,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <text/>
          </group>
       </element>
@@ -2471,25 +2571,7 @@
                   </attribute>
                </zeroOrMore>
             </interleave>
-            <oneOrMore>
-               <ref name="otherEntityType"/>
-            </oneOrMore>
-            <optional>
-               <ref name="descriptiveNote"/>
-            </optional>
-         </group>
-      </element>
-   </define>
-   <define name="nameEntry">
-      <element name="nameEntry" ns="https://archivists.org/ns/eac/v2">
-         <group>
             <interleave>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
@@ -2503,6 +2585,18 @@
                   </attribute>
                </optional>
             </interleave>
+            <oneOrMore>
+               <ref name="otherEntityType"/>
+            </oneOrMore>
+            <optional>
+               <ref name="descriptiveNote"/>
+            </optional>
+         </group>
+      </element>
+   </define>
+   <define name="nameEntry">
+      <element name="nameEntry" ns="https://archivists.org/ns/eac/v2">
+         <group>
             <interleave>
                <optional>
                   <attribute name="id" ns="">
@@ -2559,6 +2653,12 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <optional>
+               <attribute name="conventionDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <interleave>
                <optional>
                   <attribute name="vocabularySource" ns="">
@@ -2580,6 +2680,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
                         <param name="pattern">http[s]?://.*</param>
                      </data>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -2649,6 +2763,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <ref name="nameEntry"/>
             <oneOrMore>
                <ref name="nameEntry"/>
@@ -2718,6 +2846,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <ref name="abstract"/>
             </optional>
@@ -2800,6 +2942,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <choice>
                <ref name="date"/>
                <ref name="dateRange"/>
@@ -2851,6 +3007,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2907,6 +3077,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2978,6 +3162,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="languageUsed"/>
             </oneOrMore>
@@ -3030,6 +3228,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3090,6 +3302,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="localDescription"/>
             </oneOrMore>
@@ -3142,6 +3368,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3202,6 +3442,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="occupation"/>
             </oneOrMore>
@@ -3258,6 +3512,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="place"/>
             </oneOrMore>
@@ -3307,6 +3575,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3394,6 +3676,20 @@
                <optional>
                   <attribute name="linkTitle" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3516,6 +3812,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <zeroOrMore>
                <ref name="componentEntry"/>
             </zeroOrMore>
@@ -3575,6 +3885,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <choice>
                   <ref name="reference"/>
@@ -3628,6 +3952,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3701,6 +4039,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <interleave>
                <optional>
                   <attribute name="certainty" ns="">
@@ -3808,6 +4160,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <interleave>
                <optional>
                   <attribute name="certainty" ns="">
@@ -4216,6 +4582,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <ref name="_1"/>
          </group>
       </element>
@@ -4292,12 +4672,6 @@
                </optional>
             </interleave>
             <interleave>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
@@ -4380,13 +4754,13 @@
                   </attribute>
                </optional>
             </interleave>
+            <optional>
+               <attribute name="conventionDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
             <interleave>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
@@ -4447,6 +4821,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4518,6 +4906,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <choice>
                   <ref name="reference"/>
@@ -4587,6 +4989,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <attribute name="listType" ns="">
                   <choice>
@@ -4690,6 +5106,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="level"/>
             </oneOrMore>
@@ -4755,6 +5185,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="chronItem"/>
             </oneOrMore>
@@ -4820,6 +5264,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <choice>
                <ref name="date"/>
                <ref name="dateRange"/>
@@ -4905,12 +5363,6 @@
                </optional>
             </interleave>
             <interleave>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
@@ -5034,12 +5486,6 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -5146,12 +5592,6 @@
                </optional>
             </interleave>
             <interleave>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
@@ -5260,12 +5700,6 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -5372,12 +5806,6 @@
                </optional>
             </interleave>
             <interleave>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
@@ -5496,6 +5924,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="placeName"/>
             </oneOrMore>
@@ -5595,6 +6037,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <text/>
          </group>
       </element>
@@ -5670,6 +6126,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <text/>
          </group>
       </element>
@@ -5742,6 +6212,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
                         <param name="pattern">http[s]?://.*</param>
                      </data>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5829,6 +6313,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
                         <param name="pattern">http[s]?://.*</param>
                      </data>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5942,6 +6440,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <attribute name="countryCode" ns="">
                   <data type="token"
@@ -6013,6 +6525,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <choice>
                   <ref name="reference"/>
@@ -6082,6 +6608,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="item"/>
             </oneOrMore>
@@ -6150,6 +6690,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <choice>
                <ref name="date"/>
                <ref name="dateRange"/>
@@ -6216,6 +6770,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <attribute name="languageCode" ns="">
                   <data type="token"
@@ -6271,6 +6839,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6358,6 +6940,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <attribute name="lastDateTimeVerified" ns="">
                   <choice>
@@ -6419,6 +7015,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6493,6 +7103,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <oneOrMore>
                <ref name="addressLine"/>
             </oneOrMore>
@@ -6582,6 +7206,20 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <text/>
          </group>
       </element>
@@ -6629,6 +7267,20 @@
                <optional>
                   <attribute name="scriptOfElement" ns="">
                      <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6701,6 +7353,20 @@
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <text/>
          </group>
       </element>

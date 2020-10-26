@@ -136,14 +136,6 @@
    <define name="attribute-group.assertion-reference.optional"
            combine="interleave">
       <optional>
-         <attribute name="conventionDeclarationReference">
-            <data type="IDREF"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="attribute-group.assertion-reference.optional"
-           combine="interleave">
-      <optional>
          <attribute name="maintenanceEventReference">
             <data type="IDREF"/>
          </attribute>
@@ -215,6 +207,18 @@
       <optional>
          <attribute name="scriptOfElement">
             <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.lang-and-script-and-conventionDeclarationReference.optional"
+           combine="interleave">
+      <ref name="attribute-group.lang-and-script.optional"/>
+      <ref name="attribute.conventionDeclarationReference.optional"/>
+   </define>
+   <define name="attribute.conventionDeclarationReference.optional">
+      <optional>
+         <attribute name="conventionDeclarationReference">
+            <data type="IDREF"/>
          </attribute>
       </optional>
    </define>
@@ -335,7 +339,7 @@
    <define name="attribute-group.relation-children.optional">
       <ref name="attribute-group.global-plus-lang-and-script.optional"/>
       <ref name="attribute-group.linked-data.optional"/>
-      <!-- what else???? -->
+      <ref name="attribute-group.assertion-reference.optional"/>
    </define>
    <define name="attribute-group.standard-date-attributes.optional"
            combine="interleave">

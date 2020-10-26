@@ -5,6 +5,7 @@
    <define name="element.relations">
       <element name="relations">
          <ref name="attribute-group.global.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <ref name="element.relation"/>
          </oneOrMore>
@@ -14,6 +15,7 @@
       <element name="relation">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.links.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="attribute.lastDateTimeVerified.optional"/>
          <ref name="element.targetEntity"/>
          <oneOrMore>

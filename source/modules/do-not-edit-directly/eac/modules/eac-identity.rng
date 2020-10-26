@@ -6,6 +6,7 @@
       <element name="identity">
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
          <ref name="attribute-group.localType.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <optional>
             <attribute name="identityType">
                <choice>
@@ -49,12 +50,14 @@
       <element name="identityId">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <text/>
       </element>
    </define>
    <define name="element.otherEntityTypes">
       <element name="otherEntityTypes">
          <ref name="attribute-group.global.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <ref name="element.otherEntityType"/>
          </oneOrMore>
@@ -68,9 +71,11 @@
    </define>
    <define name="element.nameEntry">
       <element name="nameEntry">
-         <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <!-- not sure if conventionDeclarationReference is fully folded into the assertion attributes or not, so just adding for the SNAC use case for the time being -->
+         <ref name="attribute.conventionDeclarationReference.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <optional>
             <attribute name="preferredForm">
                <data type="boolean"/>
@@ -89,6 +94,7 @@
       <element name="nameEntrySet">
          <ref name="attribute-group.global.optional"/>
          <ref name="attribute-group.localType.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="element.nameEntry"/>
          <oneOrMore>
             <ref name="element.nameEntry"/>
@@ -100,8 +106,8 @@
    </define>
    <define name="element.useDates">
       <element name="useDates">
-            <!-- need to add the control-reference attributes here and elsewhere -->
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="model.all-dates.choice"/>
       </element>
    </define>

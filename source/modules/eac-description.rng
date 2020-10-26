@@ -55,6 +55,7 @@
     <define name="element.existDates">
         <element name="existDates">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="model.all-dates.choice"/>
         </element>
     </define>
@@ -62,6 +63,7 @@
     <define name="element.functions">
         <element name="functions">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <element name="function">
                     <ref name="model.single-element-group"/>
@@ -74,6 +76,7 @@
     <define name="element.generalContext">
         <element name="generalContext">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="model.narrative-group.optional"/>
         </element>
     </define>
@@ -81,11 +84,13 @@
     <define name="element.languagesUsed">
         <element name="languagesUsed">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <element name="languageUsed">
                     <zeroOrMore>
                         <element name="language">
                             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <ref name="attribute-group.assertion-reference.optional"/>
                             <optional>
                                 <ref name="attribute.languageCode"/>
                             </optional>
@@ -95,6 +100,7 @@
                     <zeroOrMore>
                         <element name="writingSystem">
                             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                            <ref name="attribute-group.assertion-reference.optional"/>
                             <optional>
                                 <ref name="attribute.scriptCode"/>
                             </optional>
@@ -111,6 +117,7 @@
     <define name="element.legalStatuses">
         <element name="legalStatuses">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <element name="legalStatus">
                     <ref name="model.single-element-group"/>
@@ -124,6 +131,7 @@
     <define name="element.localDescriptions">
         <element name="localDescriptions">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <element name="localDescription">
                     <ref name="model.single-element-group"/>
@@ -136,6 +144,7 @@
     <define name="element.mandates">
         <element name="mandates">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <element name="mandate">
                     <ref name="model.single-element-group"/>
@@ -148,6 +157,7 @@
     <define name="element.occupations">
         <element name="occupations">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <element name="occupation">
                     <ref name="model.single-element-group"/>
@@ -160,6 +170,7 @@
     <define name="element.places">
         <element name="places">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <!-- defined in other-shared-elements -->
                 <ref name="element.place"/>
@@ -170,27 +181,9 @@
     <define name="element.structureOrGenealogy">
         <element name="structureOrGenealogy">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="model.narrative-group.optional"/>
         </element>
-    </define>
-    
-    <define name="model.single-element-group">
-        <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-        <ref name="attribute-group.linked-data.optional"/>
-        <ref name="attribute-group.assertion-reference.optional"/>
-        <oneOrMore>
-            <ref name="element.term"/>
-        </oneOrMore>
-        <zeroOrMore>
-            <ref name="element.placeName"/>
-        </zeroOrMore>
-        <optional>
-            <ref name="model.all-dates.choice"/>
-        </optional>
-        <optional>
-            <ref name="element.reference"/>
-        </optional>
-        <ref name="element.descriptiveNote.optional"/>  
     </define>
 
 </grammar>

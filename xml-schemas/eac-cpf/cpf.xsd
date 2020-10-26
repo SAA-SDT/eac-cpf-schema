@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 October 8                      *          
+  *                           2020 October 26                     *          
   *                                                               *
   *****************************************************************
   
@@ -637,6 +637,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="identityType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -679,7 +681,6 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -697,6 +698,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="alternativeSet">
@@ -721,6 +724,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="agencyCode" mixed="true">
@@ -857,6 +862,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="shortCode" mixed="true">
@@ -892,6 +899,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
@@ -920,7 +929,6 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -945,6 +953,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="certainty" type="xs:token"/>
       <xs:attribute name="standardDate">
          <xs:simpleType>
@@ -987,6 +997,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="maintenanceEvent">
@@ -1102,6 +1114,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="entityType">
@@ -1143,6 +1157,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="nameEntry">
@@ -1150,9 +1166,6 @@
          <xs:element type="v2:part" name="part" maxOccurs="unbounded"/>
          <xs:element type="v2:useDates" name="useDates" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
-      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1172,6 +1185,7 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -1187,6 +1201,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="preferredForm" type="xs:boolean"/>
       <xs:attribute name="status">
          <xs:simpleType>
@@ -1215,6 +1231,8 @@
       </xs:attribute>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="biogHist">
@@ -1247,6 +1265,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="existDates">
@@ -1274,6 +1294,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="functions">
@@ -1298,6 +1320,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="generalContext">
@@ -1325,6 +1349,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="languagesUsed">
@@ -1349,6 +1375,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="legalStatuses">
@@ -1373,6 +1401,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="localDescriptions">
@@ -1399,6 +1429,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="mandates">
@@ -1423,6 +1455,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="occupations">
@@ -1447,6 +1481,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="places">
@@ -1470,6 +1506,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="structureOrGenealogy">
@@ -1497,6 +1535,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="relation">
@@ -1538,6 +1578,8 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="lastDateTimeVerified">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
@@ -1579,6 +1621,8 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="p" mixed="true">
@@ -1603,6 +1647,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="span" mixed="true">
@@ -1623,6 +1669,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="style" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -1646,6 +1694,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="certainty" type="xs:token"/>
       <xs:attribute name="standardDate">
          <xs:simpleType>
@@ -1684,6 +1734,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="certainty" type="xs:token"/>
       <xs:attribute name="standardDate">
          <xs:simpleType>
@@ -1859,6 +1911,8 @@
                </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="scriptOfElement" type="xs:token"/>
+            <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+            <xs:attribute name="sourceReference" type="xs:IDREF"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
          </xs:extension>
       </xs:complexContent>
@@ -1910,7 +1964,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -1961,6 +2014,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="abstract" mixed="true">
@@ -1987,6 +2042,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="list">
@@ -2012,6 +2069,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="listType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2075,6 +2134,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronList">
@@ -2100,6 +2161,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="dateSet">
@@ -2132,6 +2195,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="function">
@@ -2181,7 +2246,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -2246,7 +2310,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -2298,7 +2361,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -2350,7 +2412,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -2402,7 +2463,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -2457,6 +2517,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="targetEntity" mixed="true">
@@ -2492,6 +2554,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="relationType" mixed="true">
@@ -2527,6 +2591,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="targetRole" mixed="true">
@@ -2562,6 +2628,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="componentEntry" mixed="true">
@@ -2599,6 +2667,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="_1">
@@ -2642,6 +2712,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="countryCode">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2675,6 +2747,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="level">
@@ -2704,6 +2778,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronItem">
@@ -2740,6 +2816,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="language" mixed="true">
@@ -2760,6 +2838,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="languageCode">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2787,6 +2867,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="scriptCode">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2829,6 +2911,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="lastDateTimeVerified">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
@@ -2856,6 +2940,8 @@
                </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="scriptOfElement" type="xs:token"/>
+            <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+            <xs:attribute name="sourceReference" type="xs:IDREF"/>
             <xs:attribute name="coordinateSystem" type="xs:token"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
          </xs:extension>
@@ -2884,6 +2970,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="event" mixed="true">
@@ -2921,6 +3009,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronItemSet">
@@ -2948,6 +3038,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="addressLine" mixed="true">
@@ -2970,6 +3062,8 @@
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
 </xs:schema>
