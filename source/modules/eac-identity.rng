@@ -78,8 +78,6 @@
     <define name="element.nameEntry">
         <element name="nameEntry">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <!-- not sure if conventionDeclarationReference is fully folded into the assertion attributes or not, so just adding for the SNAC use case for the time being -->
-            <ref name="attribute.conventionDeclarationReference.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <optional>
