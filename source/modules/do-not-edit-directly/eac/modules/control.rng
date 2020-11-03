@@ -172,6 +172,7 @@
             <element name="eventDateTime">
                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                <ref name="attribute.standardDateTime.optional"/>
+               <text/>
             </element>
             <!-- should add a definition for this, for extension reasons, but will review those issues later on -->
             <element name="agent">

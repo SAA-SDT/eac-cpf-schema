@@ -1783,7 +1783,7 @@
       </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="eventDateTime">
+   <xs:complexType name="eventDateTime" mixed="true">
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>

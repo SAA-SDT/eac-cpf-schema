@@ -4457,6 +4457,7 @@
                   </choice>
                </attribute>
             </optional>
+            <text/>
          </group>
       </element>
    </define>
