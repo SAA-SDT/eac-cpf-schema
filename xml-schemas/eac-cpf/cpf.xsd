@@ -1283,11 +1283,14 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="existDates">
-      <xs:choice>
-         <xs:element type="v2:date" name="date"/>
-         <xs:element type="v2:dateRange" name="dateRange"/>
-         <xs:element type="v2:dateSet" name="dateSet"/>
-      </xs:choice>
+      <xs:sequence>
+         <xs:choice>
+            <xs:element type="v2:date" name="date"/>
+            <xs:element type="v2:dateRange" name="dateRange"/>
+            <xs:element type="v2:dateSet" name="dateSet"/>
+         </xs:choice>
+         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+      </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>

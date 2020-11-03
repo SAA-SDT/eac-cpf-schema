@@ -57,6 +57,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="model.all-dates.choice"/>
+            <ref name="element.descriptiveNote.optional"/> 
         </element>
     </define>
     

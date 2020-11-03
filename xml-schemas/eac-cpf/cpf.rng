@@ -3045,6 +3045,9 @@
                <ref name="dateRange"/>
                <ref name="dateSet"/>
             </choice>
+            <optional>
+               <ref name="descriptiveNote"/>
+            </optional>
          </group>
       </element>
    </define>
