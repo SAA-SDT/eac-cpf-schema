@@ -212,9 +212,7 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.links.optional"/>
             <ref name="attribute.lastDateTimeVerified.optional"/>
-            <optional>
-                <ref name="element.reference"/>    
-            </optional>
+            <ref name="element.reference"/>
             <zeroOrMore>
                 <element name="citedRange">
                     <ref name="attribute-group.global.optional"/>
