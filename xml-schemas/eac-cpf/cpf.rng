@@ -2413,6 +2413,30 @@
                   </attribute>
                </optional>
             </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="vocabularySource" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="vocabularySourceURI" ns="">
+                     <data type="anyURI"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">http[s]?://.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="valueURI" ns="">
+                     <data type="anyURI"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">http[s]?://.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+            </interleave>
             <optional>
                <attribute name="lastDateTimeVerified" ns="">
                   <choice>
