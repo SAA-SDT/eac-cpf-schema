@@ -1958,17 +1958,6 @@
                   </xs:restriction>
                </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="languageOfElement">
-               <xs:simpleType>
-                  <xs:restriction base="xs:token">
-                     <xs:pattern value="[a-z]{2}.*"/>
-                  </xs:restriction>
-               </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="scriptOfElement" type="xs:token"/>
-            <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
-            <xs:attribute name="sourceReference" type="xs:IDREF"/>
-            <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
          </xs:extension>
       </xs:complexContent>
