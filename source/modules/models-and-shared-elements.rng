@@ -85,6 +85,23 @@
                 <element name="addressLine">
                     <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
                     <ref name="attribute-group.assertion-reference.optional"/>
+                    <ref name="attribute.addressLineType.optional"/> 
+                    <text/>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.contact">
+        <element name="contact">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <element name="contactLine">
+                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+                    <ref name="attribute-group.assertion-reference.optional"/>
+                    <ref name="attribute-group.links.optional"/>
+                    <ref name="attribute.contactLineType.optional"/> 
                     <text/>
                 </element>
             </oneOrMore>
@@ -97,24 +114,21 @@
             <ref name="attribute-group.linked-data.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <ref name="element.placeName"/>
+                <choice>
+                    <ref name="element.placeName"/>
+                    <ref name="element.placeRole"/>
+                    <ref name="element.geographicCoordinates"/>
+                    <ref name="element.address"/>
+                    <ref name="element.contact"/>
+                </choice>
             </oneOrMore>
-            <optional>
-                <ref name="element.placeRole"/>
-            </optional>
-            <optional>
-                <ref name="element.geographicCoordinates"/>
-            </optional>
-            <optional>
-                <ref name="element.address"/>
-            </optional>
-            <optional>
-                <ref name="model.all-dates.choice"/>
-            </optional>
-            <optional>
-                <ref name="element.reference"/>
-            </optional>         
-            <ref name="element.descriptiveNote.optional"/>    
+            <zeroOrMore>
+                <choice>
+                    <ref name="model.all-dates.choice"/>
+                    <ref name="element.reference"/>
+                </choice>
+            </zeroOrMore>
+            <ref name="element.descriptiveNote.optional"/> 
         </element>
     </define>
     

@@ -9,6 +9,21 @@
         Note that some attributes (e.g. @id) are only defined as a group (in this case, 'global')
         since they are used so frequently.
     -->
+   <define name="attribute.addressLineType.optional">
+      <optional>
+         <attribute name="addressLineType">
+            <choice>
+               <value>country</value>
+               <value>region</value>
+               <value>county</value>
+               <value>municipality</value>
+               <value>postalcode</value>
+               <value>district</value>
+               <value>street</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
    <define name="attribute.base.optional">
         <!-- now that we're no longer using XLINK, we should be clear that 
             base ONLY applys to "href" attributes...  not vocabularySourceURI, valueURI, etc.
@@ -16,6 +31,18 @@
       <optional>
          <attribute name="base">
             <data type="anyURI"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.contactLineType.optional">
+      <optional>
+         <attribute name="contactLineType">
+            <choice>
+               <value>telephone</value>
+               <value>fax</value>
+               <value>email</value>
+               <value>webpage</value>
+            </choice>
          </attribute>
       </optional>
    </define>
@@ -268,6 +295,7 @@
          </optional>
       </interleave>
    </define>
+   <!-- likely need to add base and lastDateTimeVerified to this group.... and then update references that also include lastDateTimeVerified, etc. -->
    <define name="attribute-group.links.optional">
       <interleave>
          <optional>

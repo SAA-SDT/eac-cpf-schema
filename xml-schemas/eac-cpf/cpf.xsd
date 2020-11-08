@@ -2526,18 +2526,19 @@
    </xs:complexType>
    <xs:complexType name="place">
       <xs:sequence>
-         <xs:element type="v2:placeName" name="placeName" maxOccurs="unbounded"/>
-         <xs:element type="v2:placeRole" name="placeRole" minOccurs="0"/>
-         <xs:element type="v2:geographicCoordinates"
-                     name="geographicCoordinates"
-                     minOccurs="0"/>
-         <xs:element type="v2:address" name="address" minOccurs="0"/>
-         <xs:choice minOccurs="0">
+         <xs:choice maxOccurs="unbounded">
+            <xs:element type="v2:placeName" name="placeName"/>
+            <xs:element type="v2:placeRole" name="placeRole"/>
+            <xs:element type="v2:geographicCoordinates" name="geographicCoordinates"/>
+            <xs:element type="v2:address" name="address"/>
+            <xs:element type="v2:contact" name="contact"/>
+         </xs:choice>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:date" name="date"/>
             <xs:element type="v2:dateRange" name="dateRange"/>
             <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="v2:reference" name="reference"/>
          </xs:choice>
-         <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
@@ -3045,6 +3046,34 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
+   <xs:complexType name="contact">
+      <xs:sequence>
+         <xs:element type="v2:contactLine" name="contactLine" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="languageOfElement">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[a-z]{2}.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
    <xs:complexType name="event" mixed="true">
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -3138,6 +3167,57 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="addressLineType">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="country"/>
+               <xs:enumeration value="region"/>
+               <xs:enumeration value="county"/>
+               <xs:enumeration value="municipality"/>
+               <xs:enumeration value="postalcode"/>
+               <xs:enumeration value="district"/>
+               <xs:enumeration value="street"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="contactLine" mixed="true">
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="languageOfElement">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[a-z]{2}.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="scriptOfElement" type="xs:token"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="href" type="xs:anyURI"/>
+      <xs:attribute name="linkRole" type="xs:anyURI"/>
+      <xs:attribute name="linkTitle" type="xs:token"/>
+      <xs:attribute name="contactLineType">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="telephone"/>
+               <xs:enumeration value="fax"/>
+               <xs:enumeration value="email"/>
+               <xs:enumeration value="webpage"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
 </xs:schema>

@@ -6205,27 +6205,22 @@
                </optional>
             </interleave>
             <oneOrMore>
-               <ref name="placeName"/>
+               <choice>
+                  <ref name="placeName"/>
+                  <ref name="placeRole"/>
+                  <ref name="geographicCoordinates"/>
+                  <ref name="address"/>
+                  <ref name="contact"/>
+               </choice>
             </oneOrMore>
-            <optional>
-               <ref name="placeRole"/>
-            </optional>
-            <optional>
-               <ref name="geographicCoordinates"/>
-            </optional>
-            <optional>
-               <ref name="address"/>
-            </optional>
-            <optional>
+            <zeroOrMore>
                <choice>
                   <ref name="date"/>
                   <ref name="dateRange"/>
                   <ref name="dateSet"/>
+                  <ref name="reference"/>
                </choice>
-            </optional>
-            <optional>
-               <ref name="reference"/>
-            </optional>
+            </zeroOrMore>
             <optional>
                <ref name="descriptiveNote"/>
             </optional>
@@ -7467,6 +7462,91 @@
          </group>
       </element>
    </define>
+   <define name="contact">
+      <element name="contact" ns="https://archivists.org/ns/eac/v2">
+         <group>
+            <interleave>
+               <optional>
+                  <attribute name="id" ns="">
+                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="audience" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">external</value>
+                        <value type="token" datatypeLibrary="" ns="">internal</value>
+                     </choice>
+                  </attribute>
+               </optional>
+               <zeroOrMore>
+                  <attribute>
+                     <anyName>
+                        <except>
+                           <choice>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
+                              <nsName ns=""/>
+                           </choice>
+                        </except>
+                     </anyName>
+                     <text/>
+                  </attribute>
+               </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">[a-z]{2}.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <optional>
+               <attribute name="localType" ns="">
+                  <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="conventionDeclarationReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <oneOrMore>
+               <ref name="contactLine"/>
+            </oneOrMore>
+         </group>
+      </element>
+   </define>
    <define name="event">
       <element name="event" ns="https://archivists.org/ns/eac/v2">
          <group>
@@ -7729,6 +7809,132 @@
                   </attribute>
                </optional>
             </interleave>
+            <optional>
+               <attribute name="addressLineType" ns="">
+                  <choice>
+                     <value type="token" datatypeLibrary="" ns="">country</value>
+                     <value type="token" datatypeLibrary="" ns="">region</value>
+                     <value type="token" datatypeLibrary="" ns="">county</value>
+                     <value type="token" datatypeLibrary="" ns="">municipality</value>
+                     <value type="token" datatypeLibrary="" ns="">postalcode</value>
+                     <value type="token" datatypeLibrary="" ns="">district</value>
+                     <value type="token" datatypeLibrary="" ns="">street</value>
+                  </choice>
+               </attribute>
+            </optional>
+            <text/>
+         </group>
+      </element>
+   </define>
+   <define name="contactLine">
+      <element name="contactLine" ns="https://archivists.org/ns/eac/v2">
+         <group>
+            <interleave>
+               <optional>
+                  <attribute name="id" ns="">
+                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="audience" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">external</value>
+                        <value type="token" datatypeLibrary="" ns="">internal</value>
+                     </choice>
+                  </attribute>
+               </optional>
+               <zeroOrMore>
+                  <attribute>
+                     <anyName>
+                        <except>
+                           <choice>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
+                              <nsName ns=""/>
+                           </choice>
+                        </except>
+                     </anyName>
+                     <text/>
+                  </attribute>
+               </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">[a-z]{2}.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <optional>
+               <attribute name="localType" ns="">
+                  <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="localTypeDeclarationReference" ns="">
+                  <data type="IDREF"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <interleave>
+               <optional>
+                  <attribute name="maintenanceEventReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="sourceReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="conventionDeclarationReference" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="href" ns="">
+                     <data type="anyURI"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="linkRole" ns="">
+                     <data type="anyURI"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="linkTitle" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <optional>
+               <attribute name="contactLineType" ns="">
+                  <choice>
+                     <value type="token" datatypeLibrary="" ns="">telephone</value>
+                     <value type="token" datatypeLibrary="" ns="">fax</value>
+                     <value type="token" datatypeLibrary="" ns="">email</value>
+                     <value type="token" datatypeLibrary="" ns="">webpage</value>
+                  </choice>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>
