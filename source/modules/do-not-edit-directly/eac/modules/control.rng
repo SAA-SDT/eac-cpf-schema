@@ -225,7 +225,7 @@
       <optional>
             <!-- referenceCode, and then re-use?... identifier, and the same? -->
          <element name="shortCode">
-            <ref name="attribute-group.global.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <text/>
          </element>
       </optional>

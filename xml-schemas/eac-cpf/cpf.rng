@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 October 26                     *          
+  *                           2020 November 9                     *          
   *                                                               *
   *****************************************************************
 
@@ -1879,6 +1879,22 @@
                      <text/>
                   </attribute>
                </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+                        <param name="pattern">[a-z]{2}.*</param>
+                     </data>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
             </interleave>
             <text/>
          </group>

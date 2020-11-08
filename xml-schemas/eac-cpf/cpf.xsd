@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 October 26                     *          
+  *                           2020 November 9                     *          
   *                                                               *
   *****************************************************************
   
@@ -881,6 +881,14 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="languageOfElement">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:pattern value="[a-z]{2}.*"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="reference" mixed="true">
