@@ -312,7 +312,7 @@
    </define>
    <define name="element.part">
       <element name="part">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <text/>
       </element>
