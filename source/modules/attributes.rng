@@ -452,14 +452,14 @@
     </define>
     <define name="attribute-group.standard-date-attributes.optional" combine="interleave">
         <optional>
-            <attribute name="fromDate">
+            <attribute name="notBefore">
                 <ref name="dt.any-standard-date"/>
             </attribute>
         </optional>
     </define>
     <define name="attribute-group.standard-date-attributes.optional" combine="interleave">
         <optional>
-            <attribute name="toDate">
+            <attribute name="notAfter">
                 <ref name="dt.any-standard-date"/>
             </attribute>
         </optional>
