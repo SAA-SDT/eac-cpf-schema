@@ -85,7 +85,7 @@
                     <data type="boolean"/>
                 </attribute>
             </optional>  
-            <ref name="attribute.status.optional"/>
+            <ref name="attribute.status.authorized-or-alternative.optional"/>
             <oneOrMore>
                 <ref name="element.part"/>
             </oneOrMore>
