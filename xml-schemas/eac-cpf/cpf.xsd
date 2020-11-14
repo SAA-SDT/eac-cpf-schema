@@ -987,6 +987,14 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="status">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="ongoing"/>
+               <xs:enumeration value="unknown"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="dateRange">
@@ -1766,6 +1774,14 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="status">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="ongoing"/>
+               <xs:enumeration value="unknown"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="toDate" mixed="true">
@@ -1805,6 +1821,14 @@
       <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="status">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="ongoing"/>
+               <xs:enumeration value="unknown"/>
+            </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>

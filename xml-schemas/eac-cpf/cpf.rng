@@ -2203,6 +2203,14 @@
                      </choice>
                   </attribute>
                </optional>
+               <optional>
+                  <attribute name="status" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">ongoing</value>
+                        <value type="token" datatypeLibrary="" ns="">unknown</value>
+                     </choice>
+                  </attribute>
+               </optional>
             </interleave>
             <text/>
          </group>
@@ -4307,6 +4315,14 @@
                      </choice>
                   </attribute>
                </optional>
+               <optional>
+                  <attribute name="status" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">ongoing</value>
+                        <value type="token" datatypeLibrary="" ns="">unknown</value>
+                     </choice>
+                  </attribute>
+               </optional>
             </interleave>
             <text/>
          </group>
@@ -4431,6 +4447,14 @@
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                         <data type="date"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="status" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">ongoing</value>
+                        <value type="token" datatypeLibrary="" ns="">unknown</value>
                      </choice>
                   </attribute>
                </optional>

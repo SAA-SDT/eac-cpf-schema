@@ -135,7 +135,7 @@
    <define name="element.agencyCode">
       <element name="agencyCode">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <ref name="attribute.status.optional"/>
+         <ref name="attribute.status.authorized-or-alternative.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
          <text/>
       </element>

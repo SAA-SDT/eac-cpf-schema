@@ -90,12 +90,22 @@
          </attribute>
       </optional>
    </define>
-   <define name="attribute.status.optional">
+   <define name="attribute.status.authorized-or-alternative.optional">
       <optional>
          <attribute name="status">
             <choice>
                <value>authorized</value>
                <value>alternative</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.status.ongoing-or-unknown.optional">
+      <optional>
+         <attribute name="status">
+            <choice>
+               <value>ongoing</value>
+               <value>unknown</value>
             </choice>
          </attribute>
       </optional>
@@ -404,5 +414,9 @@
             <ref name="dt.any-standard-date"/>
          </attribute>
       </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <ref name="attribute.status.ongoing-or-unknown.optional"/>
    </define>
 </grammar>
