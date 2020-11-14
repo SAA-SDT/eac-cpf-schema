@@ -2180,7 +2180,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="fromDate" ns="">
+                  <attribute name="notBefore" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -2192,7 +2192,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="toDate" ns="">
+                  <attribute name="notAfter" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4284,7 +4284,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="fromDate" ns="">
+                  <attribute name="notBefore" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4296,7 +4296,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="toDate" ns="">
+                  <attribute name="notAfter" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4411,7 +4411,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="fromDate" ns="">
+                  <attribute name="notBefore" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4423,7 +4423,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="toDate" ns="">
+                  <attribute name="notAfter" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>

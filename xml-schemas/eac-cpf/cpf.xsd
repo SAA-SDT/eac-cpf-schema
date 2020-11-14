@@ -977,12 +977,12 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="fromDate">
+      <xs:attribute name="notBefore">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="toDate">
+      <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -1756,12 +1756,12 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="fromDate">
+      <xs:attribute name="notBefore">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="toDate">
+      <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -1797,12 +1797,12 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="fromDate">
+      <xs:attribute name="notBefore">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="toDate">
+      <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
