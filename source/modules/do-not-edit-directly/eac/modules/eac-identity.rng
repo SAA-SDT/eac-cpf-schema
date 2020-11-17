@@ -90,7 +90,7 @@
    </define>
    <define name="element.nameEntrySet">
       <element name="nameEntrySet">
-         <ref name="attribute-group.global.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.localType.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="element.nameEntry"/>
