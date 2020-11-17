@@ -52,13 +52,7 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute name="base" type="xs:anyURI"/>
-         <xs:attribute name="languageOfElement">
-            <xs:simpleType>
-               <xs:restriction base="xs:token">
-                  <xs:pattern value="[a-z]{2}.*"/>
-               </xs:restriction>
-            </xs:simpleType>
-         </xs:attribute>
+         <xs:attribute name="languageOfElement" type="xs:token"/>
          <xs:attribute name="scriptOfElement" type="xs:token"/>
          <xs:anyAttribute namespace="##other" processContents="lax"/>
       </xs:complexType>
@@ -108,13 +102,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="base" type="xs:anyURI"/>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="languageEncoding">
          <xs:simpleType>
@@ -232,13 +220,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="instanceURL" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -253,13 +235,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -290,13 +266,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
@@ -322,21 +292,9 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
-      <xs:attribute name="countryCode">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[A-Z]{2,3}|[0-9]{2,3}"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="countryCode" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -367,20 +325,8 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageCode" use="required">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="scriptCode" use="required">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[A-Z]{1}[a-z]{3}"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageCode" use="required" type="xs:token"/>
+      <xs:attribute name="scriptCode" use="required" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="conventionDeclaration">
@@ -398,13 +344,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -440,13 +380,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -482,13 +416,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -526,13 +454,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -568,13 +490,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -593,13 +509,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="base" type="xs:anyURI"/>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -627,13 +537,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="base" type="xs:anyURI"/>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -674,13 +578,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="base" type="xs:anyURI"/>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -719,13 +617,7 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="base" type="xs:anyURI"/>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -742,13 +634,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="status">
          <xs:simpleType>
@@ -785,13 +671,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -820,13 +700,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -858,13 +732,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -881,13 +749,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -904,13 +766,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -930,13 +786,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="lastDateTimeVerified">
          <xs:simpleType>
@@ -958,13 +808,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1011,13 +855,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1044,13 +882,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventType" use="required">
          <xs:simpleType>
@@ -1086,13 +918,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
@@ -1129,13 +955,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1217,13 +1037,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1271,13 +1085,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1306,13 +1114,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1339,13 +1141,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1368,13 +1164,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1398,13 +1188,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1425,13 +1209,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1452,13 +1230,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1481,13 +1253,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1508,13 +1274,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1535,13 +1295,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1561,13 +1315,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1591,13 +1339,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1632,13 +1374,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
@@ -1671,13 +1407,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="lastDateTimeVerified">
          <xs:simpleType>
@@ -1706,13 +1436,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1729,13 +1453,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -1753,13 +1471,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1802,13 +1514,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -1851,13 +1557,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="standardDateTime">
          <xs:simpleType>
@@ -1876,13 +1576,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -1920,13 +1614,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -1940,13 +1628,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -1975,13 +1657,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="unit" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -2026,13 +1702,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2064,13 +1734,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2094,13 +1758,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -2121,13 +1779,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2149,13 +1801,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2215,13 +1861,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2243,13 +1883,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2278,13 +1912,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2317,13 +1945,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2382,13 +2004,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2434,13 +2050,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2486,13 +2096,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2538,13 +2142,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2592,13 +2190,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2632,13 +2224,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2670,13 +2256,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2708,13 +2288,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -2746,13 +2320,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2792,13 +2360,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2820,13 +2382,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="countryCode">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[A-Z]{2,3}|[0-9]{2,3}"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="countryCode" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="item" mixed="true">
@@ -2843,13 +2399,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2875,13 +2425,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2914,13 +2458,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -2939,24 +2477,12 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="languageCode">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageCode" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="writingSystem" mixed="true">
@@ -2969,24 +2495,12 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="scriptCode">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[A-Z]{1}[a-z]{3}"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="scriptCode" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="placeRole" mixed="true">
@@ -2999,13 +2513,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
@@ -3044,13 +2552,7 @@
                   </xs:restriction>
                </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="languageOfElement">
-               <xs:simpleType>
-                  <xs:restriction base="xs:token">
-                     <xs:pattern value="[a-z]{2}.*"/>
-                  </xs:restriction>
-               </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute name="languageOfElement" type="xs:token"/>
             <xs:attribute name="scriptOfElement" type="xs:token"/>
             <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
             <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -3073,13 +2575,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -3101,13 +2597,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -3126,13 +2616,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -3173,13 +2657,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
@@ -3196,13 +2674,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
@@ -3234,13 +2706,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="languageOfElement">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:pattern value="[a-z]{2}.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="languageOfElement" type="xs:token"/>
       <xs:attribute name="scriptOfElement" type="xs:token"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
