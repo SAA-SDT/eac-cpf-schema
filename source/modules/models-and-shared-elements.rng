@@ -61,7 +61,7 @@
                     <ref name="element.event"/>
                 </group>
                 <oneOrMore>
-                    <ref name="chronItemSet"/>
+                    <ref name="element.chronItemSet"/>
                 </oneOrMore>
             </choice>
         </element>

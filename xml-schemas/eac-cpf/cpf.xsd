@@ -2434,7 +2434,7 @@
          </xs:choice>
          <xs:choice>
             <xs:sequence>
-               <xs:element type="v2:placeName" name="placeName" minOccurs="0"/>
+               <xs:element type="v2:place" name="place" minOccurs="0"/>
                <xs:element type="v2:event" name="event"/>
             </xs:sequence>
             <xs:element type="v2:chronItemSet" name="chronItemSet" maxOccurs="unbounded"/>
@@ -2633,8 +2633,8 @@
    </xs:complexType>
    <xs:complexType name="chronItemSet">
       <xs:sequence>
-         <xs:element type="v2:placeName"
-                     name="placeName"
+         <xs:element type="v2:place"
+                     name="place"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
          <xs:element type="v2:event" name="event" maxOccurs="unbounded"/>
