@@ -921,7 +921,7 @@
    </xs:complexType>
    <xs:complexType name="source">
       <xs:sequence>
-         <xs:element type="v2:sourceEntry" name="sourceEntry"/>
+         <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:citedRange"
                      name="citedRange"
                      minOccurs="0"
@@ -1636,35 +1636,6 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
-   <xs:complexType name="sourceEntry" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="citedRange" mixed="true">

@@ -21,6 +21,28 @@
          <text/>
       </element>
    </define>
+   <define name="element.agent">
+      <element name="agent">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <!-- why not juse use the RiC agent types here? -->
+         <attribute name="agentType">
+            <choice>
+               <value>human</value>
+               <value>machine</value>
+               <value>unknown</value>
+            </choice>
+         </attribute>
+         <text/>
+      </element>
+   </define>
+   <define name="element.citedRange">
+      <element name="citedRange">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.unit.optional"/>
+         <text/>
+      </element>
+   </define>
    <define name="element.control">
       <element name="control">
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
@@ -82,6 +104,13 @@
          <ref name="model.declaration-group"/>
       </element>
    </define>
+   <define name="element.eventDateTime">
+      <element name="eventDateTime">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.standardDateTime.optional"/>
+         <text/>
+      </element>
+   </define>
    <define name="element.eventDescription">
       <element name="eventDescription">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
@@ -132,50 +161,33 @@
       </element>
    </define>
    <define name="element.maintenanceEvent">
-      <oneOrMore>
-         <element name="maintenanceEvent">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <!-- move these to attribute.rng, perhaps.... or keep here, since they'll only be defined in control.  just depends on how easy we want to make this extensible, i guess.-->
-            <attribute name="maintenanceEventType">
-               <choice>
-                  <value>cancelled</value>
-                  <value>created</value>
-                  <value>deleted</value>
-                  <value>derived</value>
-                  <value>revised</value>
-                  <value>unknown</value>
-                  <value>updated</value>
-               </choice>
-            </attribute>
-            <element name="eventDateTime">
-               <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-               <ref name="attribute.standardDateTime.optional"/>
-               <text/>
-            </element>
-            <!-- should add a definition for this, for extension reasons, but will review those issues later on -->
-            <element name="agent">
-               <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-               <ref name="attribute-group.linked-data.optional"/>
-               <!-- why not juse use the RiC agent types here? -->
-               <attribute name="agentType">
-                  <choice>
-                     <value>human</value>
-                     <value>machine</value>
-                     <value>unknown</value>
-                  </choice>
-               </attribute>
-               <text/>
-            </element>
-            <zeroOrMore>
-               <ref name="element.eventDescription"/>
-            </zeroOrMore>
-         </element>
-      </oneOrMore>
+      <element name="maintenanceEvent">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <!-- move these to attribute.rng, perhaps.... or keep here, since they'll only be defined in control.  just depends on how easy we want to make this extensible, i guess.-->
+         <attribute name="maintenanceEventType">
+            <choice>
+               <value>cancelled</value>
+               <value>created</value>
+               <value>deleted</value>
+               <value>derived</value>
+               <value>revised</value>
+               <value>unknown</value>
+               <value>updated</value>
+            </choice>
+         </attribute>
+         <ref name="element.eventDateTime"/>
+         <ref name="element.agent"/>
+         <zeroOrMore>
+            <ref name="element.eventDescription"/>
+         </zeroOrMore>
+      </element>
    </define>
    <define name="element.maintenanceHistory">
       <element name="maintenanceHistory">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <ref name="element.maintenanceEvent"/>
+         <oneOrMore>
+            <ref name="element.maintenanceEvent"/>
+         </oneOrMore>
       </element>
    </define>
    <define name="element.otherAgencyCode">
@@ -222,18 +234,9 @@
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.links.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
-         <!-- might wind up as reference, but not sure if that's been settled yet -->
-         <element name="sourceEntry">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.linked-data.optional"/>
-            <text/>
-         </element>
+         <ref name="element.reference"/>
          <zeroOrMore>
-            <element name="citedRange">
-               <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-               <ref name="attribute.unit.optional"/>
-               <text/>
-            </element>
+            <ref name="element.citedRange"/>
          </zeroOrMore>
          <ref name="element.objectXMLWrap.optional"/>
          <ref name="element.descriptiveNote.optional"/>
