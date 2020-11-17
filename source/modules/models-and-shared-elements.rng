@@ -9,21 +9,105 @@
         until we know which direction EAD will go. 
     -->
     
-    <!-- DATES -->
-
-    <define name="model.all-dates.choice">
-        <choice>
-            <ref name="element.date"/>
-            <ref name="element.dateRange"/>
-            <ref name="element.dateSet"/>
-        </choice>
+    <!-- ELEMENTS -->
+    <define name="element.abstract">
+        <element name="abstract">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="model.mixed-content.optional"/>
+        </element>
     </define>
     
-    <define name="model.date-dateRange.choice">
-        <choice>
-            <ref name="element.date"/>
-            <ref name="element.dateRange"/>
-        </choice>
+    <define name="element.address">
+        <element name="address">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.addressLine"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.addressLine">
+        <element name="addressLine">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="attribute.addressLineType.optional"/> 
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.biogHist">
+        <element name="biogHist">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <optional>
+                <ref name="element.abstract"/>
+            </optional>
+            <ref name="model.narrative-group.optional"/>
+        </element>
+    </define>
+     
+    <define name="element.chronItem">
+        <element name="chronItem">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="model.all-dates.choice"/>
+            <choice>
+                <group>
+                    <optional>
+                        <ref name="element.place"/>
+                    </optional>
+                    <ref name="element.event"/>
+                </group>
+                <oneOrMore>
+                    <ref name="chronItemSet"/>
+                </oneOrMore>
+            </choice>
+        </element>
+    </define>
+    
+    <define name="element.chronItemSet">
+        <element name="chronItemSet">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <zeroOrMore>
+                <ref name="element.place"/>
+            </zeroOrMore>
+            <oneOrMore>
+                <ref name="element.event"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.chronList">
+        <element name="chronList">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.chronItem"/>
+            </oneOrMore>
+        </element>
+    </define>
+      
+    <define name="element.contact">
+        <element name="contact">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.contactLine"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.contactLine">
+        <element name="contactLine">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="attribute-group.links.optional"/>
+            <ref name="attribute.contactLineType.optional"/> 
+            <text/>
+        </element>
     </define>
     
     <define name="element.date">
@@ -36,6 +120,7 @@
     </define>  
     
     <define name="element.dateRange">
+        <!-- need to update with something required here still-->
         <element name="dateRange">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
@@ -59,6 +144,32 @@
         </element>
     </define>
     
+    <define name="element.descriptiveNote.optional">
+        <optional>
+            <element name="descriptiveNote">
+                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                <ref name="attribute-group.assertion-reference.optional"/>
+                <oneOrMore>
+                    <ref name="element.p"/>
+                </oneOrMore>
+            </element>
+        </optional>
+    </define>
+    
+    <define name="element.event">
+        <element name="event">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <text/>
+            <!-- note that EAD3 allows a lot of mixed content here, so when we update,
+                we'll need to accomodate something like:
+                <ref name="model.paragraph.content"/>
+                and add our @a:exclude-from attributes
+               -->
+        </element>
+    </define>
+       
     <define name="element.fromDate">
         <element name="fromDate">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -68,47 +179,91 @@
         </element>
     </define>
     
-    <define name="element.toDate">
-        <element name="toDate">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+    <define name="element.geographicCoordinates">
+        <element name="geographicCoordinates">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="attribute-group.standard-date-attributes.optional"/>
-            <text/>
+            <optional>
+                <attribute name="coordinateSystem">
+                    <data type="token"/>
+                </attribute>
+            </optional>
+            <!-- might be too strict -->
+            <data type="normalizedString"/>
         </element>
     </define>
     
-    <!-- PLACES -->
-    <define name="element.address">
-        <element name="address">
+    <define name="element.item">
+        <element name="item">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="model.mixed-content.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.level">
+        <element name="level">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <!-- any reason??? that's the current spec -->
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <!-- this is new, but what's the point of having a level with no text???? -->
             <oneOrMore>
-                <element name="addressLine">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-                    <ref name="attribute-group.assertion-reference.optional"/>
-                    <ref name="attribute.addressLineType.optional"/> 
-                    <text/>
-                </element>
+                <ref name="element.item"/>
             </oneOrMore>
+            <zeroOrMore>
+                <ref name="element.level"/>
+            </zeroOrMore>
         </element>
     </define>
     
-    <define name="element.contact">
-        <element name="contact">
+    <define name="element.list">
+        <element name="list">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="attribute-group.lists.optional"/>
             <oneOrMore>
-                <element name="contactLine">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-                    <ref name="attribute-group.assertion-reference.optional"/>
-                    <ref name="attribute-group.links.optional"/>
-                    <ref name="attribute.contactLineType.optional"/> 
-                    <text/>
-                </element>
+                <ref name="element.item"/>
             </oneOrMore>
         </element>
     </define>
 
+    <define name="element.objectXMLWrap.optional">
+        <optional>
+            <element name="objectXMLWrap">
+                <ref name="attribute-group.global.optional"/>
+                <ref name="model.any-element"/>
+            </element>
+        </optional>
+    </define>
+    
+    <define name="element.outline">
+        <!-- will likely be replaced with hierarchy list options -->
+        <element name="outline">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.level"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.p">
+        <element name="p">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <!-- current spec would add assertion reference attributes to paragraph.  do we want that? -->
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="model.mixed-content.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.part">
+        <element name="part">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <text/>
+        </element>
+    </define>
+    
     <define name="element.place">
         <element name="place">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -133,20 +288,6 @@
         </element>
     </define>
     
-    <define name="element.geographicCoordinates">
-        <element name="geographicCoordinates">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <optional>
-                <attribute name="coordinateSystem">
-                    <data type="token"/>
-                </attribute>
-            </optional>
-            <!-- might be too strict -->
-            <data type="normalizedString"/>
-        </element>
-    </define>
-    
     <define name="element.placeName">
         <element name="placeName">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -167,8 +308,87 @@
             <text/>
         </element>
     </define>
+
+    <define name="element.reference">
+        <element name="reference">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="attribute-group.links.optional"/>
+            <zeroOrMore>
+                <choice>
+                    <ref name="element.span"/>
+                    <text/>
+                </choice>
+            </zeroOrMore>
+        </element>
+    </define>
+
+    <define name="element.span">
+        <element name="span">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="attribute.style.optional"/>
+            <text/>
+        </element>
+    </define>
     
-    <!-- control: declaration elements -->
+    <define name="element.term">
+        <element name="term">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute.lastDateTimeVerified.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.toDate">
+        <element name="toDate">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="attribute-group.standard-date-attributes.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+   
+
+    <!-- MODELS -->
+    <define name="model.all-dates.choice">
+        <choice>
+            <ref name="element.date"/>
+            <ref name="element.dateRange"/>
+            <ref name="element.dateSet"/>
+        </choice>
+    </define>
+    
+    <define name="model.any-element">
+        <element>
+            <anyName>
+                <except>
+                    <nsName ns="https://archivists.org/ns/eac/v2"/>
+                </except>
+            </anyName>
+            <zeroOrMore>
+                <attribute>
+                    <anyName/>
+                </attribute>
+            </zeroOrMore>
+            <zeroOrMore>
+                <choice>
+                    <text/>
+                    <ref name="model.any-element"/>
+                </choice>
+            </zeroOrMore>
+        </element>
+    </define>
+    
+    <define name="model.date-dateRange.choice">
+        <choice>
+            <ref name="element.date"/>
+            <ref name="element.dateRange"/>
+        </choice>
+    </define>
+    
     <define name="model.declaration-group">
         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
         <ref name="attribute-group.linked-data.optional"/>
@@ -179,48 +399,16 @@
         <ref name="element.descriptiveNote.optional"/>
     </define>
     
-    <!-- description: singular elements -->
-    <define name="model.single-element-group">
-        <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-        <ref name="attribute-group.linked-data.optional"/>
-        <ref name="attribute-group.assertion-reference.optional"/>
-        <oneOrMore>
-            <ref name="element.term"/>
-        </oneOrMore>
+    <define name="model.mixed-content.optional">
         <zeroOrMore>
-            <ref name="element.placeName"/>
+            <choice>
+                <ref name="element.reference"/>
+                <ref name="element.span"/>
+                <text/>
+            </choice>
         </zeroOrMore>
-        <optional>
-            <ref name="model.all-dates.choice"/>
-        </optional>
-        <optional>
-            <ref name="element.reference"/>
-        </optional>
-        <ref name="element.descriptiveNote.optional"/>  
-    </define>
-
-    <!-- BIOGHIST -->
-    <!-- to finish -->
-    <define name="element.biogHist">
-        <element name="biogHist">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <optional>
-                <ref name="element.abstract"/>
-            </optional>
-            <ref name="model.narrative-group.optional"/>
-        </element>
     </define>
     
-    <define name="element.abstract">
-        <element name="abstract">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="model.mixed-content.optional"/>
-        </element>
-    </define>
-    
-    <!-- FORMATING -->
     <define name="model.narrative-group.optional" combine="interleave">
         <!-- finish -->
         <zeroOrMore>
@@ -250,199 +438,24 @@
             <ref name="element.reference"/>
         </zeroOrMore>
     </define>
-    
-    <define name="element.outline">
-        <element name="outline">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <oneOrMore>
-                <ref name="element.level"/>
-            </oneOrMore>
-        </element>
-    </define>
-    
-    <define name="element.level">
-        <element name="level">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <!-- any reason??? that's the current spec -->
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <!-- this is new, but what's the point of having a level with no text???? -->
-            <oneOrMore>
-                <ref name="element.item"/>
-            </oneOrMore>
-            <zeroOrMore>
-                <ref name="element.level"/>
-            </zeroOrMore>
-        </element>
-    </define>
-    
-    <define name="element.chronList">
-        <element name="chronList">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <oneOrMore>
-                <!-- still need to abstract this, and other elements, for extensibility purposes -->
-                <element name="chronItem">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-                    <ref name="attribute-group.assertion-reference.optional"/>
-                    <ref name="model.all-dates.choice"/>
-                    <choice>
-                        <group>
-                            <optional>
-                                <ref name="element.placeName"/>
-                            </optional>
-                            <ref name="element.event"/>
-                        </group>
-                        <oneOrMore>
-                            <element name="chronItemSet">
-                                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                                <ref name="attribute-group.assertion-reference.optional"/>
-                                <zeroOrMore>
-                                    <ref name="element.placeName"/>
-                                </zeroOrMore>
-                                <oneOrMore>
-                                    <ref name="element.event"/>
-                                </oneOrMore>
-                            </element>
-                        </oneOrMore>
-                    </choice>
-                </element>
-            </oneOrMore>
-        </element>
-    </define>
-    
-    <define name="element.event">
-        <element name="event">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.linked-data.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <text/>
-            <!-- note that EAD3 allows a lot of mixed content here, so when we update,
-                we'll need to accomodate something like:
-                <ref name="model.paragraph.content"/>
-                and add our @a:exclude-from attributes
-               -->
-        </element>
-    </define>
-    
-    <define name="element.list">
-        <element name="list">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="attribute-group.lists.optional"/>
-            <oneOrMore>
-                <ref name="element.item"/>
-            </oneOrMore>
-        </element>
-    </define>
-    
-    <define name="element.item">
-        <element name="item">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="model.mixed-content.optional"/>
-        </element>
-    </define>
-
-    <define name="element.part">
-        <element name="part">
-            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <text/>
-        </element>
-    </define>
-    
-    <define name="element.term">
-        <element name="term">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute.lastDateTimeVerified.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <text/>
-        </element>
-    </define>
-    
-    <define name="element.descriptiveNote.optional">
-        <optional>
-            <element name="descriptiveNote">
-                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <ref name="attribute-group.assertion-reference.optional"/>
-                <ref name="element.p"/>
-            </element>
-        </optional>
-    </define>
-
-    <define name="element.p">
+      
+    <define name="model.single-element-group">
+        <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+        <ref name="attribute-group.linked-data.optional"/>
+        <ref name="attribute-group.assertion-reference.optional"/>
         <oneOrMore>
-            <element name="p">
-                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <!-- current spec would add assertion reference attributes to paragraph.  do we want that? -->
-                <ref name="attribute-group.assertion-reference.optional"/>
-                <ref name="model.mixed-content.optional"/>
-            </element>
+            <ref name="element.term"/>
         </oneOrMore>
-    </define>
-
-    <define name="model.mixed-content.optional">
         <zeroOrMore>
-            <choice>
-                <ref name="element.reference"/>
-                <ref name="element.span"/>
-                <text/>
-            </choice>
+            <ref name="element.placeName"/>
         </zeroOrMore>
-    </define>
-
-    <define name="element.reference">
-        <element name="reference">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="attribute-group.links.optional"/>
-            <zeroOrMore>
-                <choice>
-                    <ref name="element.span"/>
-                    <text/>
-                </choice>
-            </zeroOrMore>
-        </element>
-    </define>
-
-    <define name="element.span">
-        <element name="span">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="attribute.style.optional"/>
-            <text/>
-        </element>
-    </define>
-    
-    <define name="element.objectXMLWrap.optional">
         <optional>
-            <element name="objectXMLWrap">
-                <ref name="attribute-group.global.optional"/>
-                <ref name="model.any-element"/>
-            </element>
+            <ref name="model.all-dates.choice"/>
         </optional>
+        <optional>
+            <ref name="element.reference"/>
+        </optional>
+        <ref name="element.descriptiveNote.optional"/>  
     </define>
     
-    <define name="model.any-element">
-        <element>
-            <anyName>
-                <except>
-                    <nsName ns="https://archivists.org/ns/eac/v2"/>
-                </except>
-            </anyName>
-            <zeroOrMore>
-                <attribute>
-                    <anyName/>
-                </attribute>
-            </zeroOrMore>
-            <zeroOrMore>
-                <choice>
-                    <text/>
-                    <ref name="model.any-element"/>
-                </choice>
-            </zeroOrMore>
-        </element>
-    </define>
-
 </grammar>
