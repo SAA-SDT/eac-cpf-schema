@@ -8,11 +8,29 @@
     <!-- to do:
         combine the list values, since there are repeats.  (e.g. cancelled appears in more than one list)
      -->
+    
+    <define name="element.agencyCode">
+        <element name="agencyCode">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute.status.authorized-or-alternative.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.agencyName">
+        <element name="agencyName">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
+        </element>
+    </define>
+
     <define name="element.control">
         <element name="control">
-            <!-- is @audience really needed here??? -->
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
             <ref name="attribute-group.control-encodings.optional"/>
+            <!-- note: if we want to allow attributes to be extensible, as well, then these should be defined separately -->
             <attribute name="maintenanceStatus">
                 <choice>
                     <value>revised</value>
@@ -24,7 +42,7 @@
                     <value>cancelled</value>
                     <value>derived</value>
                 </choice> 
-            </attribute>
+            </attribute>          
             <optional>
                 <attribute name="publicationStatus">
                     <choice>
@@ -34,135 +52,98 @@
                     </choice>
                 </attribute>
             </optional>
-            <!-- just a note that i'd prefer a new element, like identifier, that could
-                replace recordId, otherRecordId, unitid, etc.-->
-            <element name="recordId">
-                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <optional>
-                    <attribute name="instanceURL">
-                        <data type="anyURI"/>
-                    </attribute>
-                </optional>
-                <text/>
-            </element>         
+            <ref name="element.recordId"/>
             <zeroOrMore>
-                <element name="otherRecordId">
-                    <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                    <ref name="attribute-group.localType.optional"/>
-                    <ref name="attribute-group.linked-data.optional"/>
-                    <text/>
-                </element>
+                <ref name="element.otherRecordId"/>
             </zeroOrMore>     
             <zeroOrMore>
-                <element name="representation">
-                    <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                    <ref name="attribute-group.links.optional"/>
-                    <text/>
-                </element>
+                <ref name="element.representation"/>
             </zeroOrMore>
- 
             <optional a:exclude-from="eac">
                 <ref name="element.fileDesc"/>
-            </optional>
- 
-            <element name="maintenanceAgency">
-                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <ref name="attribute.countryCode.optional"/>
-                <ref name="attribute-group.linked-data.optional"/>
-                <!-- update to enforce the order, which is more compatible with the XSD-creation process for the time being.
-                    also separating out the definitions for potential extensions. should likely do the same for others, like languageDeclaration -->
-                <optional>
-                    <ref name="element.agencyCode"/>
-                </optional>
-                <zeroOrMore>
-                    <ref name="element.otherAgencyCode"/>
-                </zeroOrMore>
-                <oneOrMore>
-                    <ref name="element.agencyName"/>
-                </oneOrMore>
-                <ref name="element.descriptiveNote.optional"/>
-            </element>          
+            </optional> 
+            <ref name="element.maintenanceAgency"/>
             <zeroOrMore>
-                <element name="languageDeclaration">
-                    <ref name="attribute-group.global.optional"/>
-                    <ref name="attribute-group.language-and-script-code"/>
-                    <ref name="element.descriptiveNote.optional"/>
-                </element>
+                <ref name="element.languageDeclaration"/>
             </zeroOrMore>
             <zeroOrMore>
-                <element name="conventionDeclaration">
-                    <ref name="model.declaration-group"/>
-                </element>
+                <ref name="element.conventionDeclaration"/>
             </zeroOrMore>
             <!-- note: will be required in DACS. -->
             <zeroOrMore>
-                <element name="rightsDeclaration">
-                    <ref name="model.declaration-group"/>
-                </element>
+                <ref name="element.rightsDeclaration"/>
             </zeroOrMore>
             <zeroOrMore>
-                <element name="localTypeDeclaration">
-                    <ref name="model.declaration-group"/>
-                </element>
+                <ref name="element.localTypeDeclaration"/>
             </zeroOrMore>         
             <zeroOrMore>
-                <element name="localControl">
-                    <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-                    <ref name="attribute-group.linked-data.optional"/>
-                    <oneOrMore>
-                        <ref name="element.term"/>
-                    </oneOrMore>
-                    <optional>
-                        <ref name="model.date-dateRange.choice"/> 
-                    </optional>
-                </element>
+                <ref name="element.localControl"/>
             </zeroOrMore>
-            <element name="maintenanceHistory">
-                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <ref name="element.maintenanceEvent"/>
-            </element>
+            <ref name="element.maintenanceHistory"/>
             <optional>
-                <element name="sources">
-                    <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
-                    <oneOrMore>
-                        <ref name="element.source"/>     
-                    </oneOrMore>
-                    <ref name="element.descriptiveNote.optional"/>
-                </element>
+                <ref name="element.sources"/>
             </optional>
         </element>
     </define>
     
-    <define name="element.agencyName">
-        <element name="agencyName">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.linked-data.optional"/>
-            <text/>
+    <define name="element.conventionDeclaration">
+        <element name="conventionDeclaration">
+            <ref name="model.declaration-group"/>
         </element>
     </define>
     
-    <define name="element.agencyCode">
-        <element name="agencyCode">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute.status.authorized-or-alternative.optional"/>
-            <ref name="attribute-group.linked-data.optional"/>
-            <text/>
-        </element>
-    </define>
-    
-    <define name="element.otherAgencyCode">
-        <element name="otherAgencyCode">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.linked-data.optional"/>
-            <text/>
-        </element>
-    </define>
-
     <define name="element.eventDescription">
         <element name="eventDescription">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <text/>
         </element>
+    </define>
+    
+    <define name="element.languageDeclaration">
+        <element name="languageDeclaration">
+            <ref name="attribute-group.global.optional"/>
+            <ref name="attribute-group.language-and-script-code"/>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.localControl">
+        <element name="localControl">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <oneOrMore>
+                <ref name="element.term"/>
+            </oneOrMore>
+            <optional>
+                <ref name="model.date-dateRange.choice"/> 
+            </optional>
+        </element>
+    </define>
+    
+    <define name="element.localTypeDeclaration">
+        <element name="localTypeDeclaration">
+            <ref name="model.declaration-group"/>
+        </element>
+    </define>
+    
+    <define name="element.maintenanceAgency">
+        <element name="maintenanceAgency">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute.countryCode.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <!-- update to enforce the order, which is more compatible with the XSD-creation process for the time being.
+                    also separating out the definitions for potential extensions. should likely do the same for others, like languageDeclaration -->
+            <optional>
+                <ref name="element.agencyCode"/>
+            </optional>
+            <zeroOrMore>
+                <ref name="element.otherAgencyCode"/>
+            </zeroOrMore>
+            <oneOrMore>
+                <ref name="element.agencyName"/>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>  
     </define>
     
     <define name="element.maintenanceEvent">
@@ -207,6 +188,57 @@
         </oneOrMore>
     </define>
     
+    <define name="element.maintenanceHistory">
+        <element name="maintenanceHistory">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="element.maintenanceEvent"/>
+        </element>
+    </define>
+    
+    <define name="element.otherAgencyCode">
+        <element name="otherAgencyCode">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.otherRecordId">
+        <element name="otherRecordId">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.recordId">
+        <element name="recordId">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="dt.non-empty-element-with-newlines-available"/>
+        </element>    
+    </define>
+    
+    <define name="element.representation">
+        <element name="representation">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.links.optional"/>
+            <text/>
+        </element>
+    </define>
+        
+    <define name="element.rightsDeclaration">
+        <element name="rightsDeclaration">
+            <ref name="model.declaration-group"/>
+        </element>
+    </define>
+    
+    <define name="element.shortCode">
+        <element name="shortCode">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <text/>
+        </element>
+    </define>
+    
     <define name="element.source">
         <element name="source">
             <!-- no more localType? -->
@@ -232,19 +264,14 @@
         </element>  
     </define>
     
-    <!-- reused for all of the *declaration elements, aside from the odd duck, languageDeclaration -->
-    <define name="model.declaration-group">
-        <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-        <ref name="attribute-group.linked-data.optional"/>
-        <optional>
-            <!-- referenceCode, and then re-use?... identifier, and the same? -->
-            <element name="shortCode">
-                <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                <text/>
-            </element>
-        </optional>
-        <ref name="element.reference"/>
-        <ref name="element.descriptiveNote.optional"/>
+    <define name="element.sources">
+        <element name="sources">
+            <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+            <oneOrMore>
+                <ref name="element.source"/>     
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
     </define>
-
+    
 </grammar>

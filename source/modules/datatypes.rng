@@ -25,4 +25,16 @@
         </choice>
     </define>
     
+    <define name="dt.non-empty-element-with-newlines-available">
+        <data type="string">
+            <param name="pattern">(.|\n|\r)*\S(.|\n|\r)*</param>
+        </data>
+    </define>
+    
+    <define name="dt.non-empty-value">
+        <data type="token">
+            <param name="pattern">.*[\S]+.*</param>
+        </data>
+    </define>
+    
 </grammar>

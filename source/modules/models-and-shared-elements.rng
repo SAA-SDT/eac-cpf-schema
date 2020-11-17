@@ -8,8 +8,9 @@
         keeping them in eac-description for now
         until we know which direction EAD will go. 
     -->
-
+    
     <!-- DATES -->
+
     <define name="model.all-dates.choice">
         <choice>
             <ref name="element.date"/>
@@ -146,7 +147,6 @@
         </element>
     </define>
     
-    <!-- previously placeEntry -->
     <define name="element.placeName">
         <element name="placeName">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -168,7 +168,18 @@
         </element>
     </define>
     
-    <!--Singular elements -->
+    <!-- control: declaration elements -->
+    <define name="model.declaration-group">
+        <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+        <ref name="attribute-group.linked-data.optional"/>
+        <optional>
+            <ref name="element.shortCode"/>
+        </optional>
+        <ref name="element.reference"/>
+        <ref name="element.descriptiveNote.optional"/>
+    </define>
+    
+    <!-- description: singular elements -->
     <define name="model.single-element-group">
         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
         <ref name="attribute-group.linked-data.optional"/>
@@ -412,6 +423,7 @@
             </element>
         </optional>
     </define>
+    
     <define name="model.any-element">
         <element>
             <anyName>
