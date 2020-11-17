@@ -210,20 +210,28 @@
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="recordId" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="instanceURL" type="xs:anyURI"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   <xs:complexType name="recordId">
+      <xs:simpleContent>
+         <xs:restriction base="xs:anyType">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:pattern value="(.|\n|\r)*\S(.|\n|\r)*"/>
+               </xs:restriction>
+            </xs:simpleType>
+            <xs:attribute name="id" type="xs:ID"/>
+            <xs:attribute name="audience">
+               <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                     <xs:enumeration value="external"/>
+                     <xs:enumeration value="internal"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+            <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+         </xs:restriction>
+      </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="otherRecordId" mixed="true">
       <xs:attribute name="id" type="xs:ID"/>
@@ -268,6 +276,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
