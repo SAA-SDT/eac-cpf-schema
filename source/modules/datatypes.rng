@@ -25,11 +25,4 @@
         </choice>
     </define>
     
-    <!-- no longer used, since we're switching to even more open for the time being. remove entirely from source later, unless decision is reversed. -->
-    <define name="dt.language">
-        <data type="token">
-            <param name="pattern">[a-z]{2}.*</param>
-        </data>
-    </define>
-    
 </grammar>

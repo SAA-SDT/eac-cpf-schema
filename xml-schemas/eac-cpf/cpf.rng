@@ -73,13 +73,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -132,13 +132,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -365,13 +365,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -420,13 +420,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -505,13 +505,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -574,20 +574,20 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
             <optional>
                <attribute name="countryCode" ns="">
-                  <data type="token"
+                  <data type="NMTOKEN"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -663,11 +663,11 @@
             </interleave>
             <interleave>
                <attribute name="languageCode" ns="">
-                  <data type="token"
+                  <data type="NMTOKEN"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
                <attribute name="scriptCode" ns="">
-                  <data type="token"
+                  <data type="NMTOKEN"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </interleave>
@@ -711,13 +711,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -802,13 +802,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -893,13 +893,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -984,13 +984,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1077,13 +1077,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1134,13 +1134,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1194,13 +1194,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1304,13 +1304,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1470,13 +1470,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1541,13 +1541,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1622,13 +1622,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1695,13 +1695,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1768,13 +1768,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1839,13 +1839,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1888,13 +1888,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -1982,13 +1982,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2065,13 +2065,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2198,13 +2198,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2284,13 +2284,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2348,13 +2348,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2464,13 +2464,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2682,13 +2682,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2806,13 +2806,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2893,13 +2893,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -2993,13 +2993,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3081,13 +3081,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3155,13 +3155,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3240,13 +3240,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3314,13 +3314,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3388,13 +3388,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3462,13 +3462,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3536,13 +3536,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3610,13 +3610,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3681,13 +3681,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3766,13 +3766,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3888,13 +3888,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -3999,13 +3999,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4074,13 +4074,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4149,13 +4149,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4282,13 +4282,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4415,13 +4415,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4478,13 +4478,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4558,13 +4558,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4607,13 +4607,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4680,13 +4680,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4770,13 +4770,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4881,13 +4881,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -4962,13 +4962,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5035,13 +5035,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5122,13 +5122,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5243,13 +5243,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5326,13 +5326,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5409,13 +5409,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5499,13 +5499,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5625,13 +5625,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5736,13 +5736,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5847,13 +5847,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -5958,13 +5958,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6069,13 +6069,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6193,13 +6193,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6286,13 +6286,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6379,13 +6379,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6472,13 +6472,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6600,13 +6600,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6669,7 +6669,7 @@
             </interleave>
             <optional>
                <attribute name="countryCode" ns="">
-                  <data type="token"
+                  <data type="NMTOKEN"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6711,13 +6711,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6798,13 +6798,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6884,13 +6884,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -6980,13 +6980,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7013,7 +7013,7 @@
             </interleave>
             <optional>
                <attribute name="languageCode" ns="">
-                  <data type="token"
+                  <data type="NMTOKEN"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7055,13 +7055,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7088,7 +7088,7 @@
             </interleave>
             <optional>
                <attribute name="scriptCode" ns="">
-                  <data type="token"
+                  <data type="NMTOKEN"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7130,13 +7130,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7237,13 +7237,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7313,13 +7313,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7396,13 +7396,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7479,13 +7479,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7584,13 +7584,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7658,13 +7658,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
@@ -7752,13 +7752,13 @@
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="scriptOfElement" ns="">
-                     <data type="token"
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
