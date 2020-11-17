@@ -209,7 +209,7 @@
          </element>
          <zeroOrMore>
             <element name="citedRange">
-               <ref name="attribute-group.global.optional"/>
+               <ref name="attribute-group.global-plus-lang-and-script.optional"/>
                <ref name="attribute.unit.optional"/>
                <text/>
             </element>
