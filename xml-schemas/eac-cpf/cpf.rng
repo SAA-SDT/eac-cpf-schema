@@ -544,6 +544,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
+               <optional>
+                  <attribute name="lastDateTimeVerified" ns="">
+                     <choice>
+                        <data type="gYear"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="gYearMonth"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="date"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="dateTime"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
+                  </attribute>
+               </optional>
             </interleave>
             <text/>
          </group>
@@ -1947,6 +1961,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
+               <optional>
+                  <attribute name="lastDateTimeVerified" ns="">
+                     <choice>
+                        <data type="gYear"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="gYearMonth"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="date"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="dateTime"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
+                  </attribute>
+               </optional>
             </interleave>
             <oneOrMore>
                <choice>
@@ -2387,6 +2415,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
+               <optional>
+                  <attribute name="lastDateTimeVerified" ns="">
+                     <choice>
+                        <data type="gYear"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="gYearMonth"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="date"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="dateTime"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
+                  </attribute>
+               </optional>
             </interleave>
             <interleave>
                <optional>
@@ -2412,20 +2454,6 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
-               <attribute name="lastDateTimeVerified" ns="">
-                  <choice>
-                     <data type="gYear"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="gYearMonth"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="date"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="dateTime"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </choice>
-               </attribute>
-            </optional>
             <ref name="sourceEntry"/>
             <zeroOrMore>
                <ref name="citedRange"/>
@@ -3805,6 +3833,20 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
+               <optional>
+                  <attribute name="lastDateTimeVerified" ns="">
+                     <choice>
+                        <data type="gYear"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="gYearMonth"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="date"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="dateTime"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
+                  </attribute>
+               </optional>
             </interleave>
             <interleave>
                <optional>
@@ -3826,20 +3868,6 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
-               <attribute name="lastDateTimeVerified" ns="">
-                  <choice>
-                     <data type="gYear"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="gYearMonth"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="date"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="dateTime"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </choice>
-               </attribute>
-            </optional>
             <ref name="targetEntity"/>
             <oneOrMore>
                <ref name="relationType"/>
@@ -3908,20 +3936,6 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
-               <attribute name="lastDateTimeVerified" ns="">
-                  <choice>
-                     <data type="gYear"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="gYearMonth"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="date"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="dateTime"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </choice>
-               </attribute>
-            </optional>
             <interleave>
                <optional>
                   <attribute name="href" ns="">
@@ -3939,6 +3953,20 @@
                   <attribute name="linkTitle" ns="">
                      <data type="token"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="lastDateTimeVerified" ns="">
+                     <choice>
+                        <data type="gYear"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="gYearMonth"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="date"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="dateTime"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
                   </attribute>
                </optional>
             </interleave>
@@ -7821,6 +7849,20 @@
                   <attribute name="linkTitle" ns="">
                      <data type="token"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="lastDateTimeVerified" ns="">
+                     <choice>
+                        <data type="gYear"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="gYearMonth"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="date"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                        <data type="dateTime"
+                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     </choice>
                   </attribute>
                </optional>
             </interleave>

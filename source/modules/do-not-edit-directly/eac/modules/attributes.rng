@@ -309,7 +309,6 @@
          </optional>
       </interleave>
    </define>
-   <!-- likely need to add base and lastDateTimeVerified to this group.... and then update references that also include lastDateTimeVerified, etc. -->
    <define name="attribute-group.links.optional">
       <interleave>
          <optional>
@@ -322,13 +321,6 @@
                <data type="anyURI"/>
             </attribute>
          </optional>
-         <!-- this has been removed from EAC?
-            <optional>
-                <attribute name="arcRole">
-                    <data type="anyURI"/>
-                </attribute>
-            </optional>
-            -->
          <optional>
             <attribute name="linkRole">
                <data type="anyURI"/>
@@ -339,6 +331,7 @@
                <data type="token"/>
             </attribute>
          </optional>
+         <ref name="attribute.lastDateTimeVerified.optional"/>
       </interleave>
    </define>
    <define name="attribute-group.lists.optional">

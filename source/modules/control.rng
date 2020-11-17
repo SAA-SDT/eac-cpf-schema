@@ -245,7 +245,6 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.links.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <ref name="attribute.lastDateTimeVerified.optional"/>
             <!-- might wind up as reference, but not sure if that's been settled yet -->
             <element name="sourceEntry">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>

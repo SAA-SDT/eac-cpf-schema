@@ -16,7 +16,6 @@
    <define name="element.setComponent">
       <element name="setComponent">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <ref name="attribute.lastDateTimeVerified.optional"/>
          <ref name="attribute-group.links.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <zeroOrMore>
