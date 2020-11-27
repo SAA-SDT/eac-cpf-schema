@@ -313,11 +313,6 @@
       <interleave>
          <optional>
             <attribute name="href">
-                    <!-- allowing base here?  just curious what base can and cannot be tied to? -->
-                    <!-- in EAC 1.0, that's localType, vocabularySource, and xlink:href.  but really xlink:href
-                    is the only that makes sense, since those are in the same namespace -->
-                    <!-- not available in EAD2002 and earlier. 
-                    in EAD, base can be added to ead and all c levels.-->
                <data type="anyURI"/>
             </attribute>
          </optional>
@@ -415,5 +410,19 @@
    <define name="attribute-group.standard-date-attributes.optional"
            combine="interleave">
       <ref name="attribute.status.ongoing-or-unknown.optional"/>
+   </define>
+   <define name="attribute-group.target-and-xpointer.optional">
+      <interleave>
+         <optional>
+            <attribute name="target">
+               <data type="IDREF"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="xpointer">
+               <data type="token"/>
+            </attribute>
+         </optional>
+      </interleave>
    </define>
 </grammar>

@@ -794,6 +794,8 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="xpointer" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="term" mixed="true">
