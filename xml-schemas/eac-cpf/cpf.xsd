@@ -1697,6 +1697,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -1940,6 +1942,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -1999,6 +2003,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -2045,6 +2051,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -2091,6 +2099,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
@@ -2137,6 +2147,8 @@
       </xs:attribute>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
