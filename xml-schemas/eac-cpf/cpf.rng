@@ -7694,12 +7694,14 @@
             <optional>
                <attribute name="addressLineType" ns="">
                   <choice>
-                     <value type="token" datatypeLibrary="" ns="">country</value>
-                     <value type="token" datatypeLibrary="" ns="">region</value>
+                     <value type="token" datatypeLibrary="" ns="">city</value>
                      <value type="token" datatypeLibrary="" ns="">county</value>
-                     <value type="token" datatypeLibrary="" ns="">municipality</value>
-                     <value type="token" datatypeLibrary="" ns="">postalcode</value>
+                     <value type="token" datatypeLibrary="" ns="">country</value>
                      <value type="token" datatypeLibrary="" ns="">district</value>
+                     <value type="token" datatypeLibrary="" ns="">municipality</value>
+                     <value type="token" datatypeLibrary="" ns="">postBox</value>
+                     <value type="token" datatypeLibrary="" ns="">postalCode</value>
+                     <value type="token" datatypeLibrary="" ns="">region</value>
                      <value type="token" datatypeLibrary="" ns="">street</value>
                   </choice>
                </attribute>
@@ -7822,10 +7824,11 @@
             <optional>
                <attribute name="contactLineType" ns="">
                   <choice>
-                     <value type="token" datatypeLibrary="" ns="">telephone</value>
-                     <value type="token" datatypeLibrary="" ns="">fax</value>
                      <value type="token" datatypeLibrary="" ns="">email</value>
-                     <value type="token" datatypeLibrary="" ns="">webpage</value>
+                     <value type="token" datatypeLibrary="" ns="">fax</value>
+                     <value type="token" datatypeLibrary="" ns="">homepage</value>
+                     <value type="token" datatypeLibrary="" ns="">mobileNumber</value>
+                     <value type="token" datatypeLibrary="" ns="">phoneNumber</value>
                   </choice>
                </attribute>
             </optional>

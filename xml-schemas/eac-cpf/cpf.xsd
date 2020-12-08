@@ -2679,12 +2679,14 @@
       <xs:attribute name="addressLineType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
-               <xs:enumeration value="country"/>
-               <xs:enumeration value="region"/>
+               <xs:enumeration value="city"/>
                <xs:enumeration value="county"/>
-               <xs:enumeration value="municipality"/>
-               <xs:enumeration value="postalcode"/>
+               <xs:enumeration value="country"/>
                <xs:enumeration value="district"/>
+               <xs:enumeration value="municipality"/>
+               <xs:enumeration value="postBox"/>
+               <xs:enumeration value="postalCode"/>
+               <xs:enumeration value="region"/>
                <xs:enumeration value="street"/>
             </xs:restriction>
          </xs:simpleType>
@@ -2719,10 +2721,11 @@
       <xs:attribute name="contactLineType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
-               <xs:enumeration value="telephone"/>
-               <xs:enumeration value="fax"/>
                <xs:enumeration value="email"/>
-               <xs:enumeration value="webpage"/>
+               <xs:enumeration value="fax"/>
+               <xs:enumeration value="homepage"/>
+               <xs:enumeration value="mobileNumber"/>
+               <xs:enumeration value="phoneNumber"/>
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>

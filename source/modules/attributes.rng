@@ -14,12 +14,14 @@
         <optional>
             <attribute name="addressLineType">
                 <choice>
-                    <value>country</value>
-                    <value>region</value>
+                    <value>city</value>
                     <value>county</value>
-                    <value>municipality</value>
-                    <value>postalcode</value>
+                    <value>country</value>
                     <value>district</value>
+                    <value>municipality</value>
+                    <value>postBox</value>
+                    <value>postalCode</value>
+                    <value>region</value>
                     <value>street</value>
                 </choice>
             </attribute>
@@ -41,10 +43,11 @@
         <optional>
             <attribute name="contactLineType">
                 <choice>
-                    <value>telephone</value>
-                    <value>fax</value>
                     <value>email</value>
-                    <value>webpage</value>
+                    <value>fax</value>
+                    <value>homepage</value>
+                    <value>mobileNumber</value>
+                    <value>phoneNumber</value>
                 </choice>
             </attribute>
         </optional>
