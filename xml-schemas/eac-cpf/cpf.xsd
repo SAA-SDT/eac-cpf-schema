@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 November 9                     *          
+  *                           2020 December 13                    *          
   *                                                               *
   *****************************************************************
   
@@ -620,6 +620,7 @@
    <xs:complexType name="relations">
       <xs:sequence>
          <xs:element type="v2:relation" name="relation" maxOccurs="unbounded"/>
+         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -631,6 +632,9 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="base" type="xs:anyURI"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1453,6 +1457,7 @@
                      minOccurs="0"
                      maxOccurs="unbounded"/>
          <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
+         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -1466,14 +1471,6 @@
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="href" type="xs:anyURI"/>
-      <xs:attribute name="linkRole" type="xs:anyURI"/>
-      <xs:attribute name="linkTitle" type="xs:token"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2308,7 +2305,21 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="targetEntity" mixed="true">
+   <xs:complexType name="targetEntity">
+      <xs:sequence>
+         <xs:element type="v2:part" name="part" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="targetType" use="required">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="corporateBody"/>
+               <xs:enumeration value="person"/>
+               <xs:enumeration value="family"/>
+               <xs:enumeration value="function"/>
+               <xs:enumeration value="resource"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>

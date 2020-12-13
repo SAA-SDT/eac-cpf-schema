@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 November 9                     *          
+  *                           2020 December 13                    *          
   *                                                               *
   *****************************************************************
 
@@ -1535,6 +1535,26 @@
                   </attribute>
                </zeroOrMore>
             </interleave>
+            <optional>
+               <attribute name="base" ns="">
+                  <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
             <interleave>
                <optional>
                   <attribute name="maintenanceEventReference" ns="">
@@ -1558,6 +1578,9 @@
             <oneOrMore>
                <ref name="relation"/>
             </oneOrMore>
+            <optional>
+               <ref name="descriptiveNote"/>
+            </optional>
          </group>
       </element>
    </define>
@@ -4209,40 +4232,6 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="href" ns="">
-                     <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="linkRole" ns="">
-                     <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="linkTitle" ns="">
-                     <data type="token"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="lastDateTimeVerified" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="dateTime"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
-                  </attribute>
-               </optional>
-            </interleave>
-            <interleave>
-               <optional>
                   <attribute name="maintenanceEventReference" ns="">
                      <data type="IDREF"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4280,6 +4269,9 @@
             </zeroOrMore>
             <optional>
                <ref name="objectXMLWrap"/>
+            </optional>
+            <optional>
+               <ref name="descriptiveNote"/>
             </optional>
          </group>
       </element>
@@ -6712,6 +6704,15 @@
    <define name="targetEntity">
       <element name="targetEntity" ns="https://archivists.org/ns/eac/v2">
          <group>
+            <attribute name="targetType" ns="">
+               <choice>
+                  <value type="token" datatypeLibrary="" ns="">corporateBody</value>
+                  <value type="token" datatypeLibrary="" ns="">person</value>
+                  <value type="token" datatypeLibrary="" ns="">family</value>
+                  <value type="token" datatypeLibrary="" ns="">function</value>
+                  <value type="token" datatypeLibrary="" ns="">resource</value>
+               </choice>
+            </attribute>
             <interleave>
                <optional>
                   <attribute name="id" ns="">
@@ -6804,7 +6805,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <text/>
+            <oneOrMore>
+               <ref name="part"/>
+            </oneOrMore>
          </group>
       </element>
    </define>

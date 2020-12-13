@@ -120,6 +120,17 @@
          </attribute>
       </optional>
    </define>
+   <define name="attribute.targetType">
+      <attribute name="targetType">
+         <choice>
+            <value>corporateBody</value>
+            <value>person</value>
+            <value>family</value>
+            <value>function</value>
+            <value>resource</value>
+         </choice>
+      </attribute>
+   </define>
    <define name="attribute.unit.optional">
       <optional>
          <attribute name="unit">
