@@ -11,6 +11,9 @@
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <!-- does order matter, or can we just add at will for once??? -->
+         <!-- NOTE:  need to update how this is defined for the XSD conversion.  the issue comes in
+                if we want to mix "0 or more" and "0 or 1" values.
+            right now, the result in the XSD is that each of these "0 or 1" options become "0 or more"-->
          <interleave>
             <zeroOrMore>
                     <!-- defined in other-shared-elements, since we'll port this to EAD -->
@@ -60,7 +63,7 @@
    </define>
    <define name="element.functions">
       <element name="functions">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <element name="function">
@@ -72,14 +75,14 @@
    </define>
    <define name="element.generalContext">
       <element name="generalContext">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="model.narrative-group.optional"/>
       </element>
    </define>
    <define name="element.languagesUsed">
       <element name="languagesUsed">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <element name="languageUsed">
@@ -111,7 +114,7 @@
    </define>
    <define name="element.legalStatuses">
       <element name="legalStatuses">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <element name="legalStatus">
@@ -121,10 +124,9 @@
          <ref name="element.descriptiveNote.optional"/>
       </element>
    </define>
-   <!-- can we axe this??? probably not, but would be nice. -->
    <define name="element.localDescriptions">
       <element name="localDescriptions">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <element name="localDescription">
@@ -136,7 +138,7 @@
    </define>
    <define name="element.mandates">
       <element name="mandates">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <element name="mandate">
@@ -148,7 +150,7 @@
    </define>
    <define name="element.occupations">
       <element name="occupations">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
             <element name="occupation">
@@ -160,17 +162,18 @@
    </define>
    <define name="element.places">
       <element name="places">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
                 <!-- defined in other-shared-elements -->
             <ref name="element.place"/>
          </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
       </element>
    </define>
    <define name="element.structureOrGenealogy">
       <element name="structureOrGenealogy">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="model.narrative-group.optional"/>
       </element>
