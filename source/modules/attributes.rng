@@ -4,6 +4,8 @@
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
 
+     <!-- clean this up once everything is settled -->
+    
     <!-- Here be attribute definitions (if used more than once) and attribute groups.
         Listed alphabetically, with first the standalone attributes (e.g. attribute.base)
         then the attribute groups (e.g. attribue-group.global).
@@ -85,16 +87,6 @@
         </attribute>
     </define>
     
-    <!-- should be able to use these two attributes as a pair in all/most cases -->
-    <define name="attribute-group.localType.optional">
-        <optional>
-            <ref name="attribute.localType"/>
-        </optional>
-        <optional>
-            <ref name="attribute.localTypeDeclarationReference"/>
-        </optional>  
-    </define>
-    
     <define name="attribute.standardDateTime.optional">
         <optional>
             <attribute name="standardDateTime">
@@ -133,6 +125,14 @@
         </optional>
     </define>
     
+    <define name="attribute.target.optional">
+        <optional>
+            <attribute name="target">
+                <data type="IDREF"/>
+            </attribute>
+        </optional>
+    </define>
+    
     <define name="attribute.unit.optional">
         <optional>
             <attribute name="unit">
@@ -141,6 +141,15 @@
         </optional>
     </define>
 
+    <!-- this might get excluded from EAC, though, as the current decision is not to add it -->
+    <define name="attribute.xpointer.optional">
+        <optional>
+            <attribute name="xpointer">
+                <data type="token"/>
+            </attribute>
+        </optional>
+    </define>
+    
     <!-- and the attribute groups -->
     
     <define name="attribute-group.control-encodings.optional">
@@ -225,6 +234,10 @@
             </attribute>  
         </optional>
     </define>
+    <!-- for now, target is globabl.  but probably should define a linking group -->
+    <define name="attribute-group.global.optional" combine="interleave">
+        <ref name="attribute.target.optional"/>
+    </define>
     <define name="attribute-group.global.optional" combine="interleave">
         <zeroOrMore>
             <attribute>
@@ -282,6 +295,16 @@
         <ref name="attribute.conventionDeclarationReference.optional"/>
     </define>
     
+    <!-- should be able to use these two attributes as a pair in all/most cases -->
+    <define name="attribute-group.localType.optional">
+        <optional>
+            <ref name="attribute.localType"/>
+        </optional>
+        <optional>
+            <ref name="attribute.localTypeDeclarationReference"/>
+        </optional>  
+    </define>
+      
     <define name="attribute.conventionDeclarationReference.optional">
         <optional>
             <attribute name="conventionDeclarationReference">
@@ -476,16 +499,8 @@
     
     <define name="attribute-group.target-and-xpointer.optional">
         <interleave>
-            <optional>
-                <attribute name="target">
-                    <data type="IDREF"/>
-                </attribute>
-            </optional>
-            <optional>
-                <attribute name="xpointer">
-                    <data type="token"/>
-                </attribute>
-            </optional>
+            <ref name="attribute.target.optional"/>
+            <ref name="attribute.xpointer.optional"/>
         </interleave>
     </define>
     
