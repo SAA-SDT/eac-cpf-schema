@@ -77,6 +77,7 @@
       <element name="generalContext">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.head.optional"/>
          <ref name="model.narrative-group.optional"/>
       </element>
    </define>
@@ -175,6 +176,7 @@
       <element name="structureOrGenealogy">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.head.optional"/>
          <ref name="model.narrative-group.optional"/>
       </element>
    </define>

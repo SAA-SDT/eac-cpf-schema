@@ -38,6 +38,7 @@
       <element name="biogHist">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.head.optional"/>
          <optional>
             <ref name="element.abstract"/>
          </optional>
@@ -177,6 +178,15 @@
          <data type="normalizedString"/>
       </element>
    </define>
+   <define name="element.head.optional">
+      <optional>
+            <!-- what would be the use case for embedding links in headers? (links to headers, sure). let's restrict that, for now, and adjust depending on GitHub issue created -->
+         <element name="head">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="model.mixed-content-no-references.optional"/>
+         </element>
+      </optional>
+   </define>
    <define name="element.item">
       <element name="item">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -184,25 +194,15 @@
          <ref name="model.mixed-content.optional"/>
       </element>
    </define>
-   <define name="element.level">
-      <element name="level">
-         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-         <!-- any reason??? that's the current spec -->
-         <ref name="attribute-group.assertion-reference.optional"/>
-         <!-- this is new, but what's the point of having a level with no text???? -->
-         <oneOrMore>
-            <ref name="element.item"/>
-         </oneOrMore>
-         <zeroOrMore>
-            <ref name="element.level"/>
-         </zeroOrMore>
-      </element>
-   </define>
    <define name="element.list">
       <element name="list">
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="attribute-group.lists.optional"/>
+         <ref name="element.head.optional"/>
+         <optional>
+            <ref name="element.list"/>
+         </optional>
          <oneOrMore>
             <ref name="element.item"/>
          </oneOrMore>
@@ -215,16 +215,6 @@
             <ref name="model.any-element"/>
          </element>
       </optional>
-   </define>
-   <define name="element.outline">
-        <!-- will likely be replaced with hierarchy list options -->
-      <element name="outline">
-         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
-         <ref name="attribute-group.assertion-reference.optional"/>
-         <oneOrMore>
-            <ref name="element.level"/>
-         </oneOrMore>
-      </element>
    </define>
    <define name="element.p">
       <element name="p">
@@ -372,16 +362,17 @@
          </choice>
       </zeroOrMore>
    </define>
-   <define name="model.narrative-group.optional" combine="interleave">
-        <!-- finish -->
+   <define name="model.mixed-content-no-references.optional">
       <zeroOrMore>
-         <ref name="element.list"/>
+         <choice>
+            <ref name="element.span"/>
+            <text/>
+         </choice>
       </zeroOrMore>
    </define>
    <define name="model.narrative-group.optional" combine="interleave">
-        <!-- finish -->
       <zeroOrMore>
-         <ref name="element.outline"/>
+         <ref name="element.list"/>
       </zeroOrMore>
    </define>
    <define name="model.narrative-group.optional" combine="interleave">
@@ -396,7 +387,7 @@
       </zeroOrMore>
    </define>
    <define name="model.narrative-group.optional" combine="interleave">
-        <!-- finish -->
+        <!-- note:  was this removed? -->
       <zeroOrMore>
          <ref name="element.reference"/>
       </zeroOrMore>

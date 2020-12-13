@@ -1151,10 +1151,10 @@
    </xs:complexType>
    <xs:complexType name="biogHist">
       <xs:sequence>
+         <xs:element type="v2:head" name="head" minOccurs="0"/>
          <xs:element type="v2:abstract" name="abstract" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:outline" name="outline"/>
             <xs:element type="v2:chronList" name="chronList"/>
             <xs:element type="v2:p" name="p"/>
             <xs:element type="v2:reference" name="reference"/>
@@ -1232,13 +1232,15 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="generalContext">
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:list" name="list"/>
-         <xs:element type="v2:outline" name="outline"/>
-         <xs:element type="v2:chronList" name="chronList"/>
-         <xs:element type="v2:p" name="p"/>
-         <xs:element type="v2:reference" name="reference"/>
-      </xs:choice>
+      <xs:sequence>
+         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="v2:list" name="list"/>
+            <xs:element type="v2:chronList" name="chronList"/>
+            <xs:element type="v2:p" name="p"/>
+            <xs:element type="v2:reference" name="reference"/>
+         </xs:choice>
+      </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1405,13 +1407,15 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="structureOrGenealogy">
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:list" name="list"/>
-         <xs:element type="v2:outline" name="outline"/>
-         <xs:element type="v2:chronList" name="chronList"/>
-         <xs:element type="v2:p" name="p"/>
-         <xs:element type="v2:reference" name="reference"/>
-      </xs:choice>
+      <xs:sequence>
+         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="v2:list" name="list"/>
+            <xs:element type="v2:chronList" name="chronList"/>
+            <xs:element type="v2:p" name="p"/>
+            <xs:element type="v2:reference" name="reference"/>
+         </xs:choice>
+      </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1837,6 +1841,24 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
+   <xs:complexType name="head" mixed="true">
+      <xs:sequence>
+         <xs:element type="v2:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
    <xs:complexType name="abstract" mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
          <xs:element type="v2:reference" name="reference"/>
@@ -1863,6 +1885,8 @@
    </xs:complexType>
    <xs:complexType name="list">
       <xs:sequence>
+         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:element type="v2:list" name="list" minOccurs="0"/>
          <xs:element type="v2:item" name="item" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
@@ -1920,29 +1944,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
-   <xs:complexType name="outline">
-      <xs:sequence>
-         <xs:element type="v2:level" name="level" maxOccurs="unbounded"/>
-      </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
-      <xs:attribute name="sourceReference" type="xs:IDREF"/>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronList">
@@ -2488,33 +2489,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:span" name="span"/>
       </xs:choice>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
-      <xs:attribute name="sourceReference" type="xs:IDREF"/>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
-   <xs:complexType name="level">
-      <xs:sequence>
-         <xs:element type="v2:item" name="item" maxOccurs="unbounded"/>
-         <xs:element type="v2:level"
-                     name="level"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
-      </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>

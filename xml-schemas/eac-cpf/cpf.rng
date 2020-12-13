@@ -3190,14 +3190,14 @@
                </optional>
             </interleave>
             <optional>
+               <ref name="head"/>
+            </optional>
+            <optional>
                <ref name="abstract"/>
             </optional>
             <interleave>
                <zeroOrMore>
                   <ref name="list"/>
-               </zeroOrMore>
-               <zeroOrMore>
-                  <ref name="outline"/>
                </zeroOrMore>
                <zeroOrMore>
                   <ref name="chronList"/>
@@ -3481,12 +3481,12 @@
                   </attribute>
                </optional>
             </interleave>
+            <optional>
+               <ref name="head"/>
+            </optional>
             <interleave>
                <zeroOrMore>
                   <ref name="list"/>
-               </zeroOrMore>
-               <zeroOrMore>
-                  <ref name="outline"/>
                </zeroOrMore>
                <zeroOrMore>
                   <ref name="chronList"/>
@@ -4136,12 +4136,12 @@
                   </attribute>
                </optional>
             </interleave>
+            <optional>
+               <ref name="head"/>
+            </optional>
             <interleave>
                <zeroOrMore>
                   <ref name="list"/>
-               </zeroOrMore>
-               <zeroOrMore>
-                  <ref name="outline"/>
                </zeroOrMore>
                <zeroOrMore>
                   <ref name="chronList"/>
@@ -5448,6 +5448,66 @@
          </group>
       </element>
    </define>
+   <define name="head">
+      <element name="head" ns="https://archivists.org/ns/eac/v2">
+         <group>
+            <interleave>
+               <optional>
+                  <attribute name="id" ns="">
+                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="audience" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">external</value>
+                        <value type="token" datatypeLibrary="" ns="">internal</value>
+                     </choice>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="target" ns="">
+                     <data type="IDREF"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <zeroOrMore>
+                  <attribute>
+                     <anyName>
+                        <except>
+                           <choice>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
+                              <nsName ns=""/>
+                           </choice>
+                        </except>
+                     </anyName>
+                     <text/>
+                  </attribute>
+               </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <oneOrMore>
+               <choice>
+                  <ref name="span"/>
+                  <text/>
+               </choice>
+            </oneOrMore>
+         </group>
+      </element>
+   </define>
    <define name="abstract">
       <element name="abstract" ns="https://archivists.org/ns/eac/v2">
          <group>
@@ -5662,97 +5722,14 @@
                   </choice>
                </attribute>
             </optional>
+            <optional>
+               <ref name="head"/>
+            </optional>
+            <optional>
+               <ref name="list"/>
+            </optional>
             <oneOrMore>
                <ref name="item"/>
-            </oneOrMore>
-         </group>
-      </element>
-   </define>
-   <define name="outline">
-      <element name="outline" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="target" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <interleave>
-               <optional>
-                  <attribute name="languageOfElement" ns="">
-                     <data type="NMTOKEN"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="scriptOfElement" ns="">
-                     <data type="NMTOKEN"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <optional>
-               <attribute name="localType" ns="">
-                  <data type="anyURI"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
-            <optional>
-               <attribute name="localTypeDeclarationReference" ns="">
-                  <data type="IDREF"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
-            <interleave>
-               <optional>
-                  <attribute name="maintenanceEventReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="sourceReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <oneOrMore>
-               <ref name="level"/>
             </oneOrMore>
          </group>
       </element>
@@ -7370,98 +7347,6 @@
                   <text/>
                </choice>
             </oneOrMore>
-         </group>
-      </element>
-   </define>
-   <define name="level">
-      <element name="level" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="target" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <interleave>
-               <optional>
-                  <attribute name="languageOfElement" ns="">
-                     <data type="NMTOKEN"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="scriptOfElement" ns="">
-                     <data type="NMTOKEN"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <optional>
-               <attribute name="localType" ns="">
-                  <data type="anyURI"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
-            <optional>
-               <attribute name="localTypeDeclarationReference" ns="">
-                  <data type="IDREF"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
-            <interleave>
-               <optional>
-                  <attribute name="maintenanceEventReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="sourceReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="conventionDeclarationReference" ns="">
-                     <data type="IDREF"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <oneOrMore>
-               <ref name="item"/>
-            </oneOrMore>
-            <zeroOrMore>
-               <ref name="level"/>
-            </zeroOrMore>
          </group>
       </element>
    </define>
