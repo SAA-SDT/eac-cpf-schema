@@ -2784,7 +2784,6 @@
       <xs:attribute name="addressLineType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
-               <xs:enumeration value="city"/>
                <xs:enumeration value="county"/>
                <xs:enumeration value="country"/>
                <xs:enumeration value="district"/>
