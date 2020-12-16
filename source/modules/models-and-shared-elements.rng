@@ -199,6 +199,7 @@
             <!-- what would be the use case for embedding links in headers? (links to headers, sure). let's restrict that, for now, and adjust depending on GitHub issue created -->
             <element name="head">
                 <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+                <ref name="attribute-group.assertion-reference.optional"/>
                 <ref name="model.mixed-content-no-references.optional"/>
             </element>
         </optional>
