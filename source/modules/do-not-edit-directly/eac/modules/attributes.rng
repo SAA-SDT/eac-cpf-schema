@@ -321,7 +321,9 @@
       <ref name="attribute.languageCode"/>
    </define>
    <define name="attribute-group.language-and-script-code" combine="interleave">
-      <ref name="attribute.scriptCode"/>
+      <optional>
+         <ref name="attribute.scriptCode"/>
+      </optional>
    </define>
    <!-- should probably rename this group -->
    <define name="attribute-group.linked-data.optional">

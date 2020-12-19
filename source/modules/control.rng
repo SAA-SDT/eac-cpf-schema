@@ -133,7 +133,7 @@
     
     <define name="element.languageDeclaration">
         <element name="languageDeclaration">
-            <ref name="attribute-group.global.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.language-and-script-code"/>
             <ref name="element.descriptiveNote.optional"/>
         </element>

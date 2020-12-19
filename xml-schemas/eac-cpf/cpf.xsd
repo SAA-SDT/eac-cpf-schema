@@ -349,8 +349,10 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="languageCode" use="required" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptCode" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptCode" type="xs:NMTOKEN"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="conventionDeclaration">
