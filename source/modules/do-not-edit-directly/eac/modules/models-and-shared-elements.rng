@@ -289,7 +289,7 @@
    </define>
    <define name="element.span">
       <element name="span">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="attribute.style.optional"/>
          <text/>
