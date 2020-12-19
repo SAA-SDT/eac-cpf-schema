@@ -4,6 +4,20 @@
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
 
+    <define name="element.entityType">
+        <element name="entityType">
+            <ref name="attribute-group.global.optional"/>
+            <attribute name="value">
+                <choice>
+                    <value>corporateBody</value>
+                    <value>person</value>
+                    <value>family</value>
+                </choice>
+            </attribute>
+            <empty/>
+        </element>
+    </define>
+    
     <define name="element.identity">
         <element name="identity">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -20,19 +34,7 @@
                 <ref name="element.identityId"/>
             </zeroOrMore>
             <group>
-                <!-- what about something like changing this to "entity" and the value attribute to "@entityType"?
-                I don't like value as an attribute name.  Even @cpfType would be preferred :) -->
-                <element name="entityType">
-                    <ref name="attribute-group.global.optional"/>
-                    <attribute name="value">
-                        <choice>
-                            <value>corporateBody</value>
-                            <value>person</value>
-                            <value>family</value>
-                        </choice>
-                    </attribute>
-                    <empty/>
-                </element>
+                <ref name="element.entityType"/>
                 <optional>
                     <ref name="element.otherEntityTypes"/>
                 </optional>
@@ -55,24 +57,7 @@
             <text/>
         </element>
     </define>
-    
-    <define name="element.otherEntityTypes">
-        <element name="otherEntityTypes">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.assertion-reference.optional"/>
-            <oneOrMore>
-                <ref name="element.otherEntityType"/>
-            </oneOrMore>
-            <ref name="element.descriptiveNote.optional"/>
-        </element>
-    </define>
-    
-    <define name="element.otherEntityType">
-        <element name="otherEntityType">
-            <ref name="model.single-element-group"/>
-        </element>
-    </define>
-
+     
     <define name="element.nameEntry">
         <element name="nameEntry">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
@@ -104,6 +89,23 @@
             <optional>
                 <ref name="element.useDates"/>
             </optional>
+        </element>
+    </define>
+     
+    <define name="element.otherEntityType">
+        <element name="otherEntityType">
+            <ref name="model.single-element-group"/>
+        </element>
+    </define>
+    
+    <define name="element.otherEntityTypes">
+        <element name="otherEntityTypes">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.otherEntityType"/>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
         </element>
     </define>
     
