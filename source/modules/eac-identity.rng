@@ -6,8 +6,7 @@
 
     <define name="element.identity">
         <element name="identity">
-            <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
-            <ref name="attribute-group.localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <optional>
                 <attribute name="identityType">
@@ -25,7 +24,6 @@
                 I don't like value as an attribute name.  Even @cpfType would be preferred :) -->
                 <element name="entityType">
                     <ref name="attribute-group.global.optional"/>
-                    <ref name="attribute-group.localType.optional"/>
                     <attribute name="value">
                         <choice>
                             <value>corporateBody</value>
@@ -60,7 +58,7 @@
     
     <define name="element.otherEntityTypes">
         <element name="otherEntityTypes">
-            <ref name="attribute-group.global.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
                 <ref name="element.otherEntityType"/>
@@ -97,8 +95,7 @@
     
     <define name="element.nameEntrySet">
         <element name="nameEntrySet">
-            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <ref name="attribute-group.localType.optional"/>
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="element.nameEntry"/>
             <oneOrMore>

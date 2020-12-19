@@ -1320,12 +1320,6 @@
                   </attribute>
                </zeroOrMore>
             </interleave>
-            <optional>
-               <attribute name="base" ns="">
-                  <data type="anyURI"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
             <interleave>
                <optional>
                   <attribute name="languageOfElement" ns="">
@@ -2854,18 +2848,6 @@
                   </attribute>
                </zeroOrMore>
             </interleave>
-            <optional>
-               <attribute name="localType" ns="">
-                  <data type="anyURI"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
-            <optional>
-               <attribute name="localTypeDeclarationReference" ns="">
-                  <data type="IDREF"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
             <attribute name="value" ns="">
                <choice>
                   <value type="token" datatypeLibrary="" ns="">corporateBody</value>
@@ -2912,6 +2894,20 @@
                      <text/>
                   </attribute>
                </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
             </interleave>
             <interleave>
                <optional>

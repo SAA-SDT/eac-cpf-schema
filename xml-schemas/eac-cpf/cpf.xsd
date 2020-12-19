@@ -569,7 +569,6 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="localType" type="xs:anyURI"/>
@@ -1057,8 +1056,6 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="value" use="required">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1087,6 +1084,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
