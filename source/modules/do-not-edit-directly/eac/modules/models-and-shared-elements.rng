@@ -270,7 +270,9 @@
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
-         <ref name="attribute.lastDateTimeVerified.optional"/>
+         <!-- scrapping, but this attribute was available in EAC 1.  make sure the transformation considers that detail
+            <ref name="attribute.lastDateTimeVerified.optional"/>
+            -->
          <text/>
       </element>
    </define>

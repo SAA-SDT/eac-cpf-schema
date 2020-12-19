@@ -7776,20 +7776,6 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
-               <attribute name="lastDateTimeVerified" ns="">
-                  <choice>
-                     <data type="gYear"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="gYearMonth"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="date"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="dateTime"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </choice>
-               </attribute>
-            </optional>
             <text/>
          </group>
       </element>
