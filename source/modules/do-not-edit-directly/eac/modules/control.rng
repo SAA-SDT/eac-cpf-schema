@@ -192,7 +192,8 @@
    </define>
    <define name="element.otherAgencyCode">
       <element name="otherAgencyCode">
-         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute.status.authorized-or-alternative.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
          <text/>
       </element>

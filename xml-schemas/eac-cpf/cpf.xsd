@@ -715,6 +715,16 @@
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="status">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="authorized"/>
+               <xs:enumeration value="alternative"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI">
          <xs:simpleType>
