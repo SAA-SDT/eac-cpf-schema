@@ -15,7 +15,6 @@
       <optional>
          <attribute name="addressLineType">
             <choice>
-               <value>city</value>
                <value>county</value>
                <value>country</value>
                <value>district</value>
