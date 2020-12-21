@@ -85,35 +85,38 @@
             <ref name="model.narrative-group.optional"/>
         </element>
     </define>
+    
+    <define name="element.language">
+        <element name="language">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <optional>
+                <ref name="attribute.languageCode"/>
+            </optional>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.languageUsed">
+        <element name="languageUsed">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <zeroOrMore>
+                <ref name="element.language"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="element.writingSystem"/>
+            </zeroOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
 
     <define name="element.languagesUsed">
         <element name="languagesUsed">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <element name="languageUsed">
-                    <zeroOrMore>
-                        <element name="language">
-                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                            <ref name="attribute-group.assertion-reference.optional"/>
-                            <optional>
-                                <ref name="attribute.languageCode"/>
-                            </optional>
-                            <text/>
-                        </element>
-                    </zeroOrMore>
-                    <zeroOrMore>
-                        <element name="writingSystem">
-                            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-                            <ref name="attribute-group.assertion-reference.optional"/>
-                            <optional>
-                                <ref name="attribute.scriptCode"/>
-                            </optional>
-                            <text/>
-                        </element>
-                    </zeroOrMore>
-                    <ref name="element.descriptiveNote.optional"/>
-                </element>
+                <ref name="element.languageUsed"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
         </element>
@@ -189,6 +192,17 @@
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="element.head.optional"/>
             <ref name="model.narrative-group.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.writingSystem">
+        <element name="writingSystem">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <optional>
+                <ref name="attribute.scriptCode"/>
+            </optional>
+            <text/>
         </element>
     </define>
 
