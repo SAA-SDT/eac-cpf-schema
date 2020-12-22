@@ -5778,15 +5778,17 @@
                   </choice>
                </attribute>
             </optional>
-            <optional>
-               <ref name="head"/>
-            </optional>
-            <optional>
-               <ref name="list"/>
-            </optional>
-            <oneOrMore>
-               <ref name="item"/>
-            </oneOrMore>
+            <interleave>
+               <optional>
+                  <ref name="head"/>
+               </optional>
+               <optional>
+                  <ref name="list"/>
+               </optional>
+               <optional>
+                  <ref name="item"/>
+               </optional>
+            </interleave>
          </group>
       </element>
    </define>

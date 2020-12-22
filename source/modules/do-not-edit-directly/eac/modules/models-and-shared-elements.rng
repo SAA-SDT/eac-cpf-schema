@@ -200,13 +200,15 @@
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="attribute-group.lists.optional"/>
-         <ref name="element.head.optional"/>
-         <optional>
-            <ref name="element.list"/>
-         </optional>
-         <oneOrMore>
-            <ref name="element.item"/>
-         </oneOrMore>
+         <interleave>
+            <ref name="element.head.optional"/>
+            <optional>
+               <ref name="element.list"/>
+            </optional>
+            <optional>
+               <ref name="element.item"/>
+            </optional>
+         </interleave>
       </element>
    </define>
    <define name="element.objectXMLWrap.optional">
