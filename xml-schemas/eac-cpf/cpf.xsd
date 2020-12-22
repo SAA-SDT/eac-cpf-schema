@@ -849,11 +849,6 @@
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>

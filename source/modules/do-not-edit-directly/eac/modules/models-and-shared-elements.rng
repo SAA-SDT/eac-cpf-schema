@@ -302,7 +302,6 @@
    <define name="element.term">
       <element name="term">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <ref name="attribute.lastDateTimeVerified.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <text/>
       </element>
