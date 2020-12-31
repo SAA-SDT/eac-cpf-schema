@@ -893,10 +893,13 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="dateRange">
-      <xs:sequence>
-         <xs:element type="v2:fromDate" name="fromDate" minOccurs="0"/>
-         <xs:element type="v2:toDate" name="toDate" minOccurs="0"/>
-      </xs:sequence>
+      <xs:choice>
+         <xs:sequence>
+            <xs:element type="v2:fromDate" name="fromDate"/>
+            <xs:element type="v2:toDate" name="toDate" minOccurs="0"/>
+         </xs:sequence>
+         <xs:element type="v2:toDate" name="toDate"/>
+      </xs:choice>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>

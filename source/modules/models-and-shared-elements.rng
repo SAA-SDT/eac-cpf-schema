@@ -125,12 +125,17 @@
         <element name="dateRange">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <optional>
-                <ref name="element.fromDate"/>
-            </optional>
-            <optional>
-                <ref name="element.toDate"/>
-            </optional>
+            <choice>
+                <group>
+                    <ref name="element.fromDate"/>
+                    <optional>
+                        <ref name="element.toDate"/>
+                    </optional>
+                </group>
+                <group>
+                    <ref name="element.toDate"/> 
+                </group>
+            </choice>
         </element>
     </define>
     

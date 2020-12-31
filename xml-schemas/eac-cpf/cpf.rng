@@ -2449,12 +2449,15 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
-               <ref name="fromDate"/>
-            </optional>
-            <optional>
+            <choice>
+               <group>
+                  <ref name="fromDate"/>
+                  <optional>
+                     <ref name="toDate"/>
+                  </optional>
+               </group>
                <ref name="toDate"/>
-            </optional>
+            </choice>
          </group>
       </element>
    </define>
