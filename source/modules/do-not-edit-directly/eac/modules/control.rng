@@ -70,34 +70,58 @@
             </attribute>
          </optional>
          <ref name="element.recordId"/>
-         <zeroOrMore>
-            <ref name="element.otherRecordId"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="element.representation"/>
-         </zeroOrMore>
          <ref name="element.maintenanceAgency"/>
-         <zeroOrMore>
-            <ref name="element.languageDeclaration"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="element.conventionDeclaration"/>
-         </zeroOrMore>
-         <!-- note: will be required in DACS. -->
-         <zeroOrMore>
-            <ref name="element.rightsDeclaration"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="element.localTypeDeclaration"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="element.localControl"/>
-         </zeroOrMore>
          <ref name="element.maintenanceHistory"/>
+         <interleave>
+            <zeroOrMore>
+               <ref name="element.otherRecordId"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="element.representation"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="element.languageDeclaration"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="element.conventionDeclaration"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="element.rightsDeclaration"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="element.localTypeDeclaration"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="element.localControl"/>
+            </zeroOrMore>
+         </interleave>
          <optional>
             <ref name="element.sources"/>
          </optional>
       </element>
+   </define>
+   <define name="model.control.optional.repeatable">
+      <zeroOrMore>
+         <ref name="element.otherRecordId"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="element.representation"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="element.languageDeclaration"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="element.conventionDeclaration"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="element.rightsDeclaration"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="element.localTypeDeclaration"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="element.localControl"/>
+      </zeroOrMore>
    </define>
    <define name="element.conventionDeclaration">
       <element name="conventionDeclaration">

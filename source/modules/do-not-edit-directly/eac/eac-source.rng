@@ -31,15 +31,17 @@
       <element name="cpfDescription">
          <ref name="attribute-group.global-plus-base.optional"/>
          <ref name="element.identity"/>
-         <optional>
-            <ref name="element.description"/>
-         </optional>
-         <optional>
-            <ref name="element.relations"/>
-         </optional>
-         <optional>
-            <ref name="element.alternativeSet"/>
-         </optional>
+         <interleave>
+            <optional>
+               <ref name="element.description"/>
+            </optional>
+            <optional>
+               <ref name="element.relations"/>
+            </optional>
+            <optional>
+               <ref name="element.alternativeSet"/>
+            </optional>
+         </interleave>
       </element>
    </define>
    <define name="element.multipleIdentities">

@@ -31,6 +31,7 @@
 -->
 <xs:schema xmlns:v2="https://archivists.org/ns/eac/v2"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
            elementFormDefault="qualified"
            targetNamespace="https://archivists.org/ns/eac/v2">
    <xs:element name="eac">
@@ -58,22 +59,23 @@
          <xs:anyAttribute namespace="##other" processContents="lax"/>
       </xs:complexType>
    </xs:element>
-   <xs:complexType name="control">
-      <xs:sequence>
+   <xs:complexType name="control">     
+      <xs:all>
+         <!-- REQUIRED -->
          <xs:element type="v2:recordId" name="recordId"/>
          <xs:element type="v2:maintenanceAgency" name="maintenanceAgency"/>
          <xs:element type="v2:maintenanceHistory" name="maintenanceHistory"/>
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:otherRecordId" name="otherRecordId"/>
-            <xs:element type="v2:representation" name="representation"/>
-            <xs:element type="v2:languageDeclaration" name="languageDeclaration"/>
-            <xs:element type="v2:conventionDeclaration" name="conventionDeclaration"/>
-            <xs:element type="v2:rightsDeclaration" name="rightsDeclaration"/>
-            <xs:element type="v2:localTypeDeclaration" name="localTypeDeclaration"/>
-            <xs:element type="v2:localControl" name="localControl"/>
-         </xs:choice>
+         <!-- OPTIONAL / REPEATABLE -->
+         <xs:element vc:minVersion="1.1" type="v2:otherRecordId" name="otherRecordId" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element vc:minVersion="1.1" type="v2:representation" name="representation" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element vc:minVersion="1.1" type="v2:languageDeclaration" name="languageDeclaration" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element vc:minVersion="1.1" type="v2:conventionDeclaration" name="conventionDeclaration" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element vc:minVersion="1.1" type="v2:rightsDeclaration" name="rightsDeclaration" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element vc:minVersion="1.1" type="v2:localTypeDeclaration" name="localTypeDeclaration" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element vc:minVersion="1.1" type="v2:localControl" name="localControl" minOccurs="0" maxOccurs="unbounded"/>
+         <!-- OPTIONAL / MAX = 1 -->
          <xs:element type="v2:sources" name="sources" minOccurs="0"/>
-      </xs:sequence>
+      </xs:all>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
