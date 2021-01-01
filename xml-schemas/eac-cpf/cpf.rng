@@ -5738,9 +5738,9 @@
                <optional>
                   <ref name="list"/>
                </optional>
-               <optional>
+               <zeroOrMore>
                   <ref name="item"/>
-               </optional>
+               </zeroOrMore>
             </interleave>
          </group>
       </element>

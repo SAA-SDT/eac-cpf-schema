@@ -228,9 +228,9 @@
                 <optional>
                     <ref name="element.list"/>
                 </optional>
-                <optional>
+                <zeroOrMore>
                     <ref name="element.item"/>
-                </optional>
+                </zeroOrMore>
             </interleave>
         </element>
     </define>
