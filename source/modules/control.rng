@@ -76,37 +76,27 @@
                     </choice>
                 </attribute>
             </optional>
-            <ref name="element.recordId"/>
-            <zeroOrMore>
-                <ref name="element.otherRecordId"/>
-            </zeroOrMore>     
-            <zeroOrMore>
-                <ref name="element.representation"/>
-            </zeroOrMore>
-            <optional a:exclude-from="eac">
-                <ref name="element.fileDesc"/>
-            </optional> 
+            <ref name="element.identifiers"/>
             <ref name="element.maintenanceAgency"/>
-            <zeroOrMore>
-                <ref name="element.languageDeclaration"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="element.conventionDeclaration"/>
-            </zeroOrMore>
-            <!-- note: will be required in DACS. -->
-            <zeroOrMore>
-                <ref name="element.rightsDeclaration"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="element.localTypeDeclaration"/>
-            </zeroOrMore>         
-            <zeroOrMore>
-                <ref name="element.localControl"/>
-            </zeroOrMore>
             <ref name="element.maintenanceHistory"/>
-            <optional>
-                <ref name="element.sources"/>
-            </optional>
+            <interleave>
+                <optional a:exclude-from="eac">
+                    <ref name="element.fileDesc"/>
+                </optional> 
+                <optional>
+                    <ref name="element.sources"/>
+                </optional>
+            </interleave>
+            <zeroOrMore>
+                <choice>
+                    <ref name="element.conventionDeclaration"/>
+                    <ref name="element.languageDeclaration"/>
+                    <ref name="element.localControl"/>
+                    <ref name="element.localTypeDeclaration"/>
+                    <ref name="element.representation"/>
+                    <ref name="element.rightsDeclaration"/>
+                </choice>
+            </zeroOrMore>
         </element>
     </define>
     
@@ -128,6 +118,16 @@
         <element name="eventDescription">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <text/>
+        </element>
+    </define>
+    
+    <define name="element.identifiers">
+        <element name="identifiers">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="element.recordId"/>
+            <zeroOrMore>
+                <ref name="element.otherRecordId"/>
+            </zeroOrMore>  
         </element>
     </define>
     
