@@ -23,9 +23,9 @@
             -->
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="element.targetEntity"/>
-            <oneOrMore>
+            <zeroOrMore>
                 <ref name="element.relationType"/>
-            </oneOrMore>
+            </zeroOrMore>
             <zeroOrMore>
                 <ref name="element.targetRole"/>
             </zeroOrMore>
