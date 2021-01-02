@@ -1437,17 +1437,29 @@
             <zeroOrMore>
                <ref name="existDates"/>
             </zeroOrMore>
-            <optional>
-               <choice>
+            <interleave>
+               <optional>
                   <ref name="functions"/>
+               </optional>
+               <optional>
                   <ref name="languagesUsed"/>
+               </optional>
+               <optional>
                   <ref name="legalStatuses"/>
+               </optional>
+               <optional>
                   <ref name="localDescriptions"/>
+               </optional>
+               <optional>
                   <ref name="mandates"/>
+               </optional>
+               <optional>
                   <ref name="occupations"/>
+               </optional>
+               <optional>
                   <ref name="places"/>
-               </choice>
-            </optional>
+               </optional>
+            </interleave>
             <zeroOrMore>
                <choice>
                   <ref name="biogHist"/>

@@ -586,7 +586,7 @@
                      name="existDates"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:choice minOccurs="0">
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:functions" name="functions"/>
             <xs:element type="v2:languagesUsed" name="languagesUsed"/>
             <xs:element type="v2:legalStatuses" name="legalStatuses"/>

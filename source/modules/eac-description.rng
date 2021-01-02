@@ -18,17 +18,29 @@
             <zeroOrMore>
                 <ref name="element.existDates"/>
             </zeroOrMore>
-            <optional>
-                <choice>
+            <interleave>
+                <optional>
                     <ref name="element.functions"/>
+                </optional>
+                <optional>
                     <ref name="element.languagesUsed"/>
+                </optional>
+                <optional>
                     <ref name="element.legalStatuses"/>
+                </optional>
+                <optional>
                     <ref name="element.localDescriptions"/>
+                </optional>
+                <optional>
                     <ref name="element.mandates"/>
+                </optional>
+                <optional>
                     <ref name="element.occupations"/>
+                </optional>
+                <optional>
                     <ref name="element.places"/>
-                </choice>
-            </optional>
+                </optional>
+            </interleave>
             <zeroOrMore>
                 <choice>
                     <ref name="element.biogHist"/>
