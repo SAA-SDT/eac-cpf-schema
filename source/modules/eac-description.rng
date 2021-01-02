@@ -11,47 +11,31 @@
         <element name="description">
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <!-- does order matter, or can we just add at will for once??? -->
             <!-- NOTE:  need to update how this is defined for the XSD conversion.  the issue comes in
                 if we want to mix "0 or more" and "0 or 1" values.
             right now, the result in the XSD is that each of these "0 or 1" options become "0 or more"-->
-            <interleave>
-                <zeroOrMore>
-                    <!-- defined in other-shared-elements, since we'll port this to EAD -->
-                    <ref name="element.biogHist"/>
-                </zeroOrMore>
-                <!-- this is new... is it okay to repeat? -->
-                <zeroOrMore>
-                    <ref name="element.existDates"/>
-                </zeroOrMore>
-                <optional>
+            <!-- back to encforcing order, due to a mixture of optional and 0 or more elements here -->
+            <zeroOrMore>
+                <ref name="element.existDates"/>
+            </zeroOrMore>
+            <optional>
+                <choice>
                     <ref name="element.functions"/>
-                </optional>
-                <zeroOrMore>
-                    <ref name="element.generalContext"/>
-                </zeroOrMore>
-                <optional>
                     <ref name="element.languagesUsed"/>
-                </optional>
-                <optional>
                     <ref name="element.legalStatuses"/>
-                </optional>
-                <optional>
                     <ref name="element.localDescriptions"/>
-                </optional>
-                <optional>
                     <ref name="element.mandates"/>
-                </optional>
-                <optional>
                     <ref name="element.occupations"/>
-                </optional>
-                <optional>
                     <ref name="element.places"/>
-                </optional>
-                <zeroOrMore>
+                </choice>
+            </optional>
+            <zeroOrMore>
+                <choice>
+                    <ref name="element.biogHist"/>
+                    <ref name="element.generalContext"/>
                     <ref name="element.structureOrGenealogy"/>
-                </zeroOrMore>
-            </interleave>
+                </choice>
+            </zeroOrMore>
         </element>
     </define>
     
