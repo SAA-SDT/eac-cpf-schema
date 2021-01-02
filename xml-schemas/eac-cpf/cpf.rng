@@ -4234,9 +4234,9 @@
                </optional>
             </interleave>
             <ref name="targetEntity"/>
-            <oneOrMore>
+            <zeroOrMore>
                <ref name="relationType"/>
-            </oneOrMore>
+            </zeroOrMore>
             <zeroOrMore>
                <ref name="targetRole"/>
             </zeroOrMore>

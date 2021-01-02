@@ -1452,7 +1452,10 @@
    <xs:complexType name="relation">
       <xs:sequence>
          <xs:element type="v2:targetEntity" name="targetEntity"/>
-         <xs:element type="v2:relationType" name="relationType" maxOccurs="unbounded"/>
+         <xs:element type="v2:relationType"
+                     name="relationType"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
          <xs:element type="v2:targetRole"
                      name="targetRole"
                      minOccurs="0"
