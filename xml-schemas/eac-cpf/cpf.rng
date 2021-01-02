@@ -5731,13 +5731,13 @@
                   </choice>
                </attribute>
             </optional>
+            <optional>
+               <ref name="head"/>
+            </optional>
             <interleave>
-               <optional>
-                  <ref name="head"/>
-               </optional>
-               <optional>
+               <zeroOrMore>
                   <ref name="list"/>
-               </optional>
+               </zeroOrMore>
                <zeroOrMore>
                   <ref name="item"/>
                </zeroOrMore>

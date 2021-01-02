@@ -1889,11 +1889,13 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="list">
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:head" name="head"/>
-         <xs:element type="v2:list" name="list"/>
-         <xs:element type="v2:item" name="item"/>
-      </xs:choice>
+      <xs:sequence>
+         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="v2:list" name="list"/>
+            <xs:element type="v2:item" name="item"/>
+         </xs:choice>
+      </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>

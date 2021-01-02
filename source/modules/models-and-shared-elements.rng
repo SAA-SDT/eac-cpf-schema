@@ -222,12 +222,12 @@
         <element name="list">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <ref name="attribute-group.lists.optional"/>
+            <ref name="attribute-group.lists.optional"/>      
+            <ref name="element.head.optional"/>
             <interleave>
-                <ref name="element.head.optional"/>
-                <optional>
+                <zeroOrMore>
                     <ref name="element.list"/>
-                </optional>
+                </zeroOrMore>
                 <zeroOrMore>
                     <ref name="element.item"/>
                 </zeroOrMore>
