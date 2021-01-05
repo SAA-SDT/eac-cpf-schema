@@ -3025,9 +3025,9 @@
             <oneOrMore>
                <ref name="part"/>
             </oneOrMore>
-            <optional>
+            <zeroOrMore>
                <ref name="useDates"/>
-            </optional>
+            </zeroOrMore>
          </group>
       </element>
    </define>
@@ -3118,9 +3118,9 @@
             <oneOrMore>
                <ref name="nameEntry"/>
             </oneOrMore>
-            <optional>
+            <zeroOrMore>
                <ref name="useDates"/>
-            </optional>
+            </zeroOrMore>
          </group>
       </element>
    </define>

@@ -1095,7 +1095,10 @@
    <xs:complexType name="nameEntry">
       <xs:sequence>
          <xs:element type="v2:part" name="part" maxOccurs="unbounded"/>
-         <xs:element type="v2:useDates" name="useDates" minOccurs="0"/>
+         <xs:element type="v2:useDates"
+                     name="useDates"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -1144,7 +1147,10 @@
       <xs:sequence>
          <xs:element type="v2:nameEntry" name="nameEntry"/>
          <xs:element type="v2:nameEntry" name="nameEntry" maxOccurs="unbounded"/>
-         <xs:element type="v2:useDates" name="useDates" minOccurs="0"/>
+         <xs:element type="v2:useDates"
+                     name="useDates"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">

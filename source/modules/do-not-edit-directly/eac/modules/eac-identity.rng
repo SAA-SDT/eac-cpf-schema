@@ -67,9 +67,9 @@
          <oneOrMore>
             <ref name="element.part"/>
          </oneOrMore>
-         <optional>
+         <zeroOrMore>
             <ref name="element.useDates"/>
-         </optional>
+         </zeroOrMore>
       </element>
    </define>
    <define name="element.nameEntrySet">
@@ -80,9 +80,9 @@
          <oneOrMore>
             <ref name="element.nameEntry"/>
          </oneOrMore>
-         <optional>
+         <zeroOrMore>
             <ref name="element.useDates"/>
-         </optional>
+         </zeroOrMore>
       </element>
    </define>
    <define name="element.otherEntityType">
