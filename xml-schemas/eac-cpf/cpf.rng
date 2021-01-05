@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 December 13                    *          
+  *                           2021 January 5                      *          
   *                                                               *
   *****************************************************************
 
@@ -2310,13 +2310,25 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="certainty" ns="">
-                     <data type="token"
+                  <attribute name="calendar" ns="">
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="standardDate" ns="">
+                  <attribute name="certainty" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="era" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="notAfter" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -2340,7 +2352,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="notAfter" ns="">
+                  <attribute name="standardDate" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4635,13 +4647,25 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="certainty" ns="">
-                     <data type="token"
+                  <attribute name="calendar" ns="">
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="standardDate" ns="">
+                  <attribute name="certainty" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="era" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="notAfter" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4665,7 +4689,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="notAfter" ns="">
+                  <attribute name="standardDate" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4774,13 +4798,25 @@
             </interleave>
             <interleave>
                <optional>
-                  <attribute name="certainty" ns="">
-                     <data type="token"
+                  <attribute name="calendar" ns="">
+                     <data type="NMTOKEN"
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="standardDate" ns="">
+                  <attribute name="certainty" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="era" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="notAfter" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
@@ -4804,7 +4840,7 @@
                   </attribute>
                </optional>
                <optional>
-                  <attribute name="notAfter" ns="">
+                  <attribute name="standardDate" ns="">
                      <choice>
                         <data type="gYear"
                               datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>

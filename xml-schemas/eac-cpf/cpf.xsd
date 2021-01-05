@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2020 December 13                    *          
+  *                           2021 January 5                      *          
   *                                                               *
   *****************************************************************
   
@@ -873,8 +873,10 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="certainty" type="xs:token"/>
-      <xs:attribute name="standardDate">
+      <xs:attribute name="calendar" type="xs:NMTOKEN"/>
+      <xs:attribute name="certainty" type="xs:NMTOKEN"/>
+      <xs:attribute name="era" type="xs:NMTOKEN"/>
+      <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -884,7 +886,7 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="notAfter">
+      <xs:attribute name="standardDate">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -1584,8 +1586,10 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="certainty" type="xs:token"/>
-      <xs:attribute name="standardDate">
+      <xs:attribute name="calendar" type="xs:NMTOKEN"/>
+      <xs:attribute name="certainty" type="xs:NMTOKEN"/>
+      <xs:attribute name="era" type="xs:NMTOKEN"/>
+      <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -1595,7 +1599,7 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="notAfter">
+      <xs:attribute name="standardDate">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -1628,8 +1632,10 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="certainty" type="xs:token"/>
-      <xs:attribute name="standardDate">
+      <xs:attribute name="calendar" type="xs:NMTOKEN"/>
+      <xs:attribute name="certainty" type="xs:NMTOKEN"/>
+      <xs:attribute name="era" type="xs:NMTOKEN"/>
+      <xs:attribute name="notAfter">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
@@ -1639,7 +1645,7 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="notAfter">
+      <xs:attribute name="standardDate">
          <xs:simpleType>
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
          </xs:simpleType>

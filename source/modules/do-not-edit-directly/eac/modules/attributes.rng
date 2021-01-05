@@ -414,15 +414,31 @@
    <define name="attribute-group.standard-date-attributes.optional"
            combine="interleave">
       <optional>
-         <attribute name="certainty">
-            <data type="token"/>
+         <attribute name="calendar">
+            <data type="NMTOKEN"/>
          </attribute>
       </optional>
    </define>
    <define name="attribute-group.standard-date-attributes.optional"
            combine="interleave">
       <optional>
-         <attribute name="standardDate">
+         <attribute name="certainty">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="era">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="notAfter">
             <ref name="dt.any-standard-date"/>
          </attribute>
       </optional>
@@ -438,7 +454,7 @@
    <define name="attribute-group.standard-date-attributes.optional"
            combine="interleave">
       <optional>
-         <attribute name="notAfter">
+         <attribute name="standardDate">
             <ref name="dt.any-standard-date"/>
          </attribute>
       </optional>
