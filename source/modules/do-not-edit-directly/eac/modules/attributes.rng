@@ -369,7 +369,6 @@
       <optional>
          <attribute name="listType">
             <choice>
-               <value>deflist</value>
                <value>ordered</value>
                <value>unordered</value>
             </choice>

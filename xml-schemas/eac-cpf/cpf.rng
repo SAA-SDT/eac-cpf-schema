@@ -6681,7 +6681,6 @@
             <optional>
                <attribute name="listType" ns="">
                   <choice>
-                     <value type="token" datatypeLibrary="" ns="">deflist</value>
                      <value type="token" datatypeLibrary="" ns="">ordered</value>
                      <value type="token" datatypeLibrary="" ns="">unordered</value>
                   </choice>
