@@ -42,10 +42,10 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="element.head.optional"/>
-            <optional>
+            <optional a:exclude-from="ead">
                 <ref name="element.abstract"/>
             </optional>
-            <ref name="model.narrative-group.optional"/>
+            <ref name="model.narrative-group-plus-chronList.optional"/>
         </element>
     </define>
      
@@ -422,22 +422,20 @@
         </zeroOrMore>
     </define>
     <define name="model.narrative-group.optional" combine="interleave">
-        <!-- why not allow this in elements other than biogHist??? -->
-        <zeroOrMore>
-            <ref name="element.chronList"/>
-        </zeroOrMore>
-    </define>
-    <define name="model.narrative-group.optional" combine="interleave">
         <zeroOrMore>
             <ref name="element.p"/>   
         </zeroOrMore>
     </define>
-    <define name="model.narrative-group.optional" combine="interleave">
-        <!-- note:  was this removed? -->
-        <zeroOrMore>
-            <ref name="element.reference"/>
-        </zeroOrMore>
+    
+    <define name="model.narrative-group-plus-chronList.optional">
+        <interleave>
+            <ref name="model.narrative-group.optional"/>
+            <zeroOrMore>
+                <ref name="element.chronList"/>
+            </zeroOrMore>
+        </interleave>
     </define>
+
       
     <define name="model.single-element-group">
         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>

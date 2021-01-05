@@ -1375,9 +1375,8 @@
          <xs:element type="v2:abstract" name="abstract" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:chronList" name="chronList"/>
             <xs:element type="v2:p" name="p"/>
-            <xs:element type="v2:reference" name="reference"/>
+            <xs:element type="v2:chronList" name="chronList"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
@@ -1404,9 +1403,7 @@
          <xs:element type="v2:head" name="head" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:chronList" name="chronList"/>
             <xs:element type="v2:p" name="p"/>
-            <xs:element type="v2:reference" name="reference"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
@@ -1433,9 +1430,7 @@
          <xs:element type="v2:head" name="head" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:chronList" name="chronList"/>
             <xs:element type="v2:p" name="p"/>
-            <xs:element type="v2:reference" name="reference"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>

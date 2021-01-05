@@ -3956,13 +3956,10 @@
                   <ref name="list"/>
                </zeroOrMore>
                <zeroOrMore>
-                  <ref name="chronList"/>
-               </zeroOrMore>
-               <zeroOrMore>
                   <ref name="p"/>
                </zeroOrMore>
                <zeroOrMore>
-                  <ref name="reference"/>
+                  <ref name="chronList"/>
                </zeroOrMore>
             </interleave>
          </group>
@@ -4059,13 +4056,7 @@
                   <ref name="list"/>
                </zeroOrMore>
                <zeroOrMore>
-                  <ref name="chronList"/>
-               </zeroOrMore>
-               <zeroOrMore>
                   <ref name="p"/>
-               </zeroOrMore>
-               <zeroOrMore>
-                  <ref name="reference"/>
                </zeroOrMore>
             </interleave>
          </group>
@@ -4162,13 +4153,7 @@
                   <ref name="list"/>
                </zeroOrMore>
                <zeroOrMore>
-                  <ref name="chronList"/>
-               </zeroOrMore>
-               <zeroOrMore>
                   <ref name="p"/>
-               </zeroOrMore>
-               <zeroOrMore>
-                  <ref name="reference"/>
                </zeroOrMore>
             </interleave>
          </group>
