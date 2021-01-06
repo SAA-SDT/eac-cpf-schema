@@ -15,11 +15,27 @@
                 if we want to mix "0 or more" and "0 or 1" values.
             right now, the result in the XSD is that each of these "0 or 1" options become "0 or more"-->
             <!-- back to encforcing order, due to a mixture of optional and 0 or more elements here -->
-    
-            <group>
-                <ref name="single-element-group"/>
-            </group>
-
+            <optional>
+                <ref name="element.functions"/>
+            </optional>
+            <optional>
+                <ref name="element.languagesUsed"/>
+            </optional>
+            <optional>
+                <ref name="element.legalStatuses"/>
+            </optional>
+            <optional>
+                <ref name="element.localDescriptions"/>
+            </optional>
+            <optional>
+                <ref name="element.mandates"/>
+            </optional>
+            <optional>
+                <ref name="element.occupations"/>
+            </optional>
+            <optional>
+                <ref name="element.places"/>
+            </optional>
             <zeroOrMore>
                 <choice>
                     <ref name="element.biogHist"/>
@@ -29,32 +45,6 @@
                 </choice>
             </zeroOrMore>
         </element>
-    </define>
-    
-    <define name="single-element-group">
-
-        <optional>
-            <ref name="element.functions"/>
-        </optional>
-        <optional>
-            <ref name="element.languagesUsed"/>
-        </optional>
-        <optional>
-            <ref name="element.legalStatuses"/>
-        </optional>
-        <optional>
-            <ref name="element.localDescriptions"/>
-        </optional>
-        <optional>
-            <ref name="element.mandates"/>
-        </optional>
-        <optional>
-            <ref name="element.occupations"/>
-        </optional>
-        <optional>
-            <ref name="element.places"/>
-        </optional>
-
     </define>
     
     <define name="element.existDates">
