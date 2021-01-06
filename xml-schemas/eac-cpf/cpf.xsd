@@ -582,21 +582,16 @@
    </xs:complexType>
    <xs:complexType name="description">
       <xs:sequence>
-         <xs:element type="v2:existDates"
-                     name="existDates"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:functions" name="functions"/>
-            <xs:element type="v2:languagesUsed" name="languagesUsed"/>
-            <xs:element type="v2:legalStatuses" name="legalStatuses"/>
-            <xs:element type="v2:localDescriptions" name="localDescriptions"/>
-            <xs:element type="v2:mandates" name="mandates"/>
-            <xs:element type="v2:occupations" name="occupations"/>
-            <xs:element type="v2:places" name="places"/>
-         </xs:choice>
+         <xs:element type="v2:functions" name="functions" minOccurs="0"/>
+         <xs:element type="v2:languagesUsed" name="languagesUsed" minOccurs="0"/>
+         <xs:element type="v2:legalStatuses" name="legalStatuses" minOccurs="0"/>
+         <xs:element type="v2:localDescriptions" name="localDescriptions" minOccurs="0"/>
+         <xs:element type="v2:mandates" name="mandates" minOccurs="0"/>
+         <xs:element type="v2:occupations" name="occupations" minOccurs="0"/>
+         <xs:element type="v2:places" name="places" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element type="v2:biogHist" name="biogHist"/>
+            <xs:element type="v2:existDates" name="existDates"/>
             <xs:element type="v2:generalContext" name="generalContext"/>
             <xs:element type="v2:structureOrGenealogy" name="structureOrGenealogy"/>
          </xs:choice>
@@ -1171,34 +1166,6 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="existDates">
-      <xs:sequence>
-         <xs:choice>
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
-         </xs:choice>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
-      </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
-      <xs:attribute name="sourceReference" type="xs:IDREF"/>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
    <xs:complexType name="functions">
       <xs:sequence>
          <xs:element type="v2:function" name="function" maxOccurs="unbounded"/>
@@ -1378,6 +1345,34 @@
             <xs:element type="v2:p" name="p"/>
             <xs:element type="v2:chronList" name="chronList"/>
          </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="existDates">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element type="v2:date" name="date"/>
+            <xs:element type="v2:dateRange" name="dateRange"/>
+            <xs:element type="v2:dateSet" name="dateSet"/>
+         </xs:choice>
+         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
@@ -1860,36 +1855,6 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="dateSet">
-      <xs:sequence>
-         <xs:choice>
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-         </xs:choice>
-         <xs:choice maxOccurs="unbounded">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-         </xs:choice>
-      </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
-      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
-      <xs:attribute name="sourceReference" type="xs:IDREF"/>
-      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
    <xs:complexType name="function">
       <xs:sequence>
          <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
@@ -2329,6 +2294,36 @@
    <xs:complexType name="chronList">
       <xs:sequence>
          <xs:element type="v2:chronItem" name="chronItem" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="dateSet">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element type="v2:date" name="date"/>
+            <xs:element type="v2:dateRange" name="dateRange"/>
+         </xs:choice>
+         <xs:choice maxOccurs="unbounded">
+            <xs:element type="v2:date" name="date"/>
+            <xs:element type="v2:dateRange" name="dateRange"/>
+         </xs:choice>
       </xs:sequence>
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
