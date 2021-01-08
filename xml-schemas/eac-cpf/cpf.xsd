@@ -42,7 +42,6 @@
                <xs:element type="v2:multipleIdentities" name="multipleIdentities"/>
             </xs:choice>
          </xs:sequence>
-         <xs:attribute name="id" type="xs:ID"/>
          <xs:attribute name="audience">
             <xs:simpleType>
                <xs:restriction base="xs:token">
@@ -51,8 +50,8 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
-         <xs:attribute name="target" type="xs:IDREF"/>
          <xs:attribute name="base" type="xs:anyURI"/>
+         <xs:attribute name="id" type="xs:ID"/>
          <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
          <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
          <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -93,7 +92,6 @@
          <xs:element type="v2:maintenanceHistory" name="maintenanceHistory"/>
          <xs:element type="v2:sources" name="sources" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -102,6 +100,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
@@ -181,7 +180,6 @@
          <xs:element type="v2:relations" name="relations" minOccurs="0"/>
          <xs:element type="v2:alternativeSet" name="alternativeSet" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -190,6 +188,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -201,7 +200,6 @@
                      name="cpfDescription"
                      maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -210,6 +208,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
@@ -222,7 +221,6 @@
                   <xs:pattern value="(.|\n|\r)*\S(.|\n|\r)*"/>
                </xs:restriction>
             </xs:simpleType>
-            <xs:attribute name="id" type="xs:ID"/>
             <xs:attribute name="audience">
                <xs:simpleType>
                   <xs:restriction base="xs:token">
@@ -231,6 +229,7 @@
                   </xs:restriction>
                </xs:simpleType>
             </xs:attribute>
+            <xs:attribute name="id" type="xs:ID"/>
             <xs:attribute name="target" type="xs:IDREF"/>
             <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
             <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -239,7 +238,6 @@
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="otherRecordId" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -248,6 +246,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -271,7 +270,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="representation" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -280,6 +278,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -305,7 +304,6 @@
          <xs:element type="v2:agencyName" name="agencyName" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -314,6 +312,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -339,7 +338,6 @@
       <xs:sequence>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -348,6 +346,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -361,7 +360,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -370,6 +368,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -396,7 +395,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -405,6 +403,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -431,7 +430,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -440,6 +438,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -468,7 +467,6 @@
             <xs:element type="v2:dateRange" name="dateRange"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -477,6 +475,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -505,7 +504,6 @@
                      name="maintenanceEvent"
                      maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -514,6 +512,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -524,7 +523,6 @@
          <xs:element type="v2:source" name="source" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -533,6 +531,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
@@ -553,7 +552,6 @@
          </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -562,6 +560,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -596,7 +595,6 @@
             <xs:element type="v2:structureOrGenealogy" name="structureOrGenealogy"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -605,6 +603,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
@@ -619,7 +618,6 @@
          <xs:element type="v2:relation" name="relation" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -628,6 +626,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
@@ -641,7 +640,6 @@
       <xs:sequence>
          <xs:element type="v2:setComponent" name="setComponent" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -650,6 +648,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
@@ -660,7 +659,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="agencyCode" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -669,6 +667,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -698,7 +697,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="otherAgencyCode" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -707,6 +705,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -738,7 +737,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="agencyName" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -747,6 +745,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -771,7 +770,6 @@
       <xs:sequence>
          <xs:element type="v2:p" name="p" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -780,6 +778,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -789,7 +788,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="shortCode" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -798,6 +796,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -807,7 +806,6 @@
       <xs:sequence>
          <xs:element type="v2:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -816,6 +814,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -833,7 +832,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="term" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -842,6 +840,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -851,7 +850,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="date" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -860,6 +858,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -904,7 +903,6 @@
          </xs:sequence>
          <xs:element type="v2:toDate" name="toDate"/>
       </xs:choice>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -913,6 +911,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -932,7 +931,6 @@
                      minOccurs="0"
                      maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -941,6 +939,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -969,7 +968,6 @@
          <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -978,6 +976,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1007,7 +1006,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="identityId" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1016,6 +1014,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1042,7 +1041,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="entityType">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1051,6 +1049,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="value" use="required">
          <xs:simpleType>
@@ -1070,7 +1069,6 @@
                      maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1079,6 +1077,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1095,7 +1094,6 @@
                      minOccurs="0"
                      maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1104,6 +1102,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1147,7 +1146,6 @@
                      minOccurs="0"
                      maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1156,6 +1154,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1171,7 +1170,6 @@
          <xs:element type="v2:function" name="function" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1180,6 +1178,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1195,7 +1194,6 @@
          <xs:element type="v2:languageUsed" name="languageUsed" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1204,6 +1202,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1219,7 +1218,6 @@
          <xs:element type="v2:legalStatus" name="legalStatus" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1228,6 +1226,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1245,7 +1244,6 @@
                      maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1254,6 +1252,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1269,7 +1268,6 @@
          <xs:element type="v2:mandate" name="mandate" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1278,6 +1276,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1293,7 +1292,6 @@
          <xs:element type="v2:occupation" name="occupation" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1302,6 +1300,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1317,7 +1316,6 @@
          <xs:element type="v2:place" name="place" maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1326,6 +1324,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1346,7 +1345,6 @@
             <xs:element type="v2:chronList" name="chronList"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1355,6 +1353,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1374,7 +1373,6 @@
          </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1383,6 +1381,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1401,7 +1400,6 @@
             <xs:element type="v2:p" name="p"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1410,6 +1408,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1428,7 +1427,6 @@
             <xs:element type="v2:p" name="p"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1437,6 +1435,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1470,7 +1469,6 @@
          <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1479,6 +1477,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1496,7 +1495,6 @@
          <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1505,6 +1503,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1526,7 +1525,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:span" name="span"/>
       </xs:choice>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1535,6 +1533,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1544,7 +1543,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="span" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1553,6 +1551,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1565,7 +1564,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="fromDate" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1574,6 +1572,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1611,7 +1610,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="toDate" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1620,6 +1618,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1657,7 +1656,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="eventDateTime" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1666,6 +1664,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1677,7 +1676,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="agent" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1686,6 +1684,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1716,7 +1715,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="eventDescription" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1725,13 +1723,13 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="citedRange" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1740,6 +1738,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1749,7 +1748,6 @@
    <xs:complexType name="objectXMLWrap">
       <xs:complexContent>
          <xs:extension base="v2:_1">
-            <xs:attribute name="id" type="xs:ID"/>
             <xs:attribute name="audience">
                <xs:simpleType>
                   <xs:restriction base="xs:token">
@@ -1758,6 +1756,7 @@
                   </xs:restriction>
                </xs:simpleType>
             </xs:attribute>
+            <xs:attribute name="id" type="xs:ID"/>
             <xs:attribute name="target" type="xs:IDREF"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
          </xs:extension>
@@ -1778,7 +1777,6 @@
          <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1787,6 +1785,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1813,7 +1812,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="part" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1822,6 +1820,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1838,7 +1837,6 @@
          <xs:element type="v2:dateRange" name="dateRange"/>
          <xs:element type="v2:dateSet" name="dateSet"/>
       </xs:choice>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1847,6 +1845,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1870,7 +1869,6 @@
          <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1879,6 +1877,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1916,7 +1915,6 @@
                      maxOccurs="unbounded"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1925,6 +1923,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1950,7 +1949,6 @@
          <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1959,6 +1957,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -1999,7 +1998,6 @@
          <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2008,6 +2006,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2048,7 +2047,6 @@
          <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2057,6 +2055,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2097,7 +2096,6 @@
          <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2106,6 +2104,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2148,7 +2147,6 @@
          </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2157,6 +2155,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2186,7 +2185,6 @@
       <xs:sequence>
          <xs:element type="v2:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2195,6 +2193,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2208,7 +2207,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:span" name="span"/>
       </xs:choice>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2217,6 +2215,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2235,7 +2234,6 @@
             <xs:element type="v2:item" name="item"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2244,6 +2242,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2295,7 +2294,6 @@
       <xs:sequence>
          <xs:element type="v2:chronItem" name="chronItem" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2304,6 +2302,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2325,7 +2324,6 @@
             <xs:element type="v2:dateRange" name="dateRange"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2334,6 +2332,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2351,6 +2350,7 @@
       <xs:attribute name="targetType" use="required">
          <xs:simpleType>
             <xs:restriction base="xs:token">
+               <xs:enumeration value="agent"/>
                <xs:enumeration value="corporateBody"/>
                <xs:enumeration value="person"/>
                <xs:enumeration value="family"/>
@@ -2359,7 +2359,6 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2368,6 +2367,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2392,7 +2392,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="relationType" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2401,6 +2400,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2425,7 +2425,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="targetRole" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2434,6 +2433,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2458,7 +2458,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="componentEntry" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2467,6 +2466,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2499,7 +2499,6 @@
       </xs:choice>
    </xs:complexType>
    <xs:complexType name="placeName" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2508,6 +2507,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2535,7 +2535,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="language" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2544,6 +2543,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2554,7 +2554,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="writingSystem" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2563,6 +2562,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2573,7 +2573,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="placeRole" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2582,6 +2581,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2608,7 +2608,6 @@
    <xs:complexType name="geographicCoordinates">
       <xs:simpleContent>
          <xs:extension base="xs:normalizedString">
-            <xs:attribute name="id" type="xs:ID"/>
             <xs:attribute name="audience">
                <xs:simpleType>
                   <xs:restriction base="xs:token">
@@ -2617,6 +2616,7 @@
                   </xs:restriction>
                </xs:simpleType>
             </xs:attribute>
+            <xs:attribute name="id" type="xs:ID"/>
             <xs:attribute name="target" type="xs:IDREF"/>
             <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
             <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2632,7 +2632,6 @@
       <xs:sequence>
          <xs:element type="v2:addressLine" name="addressLine" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2641,6 +2640,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2655,7 +2655,6 @@
       <xs:sequence>
          <xs:element type="v2:contactLine" name="contactLine" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2664,6 +2663,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2679,7 +2679,6 @@
          <xs:element type="v2:reference" name="reference"/>
          <xs:element type="v2:span" name="span"/>
       </xs:choice>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2688,6 +2687,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2713,7 +2713,6 @@
             <xs:element type="v2:chronItemSet" name="chronItemSet" maxOccurs="unbounded"/>
          </xs:choice>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2722,6 +2721,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2733,7 +2733,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="addressLine" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2742,6 +2741,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2767,7 +2767,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="contactLine" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2776,6 +2775,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2806,7 +2806,6 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="event" mixed="true">
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2815,6 +2814,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
@@ -2848,7 +2848,6 @@
                      maxOccurs="unbounded"/>
          <xs:element type="v2:event" name="event" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2857,6 +2856,7 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>

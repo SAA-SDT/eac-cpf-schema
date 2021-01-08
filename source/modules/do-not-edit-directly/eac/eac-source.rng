@@ -19,7 +19,7 @@
    </start>
    <define name="element.eac">
       <element xml:id="eac" name="eac">
-         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <ref name="attribute-group.eac-document-node"/>
          <ref name="element.control"/>
          <choice>
             <ref name="element.cpfDescription"/>
