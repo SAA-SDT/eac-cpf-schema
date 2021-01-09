@@ -2317,38 +2317,20 @@
                </optional>
                <optional>
                   <attribute name="notAfter" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="notBefore" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="standardDate" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
@@ -4639,38 +4621,20 @@
                </optional>
                <optional>
                   <attribute name="notAfter" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="notBefore" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="standardDate" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
@@ -4790,38 +4754,20 @@
                </optional>
                <optional>
                   <attribute name="notAfter" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="notBefore" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="standardDate" ns="">
-                     <choice>
-                        <data type="gYear"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="gYearMonth"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                        <data type="date"
-                              datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     </choice>
+                     <data type="token"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>

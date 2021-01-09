@@ -870,21 +870,9 @@
       <xs:attribute name="calendar" type="xs:NMTOKEN"/>
       <xs:attribute name="certainty" type="xs:NMTOKEN"/>
       <xs:attribute name="era" type="xs:NMTOKEN"/>
-      <xs:attribute name="notAfter">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="notBefore">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="standardDate">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="notAfter" type="xs:token"/>
+      <xs:attribute name="notBefore" type="xs:token"/>
+      <xs:attribute name="standardDate" type="xs:token"/>
       <xs:attribute name="status">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1584,21 +1572,9 @@
       <xs:attribute name="calendar" type="xs:NMTOKEN"/>
       <xs:attribute name="certainty" type="xs:NMTOKEN"/>
       <xs:attribute name="era" type="xs:NMTOKEN"/>
-      <xs:attribute name="notAfter">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="notBefore">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="standardDate">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="notAfter" type="xs:token"/>
+      <xs:attribute name="notBefore" type="xs:token"/>
+      <xs:attribute name="standardDate" type="xs:token"/>
       <xs:attribute name="status">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1630,21 +1606,9 @@
       <xs:attribute name="calendar" type="xs:NMTOKEN"/>
       <xs:attribute name="certainty" type="xs:NMTOKEN"/>
       <xs:attribute name="era" type="xs:NMTOKEN"/>
-      <xs:attribute name="notAfter">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="notBefore">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="standardDate">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="notAfter" type="xs:token"/>
+      <xs:attribute name="notBefore" type="xs:token"/>
+      <xs:attribute name="standardDate" type="xs:token"/>
       <xs:attribute name="status">
          <xs:simpleType>
             <xs:restriction base="xs:token">

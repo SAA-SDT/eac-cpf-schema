@@ -219,6 +219,7 @@
         <optional>
             <attribute name="dateEncoding">
                 <choice>
+                    <!-- at whot point to do we need to get specific?  e.g. 8601:2019 vs. 8601:2004, which are certainly not compatible --> 
                     <value>iso8601</value>
                     <value>otherDateEncoding</value>
                 </choice>
@@ -523,21 +524,21 @@
     <define name="attribute-group.standard-date-attributes.optional" combine="interleave">
         <optional>
             <attribute name="notAfter">
-                <ref name="dt.any-standard-date"/>
+                <data type="token"/>
             </attribute>
         </optional>
     </define>
     <define name="attribute-group.standard-date-attributes.optional" combine="interleave">
         <optional>
             <attribute name="notBefore">
-                <ref name="dt.any-standard-date"/>
+                <data type="token"/>
             </attribute>
         </optional>
     </define>
     <define name="attribute-group.standard-date-attributes.optional" combine="interleave">
         <optional>
             <attribute name="standardDate">
-                <ref name="dt.any-standard-date"/>
+                <data type="token"/>
             </attribute>
         </optional>
     </define>
