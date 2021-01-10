@@ -356,8 +356,8 @@
    </xs:complexType>
    <xs:complexType name="conventionDeclaration">
       <xs:sequence>
-         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
          <xs:element type="v2:reference" name="reference"/>
+         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -391,8 +391,8 @@
    </xs:complexType>
    <xs:complexType name="rightsDeclaration">
       <xs:sequence>
-         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
          <xs:element type="v2:reference" name="reference"/>
+         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -426,8 +426,8 @@
    </xs:complexType>
    <xs:complexType name="localTypeDeclaration">
       <xs:sequence>
-         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
          <xs:element type="v2:reference" name="reference"/>
+         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -787,21 +787,6 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="shortCode" mixed="true">
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="target" type="xs:IDREF"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
    <xs:complexType name="reference" mixed="true">
       <xs:sequence>
          <xs:element type="v2:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
@@ -829,6 +814,21 @@
             <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
          </xs:simpleType>
       </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="shortCode" mixed="true">
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="target" type="xs:IDREF"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="term" mixed="true">
