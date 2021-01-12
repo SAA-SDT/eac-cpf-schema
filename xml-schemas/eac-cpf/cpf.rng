@@ -5511,9 +5511,6 @@
                </choice>
             </optional>
             <optional>
-               <ref name="reference"/>
-            </optional>
-            <optional>
                <ref name="descriptiveNote"/>
             </optional>
          </group>
@@ -5735,9 +5732,6 @@
                </choice>
             </optional>
             <optional>
-               <ref name="reference"/>
-            </optional>
-            <optional>
                <ref name="descriptiveNote"/>
             </optional>
          </group>
@@ -5862,9 +5856,6 @@
                   <ref name="dateRange"/>
                   <ref name="dateSet"/>
                </choice>
-            </optional>
-            <optional>
-               <ref name="reference"/>
             </optional>
             <optional>
                <ref name="descriptiveNote"/>
@@ -5993,9 +5984,6 @@
                </choice>
             </optional>
             <optional>
-               <ref name="reference"/>
-            </optional>
-            <optional>
                <ref name="descriptiveNote"/>
             </optional>
          </group>
@@ -6120,9 +6108,6 @@
                   <ref name="dateRange"/>
                   <ref name="dateSet"/>
                </choice>
-            </optional>
-            <optional>
-               <ref name="reference"/>
             </optional>
             <optional>
                <ref name="descriptiveNote"/>
