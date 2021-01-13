@@ -878,14 +878,6 @@
       <xs:attribute name="notAfter" type="xs:token"/>
       <xs:attribute name="notBefore" type="xs:token"/>
       <xs:attribute name="standardDate" type="xs:token"/>
-      <xs:attribute name="status">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="ongoing"/>
-               <xs:enumeration value="unknown"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="dateRange">
@@ -1583,7 +1575,6 @@
       <xs:attribute name="status">
          <xs:simpleType>
             <xs:restriction base="xs:token">
-               <xs:enumeration value="ongoing"/>
                <xs:enumeration value="unknown"/>
             </xs:restriction>
          </xs:simpleType>

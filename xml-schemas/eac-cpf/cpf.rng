@@ -2367,14 +2367,6 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
-               <optional>
-                  <attribute name="status" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">ongoing</value>
-                        <value type="token" datatypeLibrary="" ns="">unknown</value>
-                     </choice>
-                  </attribute>
-               </optional>
             </interleave>
             <text/>
          </group>
@@ -4671,15 +4663,12 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
-               <optional>
-                  <attribute name="status" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">ongoing</value>
-                        <value type="token" datatypeLibrary="" ns="">unknown</value>
-                     </choice>
-                  </attribute>
-               </optional>
             </interleave>
+            <optional>
+               <attribute name="status" ns="">
+                  <value type="token" datatypeLibrary="" ns="">unknown</value>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>
@@ -4804,15 +4793,15 @@
                            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
-               <optional>
-                  <attribute name="status" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">ongoing</value>
-                        <value type="token" datatypeLibrary="" ns="">unknown</value>
-                     </choice>
-                  </attribute>
-               </optional>
             </interleave>
+            <optional>
+               <attribute name="status" ns="">
+                  <choice>
+                     <value type="token" datatypeLibrary="" ns="">ongoing</value>
+                     <value type="token" datatypeLibrary="" ns="">unknown</value>
+                  </choice>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>
