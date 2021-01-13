@@ -135,6 +135,16 @@
         </optional>
     </define>
     
+    <define name="attribute.status.unknown.optional">
+        <optional>
+            <attribute name="status">
+                <choice>
+                    <value>unknown</value>
+                </choice>
+            </attribute>
+        </optional>
+    </define>
+    
     <define name="attribute.style.optional">
         <optional>
             <attribute name="style">
@@ -541,9 +551,6 @@
                 <data type="token"/>
             </attribute>
         </optional>
-    </define>
-    <define name="attribute-group.standard-date-attributes.optional" combine="interleave">
-        <ref name="attribute.status.ongoing-or-unknown.optional"/>
     </define>
     
     <define name="attribute-group.target-and-xpointer.optional">

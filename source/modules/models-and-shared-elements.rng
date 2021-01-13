@@ -181,6 +181,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="attribute-group.standard-date-attributes.optional"/>
+            <ref name="attribute.status.unknown.optional"/>
             <text/>
         </element>
     </define>
@@ -344,6 +345,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="attribute-group.standard-date-attributes.optional"/>
+            <ref name="attribute.status.ongoing-or-unknown.optional"/>
             <text/>
         </element>
     </define>
