@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 https://eac.staatsbibliothek-berlin.de/schema/cpf.xsd" 
+    xmlns:mods="http://www.loc.gov/mods/v3"
+    xml:id="eac-cpf" xml:base="https://github.com/SAA-SDT/eac-cpf-schema" xml:lang="eng">
+    <control xml:id="control" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues" xml:lang="eng">
+        <recordId xml:id="recordId_ID">recordId</recordId>
+        <otherRecordId xml:id="otherRecordId1_ID" localType="otherRecordId1-localType">otherRecordId1</otherRecordId>
+        <otherRecordId xml:id="otherRecordId2_ID" localType="otherRecordId2-localType">otherRecordId2</otherRecordId>
+        <maintenanceStatus xml:id="maintenanceStatus">new</maintenanceStatus>
+        <publicationStatus xml:id="publicationStatus">published</publicationStatus>
+        <maintenanceAgency xml:id="maintenanceAgency">
+            <agencyCode xml:id="agencyCode">XX-1234567890</agencyCode>
+            <otherAgencyCode xml:id="otherAgencyCode1_ID" localType="otherAgencyCode1-localType">otherAgencyCode1</otherAgencyCode>
+            <otherAgencyCode xml:id="otherAgencyCode2_ID" localType="otherAgencyCode2-localType">otherAgencyCode2</otherAgencyCode>
+            <agencyName xml:id="agencyName1_ID" xml:lang="eng">agencyName1</agencyName>
+            <agencyName xml:id="agencyName2_ID" xml:lang="fre">agencyName2</agencyName>
+            <descriptiveNote xml:id="maintenanceAgency-descriptiveNote" xml:lang="eng">
+                <p  xml:id="maintenanceAgency-descriptiveNote-p1_ID" xml:lang="eng">maintenanceAgency-descriptiveNote-p1</p>
+                <p  xml:id="maintenanceAgency-descriptiveNote-p2_ID" xml:lang="fre">maintenanceAgency-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </maintenanceAgency>
+        <conventionDeclaration xml:id="conventionDeclaration1" xml:lang="eng">
+            <abbreviation xml:id="conventionDeclaration1-abbreviation_ID">conventionDeclaration1-abbreviation</abbreviation>
+            <citation xml:id="conventionDeclaration1-citation_ID" xml:lang="eng" lastDateTimeVerified="2021-01-13" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/102" 
+                xlink:title="conventionDeclaration1-citation-xlink:title" xlink:role="conventionDeclaration1-citation-xlink:role" 
+                xlink:actuate="onRequest" xlink:show="new" xlink:arcrole="conventionDeclaration1-citation-xlink:arcrole">
+                conventionDeclaration1-citation</citation>
+            <descriptiveNote xml:id="conventionDeclaration1-descriptiveNote" xml:lang="eng">
+                <p  xml:id="conventionDeclaration1-descriptiveNote-p1_ID" xml:lang="eng">conventionDeclaration1-descriptiveNote-p1</p>
+                <p  xml:id="conventionDeclaration1-descriptiveNote-p2_ID" xml:lang="fre">conventionDeclaration1-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </conventionDeclaration>
+        <conventionDeclaration xml:id="conventionDeclaration2" xml:lang="spa">
+            <abbreviation xml:id="conventionDeclaration2-abbreviation_ID">conventionDeclaration2-abbreviation</abbreviation>
+            <citation xml:id="conventionDeclaration2-citation_ID" xml:lang="spa" lastDateTimeVerified="2021-01-13" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/102" 
+                xlink:title="conventionDeclaration2-citation-xlink:title" xlink:role="conventionDeclaration2-citation-xlink:role" 
+                xlink:actuate="onRequest" xlink:show="new" xlink:arcrole="conventionDeclaration2-citation-xlink:arcrole">
+                conventionDeclaration2-citation</citation>
+            <descriptiveNote xml:id="conventionDeclaration2-descriptiveNote" xml:lang="spa">
+                <p  xml:id="conventionDeclaration2-descriptiveNote-p1_ID" xml:lang="spa">conventionDeclaration2-descriptiveNote-p1</p>
+                <p  xml:id="conventionDeclaration2-descriptiveNote-p2_ID" xml:lang="ita">conventionDeclaration2-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </conventionDeclaration>
+        <rightsDeclaration xml:id="rightsDeclaration1" xml:lang="eng" localType="rightsDeclaration1-localType">
+            <abbreviation xml:id="rightsDeclaration1-abbreviation_ID">rightsDeclaration1-abbreviation</abbreviation>
+            <citation xml:id="rightsDeclaration1-citation_ID" xml:lang="eng" lastDateTimeVerified="2021-01-13" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/102" 
+                xlink:title="rightsDeclaration1-citation-xlink:title" xlink:role="rightsDeclaration1-citation-xlink:role" 
+                xlink:actuate="onRequest" xlink:show="new" xlink:arcrole="rightsDeclaration2-citation-xlink:arcrole">
+                rightsDeclaration2-citation</citation>
+            <descriptiveNote xml:id="rightsDeclaration1-descriptiveNote" xml:lang="eng">
+                <p  xml:id="rightsDeclaration1-descriptiveNote-p1_ID" xml:lang="eng">rightsDeclaration1-descriptiveNote-p1</p>
+                <p  xml:id="rightsDeclaration1-descriptiveNote-p2_ID" xml:lang="fre">rightsDeclaration1-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </rightsDeclaration>
+        <rightsDeclaration xml:id="rightsDeclaration2" xml:lang="spa" localType="rightsDeclaration2-localType">
+            <abbreviation xml:id="rightsDeclaration2-abbreviation_ID">rightsDeclaration2-abbreviation</abbreviation>
+            <citation xml:id="rightsDeclaration2-citation_ID" xml:lang="spa" lastDateTimeVerified="2021-01-13" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/102" 
+                xlink:title="rightsDeclaration2-citation-xlink:title" xlink:role="rightsDeclaration2-citation-xlink:role" 
+                xlink:actuate="onRequest" xlink:show="new" xlink:arcrole="rightsDeclaration2-citation-xlink:arcrole">
+                rightsDeclaration2-citation</citation>
+            <descriptiveNote xml:id="rightsDeclaration2-descriptiveNote" xml:lang="spa">
+                <p  xml:id="rightsDeclaration2-descriptiveNote-p1_ID" xml:lang="spa">rightsDeclaration2-descriptiveNote-p1</p>
+                <p  xml:id="rightsDeclaration2-descriptiveNote-p2_ID" xml:lang="ita">rightsDeclaration2-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </rightsDeclaration>
+        <localTypeDeclaration xml:id="localTypeDeclaration1" xml:lang="eng">
+            <abbreviation xml:id="localTypeDeclaration1-abbreviation_ID">localTypeDeclaration1-abbreviation</abbreviation>
+            <citation xml:id="localTypeDeclaration1-citation_ID" xml:lang="eng" lastDateTimeVerified="2021-01-13" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/102" 
+                xlink:title="localTypeDeclaration1-citation-xlink:title" xlink:role="localTypeDeclaration1-citation-xlink:role" 
+                xlink:actuate="onRequest" xlink:show="new" xlink:arcrole="localTypeDeclaration2-citation-xlink:arcrole">
+                localTypeDeclaration2-citation</citation>
+            <descriptiveNote xml:id="localTypeDeclaration1-descriptiveNote" xml:lang="eng">
+                <p  xml:id="localTypeDeclaration1-descriptiveNote-p1_ID" xml:lang="eng">localTypeDeclaration1-descriptiveNote-p1</p>
+                <p  xml:id="localTypeDeclaration1-descriptiveNote-p2_ID" xml:lang="fre">localTypeDeclaration1-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </localTypeDeclaration>
+        <localTypeDeclaration xml:id="localTypeDeclaration2" xml:lang="spa">
+            <abbreviation xml:id="localTypeDeclaration2-abbreviation_ID">localTypeDeclaration2-abbreviation</abbreviation>
+            <citation xml:id="localTypeDeclaration2-citation_ID" xml:lang="spa" lastDateTimeVerified="2021-01-13T00:00:00" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/102" 
+                xlink:title="localTypeDeclaration2-citation-xlink:title" xlink:role="localTypeDeclaration2-citation-xlink:role" 
+                xlink:actuate="onRequest" xlink:show="new" xlink:arcrole="localTypeDeclaration2-citation-xlink:arcrole">
+                localTypeDeclaration2-citation</citation>
+            <descriptiveNote xml:id="localTypeDeclaration2-descriptiveNote" xml:lang="spa">
+                <p  xml:id="localTypeDeclaration2-descriptiveNote-p1_ID" xml:lang="spa">localTypeDeclaration2-descriptiveNote-p1</p>
+                <p  xml:id="localTypeDeclaration2-descriptiveNote-p2_ID" xml:lang="ita">localTypeDeclaration2-descriptiveNote-p2</p>
+            </descriptiveNote>
+        </localTypeDeclaration>
+        <localControl xml:id="localControl1" xml:lang="eng" localType="localControl1-localType">
+            <term xml:id="localControl1-term_ID" xml:lang="eng" scriptCode="Latn" transliteration="localControl1-term-transliteration" 
+                lastDateTimeVerified="2021-01-13T00:00:01" vocabularySource="localControl1-term-vocabularySource">localControl1-term</term>
+            <date xml:id="localControl1-date" xml:lang="eng" localType="localControl1-date-localType" notAfter="2021-02-01" 
+                notBefore="2021-01-01" standardDate="2021-01-13">localControl1-date</date>
+        </localControl>
+        <localControl xml:id="localControl2" xml:lang="eng" localType="localControl2-localType">
+            <term xml:id="localControl2-term_ID" xml:lang="eng" scriptCode="Latn" transliteration="localControl2-term-transliteration" 
+                lastDateTimeVerified="2021-01-13T00:00:02" vocabularySource="localControl2-term-vocabularySource">localControl2-term</term>
+            <dateRange xml:id="localControl2-dateRange" xml:lang="eng" localType="localControl2-dateRange-localType">
+                <fromDate xml:id="localControl2-fromDate_ID" xml:lang="eng" localType="localControl2-fromDate-localType" notAfter="2021-02-01" 
+                    notBefore="2021-01-01" standardDate="2021-01-13">localControl2-fromDate</fromDate>
+                <toDate xml:id="localControl2-toDate_ID" xml:lang="eng" localType="localControl2-toDate-localType" notAfter="2021-02-01" 
+                    notBefore="2021-01-01" standardDate="2021-01-13">localControl2-toDate</toDate>
+            </dateRange>
+        </localControl>
+        <maintenanceHistory xml:id="maintenanceHistory" xml:lang="eng">
+            <maintenanceEvent xml:id="maintenanceEvent1" xml:lang="eng">
+                <eventType xml:id="maintenanceEvent1-eventType">created</eventType>
+                <eventDateTime xml:id="maintenanceEvent1-evenDateTime_ID" xml:lang="eng" standardDateTime="2021-01-13T00:00:03">
+                    maintenanceEvent1-evenDateTime</eventDateTime>
+                <agentType xml:id="maintenanceEvent1-agentType">human</agentType>
+                <agent xml:id="maintenanceEvent1-agent_ID" xml:lang="eng">maintenanceEvent1-agent</agent>
+            </maintenanceEvent>
+            <maintenanceEvent xml:id="maintenanceEvent2" xml:lang="fre">
+                <eventType xml:id="maintenanceEvent2-eventType">revised</eventType>
+                <eventDateTime xml:id="maintenanceEvent2-evenDateTime_ID" xml:lang="fre" standardDateTime="2021-01-13T00:00:04">
+                    2021</eventDateTime>
+                <agentType xml:id="maintenanceEvent2-agentType">human</agentType>
+                <agent xml:id="maintenanceEvent2-agent_ID" xml:lang="fre">maintenanceEvent2-agent</agent>
+            </maintenanceEvent>
+            <maintenanceEvent xml:id="maintenanceEvent3" xml:lang="spa">
+                <eventType xml:id="maintenanceEvent3-eventType">updated</eventType>
+                <eventDateTime xml:id="maintenanceEvent3-evenDateTime_ID" xml:lang="spa" standardDateTime="2021-01-13T00:00:05">
+                    Enero 2021</eventDateTime>
+                <agentType xml:id="maintenanceEvent3-agentType">human</agentType>
+                <agent xml:id="maintenanceEvent3-agent_ID" xml:lang="spa">maintenanceEvent3-agent</agent>
+            </maintenanceEvent>
+            <maintenanceEvent xml:id="maintenanceEvent4" xml:lang="ger">
+                <eventType xml:id="maintenanceEvent4-eventType">derived</eventType>
+                <eventDateTime xml:id="maintenanceEvent4-evenDateTime_ID" xml:lang="ger" standardDateTime="2021-01-13T00:00:06">
+                    13. Januar 2021</eventDateTime>
+                <agentType xml:id="maintenanceEvent4-agentType">human</agentType>
+                <agent xml:id="maintenanceEvent4-agent_ID" xml:lang="ger">maintenanceEvent4-agent</agent>
+            </maintenanceEvent>
+            <maintenanceEvent xml:id="maintenanceEvent5" xml:lang="eng">
+                <eventType xml:id="maintenanceEvent5-eventType">updated</eventType>
+                <eventDateTime xml:id="maintenanceEvent5-evenDateTime_ID" xml:lang="eng" standardDateTime="2021-01-13T00:00:07">
+                    01/13/2021</eventDateTime>
+                <agentType xml:id="maintenanceEvent5-agentType">human</agentType>
+                <agent xml:id="maintenanceEvent5-agent_ID" xml:lang="eng">maintenanceEvent5-agent</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources xml:id="sources" xml:lang="eng" xml:base="https://www2.archivists.org/governance/handbook/section7/groups/Standards">
+            <source xml:id="source1" lastDateTimeVerified="2021-01-13T00:00:08" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+                xlink:href="/TS-EAS" xlink:title="source1-xlink:title" xlink:role="source1-xlink:role" xlink:actuate="onRequest" 
+                xlink:show="new" xlink:arcrole="source1-xlink:arcrole">
+                <sourceEntry xml:id="source1-sourceEntry1_ID" xml:lang="eng" scriptCode="Latn" transliteration="source1-sourceEntry1-transliteration">
+                    source1-sourceEntry1
+                </sourceEntry>
+                <sourceEntry xml:id="source1-sourceEntry2_ID" xml:lang="fre" scriptCode="Latn" transliteration="source1-sourceEntry2-transliteration">
+                    source1-sourceEntry2
+                </sourceEntry>
+                <objectBinWrap xml:id="source1-objectBinWrap">c291cmNlMS1vYmplY3RCaW5XcmFw</objectBinWrap>
+                <descriptiveNote xml:id="source1-descriptiveNote" xml:lang="eng">
+                    <p  xml:id="source1-descriptiveNote-p1_ID" xml:lang="eng">source1-descriptiveNote-p1</p>
+                    <p  xml:id="source1-descriptiveNote-p2_ID" xml:lang="fre">source1-descriptiveNote-p2</p>
+                </descriptiveNote>
+            </source>
+            <source xml:id="source2" lastDateTimeVerified="2021-01-13T00:00:09" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+                xlink:href="/TS-EAS" xlink:title="source2-xlink:title" xlink:role="source2-xlink:role" xlink:actuate="onRequest" 
+                xlink:show="new" xlink:arcrole="source2-xlink:arcrole">
+                <sourceEntry xml:id="source2-sourceEntry1_ID" xml:lang="spa" scriptCode="Latn" transliteration="source2-sourceEntry1-transliteration">
+                    source2-sourceEntry1
+                </sourceEntry>
+                <sourceEntry xml:id="source2-sourceEntry2_ID" xml:lang="ita" scriptCode="Latn" transliteration="source2-sourceEntry2-transliteration">
+                    source2-sourceEntry2
+                </sourceEntry>
+                <objectXMLWrap xml:id="source2-objectXMLWrap_ID">
+                    <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                        <mods:titleInfo>
+                            <mods:title>source2-objectXMLWrap</mods:title>
+                        </mods:titleInfo>
+                    </mods:mods>
+                </objectXMLWrap>
+                <descriptiveNote xml:id="source2-descriptiveNote" xml:lang="spa">
+                    <p  xml:id="source2-descriptiveNote-p1_ID" xml:lang="spa">source2-descriptiveNote-p1</p>
+                    <p  xml:id="source2-descriptiveNote-p2_ID" xml:lang="ita">source2-descriptiveNote-p2</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+    </control>
+    <multipleIdentities>
+        <cpfDescription>
+            <identity>
+                <entityType>person</entityType>
+                <nameEntryParallel>
+                    <nameEntry>
+                        <part></part>
+                    </nameEntry>
+                    <nameEntry>
+                        <part></part>
+                    </nameEntry>
+                </nameEntryParallel>
+            </identity>
+        </cpfDescription>
+        <cpfDescription>
+            <identity>
+                <entityType>person</entityType>
+                <nameEntry>
+                    <part></part>
+                </nameEntry>
+            </identity>
+        </cpfDescription>
+    </multipleIdentities>
+</eac-cpf>
