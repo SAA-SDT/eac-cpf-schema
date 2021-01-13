@@ -29,7 +29,8 @@
    </define>
    <define name="element.cpfDescription">
       <element name="cpfDescription">
-         <ref name="attribute-group.global-plus-base.optional"/>
+         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="element.identity"/>
          <optional>
             <ref name="element.description"/>

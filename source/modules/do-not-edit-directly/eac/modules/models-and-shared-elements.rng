@@ -410,9 +410,6 @@
       <optional>
          <ref name="model.all-dates.choice"/>
       </optional>
-      <optional>
-         <ref name="element.reference"/>
-      </optional>
       <ref name="element.descriptiveNote.optional"/>
    </define>
 </grammar>

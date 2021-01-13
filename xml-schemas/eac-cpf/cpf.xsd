@@ -191,6 +191,11 @@
       <xs:attribute name="id" type="xs:ID"/>
       <xs:attribute name="target" type="xs:IDREF"/>
       <xs:attribute name="base" type="xs:anyURI"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
+      <xs:attribute name="sourceReference" type="xs:IDREF"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="multipleIdentities">
@@ -1738,7 +1743,6 @@
             <xs:element type="v2:dateRange" name="dateRange"/>
             <xs:element type="v2:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:reference" name="reference" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
