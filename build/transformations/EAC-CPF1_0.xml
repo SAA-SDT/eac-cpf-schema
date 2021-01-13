@@ -186,25 +186,68 @@
             </source>
         </sources>
     </control>
-    <multipleIdentities>
-        <cpfDescription>
-            <identity>
-                <entityType>person</entityType>
-                <nameEntryParallel>
-                    <nameEntry>
-                        <part></part>
+    <multipleIdentities xml:id="multipleIdentities" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
+        <cpfDescription xml:id="cpfDescription1" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
+            <identity xml:id="cpfDescription1-identity" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues" 
+                localType="cpfDescription1-identity-localType" identityType="given">
+                <entityType xml:id="entityType1">person</entityType>
+                <nameEntryParallel xml:id="cpfDescription1-nameEntryParallel1" localType="cpfDescription1-nameEntryParallel1-localType">
+                    <nameEntry xml:id="cpfDescription1-nameEntryParallel1-nameEntry1" xml:lang="eng" scriptCode="Latn" 
+                        transliteration="cpfDescription1-nameEntryParallel1-nameEntry1-transliteration" 
+                        localType="cpfDescription1-nameEntryParallel1-nameEntry1-localType">
+                        <part xml:id="cpfDescription1-nameEntryParallel1-nameEntry1-part1_ID" xml:lang="eng" 
+                            localType="cpfDescription1-nameEntryParallel1-nameEntry1-part1-localType">cpfDescription1-nameEntryParallel1-nameEntry1-part1</part>
+                        <part xml:id="cpfDescription1-nameEntryParallel1-nameEntry1-part2_ID" xml:lang="eng" 
+                            localType="cpfDescription1-nameEntryParallel1-nameEntry1-part2-localType">cpfDescription1-nameEntryParallel1-nameEntry1-part2</part>
                     </nameEntry>
-                    <nameEntry>
-                        <part></part>
+                    <nameEntry xml:id="cpfDescription1-nameEntryParallel1-nameEntry2" xml:lang="eng" scriptCode="Latn" 
+                        transliteration="cpfDescription1-nameEntryParallel1-nameEntry2-transliteration" 
+                        localType="cpfDescription1-nameEntryParallel1-nameEntry2-localType">
+                        <part xml:id="cpfDescription1-nameEntryParallel1-nameEntry2-part1_ID" xml:lang="eng" 
+                            localType="cpfDescription1-nameEntryParallel1-nameEntry2-part1-localType">cpfDescription1-nameEntryParallel1-nameEntry2-part1</part>
+                        <part xml:id="cpfDescription1-nameEntryParallel1-nameEntry2-part2_ID" xml:lang="eng" 
+                            localType="cpfDescription1-nameEntryParallel1-nameEntry2-part2-localType">cpfDescription1-nameEntryParallel1-nameEntry2-part2</part>
+                    </nameEntry>
+                </nameEntryParallel>
+                <nameEntryParallel xml:id="cpfDescription1-nameEntryParallel2" localType="cpfDescription1-nameEntryParallel2-localType">
+                    <nameEntry xml:id="cpfDescription1-nameEntryParallel2-nameEntry1" xml:lang="fre" scriptCode="Latn" 
+                        transliteration="cpfDescription1-nameEntryParallel2-nameEntry1-transliteration" 
+                        localType="cpfDescription1-nameEntryParallel2-nameEntry1-localType">
+                        <part xml:id="cpfDescription1-nameEntryParallel2-nameEntry1-part1_ID" xml:lang="fre" 
+                            localType="cpfDescription1-nameEntryParallel2-nameEntry1-part1-localType">cpfDescription1-nameEntryParallel2-nameEntry1-part1</part>
+                        <part xml:id="cpfDescription1-nameEntryParallel2-nameEntry1-part2_ID" xml:lang="fre" 
+                            localType="cpfDescription1-nameEntryParallel2-nameEntry1-part2-localType">cpfDescription1-nameEntryParallel2-nameEntry1-part2</part>
+                    </nameEntry>
+                    <nameEntry xml:id="cpfDescription1-nameEntryParallel2-nameEntry2" xml:lang="fre" scriptCode="Latn" 
+                        transliteration="cpfDescription1-nameEntryParallel2-nameEntry2-transliteration" 
+                        localType="cpfDescription1-nameEntryParallel2-nameEntry2-localType">
+                        <part xml:id="cpfDescription1-nameEntryParallel2-nameEntry2-part1_ID" xml:lang="fre" 
+                            localType="cpfDescription1-nameEntryParallel2-nameEntry2-part1-localType">cpfDescription1-nameEntryParallel2-nameEntry2-part1</part>
+                        <part xml:id="cpfDescription1-nameEntryParallel2-nameEntry2-part2_ID" xml:lang="fre" 
+                            localType="cpfDescription1-nameEntryParallel2-nameEntry2-part2-localType">cpfDescription1-nameEntryParallel2-nameEntry2-part2</part>
                     </nameEntry>
                 </nameEntryParallel>
             </identity>
         </cpfDescription>
-        <cpfDescription>
-            <identity>
-                <entityType>person</entityType>
-                <nameEntry>
-                    <part></part>
+        <cpfDescription  xml:id="cpfDescription2" xml:lang="fre" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
+            <identity xml:id="cpfDescription2-identity" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues" 
+                localType="cpfDescription2-identity-localType" identityType="acquired">
+                <entityType xml:id="entityType2">person</entityType>
+                <nameEntry xml:id="cpfDescription2-nameEntry1" xml:lang="eng" scriptCode="Latn" 
+                    transliteration="cpfDescription2-nameEntry1-transliteration" 
+                    localType="cpfDescription2-nameEntry1-localType">
+                    <part xml:id="cpfDescription2-nameEntry1-part1_ID" xml:lang="eng" 
+                        localType="cpfDescription2-nameEntry1-part1-localType">cpfDescription2-nameEntry1-part1</part>
+                    <part xml:id="cpfDescription2-nameEntry1-part2_ID" xml:lang="eng" 
+                        localType="cpfDescription2-nameEntry1-part2-localType">cpfDescription2-nameEntry1-part2</part>
+                </nameEntry>
+                <nameEntry xml:id="cpfDescription2-nameEntry2" xml:lang="fre" scriptCode="Latn" 
+                    transliteration="cpfDescription2-nameEntry2-transliteration" 
+                    localType="cpfDescription2-nameEntry2-localType">
+                    <part xml:id="cpfDescription2-nameEntry2-part1_ID" xml:lang="fre" 
+                        localType="cpfDescription2-nameEntry2-part1-localType">cpfDescription2-nameEntry2-part1</part>
+                    <part xml:id="cpfDescription2-nameEntry2-part2_ID" xml:lang="fre" 
+                        localType="cpfDescription2-nameEntry2-part2-localType">cpfDescription2-nameEntry2-part2</part>
                 </nameEntry>
             </identity>
         </cpfDescription>
