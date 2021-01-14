@@ -6262,7 +6262,6 @@
                   <ref name="date"/>
                   <ref name="dateRange"/>
                   <ref name="dateSet"/>
-                  <ref name="reference"/>
                </choice>
             </zeroOrMore>
             <optional>
