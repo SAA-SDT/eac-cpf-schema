@@ -167,7 +167,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <text/>
+            <ref name="model.mixed-content.optional"/>
             <!-- note that EAD3 allows a lot of mixed content here, so when we update,
                 we'll need to accomodate something like:
                 <ref name="model.paragraph.content"/>
