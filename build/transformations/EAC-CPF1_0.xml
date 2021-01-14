@@ -190,7 +190,9 @@
         <cpfDescription xml:id="cpfDescription1" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
             <identity xml:id="cpfDescription1-identity" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues" 
                 localType="cpfDescription1-identity-localType" identityType="given">
-                <entityType xml:id="entityType1">person</entityType>
+                <entityId xml:id="cpfDescription1-entityId1_ID" localType="cpfDescription1-entityId1-localType">cpfDescription1-entityId1</entityId>
+                <entityId xml:id="cpfDescription1-entityId2_ID" localType="cpfDescription1-entityId2-localType">cpfDescription2-entityId1</entityId>
+                <entityType xml:id="cpfDescription1-entityType1">person</entityType>
                 <nameEntryParallel xml:id="cpfDescription1-nameEntryParallel1" localType="cpfDescription1-nameEntryParallel1-localType">
                     <nameEntry xml:id="cpfDescription1-nameEntryParallel1-nameEntry1" xml:lang="eng" scriptCode="Latn" 
                         transliteration="cpfDescription1-nameEntryParallel1-nameEntry1-transliteration" 
@@ -199,6 +201,8 @@
                             localType="cpfDescription1-nameEntryParallel1-nameEntry1-part1-localType">cpfDescription1-nameEntryParallel1-nameEntry1-part1</part>
                         <part xml:id="cpfDescription1-nameEntryParallel1-nameEntry1-part2_ID" xml:lang="eng" 
                             localType="cpfDescription1-nameEntryParallel1-nameEntry1-part2-localType">cpfDescription1-nameEntryParallel1-nameEntry1-part2</part>
+                        <preferredForm xml:id="cpfDescription1-nameEntryParallel1-preferredForm1_ID">cpfDescription1-nameEntryParallel1-preferredForm1</preferredForm>
+                        <preferredForm xml:id="cpfDescription1-nameEntryParallel1-preferredForm2_ID">cpfDescription1-nameEntryParallel1-preferredForm2</preferredForm>
                     </nameEntry>
                     <nameEntry xml:id="cpfDescription1-nameEntryParallel1-nameEntry2" xml:lang="eng" scriptCode="Latn" 
                         transliteration="cpfDescription1-nameEntryParallel1-nameEntry2-transliteration" 
@@ -208,6 +212,13 @@
                         <part xml:id="cpfDescription1-nameEntryParallel1-nameEntry2-part2_ID" xml:lang="eng" 
                             localType="cpfDescription1-nameEntryParallel1-nameEntry2-part2-localType">cpfDescription1-nameEntryParallel1-nameEntry2-part2</part>
                     </nameEntry>
+                    <useDates xml:id="cpfDescription1-nameEntryParallel1-useDates" xml:lang="eng">
+                        <date xml:id="cpfDescription1-nameEntryParallel1-useDates-date_ID" xml:lang="eng" 
+                            localType="cpfDescription1-nameEntryParallel1-useDates-date-localType" standardDate="2021-01-14" notBefore="2021-01" 
+                            notAfter="2021-02">cpfDescription1-nameEntryParallel1-useDates-date</date>
+                    </useDates>
+                    <authorizedForm xml:id="cpfDescription1-nameEntryParallel1-authorizedForm1_ID">cpfDescription1-nameEntryParallel1-authorizedForm1</authorizedForm>
+                    <authorizedForm xml:id="cpfDescription1-nameEntryParallel1-authorizedForm2_ID">cpfDescription1-nameEntryParallel1-authorizedForm2</authorizedForm>
                 </nameEntryParallel>
                 <nameEntryParallel xml:id="cpfDescription1-nameEntryParallel2" localType="cpfDescription1-nameEntryParallel2-localType">
                     <nameEntry xml:id="cpfDescription1-nameEntryParallel2-nameEntry1" xml:lang="fre" scriptCode="Latn" 
@@ -226,13 +237,127 @@
                         <part xml:id="cpfDescription1-nameEntryParallel2-nameEntry2-part2_ID" xml:lang="fre" 
                             localType="cpfDescription1-nameEntryParallel2-nameEntry2-part2-localType">cpfDescription1-nameEntryParallel2-nameEntry2-part2</part>
                     </nameEntry>
+                    <useDates xml:id="cpfDescription1-nameEntryParallel2-useDates" xml:lang="eng">
+                        <dateRange xml:id="cpfDescription1-nameEntryParallel2-useDates-dateRange" xml:lang="eng" 
+                            localType="cpfDescription1-nameEntryParallel2-useDates-dateRange-localType">
+                            <fromDate xml:id="cpfDescription1-nameEntryParallel2-useDates-dateRange-fromDate_ID" xml:lang="eng" 
+                                localType="cpfDescription1-nameEntryParallel2-useDates-dateRange-fromDate-localType" standardDate="2021-01-14"
+                                notBefore="2021-01" notAfter="2021-02">cpfDescription1-nameEntryParallel2-useDates-dateRange-fromDate</fromDate>
+                            <toDate xml:id="cpfDescription1-nameEntryParallel2-useDates-dateRange-toDate_ID" xml:lang="eng" 
+                                localType="cpfDescription1-nameEntryParallel2-useDates-dateRange-toDate-localType" standardDate="2021-01-14"
+                                notBefore="2021-01" notAfter="2021-02">cpfDescription1-nameEntryParallel2-useDates-dateRange-toDate</toDate>
+                        </dateRange>
+                    </useDates>
+                    <alternativeForm xml:id="cpfDescription1-nameEntryParallel2-alternativeForm1_ID">cpfDescription1-nameEntryParallel2-alternativeForm1</alternativeForm>
+                    <alternativeForm xml:id="cpfDescription1-nameEntryParallel2-alternativeForm2_ID">cpfDescription1-nameEntryParallel2-alternativeForm2</alternativeForm>
                 </nameEntryParallel>
+                <nameEntry xml:id="cpfDescription1-nameEntry3" xml:lang="eng" scriptCode="Latn" 
+                    transliteration="cpfDescription1-nameEntry3-transliteration" 
+                    localType="cpfDescription1-nameEntry3-localType">
+                    <part xml:id="cpfDescription1-nameEntry3-part1_ID" xml:lang="eng" 
+                        localType="cpfDescription1-nameEntry3-part1-localType">cpfDescription1-nameEntry3-part1</part>
+                    <part xml:id="cpfDescription1-nameEntry3-part2_ID" xml:lang="eng" 
+                        localType="cpfDescription1-nameEntry3-part2-localType">cpfDescription1-nameEntry3-part2</part>
+                </nameEntry>
+                <nameEntry xml:id="cpfDescription1-nameEntry4" xml:lang="eng" scriptCode="Latn" 
+                    transliteration="cpfDescription1-nameEntry4-transliteration" 
+                    localType="cpfDescription1-nameEntry4-localType">
+                    <part xml:id="cpfDescription1-nameEntry4-part1_ID" xml:lang="eng" 
+                        localType="cpfDescription1-nameEntry4-part1-localType">cpfDescription1-nameEntry4-part1</part>
+                    <part xml:id="cpfDescription1-nameEntry4-part2_ID" xml:lang="eng" 
+                        localType="cpfDescription1-nameEntry4-part2-localType">cpfDescription1-nameEntry4-part2</part>
+                </nameEntry>
+                <descriptiveNote xml:id="cpfDescription1-identity-descriptiveNote" xml:lang="eng">
+                    <p  xml:id="cpfDescription1-identity-descriptiveNote-p1_ID" xml:lang="eng">cpfDescription1-identity-descriptiveNote-p1</p>
+                    <p  xml:id="cpfDescription1-identity-descriptiveNote-p2_ID" xml:lang="fre">cpfDescription1-identity-descriptiveNote-p2</p>
+                </descriptiveNote>
             </identity>
+            <description xml:id="cpfDescription1-description" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
+                <existDates>
+                    <dateSet xml:id="cpfDescription1-existDates-dateSet" xml:lang="eng" 
+                        localType="cpfDescription1-existDates-dateSet-localType">
+                        <date xml:id="cpfDescription1-existDates-dateSet-date_ID" xml:lang="eng" 
+                            localType="cpfDescription1-existDates-dateSet-date-localType" standardDate="2021-01-14" notBefore="2021-01" 
+                            notAfter="2021-02">cpfDescription1-existDates-dateSet-date</date>
+                        <dateRange xml:id="cpfDescription1-existDates-dateSet-dateRange" xml:lang="eng" 
+                            localType="cpfDescription1-existDates-dateSet-dateRange-localType">
+                            <fromDate xml:id="cpfDescription1-existDates-dateSet-dateRange-fromDate_ID" xml:lang="eng" 
+                                localType="cpfDescription1-existDates-dateSet-dateRange-fromDate-localType" standardDate="2021-01-14"
+                                notBefore="2021-01" notAfter="2021-02">cpfDescription1-existDates-dateSet-dateRange-fromDate</fromDate>
+                            <toDate xml:id="cpfDescription1-existDates-dateSet-dateRange-toDate_ID" xml:lang="eng" 
+                                localType="cpfDescription1-existDates-dateSet-dateRange-toDate-localType" standardDate="2021-01-14"
+                                notBefore="2021-01" notAfter="2021-02">cpfDescription1-existDates-dateSet-dateRange-toDate</toDate>
+                        </dateRange>
+                    </dateSet>
+                    <descriptiveNote xml:id="cpfDescription1-existDates-descriptiveNote" xml:lang="eng">
+                        <p  xml:id="cpfDescription1-existDates-descriptiveNote-p1_ID" xml:lang="eng">cpfDescription1-existDates-descriptiveNote-p1</p>
+                        <p  xml:id="cpfDescription1-existDates-descriptiveNote-p2_ID" xml:lang="fre">cpfDescription1-existDates-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </existDates>
+                <generalContext></generalContext>
+                <generalContext></generalContext>
+                <occupation></occupation>
+                <occupation></occupation>
+                <occupations></occupations>
+                <occupations></occupations>
+                <function></function>
+                <function></function>
+                <functions></functions>
+                <functions></functions>
+                <mandate></mandate>
+                <mandate></mandate>
+                <mandates></mandates>
+                <mandates></mandates>
+                <languageUsed>
+                    <language languageCode="eng"></language>
+                    <script scriptCode="Latn"></script>
+                </languageUsed>
+                <languageUsed>
+                    <language languageCode="fre"></language>
+                    <script scriptCode="Latn"></script>
+                </languageUsed>
+                <languagesUsed>
+                    <languageUsed>
+                        <language languageCode="spa"></language>
+                        <script scriptCode="Latn"></script>
+                    </languageUsed>
+                </languagesUsed>
+                <languagesUsed>
+                    <languageUsed>
+                        <language languageCode="ita"></language>
+                        <script scriptCode="Latn"></script>
+                    </languageUsed>
+                </languagesUsed>
+                <place></place>
+                <place></place>
+                <places></places>
+                <places></places>
+                <legalStatus></legalStatus>
+                <legalStatus></legalStatus>
+                <legalStatuses></legalStatuses>
+                <legalStatuses></legalStatuses>
+                <localDescription localType="cpfDescription1-localDescription1-localType"></localDescription>
+                <localDescription localType="cpfDescription1-localDescription2-localType"></localDescription>
+                <localDescriptions localType="cpfDescription1-localDescriptions1-localType"></localDescriptions>
+                <localDescriptions localType="cpfDescription1-localDescriptions2-localType"></localDescriptions>
+                <structureOrGenealogy></structureOrGenealogy>
+                <structureOrGenealogy></structureOrGenealogy>
+                <biogHist></biogHist>
+                <biogHist></biogHist>
+            </description>
+            <relations>
+                <cpfRelation></cpfRelation>
+                <cpfRelation></cpfRelation>
+                <resourceRelation></resourceRelation>
+                <resourceRelation></resourceRelation>
+                <functionRelation></functionRelation>
+                <functionRelation></functionRelation>
+            </relations>
         </cpfDescription>
         <cpfDescription  xml:id="cpfDescription2" xml:lang="fre" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
             <identity xml:id="cpfDescription2-identity" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues" 
                 localType="cpfDescription2-identity-localType" identityType="acquired">
-                <entityType xml:id="entityType2">person</entityType>
+                <entityType xml:id="cpfDescription2-entityType2">person</entityType>
                 <nameEntry xml:id="cpfDescription2-nameEntry1" xml:lang="eng" scriptCode="Latn" 
                     transliteration="cpfDescription2-nameEntry1-transliteration" 
                     localType="cpfDescription2-nameEntry1-localType">
@@ -240,6 +365,25 @@
                         localType="cpfDescription2-nameEntry1-part1-localType">cpfDescription2-nameEntry1-part1</part>
                     <part xml:id="cpfDescription2-nameEntry1-part2_ID" xml:lang="eng" 
                         localType="cpfDescription2-nameEntry1-part2-localType">cpfDescription2-nameEntry1-part2</part>
+                    <useDates xml:id="cpfDescription2-nameEntry1-useDates" xml:lang="eng">
+                        <dateSet xml:id="cpfDescription2-nameEntry1-useDates-dateSet" xml:lang="eng" 
+                            localType="cpfDescription2-nameEntry1-useDates-dateSet-localType">
+                            <date xml:id="cpfDescription2-nameEntry1-useDates-dateSet-date_ID" xml:lang="eng" 
+                                localType="cpfDescription2-nameEntry1-useDates-dateSet-date-localType" standardDate="2021-01-14" notBefore="2021-01" 
+                                notAfter="2021-02">cpfDescription2-nameEntry1-useDates-dateSet-date</date>
+                            <dateRange xml:id="cpfDescription2-nameEntry1-useDates-dateSet-dateRange" xml:lang="eng" 
+                                localType="cpfDescription2-nameEntry1-useDates-dateSet-dateRange-localType">
+                                <fromDate xml:id="cpfDescription2-nameEntry1-useDates-dateSet-dateRange-fromDate_ID" xml:lang="eng" 
+                                    localType="cpfDescription2-nameEntry1-useDates-dateSet-dateRange-fromDate-localType" standardDate="2021-01-14"
+                                    notBefore="2021-01" notAfter="2021-02">cpfDescription2-nameEntry1-useDates-dateSet-dateRange-fromDate</fromDate>
+                                <toDate xml:id="cpfDescription2-nameEntry1-useDates-dateSet-dateRange-toDate_ID" xml:lang="eng" 
+                                    localType="cpfDescription2-nameEntry1-useDates-dateSet-dateRange-toDate-localType" standardDate="2021-01-14"
+                                    notBefore="2021-01" notAfter="2021-02">cpfDescription2-nameEntry1-useDates-dateSet-dateRange-toDate</toDate>
+                            </dateRange>
+                        </dateSet>
+                    </useDates>
+                    <authorizedForm xml:id="cpfDescription2-nameEntry1-authorizedForm1_ID">cpfDescription2-nameEntry1-authorizedForm1</authorizedForm>
+                    <authorizedForm xml:id="cpfDescription2-nameEntry1-authorizedForm2_ID">cpfDescription2-nameEntry1-authorizedForm2</authorizedForm>
                 </nameEntry>
                 <nameEntry xml:id="cpfDescription2-nameEntry2" xml:lang="fre" scriptCode="Latn" 
                     transliteration="cpfDescription2-nameEntry2-transliteration" 
@@ -248,8 +392,13 @@
                         localType="cpfDescription2-nameEntry2-part1-localType">cpfDescription2-nameEntry2-part1</part>
                     <part xml:id="cpfDescription2-nameEntry2-part2_ID" xml:lang="fre" 
                         localType="cpfDescription2-nameEntry2-part2-localType">cpfDescription2-nameEntry2-part2</part>
+                    <alternativeForm xml:id="cpfDescription2-nameEntry2-alternativeForm1_ID">cpfDescription2-nameEntry2-alternativeForm1</alternativeForm>
+                    <alternativeForm xml:id="cpfDescription2-nameEntry2-alternativeForm2_ID">cpfDescription2-nameEntry2-alternativeForm2</alternativeForm>
                 </nameEntry>
             </identity>
+            <alternativeSet>
+                <setComponent></setComponent>
+            </alternativeSet>
         </cpfDescription>
     </multipleIdentities>
 </eac-cpf>
