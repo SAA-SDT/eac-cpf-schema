@@ -282,12 +282,9 @@
                     <ref name="element.contact"/>
                 </choice>
             </oneOrMore>
-            <zeroOrMore>
-                <choice>
-                    <ref name="model.all-dates.choice"/>
-                    <ref name="element.reference"/>
-                </choice>
-            </zeroOrMore>
+            <optional>
+                <ref name="model.all-dates.choice"/>
+            </optional>
             <ref name="element.descriptiveNote.optional"/> 
         </element>
     </define>
