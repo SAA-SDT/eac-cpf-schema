@@ -65,6 +65,9 @@
                     <ref name="element.chronItemSet"/>
                 </oneOrMore>
             </choice>
+            <zeroOrMore>
+                <ref name="element.reference"/>
+            </zeroOrMore>
         </element>
     </define>
     
@@ -78,6 +81,9 @@
             <oneOrMore>
                 <ref name="element.event"/>
             </oneOrMore>
+            <zeroOrMore>
+                <ref name="element.reference"/>
+            </zeroOrMore>
         </element>
     </define>
     
