@@ -5012,7 +5012,13 @@
                   </attribute>
                </optional>
             </interleave>
-            <text/>
+            <oneOrMore>
+               <choice>
+                  <ref name="reference"/>
+                  <ref name="span"/>
+                  <text/>
+               </choice>
+            </oneOrMore>
          </group>
       </element>
    </define>
@@ -8373,7 +8379,13 @@
                   </attribute>
                </optional>
             </interleave>
-            <text/>
+            <oneOrMore>
+               <choice>
+                  <ref name="reference"/>
+                  <ref name="span"/>
+                  <text/>
+               </choice>
+            </oneOrMore>
          </group>
       </element>
    </define>
