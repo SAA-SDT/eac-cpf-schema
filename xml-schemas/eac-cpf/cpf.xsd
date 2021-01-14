@@ -1675,6 +1675,10 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="eventDescription" mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+         <xs:element type="v2:reference" name="reference"/>
+         <xs:element type="v2:span" name="span"/>
+      </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2760,6 +2764,10 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="event" mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+         <xs:element type="v2:reference" name="reference"/>
+         <xs:element type="v2:span" name="span"/>
+      </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
