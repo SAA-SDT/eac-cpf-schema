@@ -61,6 +61,9 @@
                <ref name="element.chronItemSet"/>
             </oneOrMore>
          </choice>
+         <zeroOrMore>
+            <ref name="element.reference"/>
+         </zeroOrMore>
       </element>
    </define>
    <define name="element.chronItemSet">
@@ -73,6 +76,9 @@
          <oneOrMore>
             <ref name="element.event"/>
          </oneOrMore>
+         <zeroOrMore>
+            <ref name="element.reference"/>
+         </zeroOrMore>
       </element>
    </define>
    <define name="element.chronList">
@@ -254,12 +260,9 @@
                <ref name="element.contact"/>
             </choice>
          </oneOrMore>
-         <zeroOrMore>
-            <choice>
-               <ref name="model.all-dates.choice"/>
-               <ref name="element.reference"/>
-            </choice>
-         </zeroOrMore>
+         <optional>
+            <ref name="model.all-dates.choice"/>
+         </optional>
          <ref name="element.descriptiveNote.optional"/>
       </element>
    </define>

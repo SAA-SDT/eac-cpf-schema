@@ -6257,13 +6257,13 @@
                   <ref name="contact"/>
                </choice>
             </oneOrMore>
-            <zeroOrMore>
+            <optional>
                <choice>
                   <ref name="date"/>
                   <ref name="dateRange"/>
                   <ref name="dateSet"/>
                </choice>
-            </zeroOrMore>
+            </optional>
             <optional>
                <ref name="descriptiveNote"/>
             </optional>

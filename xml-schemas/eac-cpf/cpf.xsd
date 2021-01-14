@@ -2669,8 +2669,11 @@
             </xs:sequence>
             <xs:element type="v2:chronItemSet" name="chronItemSet" maxOccurs="unbounded"/>
          </xs:choice>
-         <xs:element type="v2:reference" name="reference" minOccurs="0" maxOccurs="unbounded"/>
-      </xs:sequence> 
+         <xs:element type="v2:reference"
+                     name="reference"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
+      </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -2809,8 +2812,11 @@
                      minOccurs="0"
                      maxOccurs="unbounded"/>
          <xs:element type="v2:event" name="event" maxOccurs="unbounded"/>
-         <xs:element type="v2:reference" name="reference" minOccurs="0" maxOccurs="unbounded"/>
-      </xs:sequence> 
+         <xs:element type="v2:reference"
+                     name="reference"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
+      </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
             <xs:restriction base="xs:token">
