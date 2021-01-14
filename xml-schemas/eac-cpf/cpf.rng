@@ -8036,6 +8036,9 @@
                   <ref name="chronItemSet"/>
                </oneOrMore>
             </choice>
+            <zeroOrMore>
+               <ref name="reference"/>
+            </zeroOrMore>
          </group>
       </element>
    </define>
@@ -8478,6 +8481,9 @@
             <oneOrMore>
                <ref name="event"/>
             </oneOrMore>
+            <zeroOrMore>
+               <ref name="reference"/>
+            </zeroOrMore>
          </group>
       </element>
    </define>
