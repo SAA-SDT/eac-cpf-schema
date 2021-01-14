@@ -2670,8 +2670,6 @@
             </xs:sequence>
             <xs:element type="v2:chronItemSet" name="chronItemSet" maxOccurs="unbounded"/>
          </xs:choice>
-      </xs:sequence>
-      <xs:sequence>
          <xs:element type="v2:reference" name="reference" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence> 
       <xs:attribute name="audience">
@@ -2812,8 +2810,6 @@
                      minOccurs="0"
                      maxOccurs="unbounded"/>
          <xs:element type="v2:event" name="event" maxOccurs="unbounded"/>
-      </xs:sequence>
-      <xs:sequence>
          <xs:element type="v2:reference" name="reference" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence> 
       <xs:attribute name="audience">
