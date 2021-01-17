@@ -6560,14 +6560,12 @@
             <optional>
                <ref name="head"/>
             </optional>
-            <interleave>
-               <zeroOrMore>
+            <zeroOrMore>
+               <choice>
                   <ref name="list"/>
-               </zeroOrMore>
-               <zeroOrMore>
                   <ref name="item"/>
-               </zeroOrMore>
-            </interleave>
+               </choice>
+            </zeroOrMore>
          </group>
       </element>
    </define>
@@ -8020,10 +8018,10 @@
             </choice>
             <choice>
                <group>
+                  <ref name="event"/>
                   <optional>
                      <ref name="place"/>
                   </optional>
-                  <ref name="event"/>
                </group>
                <oneOrMore>
                   <ref name="chronItemSet"/>
@@ -8468,14 +8466,14 @@
                   </attribute>
                </optional>
             </interleave>
-            <zeroOrMore>
-               <ref name="place"/>
-            </zeroOrMore>
             <oneOrMore>
                <ref name="event"/>
             </oneOrMore>
             <zeroOrMore>
-               <ref name="reference"/>
+               <choice>
+                  <ref name="place"/>
+                  <ref name="reference"/>
+               </choice>
             </zeroOrMore>
          </group>
       </element>
