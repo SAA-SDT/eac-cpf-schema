@@ -409,12 +409,12 @@
       <oneOrMore>
          <ref name="element.term"/>
       </oneOrMore>
-      <zeroOrMore>
-         <ref name="element.placeName"/>
-      </zeroOrMore>
       <optional>
          <ref name="model.all-dates.choice"/>
       </optional>
+      <zeroOrMore>
+         <ref name="element.placeName"/>
+      </zeroOrMore>
       <ref name="element.descriptiveNote.optional"/>
    </define>
 </grammar>

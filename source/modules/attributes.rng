@@ -105,6 +105,47 @@
         </attribute>
     </define>
     
+    <define name="attribute.maintenanceStatus">
+        <attribute name="maintenanceStatus">
+            <choice>
+                <value>revised</value>
+                <value>deleted</value>
+                <value>new</value>
+                <value>deletedSplit</value>
+                <value>deletedMerged</value>
+                <value>deletedReplaced</value>
+                <value>cancelled</value>
+                <value>derived</value>
+            </choice> 
+        </attribute>  
+    </define>
+    
+    <define name="attribute.maintenanceEventType">
+        <attribute name="maintenanceEventType">
+            <choice>
+                <value>cancelled</value>
+                <value>created</value>
+                <value>deleted</value>
+                <value>derived</value>
+                <value>revised</value>
+                <value>unknown</value>
+                <value>updated</value>
+            </choice>
+        </attribute>
+    </define>
+    
+    <define name="attribute.publicationStatus.optional">
+        <optional>
+            <attribute name="publicationStatus">
+                <choice>
+                    <value>approved</value>
+                    <value>published</value>
+                    <value>inProcess</value>
+                </choice>
+            </attribute>
+        </optional>
+    </define>
+    
     <define name="attribute.standardDateTime.optional">
         <optional>
             <attribute name="standardDateTime">

@@ -54,59 +54,33 @@
         <element name="control">
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
             <ref name="attribute-group.control-encodings.optional"/>
-            <!-- note: if we want to allow attributes to be extensible, as well, then these should be defined separately -->
-            <attribute name="maintenanceStatus">
-                <choice>
-                    <value>revised</value>
-                    <value>deleted</value>
-                    <value>new</value>
-                    <value>deletedSplit</value>
-                    <value>deletedMerged</value>
-                    <value>deletedReplaced</value>
-                    <value>cancelled</value>
-                    <value>derived</value>
-                </choice> 
-            </attribute>          
-            <optional>
-                <attribute name="publicationStatus">
-                    <choice>
-                        <value>approved</value>
-                        <value>published</value>
-                        <value>inProcess</value>
-                    </choice>
-                </attribute>
-            </optional>
+            <ref name="attribute.maintenanceStatus"/>
+            <ref name="attribute.publicationStatus.optional"/>
+            <!-- required -->
             <ref name="element.recordId"/>
-            <zeroOrMore>
-                <ref name="element.otherRecordId"/>
-            </zeroOrMore>     
-            <zeroOrMore>
-                <ref name="element.representation"/>
-            </zeroOrMore>
+            <ref name="element.maintenanceHistory"/>
+            <!-- optional / not repeatable -->
             <optional a:exclude-from="eac">
                 <ref name="element.fileDesc"/>
-            </optional> 
-            <ref name="element.maintenanceAgency"/>
-            <zeroOrMore>
-                <ref name="element.languageDeclaration"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="element.conventionDeclaration"/>
-            </zeroOrMore>
-            <!-- note: will be required in DACS. -->
-            <zeroOrMore>
-                <ref name="element.rightsDeclaration"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="element.localTypeDeclaration"/>
-            </zeroOrMore>         
-            <zeroOrMore>
-                <ref name="element.localControl"/>
-            </zeroOrMore>
-            <ref name="element.maintenanceHistory"/>
+            </optional>
+            <optional>
+                <ref name="element.maintenanceAgency"/>
+            </optional>
             <optional>
                 <ref name="element.sources"/>
             </optional>
+            <!-- optional /repeatable (might go back to a forced order, since the element is named 'control' afterall, but if so, should the order be A-Z, or just the EAC 1.0 order ?)-->
+            <zeroOrMore>
+                <choice>
+                    <ref name="element.conventionDeclaration"/>
+                    <ref name="element.languageDeclaration"/>
+                    <ref name="element.localControl"/>
+                    <ref name="element.localTypeDeclaration"/>
+                    <ref name="element.otherRecordId"/>
+                    <ref name="element.representation"/>
+                    <ref name="element.rightsDeclaration"/>
+                </choice>
+            </zeroOrMore>     
         </element>
     </define>
     
@@ -163,17 +137,15 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute.countryCode.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <!-- update to enforce the order, which is more compatible with the XSD-creation process for the time being.
-                    also separating out the definitions for potential extensions. should likely do the same for others, like languageDeclaration -->
             <optional>
                 <ref name="element.agencyCode"/>
             </optional>
             <zeroOrMore>
-                <ref name="element.otherAgencyCode"/>
+                <choice>
+                    <ref name="element.agencyName"/>
+                    <ref name="element.otherAgencyCode"/>
+                </choice>
             </zeroOrMore>
-            <oneOrMore>
-                <ref name="element.agencyName"/>
-            </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
         </element>  
     </define>
@@ -181,20 +153,11 @@
     <define name="element.maintenanceEvent">
         <element name="maintenanceEvent">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-            <!-- move these to attribute.rng, perhaps.... or keep here, since they'll only be defined in control.  just depends on how easy we want to make this extensible, i guess.-->
-            <attribute name="maintenanceEventType">
-                <choice>
-                    <value>cancelled</value>
-                    <value>created</value>
-                    <value>deleted</value>
-                    <value>derived</value>
-                    <value>revised</value>
-                    <value>unknown</value>
-                    <value>updated</value>
-                </choice>
-            </attribute>
+            <ref name="attribute.maintenanceEventType"/>
             <ref name="element.eventDateTime"/>
-            <ref name="element.agent"/>
+            <optional>
+                <ref name="element.agent"/>
+            </optional>
             <zeroOrMore>
                 <ref name="element.eventDescription"/>
             </zeroOrMore>
@@ -257,7 +220,7 @@
     
     <define name="element.source">
         <element name="source">
-            <!-- no more localType? -->
+            <!-- no more localType? what is available in EAC 1?  if so, we'll need a migration strategy. -->
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.links.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
@@ -265,8 +228,8 @@
             <zeroOrMore>
                 <ref name="element.citedRange"/>
             </zeroOrMore>
-            <ref name="element.objectXMLWrap.optional"/>
             <ref name="element.descriptiveNote.optional"/>
+            <ref name="element.objectXMLWrap.optional"/>
         </element>  
     </define>
     

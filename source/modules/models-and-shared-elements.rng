@@ -440,8 +440,7 @@
             </zeroOrMore>
         </interleave>
     </define>
-
-      
+     
     <define name="model.single-element-group">
         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
         <ref name="attribute-group.linked-data.optional"/>
@@ -449,12 +448,12 @@
         <oneOrMore>
             <ref name="element.term"/>
         </oneOrMore>
-        <zeroOrMore>
-            <ref name="element.placeName"/>
-        </zeroOrMore>
         <optional>
             <ref name="model.all-dates.choice"/>
         </optional>
+        <zeroOrMore>
+            <ref name="element.placeName"/>
+        </zeroOrMore>
         <ref name="element.descriptiveNote.optional"/>  
     </define>
     
