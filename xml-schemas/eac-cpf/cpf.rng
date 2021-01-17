@@ -4221,12 +4221,6 @@
                </optional>
             </interleave>
             <ref name="targetEntity"/>
-            <zeroOrMore>
-               <ref name="relationType"/>
-            </zeroOrMore>
-            <zeroOrMore>
-               <ref name="targetRole"/>
-            </zeroOrMore>
             <optional>
                <choice>
                   <ref name="date"/>
@@ -4235,13 +4229,17 @@
                </choice>
             </optional>
             <zeroOrMore>
-               <ref name="place"/>
+               <choice>
+                  <ref name="place"/>
+                  <ref name="relationType"/>
+                  <ref name="targetRole"/>
+               </choice>
             </zeroOrMore>
             <optional>
-               <ref name="objectXMLWrap"/>
+               <ref name="descriptiveNote"/>
             </optional>
             <optional>
-               <ref name="descriptiveNote"/>
+               <ref name="objectXMLWrap"/>
             </optional>
          </group>
       </element>
@@ -4355,10 +4353,10 @@
                <ref name="componentEntry"/>
             </zeroOrMore>
             <optional>
-               <ref name="objectXMLWrap"/>
+               <ref name="descriptiveNote"/>
             </optional>
             <optional>
-               <ref name="descriptiveNote"/>
+               <ref name="objectXMLWrap"/>
             </optional>
          </group>
       </element>

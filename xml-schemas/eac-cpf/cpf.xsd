@@ -1414,25 +1414,18 @@
    <xs:complexType name="relation">
       <xs:sequence>
          <xs:element type="v2:targetEntity" name="targetEntity"/>
-         <xs:element type="v2:relationType"
-                     name="relationType"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
-         <xs:element type="v2:targetRole"
-                     name="targetRole"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
             <xs:element type="v2:date" name="date"/>
             <xs:element type="v2:dateRange" name="dateRange"/>
             <xs:element type="v2:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:place"
-                     name="place"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
-         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="v2:place" name="place"/>
+            <xs:element type="v2:relationType" name="relationType"/>
+            <xs:element type="v2:targetRole" name="targetRole"/>
+         </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1457,8 +1450,8 @@
                      name="componentEntry"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>

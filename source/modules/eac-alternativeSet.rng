@@ -4,7 +4,7 @@
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
     
-    <!-- alternativeSet elements are here, in case we keep those, listed in hierarchical order -->
+    <!-- alternativeSet elements are here, in case we keep those -->
     
     <define name="element.alternativeSet">
         <element name="alternativeSet">
@@ -24,8 +24,8 @@
             <zeroOrMore>
                 <ref name="element.componentEntry"/>
             </zeroOrMore>
-            <ref name="element.objectXMLWrap.optional"/>
             <ref name="element.descriptiveNote.optional"/>
+            <ref name="element.objectXMLWrap.optional"/>
         </element>
     </define>
     

@@ -23,21 +23,18 @@
             -->
             <ref name="attribute-group.assertion-reference.optional"/>
             <ref name="element.targetEntity"/>
-            <zeroOrMore>
-                <ref name="element.relationType"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="element.targetRole"/>
-            </zeroOrMore>
             <optional>
                 <ref name="model.all-dates.choice"/>
             </optional>
             <zeroOrMore>
-                <ref name="element.place"/>
+                <choice>
+                    <ref name="element.place"/>
+                    <ref name="element.relationType"/>
+                    <ref name="element.targetRole"/>
+                </choice>
             </zeroOrMore>
-            <!-- maybe no longer needed / desired to have objectXMLWrap here ??? -->
-            <ref name="element.objectXMLWrap.optional"/>
             <ref name="element.descriptiveNote.optional"/>
+            <ref name="element.objectXMLWrap.optional"/>
         </element>
     </define>
     

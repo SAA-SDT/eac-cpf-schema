@@ -6,6 +6,7 @@
 
     <define name="dt.absolute-http-URI">
         <data type="anyURI">
+            <!-- this is probably too strict for URIs, and there are likely other protocals than http that we should support for valueURI, etc. -->
             <param name="pattern">http[s]?://.*</param>
         </data>
     </define>
