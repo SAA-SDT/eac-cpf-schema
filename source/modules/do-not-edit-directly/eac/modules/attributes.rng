@@ -418,12 +418,12 @@
          </optional>
          <optional>
             <attribute name="vocabularySourceURI">
-               <ref name="dt.absolute-http-URI"/>
+               <data type="anyURI"/>
             </attribute>
          </optional>
          <optional>
             <attribute name="valueURI">
-               <ref name="dt.absolute-http-URI"/>
+               <data type="anyURI"/>
             </attribute>
          </optional>
       </interleave>

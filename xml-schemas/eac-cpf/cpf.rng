@@ -555,17 +555,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -711,17 +707,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -877,17 +869,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -964,17 +952,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -1061,17 +1045,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -1241,17 +1221,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -1794,17 +1770,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -1873,17 +1845,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -1972,17 +1940,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -2162,17 +2126,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -2775,17 +2735,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -3078,17 +3034,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -4493,17 +4445,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5357,17 +5305,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5483,17 +5427,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5704,17 +5644,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5830,17 +5766,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -5956,17 +5888,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -6082,17 +6010,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -6208,17 +6132,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -6802,17 +6722,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -6903,17 +6819,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -7014,17 +6926,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -7137,17 +7045,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -7271,17 +7175,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -7538,17 +7438,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>
@@ -8340,17 +8236,13 @@
                <optional>
                   <attribute name="vocabularySourceURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
                <optional>
                   <attribute name="valueURI" ns="">
                      <data type="anyURI"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-                        <param name="pattern">http[s]?://.*</param>
-                     </data>
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                   </attribute>
                </optional>
             </interleave>

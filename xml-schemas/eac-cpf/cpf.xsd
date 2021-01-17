@@ -266,20 +266,8 @@
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="countryCode" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="sources">
@@ -321,20 +309,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="languageDeclaration">
@@ -380,20 +356,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="localTypeDeclaration">
@@ -415,20 +379,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="otherRecordId" mixed="true">
@@ -447,20 +399,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="representation" mixed="true">
@@ -507,20 +447,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="identity">
@@ -701,20 +629,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="agencyName" mixed="true">
@@ -731,20 +647,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="otherAgencyCode" mixed="true">
@@ -771,20 +675,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="descriptiveNote">
@@ -839,20 +731,8 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="reference" mixed="true">
@@ -1015,20 +895,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1111,20 +979,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1512,20 +1368,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="agentType" use="required">
          <xs:simpleType>
             <xs:restriction base="xs:token">
@@ -1771,20 +1615,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1819,20 +1651,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1894,20 +1714,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1942,20 +1750,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -1990,20 +1786,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2038,20 +1822,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2088,20 +1860,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2270,20 +2030,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2303,20 +2051,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2338,20 +2074,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2375,20 +2099,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2416,20 +2128,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2488,20 +2188,8 @@
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
@@ -2731,20 +2419,8 @@
       <xs:attribute name="localType" type="xs:anyURI"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="valueURI">
-         <xs:simpleType>
-            <xs:restriction base="xs:anyURI">
-               <xs:pattern value="http[s]?://.*"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
