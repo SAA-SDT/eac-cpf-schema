@@ -37,6 +37,7 @@
    <define name="element.targetEntity">
       <element name="targetEntity">
          <ref name="attribute.targetType"/>
+         <!-- no localType here, apparently -->
          <ref name="attribute-group.relation-children.optional"/>
          <oneOrMore>
             <ref name="element.part"/>
@@ -46,12 +47,14 @@
    <define name="element.relationType">
       <element name="relationType">
          <ref name="attribute-group.relation-children.optional"/>
+         <ref name="attribute-group.localType.optional"/>
          <text/>
       </element>
    </define>
    <define name="element.targetRole">
       <element name="targetRole">
          <ref name="attribute-group.relation-children.optional"/>
+         <ref name="attribute-group.localType.optional"/>
          <text/>
       </element>
    </define>
