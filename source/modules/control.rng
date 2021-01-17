@@ -224,7 +224,9 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.links.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <ref name="element.reference"/>
+            <oneOrMore>
+                <ref name="element.reference"/>
+            </oneOrMore>
             <zeroOrMore>
                 <ref name="element.citedRange"/>
             </zeroOrMore>

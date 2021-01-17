@@ -810,7 +810,7 @@
    </xs:complexType>
    <xs:complexType name="source">
       <xs:sequence>
-         <xs:element type="v2:reference" name="reference"/>
+         <xs:element type="v2:reference" name="reference" maxOccurs="unbounded"/>
          <xs:element type="v2:citedRange"
                      name="citedRange"
                      minOccurs="0"

@@ -2176,7 +2176,9 @@
                   </attribute>
                </optional>
             </interleave>
-            <ref name="reference"/>
+            <oneOrMore>
+               <ref name="reference"/>
+            </oneOrMore>
             <zeroOrMore>
                <ref name="citedRange"/>
             </zeroOrMore>
