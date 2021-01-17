@@ -487,7 +487,8 @@
         </interleave>
     </define>
     
-    <define name="attribute-group.lists.optional" a:exclude-from="eac">
+    <define name="attribute-group.lists.optional">
+        <ref name="attribute.style.optional"/>
         <optional>
             <attribute name="listType">
                 <choice>
@@ -497,7 +498,7 @@
                 </choice>
             </attribute>
         </optional>
-        <optional>
+        <optional a:exclude-from="eac">
             <attribute name="mark">
                 <choice>
                     <value>circle</value> 
@@ -508,9 +509,10 @@
                 </choice>
             </attribute>  
         </optional>
-        <optional>
+        <optional a:exclude-from="eac">
             <attribute name="numeration">
-                <!-- seems like it would be better to combine, especially since values like lower-alpha are not "numeration"s -->
+                <!-- seems like it would be better to combine, especially since values like lower-alpha are not "numeration"s.  Also the listStyle definition 
+                taken from elsehwere, for CSS, which includes additional values beyond CSS 2.1 -->
                 <choice>
                     <value>decimal</value>
                     <value>decimal-leading-zero</value>

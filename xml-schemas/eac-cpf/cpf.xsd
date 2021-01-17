@@ -2178,6 +2178,14 @@
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
       <xs:attribute name="style" type="xs:token"/>
+      <xs:attribute name="listType">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="ordered"/>
+               <xs:enumeration value="unordered"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronList">

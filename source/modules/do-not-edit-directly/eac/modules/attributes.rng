@@ -448,6 +448,17 @@
          <ref name="attribute.lastDateTimeVerified.optional"/>
       </interleave>
    </define>
+   <define name="attribute-group.lists.optional">
+      <ref name="attribute.style.optional"/>
+      <optional>
+         <attribute name="listType">
+            <choice>
+               <value>ordered</value>
+               <value>unordered</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
    <define name="attribute-group.relation-children.optional">
       <ref name="attribute-group.global-plus-lang-and-script.optional"/>
       <ref name="attribute-group.linked-data.optional"/>
