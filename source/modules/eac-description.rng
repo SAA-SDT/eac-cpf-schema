@@ -11,10 +11,6 @@
         <element name="description">
             <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <!-- NOTE:  need to update how this is defined for the XSD conversion.  the issue comes in
-                if we want to mix "0 or more" and "0 or 1" values.
-            right now, the result in the XSD is that each of these "0 or 1" options become "0 or more"-->
-            <!-- back to encforcing order, due to a mixture of optional and 0 or more elements here -->
             <optional>
                 <ref name="element.functions"/>
             </optional>
@@ -56,14 +52,18 @@
         </element>
     </define>
     
+    <define name="element.function">
+        <element name="function">
+            <ref name="model.single-element-group"/>
+        </element>
+    </define>
+    
     <define name="element.functions">
         <element name="functions">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <element name="function">
-                    <ref name="model.single-element-group"/>
-                </element>
+                <ref name="element.function"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
         </element>
@@ -94,10 +94,10 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <zeroOrMore>
-                <ref name="element.language"/>
-            </zeroOrMore>
-            <zeroOrMore>
-                <ref name="element.writingSystem"/>
+                <choice>
+                    <ref name="element.language"/>
+                    <ref name="element.writingSystem"/>
+                </choice>
             </zeroOrMore>
             <ref name="element.descriptiveNote.optional"/>
         </element>
@@ -114,16 +114,26 @@
         </element>
     </define>
     
+    <define name="element.legalStatus">
+        <element name="legalStatus">
+            <ref name="model.single-element-group"/>
+        </element>
+    </define>
+    
     <define name="element.legalStatuses">
         <element name="legalStatuses">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <element name="legalStatus">
-                    <ref name="model.single-element-group"/>
-                </element>
+                <ref name="element.legalStatus"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.localDescription">
+        <element name="localDescription">
+            <ref name="model.single-element-group"/>
         </element>
     </define>
     
@@ -132,11 +142,15 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <element name="localDescription">
-                    <ref name="model.single-element-group"/>
-                </element>
+                <ref name="element.localDescription"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.mandate">
+        <element name="mandate">
+            <ref name="model.single-element-group"/>
         </element>
     </define>
     
@@ -145,11 +159,15 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <element name="mandate">
-                    <ref name="model.single-element-group"/>
-                </element>
+                <ref name="element.mandate"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.occupation">
+        <element name="occupation">
+            <ref name="model.single-element-group"/>
         </element>
     </define>
     
@@ -158,9 +176,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <element name="occupation">
-                    <ref name="model.single-element-group"/>
-                </element>
+                <ref name="element.occupation"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>
         </element>
@@ -171,7 +187,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
             <oneOrMore>
-                <!-- defined in other-shared-elements -->
+                <!-- defined in "modesl-and-other-shared-elements.rng" -->
                 <ref name="element.place"/>
             </oneOrMore>
             <ref name="element.descriptiveNote.optional"/>

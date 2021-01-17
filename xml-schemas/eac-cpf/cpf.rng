@@ -5620,10 +5620,10 @@
                </optional>
             </interleave>
             <zeroOrMore>
-               <ref name="language"/>
-            </zeroOrMore>
-            <zeroOrMore>
-               <ref name="writingSystem"/>
+               <choice>
+                  <ref name="language"/>
+                  <ref name="writingSystem"/>
+               </choice>
             </zeroOrMore>
             <optional>
                <ref name="descriptiveNote"/>

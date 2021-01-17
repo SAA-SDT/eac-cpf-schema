@@ -1847,14 +1847,10 @@
    </xs:complexType>
    <xs:complexType name="languageUsed">
       <xs:sequence>
-         <xs:element type="v2:language"
-                     name="language"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
-         <xs:element type="v2:writingSystem"
-                     name="writingSystem"
-                     minOccurs="0"
-                     maxOccurs="unbounded"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="v2:language" name="language"/>
+            <xs:element type="v2:writingSystem" name="writingSystem"/>
+         </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
