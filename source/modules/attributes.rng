@@ -487,7 +487,7 @@
         </interleave>
     </define>
     
-    <define name="attribute-group.lists.optional">
+    <define name="attribute-group.lists.optional" a:exclude-from="eac">
         <optional>
             <attribute name="listType">
                 <choice>

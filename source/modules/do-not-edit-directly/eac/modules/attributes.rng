@@ -448,46 +448,6 @@
          <ref name="attribute.lastDateTimeVerified.optional"/>
       </interleave>
    </define>
-   <define name="attribute-group.lists.optional">
-      <optional>
-         <attribute name="listType">
-            <choice>
-               <value>ordered</value>
-               <value>unordered</value>
-            </choice>
-         </attribute>
-      </optional>
-      <optional>
-         <attribute name="mark">
-            <choice>
-               <value>circle</value>
-               <value>disc</value>
-               <value>inherit</value>
-               <value>none</value>
-               <value>square</value>
-            </choice>
-         </attribute>
-      </optional>
-      <optional>
-         <attribute name="numeration">
-                <!-- seems like it would be better to combine, especially since values like lower-alpha are not "numeration"s -->
-            <choice>
-               <value>decimal</value>
-               <value>decimal-leading-zero</value>
-               <value>lower-roman</value>
-               <value>upper-roman</value>
-               <value>lower-greek</value>
-               <value>lower-latin</value>
-               <value>upper-latin</value>
-               <value>armenian</value>
-               <value>georgian</value>
-               <value>lower-alpha</value>
-               <value>upper-alpha</value>
-               <value>inherit</value>
-            </choice>
-         </attribute>
-      </optional>
-   </define>
    <define name="attribute-group.relation-children.optional">
       <ref name="attribute-group.global-plus-lang-and-script.optional"/>
       <ref name="attribute-group.linked-data.optional"/>

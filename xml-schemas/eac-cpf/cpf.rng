@@ -6519,40 +6519,9 @@
                </optional>
             </interleave>
             <optional>
-               <attribute name="listType" ns="">
-                  <choice>
-                     <value type="token" datatypeLibrary="" ns="">ordered</value>
-                     <value type="token" datatypeLibrary="" ns="">unordered</value>
-                  </choice>
-               </attribute>
-            </optional>
-            <optional>
-               <attribute name="mark" ns="">
-                  <choice>
-                     <value type="token" datatypeLibrary="" ns="">circle</value>
-                     <value type="token" datatypeLibrary="" ns="">disc</value>
-                     <value type="token" datatypeLibrary="" ns="">inherit</value>
-                     <value type="token" datatypeLibrary="" ns="">none</value>
-                     <value type="token" datatypeLibrary="" ns="">square</value>
-                  </choice>
-               </attribute>
-            </optional>
-            <optional>
-               <attribute name="numeration" ns="">
-                  <choice>
-                     <value type="token" datatypeLibrary="" ns="">decimal</value>
-                     <value type="token" datatypeLibrary="" ns="">decimal-leading-zero</value>
-                     <value type="token" datatypeLibrary="" ns="">lower-roman</value>
-                     <value type="token" datatypeLibrary="" ns="">upper-roman</value>
-                     <value type="token" datatypeLibrary="" ns="">lower-greek</value>
-                     <value type="token" datatypeLibrary="" ns="">lower-latin</value>
-                     <value type="token" datatypeLibrary="" ns="">upper-latin</value>
-                     <value type="token" datatypeLibrary="" ns="">armenian</value>
-                     <value type="token" datatypeLibrary="" ns="">georgian</value>
-                     <value type="token" datatypeLibrary="" ns="">lower-alpha</value>
-                     <value type="token" datatypeLibrary="" ns="">upper-alpha</value>
-                     <value type="token" datatypeLibrary="" ns="">inherit</value>
-                  </choice>
+               <attribute name="style" ns="">
+                  <data type="token"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
             <optional>

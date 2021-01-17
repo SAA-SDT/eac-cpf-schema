@@ -2177,43 +2177,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
-      <xs:attribute name="listType">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="ordered"/>
-               <xs:enumeration value="unordered"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="mark">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="circle"/>
-               <xs:enumeration value="disc"/>
-               <xs:enumeration value="inherit"/>
-               <xs:enumeration value="none"/>
-               <xs:enumeration value="square"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="numeration">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="decimal"/>
-               <xs:enumeration value="decimal-leading-zero"/>
-               <xs:enumeration value="lower-roman"/>
-               <xs:enumeration value="upper-roman"/>
-               <xs:enumeration value="lower-greek"/>
-               <xs:enumeration value="lower-latin"/>
-               <xs:enumeration value="upper-latin"/>
-               <xs:enumeration value="armenian"/>
-               <xs:enumeration value="georgian"/>
-               <xs:enumeration value="lower-alpha"/>
-               <xs:enumeration value="upper-alpha"/>
-               <xs:enumeration value="inherit"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="style" type="xs:token"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="chronList">
