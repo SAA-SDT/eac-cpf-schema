@@ -7,6 +7,7 @@
     <define name="element.entityType">
         <element name="entityType">
             <ref name="attribute-group.global.optional"/>
+            <!-- unless we can use a different attribute name than "value", we should keep this defined within the element, rather than making it extensible -->
             <attribute name="value">
                 <choice>
                     <value>corporateBody</value>
@@ -22,29 +23,20 @@
         <element name="identity">
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <optional>
-                <attribute name="identityType">
-                    <choice>
-                        <value>given</value>
-                        <value>acquired</value>
-                    </choice>
-                </attribute>
-            </optional>
-            <zeroOrMore>
-                <ref name="element.identityId"/>
-            </zeroOrMore>
-            <group>
-                <ref name="element.entityType"/>
-                <optional>
-                    <ref name="element.otherEntityTypes"/>
-                </optional>
-            </group>
+            <ref name="attribute.identityType.optional"/>
+            <ref name="element.entityType"/>
             <oneOrMore>
                 <choice>
                     <ref name="element.nameEntry"/>
                     <ref name="element.nameEntrySet"/>
                 </choice>
             </oneOrMore>
+            <optional>
+                <ref name="element.otherEntityTypes"/>
+            </optional>
+            <zeroOrMore>
+                <ref name="element.identityId"/>
+            </zeroOrMore>
             <ref name="element.descriptiveNote.optional"/>
         </element>
     </define>
@@ -63,11 +55,7 @@
             <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <optional>
-                <attribute name="preferredForm">
-                    <data type="boolean"/>
-                </attribute>
-            </optional>  
+            <ref name="attribute.preferredForm.optional"/>
             <ref name="attribute.status.authorized-or-alternative.optional"/>
             <oneOrMore>
                 <ref name="element.part"/>

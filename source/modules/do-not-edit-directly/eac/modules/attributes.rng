@@ -78,6 +78,16 @@
          </attribute>
       </optional>
    </define>
+   <define name="attribute.identityType.optional">
+      <optional>
+         <attribute name="identityType">
+            <choice>
+               <value>given</value>
+               <value>acquired</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
    <define name="attribute.lastDateTimeVerified.optional">
       <optional>
          <attribute name="lastDateTimeVerified">
@@ -130,6 +140,13 @@
                <value>published</value>
                <value>inProcess</value>
             </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.preferredForm.optional">
+      <optional>
+         <attribute name="preferredForm">
+            <data type="boolean"/>
          </attribute>
       </optional>
    </define>
