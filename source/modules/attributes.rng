@@ -364,7 +364,7 @@
         <ref name="attribute-group.lang-and-script.optional"/>
     </define>
     
-    <!-- do we need ot add conventionReferenceDeclaration here, or would it be better to keep transliteration?? -->
+    <!-- do we need to add conventionReferenceDeclaration here, or would it be better to keep transliteration?? -->
     <define name="attribute-group.global-plus-lang-and-script.optional">
         <ref name="attribute-group.global.optional"/>
         <ref name="attribute-group.lang-and-script.optional"/>

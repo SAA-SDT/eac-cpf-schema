@@ -1325,6 +1325,12 @@
                </optional>
             </interleave>
             <optional>
+               <attribute name="base" ns="">
+                  <data type="anyURI"
+                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+               </attribute>
+            </optional>
+            <optional>
                <attribute name="identityType" ns="">
                   <choice>
                      <value type="token" datatypeLibrary="" ns="">given</value>

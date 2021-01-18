@@ -482,6 +482,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREF"/>
       <xs:attribute name="sourceReference" type="xs:IDREF"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREF"/>
+      <xs:attribute name="base" type="xs:anyURI"/>
       <xs:attribute name="identityType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
