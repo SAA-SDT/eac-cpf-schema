@@ -102,7 +102,7 @@
    </define>
    <define name="attribute.localTypeDeclarationReference">
       <attribute name="localTypeDeclarationReference">
-         <data type="IDREF"/>
+         <data type="IDREFS"/>
       </attribute>
    </define>
    <define name="attribute.maintenanceStatus">
@@ -196,7 +196,7 @@
    <define name="attribute.target.optional">
       <optional>
          <attribute name="target">
-            <data type="IDREF"/>
+            <data type="IDREFS"/>
          </attribute>
       </optional>
    </define>
@@ -291,7 +291,7 @@
            combine="interleave">
       <optional>
          <attribute name="maintenanceEventReference">
-            <data type="IDREF"/>
+            <data type="IDREFS"/>
          </attribute>
       </optional>
    </define>
@@ -299,7 +299,7 @@
            combine="interleave">
       <optional>
          <attribute name="sourceReference">
-            <data type="IDREF"/>
+            <data type="IDREFS"/>
          </attribute>
       </optional>
    </define>
@@ -379,7 +379,7 @@
    <define name="attribute.conventionDeclarationReference.optional">
       <optional>
          <attribute name="conventionDeclarationReference">
-            <data type="IDREF"/>
+            <data type="IDREFS"/>
          </attribute>
       </optional>
    </define>
