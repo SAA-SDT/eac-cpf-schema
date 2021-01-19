@@ -7552,12 +7552,10 @@
                   </attribute>
                </optional>
             </interleave>
-            <optional>
-               <attribute name="coordinateSystem" ns="">
-                  <data type="token"
-                        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-               </attribute>
-            </optional>
+            <attribute name="coordinateSystem" ns="">
+               <data type="token"
+                     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+            </attribute>
             <data type="normalizedString"
                   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
          </group>

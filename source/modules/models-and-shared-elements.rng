@@ -190,11 +190,9 @@
         <element name="geographicCoordinates">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
-            <optional>
-                <attribute name="coordinateSystem">
-                    <data type="token"/>
-                </attribute>
-            </optional>
+            <attribute name="coordinateSystem">
+                <data type="token"/>
+            </attribute>            
             <!-- might be too strict -->
             <data type="normalizedString"/>
         </element>

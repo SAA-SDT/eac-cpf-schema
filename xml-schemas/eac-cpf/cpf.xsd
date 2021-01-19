@@ -2223,7 +2223,7 @@
             <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
             <xs:attribute name="sourceReference" type="xs:IDREFS"/>
             <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
-            <xs:attribute name="coordinateSystem" type="xs:token"/>
+            <xs:attribute name="coordinateSystem" use="required" type="xs:token"/>
             <xs:anyAttribute namespace="##other" processContents="lax"/>
          </xs:extension>
       </xs:simpleContent>
