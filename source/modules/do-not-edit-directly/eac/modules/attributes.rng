@@ -60,6 +60,11 @@
          </attribute>
       </optional>
    </define>
+   <define name="attribute.coordinateSystem">
+      <attribute name="coordinateSystem">
+         <data type="token"/>
+      </attribute>
+   </define>
    <define name="attribute.countryCode.optional">
       <optional>
          <attribute name="countryCode">
