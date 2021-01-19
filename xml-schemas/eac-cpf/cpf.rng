@@ -849,7 +849,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1025,7 +1025,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1112,7 +1112,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1294,7 +1294,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -1918,7 +1918,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2454,7 +2454,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2579,7 +2579,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2721,7 +2721,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -2847,7 +2847,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3020,7 +3020,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3127,7 +3127,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3219,7 +3219,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3311,7 +3311,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3403,7 +3403,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3495,7 +3495,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3587,7 +3587,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3679,7 +3679,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3771,7 +3771,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3874,7 +3874,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -3968,7 +3968,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -4065,7 +4065,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -4769,7 +4769,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -4862,7 +4862,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -4992,7 +4992,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5125,7 +5125,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5294,7 +5294,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5416,7 +5416,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5538,7 +5538,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5633,7 +5633,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5755,7 +5755,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5877,7 +5877,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -5999,7 +5999,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6121,7 +6121,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6326,7 +6326,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6419,7 +6419,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6528,7 +6528,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6617,7 +6617,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6860,7 +6860,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6967,7 +6967,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7034,7 +7034,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7164,7 +7164,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7616,7 +7616,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7705,7 +7705,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7794,7 +7794,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7887,7 +7887,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -7992,7 +7992,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -8093,7 +8093,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -8225,7 +8225,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -8338,7 +8338,7 @@
             </interleave>
             <optional>
                <attribute name="localType" ns="">
-                  <data type="anyURI"
+                  <data type="token"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>

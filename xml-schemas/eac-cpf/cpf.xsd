@@ -353,7 +353,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -396,7 +396,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -416,7 +416,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
@@ -477,7 +477,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -665,7 +665,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="status">
          <xs:simpleType>
@@ -811,7 +811,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -844,7 +844,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -893,7 +893,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -933,7 +933,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -977,7 +977,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1004,7 +1004,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1028,7 +1028,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1052,7 +1052,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1078,7 +1078,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1102,7 +1102,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1126,7 +1126,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1150,7 +1150,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1179,7 +1179,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1207,7 +1207,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1234,7 +1234,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1261,7 +1261,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1469,7 +1469,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1490,7 +1490,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1523,7 +1523,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1564,7 +1564,7 @@
             <xs:attribute name="target" type="xs:IDREFS"/>
             <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
             <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-            <xs:attribute name="localType" type="xs:anyURI"/>
+            <xs:attribute name="localType" type="xs:token"/>
             <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
             <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
             <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1622,7 +1622,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1658,7 +1658,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1688,7 +1688,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1721,7 +1721,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1757,7 +1757,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1793,7 +1793,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1829,7 +1829,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1867,7 +1867,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -1915,7 +1915,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1942,7 +1942,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -1974,7 +1974,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2004,7 +2004,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2066,7 +2066,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -2089,7 +2089,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
@@ -2106,7 +2106,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -2135,7 +2135,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -2244,7 +2244,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2267,7 +2267,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2291,7 +2291,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2329,7 +2329,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2349,7 +2349,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2383,7 +2383,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
@@ -2426,7 +2426,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
@@ -2456,7 +2456,7 @@
       <xs:attribute name="target" type="xs:IDREFS"/>
       <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
       <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="localType" type="xs:anyURI"/>
+      <xs:attribute name="localType" type="xs:token"/>
       <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>

@@ -97,7 +97,7 @@
    </define>
    <define name="attribute.localType">
       <attribute name="localType">
-         <data type="anyURI"/>
+         <data type="token"/>
       </attribute>
    </define>
    <define name="attribute.localTypeDeclarationReference">
