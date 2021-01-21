@@ -5491,7 +5491,7 @@
                         transliteration="cpfDescription1-relations-cpfRelation2-relationEntry2-transliteration"
                         localType="cpfDescription1-relations-cpfRelation2-relationEntry2-localType"
                         >cpfDescription1-relations-cpfRelation2-relationEntry2</relationEntry>
-                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjItb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <objectBinWrap xml:id="cpfDescription1-relations-cpfRelation2-objectBinWrap">Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjItb2JqZWN0QmluV3JhcA==</objectBinWrap>
                     <dateRange xml:id="cpfDescription1-relations-cpfRelation2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-relations-cpfRelation2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-relations-cpfRelation2-dateRange-fromDate_ID"
@@ -5634,7 +5634,7 @@
                         transliteration="cpfDescription1-relations-cpfRelation4-relationEntry2-transliteration"
                         localType="cpfDescription1-relations-cpfRelation4-relationEntry2-localType"
                         >cpfDescription1-relations-cpfRelation4-relationEntry2</relationEntry>
-                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjQtb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <objectBinWrap xml:id="cpfDescription1-relations-cpfRelation4-objectBinWrap">Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjQtb2JqZWN0QmluV3JhcA==</objectBinWrap>
                     <dateRange xml:id="cpfDescription1-relations-cpfRelation4-dateRange" xml:lang="eng"
                         localType="cpfDescription1-relations-cpfRelation4-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-relations-cpfRelation4-dateRange-fromDate_ID"
@@ -5758,7 +5758,7 @@
                         transliteration="cpfDescription1-relations-cpfRelation6-relationEntry2-transliteration"
                         localType="cpfDescription1-relations-cpfRelation6-relationEntry2-localType"
                         >cpfDescription1-relations-cpfRelation6-relationEntry2</relationEntry>
-                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjYtb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <objectBinWrap xml:id="cpfDescription1-relations-cpfRelation6-objectBinWrap">Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjYtb2JqZWN0QmluV3JhcA==</objectBinWrap>
                     <dateRange xml:id="cpfDescription1-relations-cpfRelation6-dateRange" xml:lang="eng"
                         localType="cpfDescription1-relations-cpfRelation6-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-relations-cpfRelation6-dateRange-fromDate_ID"
@@ -5901,7 +5901,7 @@
                         transliteration="cpfDescription1-relations-cpfRelation8-relationEntry2-transliteration"
                         localType="cpfDescription1-relations-cpfRelation8-relationEntry2-localType"
                         >cpfDescription1-relations-cpfRelation8-relationEntry2</relationEntry>
-                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjgtb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <objectBinWrap xml:id="cpfDescription1-relations-cpfRelation8-objectBinWrap">Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjgtb2JqZWN0QmluV3JhcA==</objectBinWrap>
                     <dateRange xml:id="cpfDescription1-relations-cpfRelation8-dateRange" xml:lang="eng"
                         localType="cpfDescription1-relations-cpfRelation8-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-relations-cpfRelation8-dateRange-fromDate_ID"
@@ -6105,7 +6105,7 @@
                         transliteration="cpfDescription1-relations-resourceRelation2-relationEntry2-transliteration"
                         localType="cpfDescription1-relations-resourceRelation2-relationEntry2-localType"
                         >cpfDescription1-relations-resourceRelation2-relationEntry2</relationEntry>
-                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1yZXNvdXJjZVJlbGF0aW9uMi1vYmplY3RCaW5XcmFw</objectBinWrap>
+                    <objectBinWrap xml:id="cpfDescription1-relations-resourceRelation2-objectBinWrap">Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1yZXNvdXJjZVJlbGF0aW9uMi1vYmplY3RCaW5XcmFw</objectBinWrap>
                     <dateRange xml:id="cpfDescription1-relations-resourceRelation2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-relations-resourceRelation2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-relations-resourceRelation2-dateRange-fromDate_ID"
@@ -6309,7 +6309,7 @@
                         transliteration="cpfDescription1-relations-functionRelation2-relationEntry2-transliteration"
                         localType="cpfDescription1-relations-functionRelation2-relationEntry2-localType"
                         >cpfDescription1-relations-functionRelation2-relationEntry2</relationEntry>
-                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1mdW5jdGlvblJlbGF0aW9uMi1vYmplY3RCaW5XcmFw</objectBinWrap>
+                    <objectBinWrap xml:id="cpfDescription1-relations-functionRelation2-objectBinWrap">Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1mdW5jdGlvblJlbGF0aW9uMi1vYmplY3RCaW5XcmFw</objectBinWrap>
                     <dateRange xml:id="cpfDescription1-relations-functionRelation2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-relations-functionRelation2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-relations-functionRelation2-dateRange-fromDate_ID"
@@ -6503,8 +6503,66 @@
                         >cpfDescription2-nameEntry2-authorizedForm3</authorizedForm>
                 </nameEntry>
             </identity>
-            <alternativeSet>
-                <setComponent/>
+            <alternativeSet xml:id="cpfDescription2-alternativeSet" xml:lang="eng" xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
+                <setComponent xml:id="cpfDescription2-alternativeSet-setComponent1" xml:lang="eng"
+                    lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/223"
+                    xlink:title="cpfDescription2-alternativeSet-setComponent1-xlink:title"
+                    xlink:role="cpfDescription2-alternativeSet-setComponent1-xlink:role"
+                    xlink:arcrole="cpfDescription2-alternativeSet-setComponent1-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <componentEntry xml:id="cpfDescription2-alternativeSet-setComponent1-componentEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription2-alternativeSet-setComponent1-componentEntry1-transliteration"
+                        localType="cpfDescription2-alternativeSet-setComponent1-componentEntry1-localType"
+                        >cpfDescription2-alternativeSet-setComponent1-componentEntry1</componentEntry>
+                    <componentEntry xml:id="cpfDescription2-alternativeSet-setComponent1-componentEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription2-alternativeSet-setComponent1-componentEntry2-transliteration"
+                        localType="cpfDescription2-alternativeSet-setComponent1-componentEntry2-localType"
+                        >cpfDescription2-alternativeSet-setComponent1-componentEntry2</componentEntry>
+                    <objectXMLWrap xml:id="cpfDescription2-alternativeSet-setComponent1-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription2-alternativeSet-setComponent1-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <descriptiveNote xml:id="cpfDescription2-alternativeSet-setComponent1-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription2-alternativeSet-setComponent1-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription2-alternativeSet-setComponent1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription2-alternativeSet-setComponent1-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription2-alternativeSet-setComponent1-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </setComponent>
+                <setComponent xml:id="cpfDescription2-alternativeSet-setComponent2" xml:lang="eng"
+                    lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/223"
+                    xlink:title="cpfDescription2-alternativeSet-setComponent2-xlink:title"
+                    xlink:role="cpfDescription2-alternativeSet-setComponent2-xlink:role"
+                    xlink:arcrole="cpfDescription2-alternativeSet-setComponent2-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <componentEntry xml:id="cpfDescription2-alternativeSet-setComponent2-componentEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription2-alternativeSet-setComponent2-componentEntry1-transliteration"
+                        localType="cpfDescription2-alternativeSet-setComponent2-componentEntry1-localType"
+                        >cpfDescription2-alternativeSet-setComponent2-componentEntry1</componentEntry>
+                    <componentEntry xml:id="cpfDescription2-alternativeSet-setComponent2-componentEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription2-alternativeSet-setComponent2-componentEntry2-transliteration"
+                        localType="cpfDescription2-alternativeSet-setComponent2-componentEntry2-localType"
+                        >cpfDescription2-alternativeSet-setComponent2-componentEntry2</componentEntry>
+                    <objectBinWrap xml:id="cpfDescription2-alternativeSet-setComponent2-objectBinWrap">Y3BmRGVzY3JpcHRpb24yLWFsdGVybmF0aXZlU2V0LXNldENvbXBvbmVudDItb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <descriptiveNote xml:id="cpfDescription2-alternativeSet-setComponent2-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription2-alternativeSet-setComponent2-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription2-alternativeSet-setComponent2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription2-alternativeSet-setComponent2-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription2-alternativeSet-setComponent2-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </setComponent>
             </alternativeSet>
         </cpfDescription>
     </multipleIdentities>
