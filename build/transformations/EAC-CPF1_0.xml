@@ -913,6 +913,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-occupation1-term-vocabularySource">
                         cpfDescription1-occupation1-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-occupation1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-occupation1-placeEntry1-localType"
+                        transliteration="cpfDescription1-occupation1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-occupation1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-occupation1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-occupation1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-occupation1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-occupation1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-occupation1-placeEntry2-localType"
+                        transliteration="cpfDescription1-occupation1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-occupation1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-occupation1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-occupation1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-occupation1-placeEntry2</placeEntry>
                     <date xml:id="cpfDescription1-occupation1-date_ID" xml:lang="eng"
                         localType="cpfDescription1-occupation1-date-localType"
                         standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
@@ -940,6 +964,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-occupation2-term-vocabularySource">
                         cpfDescription1-occupation2-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-occupation2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-occupation2-placeEntry1-localType"
+                        transliteration="cpfDescription1-occupation2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-occupation2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-occupation2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-occupation2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-occupation2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-occupation2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-occupation2-placeEntry2-localType"
+                        transliteration="cpfDescription1-occupation2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-occupation2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-occupation2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-occupation2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-occupation2-placeEntry2</placeEntry>
                     <dateRange xml:id="cpfDescription1-occupation2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-occupation2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-occupation2-dateRange-fromDate_ID"
@@ -976,6 +1024,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-occupation3-term-vocabularySource">
                         cpfDescription1-occupation3-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-occupation3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-occupation3-placeEntry1-localType"
+                        transliteration="cpfDescription1-occupation3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-occupation3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-occupation3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-occupation3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-occupation3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-occupation3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-occupation3-placeEntry2-localType"
+                        transliteration="cpfDescription1-occupation3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-occupation3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-occupation3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-occupation3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-occupation3-placeEntry2</placeEntry>
                     <dateSet>
                         <date xml:id="cpfDescription1-occupation3-dateSet-date_ID" xml:lang="eng"
                             localType="cpfDescription1-occupation3-dateSet-date-localType"
@@ -1367,6 +1439,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-function1-term-vocabularySource">
                         cpfDescription1-function1-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-function1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-function1-placeEntry1-localType"
+                        transliteration="cpfDescription1-function1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-function1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-function1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-function1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-function1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-function1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-function1-placeEntry2-localType"
+                        transliteration="cpfDescription1-function1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-function1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-function1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-function1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-function1-placeEntry2</placeEntry>
                     <date xml:id="cpfDescription1-function1-date_ID" xml:lang="eng"
                         localType="cpfDescription1-function1-date-localType"
                         standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
@@ -1394,6 +1490,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-function2-term-vocabularySource">
                         cpfDescription1-function2-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-function2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-function2-placeEntry1-localType"
+                        transliteration="cpfDescription1-function2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-function2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-function2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-function2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-function2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-function2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-function2-placeEntry2-localType"
+                        transliteration="cpfDescription1-function2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-function2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-function2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-function2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-function2-placeEntry2</placeEntry>
                     <dateRange xml:id="cpfDescription1-function2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-function2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-function2-dateRange-fromDate_ID"
@@ -1430,6 +1550,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-function3-term-vocabularySource">
                         cpfDescription1-function3-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-function3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-function3-placeEntry1-localType"
+                        transliteration="cpfDescription1-function3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-function3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-function3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-function3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-function3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-function3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-function3-placeEntry2-localType"
+                        transliteration="cpfDescription1-function3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-function3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-function3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-function3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-function3-placeEntry2</placeEntry>
                     <dateSet>
                         <date xml:id="cpfDescription1-function3-dateSet-date_ID" xml:lang="eng"
                             localType="cpfDescription1-function3-dateSet-date-localType"
@@ -1810,6 +1954,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-mandate1-term-vocabularySource">
                         cpfDescription1-mandate1-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-mandate1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-mandate1-placeEntry1-localType"
+                        transliteration="cpfDescription1-mandate1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-mandate1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-mandate1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-mandate1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-mandate1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-mandate1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-mandate1-placeEntry2-localType"
+                        transliteration="cpfDescription1-mandate1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-mandate1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-mandate1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-mandate1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-mandate1-placeEntry2</placeEntry>
                     <date xml:id="cpfDescription1-mandate1-date_ID" xml:lang="eng"
                         localType="cpfDescription1-mandate1-date-localType"
                         standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
@@ -1837,6 +2005,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-mandate2-term-vocabularySource">
                         cpfDescription1-mandate2-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-mandate2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-mandate2-placeEntry1-localType"
+                        transliteration="cpfDescription1-mandate2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-mandate2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-mandate2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-mandate2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-mandate2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-mandate2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-mandate2-placeEntry2-localType"
+                        transliteration="cpfDescription1-mandate2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-mandate2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-mandate2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-mandate2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-mandate2-placeEntry2</placeEntry>
                     <dateRange xml:id="cpfDescription1-mandate2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-mandate2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-mandate2-dateRange-fromDate_ID"
@@ -1872,6 +2064,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-mandate3-term-vocabularySource">
                         cpfDescription1-mandate3-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-mandate3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-mandate3-placeEntry1-localType"
+                        transliteration="cpfDescription1-mandate3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-mandate3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-mandate3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-mandate3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-mandate3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-mandate3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-mandate3-placeEntry2-localType"
+                        transliteration="cpfDescription1-mandate3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-mandate3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-mandate3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-mandate3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-mandate3-placeEntry2</placeEntry>
                     <dateSet>
                         <date xml:id="cpfDescription1-mandate3-dateSet-date_ID" xml:lang="eng"
                             localType="cpfDescription1-mandate3-dateSet-date-localType"
@@ -2241,113 +2457,169 @@
                         </level>
                     </outline>
                 </mandates>
-                <languageUsed xml:id="cpfDescription1-languageUsed1" xml:lang="eng" localType="cpfDescription1-languageUsed1-localType">
-                    <language languageCode="ger" xml:id="cpfDescription1-languageUsed1-language_ID" xml:lang="eng">cpfDescription1-languageUsed1-language</language>
-                    <script scriptCode="Latn" xml:id="cpfDescription1-languageUsed1-script" xml:lang="eng">cpfDescription1-languageUsed1-script</script>
+                <languageUsed xml:id="cpfDescription1-languageUsed1" xml:lang="eng"
+                    localType="cpfDescription1-languageUsed1-localType">
+                    <language languageCode="ger" xml:id="cpfDescription1-languageUsed1-language_ID"
+                        xml:lang="eng">cpfDescription1-languageUsed1-language</language>
+                    <script scriptCode="Latn" xml:id="cpfDescription1-languageUsed1-script"
+                        xml:lang="eng">cpfDescription1-languageUsed1-script</script>
                     <descriptiveNote xml:id="cpfDescription1-languageUsed1-descriptiveNote"
                         xml:lang="eng">
-                        <p xml:id="cpfDescription1-languageUsed1-descriptiveNote-p1_ID" xml:lang="eng"
-                            >cpfDescription1-languageUsed1-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-languageUsed1-descriptiveNote-p2_ID" xml:lang="fre"
-                            >cpfDescription1-languageUsed1-descriptiveNote-p2</p>
+                        <p xml:id="cpfDescription1-languageUsed1-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-languageUsed1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-languageUsed1-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-languageUsed1-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </languageUsed>
-                <languageUsed xml:id="cpfDescription1-languageUsed2" xml:lang="eng" localType="cpfDescription1-languageUsed2-localType">
-                    <language languageCode="fre" xml:id="cpfDescription1-languageUsed2-language_ID" xml:lang="eng">cpfDescription1-languageUsed2-language</language>
-                    <script scriptCode="Latn" xml:id="cpfDescription1-languageUsed2-script" xml:lang="eng">cpfDescription1-languageUsed2-script</script>
+                <languageUsed xml:id="cpfDescription1-languageUsed2" xml:lang="eng"
+                    localType="cpfDescription1-languageUsed2-localType">
+                    <language languageCode="fre" xml:id="cpfDescription1-languageUsed2-language_ID"
+                        xml:lang="eng">cpfDescription1-languageUsed2-language</language>
+                    <script scriptCode="Latn" xml:id="cpfDescription1-languageUsed2-script"
+                        xml:lang="eng">cpfDescription1-languageUsed2-script</script>
                     <descriptiveNote xml:id="cpfDescription1-languageUsed2-descriptiveNote"
                         xml:lang="eng">
-                        <p xml:id="cpfDescription1-languageUsed2-descriptiveNote-p1_ID" xml:lang="eng"
-                            >cpfDescription1-languageUsed2-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-languageUsed2-descriptiveNote-p2_ID" xml:lang="fre"
-                            >cpfDescription1-languageUsed2-descriptiveNote-p2</p>
+                        <p xml:id="cpfDescription1-languageUsed2-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-languageUsed2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-languageUsed2-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-languageUsed2-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </languageUsed>
                 <languagesUsed>
-                    <languageUsed xml:id="cpfDescription1-languagesUsed1-languageUsed3" xml:lang="eng" localType="cpfDescription1-languagesUsed1-languageUsed3-localType">
-                        <language languageCode="ita" xml:id="cpfDescription1-languagesUsed1-languageUsed3-language_ID" xml:lang="eng">cpfDescription1-languagesUsed1-languageUsed3-language</language>
-                        <script scriptCode="Latn" xml:id="cpfDescription1-languagesUsed1-languageUsed3-script" xml:lang="eng">cpfDescription1-languagesUsed1-languageUsed3-script</script>
-                        <descriptiveNote xml:id="cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote"
+                    <languageUsed xml:id="cpfDescription1-languagesUsed1-languageUsed3"
+                        xml:lang="eng"
+                        localType="cpfDescription1-languagesUsed1-languageUsed3-localType">
+                        <language languageCode="ita"
+                            xml:id="cpfDescription1-languagesUsed1-languageUsed3-language_ID"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed1-languageUsed3-language</language>
+                        <script scriptCode="Latn"
+                            xml:id="cpfDescription1-languagesUsed1-languageUsed3-script"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed1-languageUsed3-script</script>
+                        <descriptiveNote
+                            xml:id="cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote"
                             xml:lang="eng">
-                            <p xml:id="cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote-p1_ID" xml:lang="eng"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote-p1_ID"
+                                xml:lang="eng"
                                 >cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote-p1</p>
-                            <p xml:id="cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote-p2_ID" xml:lang="fre"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote-p2_ID"
+                                xml:lang="fre"
                                 >cpfDescription1-languagesUsed1-languageUsed3-descriptiveNote-p2</p>
                         </descriptiveNote>
                     </languageUsed>
-                    <languageUsed xml:id="cpfDescription1-languagesUsed1-languageUsed4" xml:lang="eng" localType="cpfDescription1-languagesUsed1-languageUsed4-localType">
-                        <language languageCode="spa" xml:id="cpfDescription1-languagesUsed1-languageUsed4-language_ID" xml:lang="eng">cpfDescription1-languagesUsed1-languageUsed4-language</language>
-                        <script scriptCode="Latn" xml:id="cpfDescription1-languagesUsed1-languageUsed4-script" xml:lang="eng">cpfDescription1-languagesUsed1-languageUsed4-script</script>
-                        <descriptiveNote xml:id="cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote"
+                    <languageUsed xml:id="cpfDescription1-languagesUsed1-languageUsed4"
+                        xml:lang="eng"
+                        localType="cpfDescription1-languagesUsed1-languageUsed4-localType">
+                        <language languageCode="spa"
+                            xml:id="cpfDescription1-languagesUsed1-languageUsed4-language_ID"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed1-languageUsed4-language</language>
+                        <script scriptCode="Latn"
+                            xml:id="cpfDescription1-languagesUsed1-languageUsed4-script"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed1-languageUsed4-script</script>
+                        <descriptiveNote
+                            xml:id="cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote"
                             xml:lang="eng">
-                            <p xml:id="cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote-p1_ID" xml:lang="eng"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote-p1_ID"
+                                xml:lang="eng"
                                 >cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote-p1</p>
-                            <p xml:id="cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote-p2_ID" xml:lang="fre"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote-p2_ID"
+                                xml:lang="fre"
                                 >cpfDescription1-languagesUsed1-languageUsed4-descriptiveNote-p2</p>
                         </descriptiveNote>
                     </languageUsed>
                     <descriptiveNote xml:id="cpfDescription1-languagesUsed1-descriptiveNote"
                         xml:lang="eng">
-                        <p xml:id="cpfDescription1-languagesUsed1-descriptiveNote-p1_ID" xml:lang="eng"
-                            >cpfDescription1-languagesUsed1-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-languagesUsed1-descriptiveNote-p2_ID" xml:lang="fre"
-                            >cpfDescription1-languagesUsed1-descriptiveNote-p2</p>
+                        <p xml:id="cpfDescription1-languagesUsed1-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-languagesUsed1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-languagesUsed1-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-languagesUsed1-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </languagesUsed>
                 <languagesUsed>
-                    <languageUsed xml:id="cpfDescription1-languagesUsed2-languagesUsed5" xml:lang="eng" localType="cpfDescription1-languagesUsed2-languagesUsed5-localType">
-                        <language languageCode="dut" xml:id="cpfDescription1-languagesUsed2-languagesUsed5-language_ID" xml:lang="eng">cpfDescription1-languagesUsed2-languagesUsed5-language</language>
-                        <script scriptCode="Latn" xml:id="cpfDescription1-languagesUsed2-languagesUsed5-script" xml:lang="eng">cpfDescription1-languagesUsed2-languagesUsed5-script</script>
-                        <descriptiveNote xml:id="cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote"
+                    <languageUsed xml:id="cpfDescription1-languagesUsed2-languagesUsed5"
+                        xml:lang="eng"
+                        localType="cpfDescription1-languagesUsed2-languagesUsed5-localType">
+                        <language languageCode="dut"
+                            xml:id="cpfDescription1-languagesUsed2-languagesUsed5-language_ID"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed2-languagesUsed5-language</language>
+                        <script scriptCode="Latn"
+                            xml:id="cpfDescription1-languagesUsed2-languagesUsed5-script"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed2-languagesUsed5-script</script>
+                        <descriptiveNote
+                            xml:id="cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote"
                             xml:lang="eng">
-                            <p xml:id="cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote-p1_ID" xml:lang="eng"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote-p1_ID"
+                                xml:lang="eng"
                                 >cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote-p1</p>
-                            <p xml:id="cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote-p2_ID" xml:lang="fre"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote-p2_ID"
+                                xml:lang="fre"
                                 >cpfDescription1-languagesUsed2-languagesUsed5-descriptiveNote-p2</p>
                         </descriptiveNote>
                     </languageUsed>
-                    <languageUsed xml:id="cpfDescription1-languagesUsed2-languagesUsed6" xml:lang="eng" localType="cpfDescription1-languagesUsed2-languagesUsed6-localType">
-                        <language languageCode="swe" xml:id="cpfDescription1-languagesUsed2-languagesUsed6-language_ID" xml:lang="eng">cpfDescription1-languagesUsed2-languagesUsed6-language</language>
-                        <script scriptCode="Latn" xml:id="cpfDescription1-languagesUsed2-languagesUsed6-script" xml:lang="eng">cpfDescription1-languagesUsed2-languagesUsed6-script</script>
-                        <descriptiveNote xml:id="cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote"
+                    <languageUsed xml:id="cpfDescription1-languagesUsed2-languagesUsed6"
+                        xml:lang="eng"
+                        localType="cpfDescription1-languagesUsed2-languagesUsed6-localType">
+                        <language languageCode="swe"
+                            xml:id="cpfDescription1-languagesUsed2-languagesUsed6-language_ID"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed2-languagesUsed6-language</language>
+                        <script scriptCode="Latn"
+                            xml:id="cpfDescription1-languagesUsed2-languagesUsed6-script"
+                            xml:lang="eng"
+                            >cpfDescription1-languagesUsed2-languagesUsed6-script</script>
+                        <descriptiveNote
+                            xml:id="cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote"
                             xml:lang="eng">
-                            <p xml:id="cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote-p1_ID" xml:lang="eng"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote-p1_ID"
+                                xml:lang="eng"
                                 >cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote-p1</p>
-                            <p xml:id="cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote-p2_ID" xml:lang="fre"
+                            <p
+                                xml:id="cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote-p2_ID"
+                                xml:lang="fre"
                                 >cpfDescription1-languagesUsed2-languagesUsed6-descriptiveNote-p2</p>
                         </descriptiveNote>
                     </languageUsed>
                     <descriptiveNote xml:id="cpfDescription1-languagesUsed2-descriptiveNote"
                         xml:lang="eng">
-                        <p xml:id="cpfDescription1-languagesUsed2-descriptiveNote-p1_ID" xml:lang="eng"
-                            >cpfDescription1-languagesUsed2-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-languagesUsed2-descriptiveNote-p2_ID" xml:lang="fre"
-                            >cpfDescription1-languagesUsed2-descriptiveNote-p2</p>
+                        <p xml:id="cpfDescription1-languagesUsed2-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-languagesUsed2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-languagesUsed2-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-languagesUsed2-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </languagesUsed>
                 <place>
-                    <placeEntry
-                        xml:id="cpfDescription1-place1-placeEntry_ID"
-                        xml:lang="eng"
+                    <placeEntry xml:id="cpfDescription1-place1-placeEntry_ID" xml:lang="eng"
                         localType="cpfDescription1-place1-placeEntry-localType"
                         transliteration="cpfDescription1-place1-placeEntry-transliteration"
                         scriptCode="Arab"
                         vocabularySource="cpfDescription1-place1-placeEntry-vocabularySource"
-                        accuracy="cpfDescription1-place1-placeEntry-accuracy"
-                        countryCode="FR"
-                        altitude="cpfDescription1-place1-placeEntry-altitude"
-                        latitude="48.85341" longitude="2.3488"
-                        >cpfDescription1-place1-placeEntry</placeEntry>
-                    <address xml:id="cpfDescription1-place1-address" xml:lang="eng" localType="cpfDescription1-place1-address">
-                        <addressLine xml:id="cpfDescription1-place1-address-addressLine1_ID" xml:lang="eng" 
-                            localType="cpfDescription1-place1-address-addressLine1">cpfDescription1-place1-address-addressLine1</addressLine>
-                        <addressLine xml:id="cpfDescription1-place1-address-addressLine2_ID" xml:lang="eng" 
-                            localType="cpfDescription1-place1-address-addressLine2">cpfDescription1-place1-address-addressLine2</addressLine>
+                        accuracy="cpfDescription1-place1-placeEntry-accuracy" countryCode="FR"
+                        altitude="cpfDescription1-place1-placeEntry-altitude" latitude="48.85341"
+                        longitude="2.3488">cpfDescription1-place1-placeEntry</placeEntry>
+                    <address xml:id="cpfDescription1-place1-address" xml:lang="eng"
+                        localType="cpfDescription1-place1-address">
+                        <addressLine xml:id="cpfDescription1-place1-address-addressLine1_ID"
+                            xml:lang="eng" localType="cpfDescription1-place1-address-addressLine1"
+                            >cpfDescription1-place1-address-addressLine1</addressLine>
+                        <addressLine xml:id="cpfDescription1-place1-address-addressLine2_ID"
+                            xml:lang="eng" localType="cpfDescription1-place1-address-addressLine2"
+                            >cpfDescription1-place1-address-addressLine2</addressLine>
                     </address>
                     <date xml:id="cpfDescription1-place1-date_ID" xml:lang="eng"
-                        localType="cpfDescription1-place1-date-localType"
-                        standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
-                        >cpfDescription1-place1-date</date>
+                        localType="cpfDescription1-place1-date-localType" standardDate="2021-01-19"
+                        notBefore="2021-01" notAfter="2021-02">cpfDescription1-place1-date</date>
                     <citation xml:id="cpfDescription1-place1-citation_ID" xml:lang="eng"
                         lastDateTimeVerified="2021-01-19" xmlns:xlink="http://www.w3.org/1999/xlink"
                         xlink:type="simple" xlink:href="/102"
@@ -2356,32 +2628,30 @@
                         xlink:actuate="onRequest" xlink:show="new"
                         xlink:arcrole="cpfDescription1-place1-citation-xlink:arcrole">
                         cpfDescription1-place1-citation</citation>
-                    <descriptiveNote xml:id="cpfDescription1-place1-descriptiveNote"
-                        xml:lang="eng">
-                        <p xml:id="cpfDescription1-place1-descriptiveNote-p1_ID"
-                            xml:lang="eng">cpfDescription1-place1-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-place1-descriptiveNote-p2_ID"
-                            xml:lang="fre">cpfDescription1-place1-descriptiveNote-p2</p>
+                    <descriptiveNote xml:id="cpfDescription1-place1-descriptiveNote" xml:lang="eng">
+                        <p xml:id="cpfDescription1-place1-descriptiveNote-p1_ID" xml:lang="eng"
+                            >cpfDescription1-place1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-place1-descriptiveNote-p2_ID" xml:lang="fre"
+                            >cpfDescription1-place1-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </place>
                 <place>
-                    <placeEntry
-                        xml:id="cpfDescription1-place2-placeEntry_ID"
-                        xml:lang="eng"
+                    <placeEntry xml:id="cpfDescription1-place2-placeEntry_ID" xml:lang="eng"
                         localType="cpfDescription1-place2-placeEntry-localType"
                         transliteration="cpfDescription1-place2-placeEntry-transliteration"
                         scriptCode="Arab"
                         vocabularySource="cpfDescription1-place2-placeEntry-vocabularySource"
-                        accuracy="cpfDescription1-place2-placeEntry-accuracy"
-                        countryCode="FR"
-                        altitude="cpfDescription1-place2-placeEntry-altitude"
-                        latitude="48.85341" longitude="2.3488"
-                        >cpfDescription1-place2-placeEntry</placeEntry>
-                    <address xml:id="cpfDescription1-place2-address" xml:lang="eng" localType="cpfDescription1-place2-address">
-                        <addressLine xml:id="cpfDescription1-place2-address-addressLine1_ID" xml:lang="eng" 
-                            localType="cpfDescription1-place2-address-addressLine1">cpfDescription1-place2-address-addressLine1</addressLine>
-                        <addressLine xml:id="cpfDescription1-place2-address-addressLine2_ID" xml:lang="eng" 
-                            localType="cpfDescription1-place2-address-addressLine2">cpfDescription1-place2-address-addressLine2</addressLine>
+                        accuracy="cpfDescription1-place2-placeEntry-accuracy" countryCode="FR"
+                        altitude="cpfDescription1-place2-placeEntry-altitude" latitude="48.85341"
+                        longitude="2.3488">cpfDescription1-place2-placeEntry</placeEntry>
+                    <address xml:id="cpfDescription1-place2-address" xml:lang="eng"
+                        localType="cpfDescription1-place2-address">
+                        <addressLine xml:id="cpfDescription1-place2-address-addressLine1_ID"
+                            xml:lang="eng" localType="cpfDescription1-place2-address-addressLine1"
+                            >cpfDescription1-place2-address-addressLine1</addressLine>
+                        <addressLine xml:id="cpfDescription1-place2-address-addressLine2_ID"
+                            xml:lang="eng" localType="cpfDescription1-place2-address-addressLine2"
+                            >cpfDescription1-place2-address-addressLine2</addressLine>
                     </address>
                     <dateRange xml:id="cpfDescription1-place2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-place2-dateRange-localType">
@@ -2390,8 +2660,7 @@
                             localType="cpfDescription1-place2-dateRange-fromDate-localType"
                             standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
                             >cpfDescription1-place2-dateRange-fromDate</fromDate>
-                        <toDate xml:id="cpfDescription1-place2-dateRange-toDate_ID"
-                            xml:lang="eng"
+                        <toDate xml:id="cpfDescription1-place2-dateRange-toDate_ID" xml:lang="eng"
                             localType="cpfDescription1-place2-dateRange-toDate-localType"
                             standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
                             >cpfDescription1-place2-dateRange-toDate</toDate>
@@ -2404,49 +2673,44 @@
                         xlink:actuate="onRequest" xlink:show="new"
                         xlink:arcrole="cpfDescription1-place2-citation-xlink:arcrole">
                         cpfDescription1-place2-citation</citation>
-                    <descriptiveNote xml:id="cpfDescription1-place2-descriptiveNote"
-                        xml:lang="eng">
-                        <p xml:id="cpfDescription1-place2-descriptiveNote-p1_ID"
-                            xml:lang="eng">cpfDescription1-place2-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-place2-descriptiveNote-p2_ID"
-                            xml:lang="fre">cpfDescription1-place2-descriptiveNote-p2</p>
+                    <descriptiveNote xml:id="cpfDescription1-place2-descriptiveNote" xml:lang="eng">
+                        <p xml:id="cpfDescription1-place2-descriptiveNote-p1_ID" xml:lang="eng"
+                            >cpfDescription1-place2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-place2-descriptiveNote-p2_ID" xml:lang="fre"
+                            >cpfDescription1-place2-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </place>
                 <place>
-                    <placeEntry
-                        xml:id="cpfDescription1-place3-placeEntry_ID"
-                        xml:lang="eng"
+                    <placeEntry xml:id="cpfDescription1-place3-placeEntry_ID" xml:lang="eng"
                         localType="cpfDescription1-place3-placeEntry-localType"
                         transliteration="cpfDescription1-place3-placeEntry-transliteration"
                         scriptCode="Arab"
                         vocabularySource="cpfDescription1-place3-placeEntry-vocabularySource"
-                        accuracy="cpfDescription1-place3-placeEntry-accuracy"
-                        countryCode="FR"
-                        altitude="cpfDescription1-place3-placeEntry-altitude"
-                        latitude="48.85341" longitude="2.3488"
-                        >cpfDescription1-place3-placeEntry</placeEntry>
-                    <address xml:id="cpfDescription1-place3-address" xml:lang="eng" localType="cpfDescription1-place3-address">
-                        <addressLine xml:id="cpfDescription1-place3-address-addressLine1_ID" xml:lang="eng" 
-                            localType="cpfDescription1-place3-address-addressLine1">cpfDescription1-place3-address-addressLine1</addressLine>
-                        <addressLine xml:id="cpfDescription1-place3-address-addressLine2_ID" xml:lang="eng" 
-                            localType="cpfDescription1-place3-address-addressLine2">cpfDescription1-place3-address-addressLine2</addressLine>
+                        accuracy="cpfDescription1-place3-placeEntry-accuracy" countryCode="FR"
+                        altitude="cpfDescription1-place3-placeEntry-altitude" latitude="48.85341"
+                        longitude="2.3488">cpfDescription1-place3-placeEntry</placeEntry>
+                    <address xml:id="cpfDescription1-place3-address" xml:lang="eng"
+                        localType="cpfDescription1-place3-address">
+                        <addressLine xml:id="cpfDescription1-place3-address-addressLine1_ID"
+                            xml:lang="eng" localType="cpfDescription1-place3-address-addressLine1"
+                            >cpfDescription1-place3-address-addressLine1</addressLine>
+                        <addressLine xml:id="cpfDescription1-place3-address-addressLine2_ID"
+                            xml:lang="eng" localType="cpfDescription1-place3-address-addressLine2"
+                            >cpfDescription1-place3-address-addressLine2</addressLine>
                     </address>
                     <dateSet>
                         <date xml:id="cpfDescription1-place3-dateSet-date_ID" xml:lang="eng"
                             localType="cpfDescription1-place3-dateSet-date-localType"
                             standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
                             >cpfDescription1-place3-dateSet-date</date>
-                        <dateRange xml:id="cpfDescription1-place3-dateSet-dateRange"
-                            xml:lang="eng"
+                        <dateRange xml:id="cpfDescription1-place3-dateSet-dateRange" xml:lang="eng"
                             localType="cpfDescription1-place3-dateSet-dateRange-localType">
-                            <fromDate
-                                xml:id="cpfDescription1-place3-dateSet-dateRange-fromDate_ID"
+                            <fromDate xml:id="cpfDescription1-place3-dateSet-dateRange-fromDate_ID"
                                 xml:lang="eng"
                                 localType="cpfDescription1-place3-dateSet-dateRange-fromDate-localType"
                                 standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
                                 >cpfDescription1-place3-dateSet-dateRange-fromDate</fromDate>
-                            <toDate
-                                xml:id="cpfDescription1-place3-dateSet-dateRange-toDate_ID"
+                            <toDate xml:id="cpfDescription1-place3-dateSet-dateRange-toDate_ID"
                                 xml:lang="eng"
                                 localType="cpfDescription1-place3-dateSet-dateRange-toDate-localType"
                                 standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
@@ -2461,18 +2725,16 @@
                         xlink:actuate="onRequest" xlink:show="new"
                         xlink:arcrole="cpfDescription1-place3-citation-xlink:arcrole">
                         cpfDescription1-place3-citation</citation>
-                    <descriptiveNote xml:id="cpfDescription1-place3-descriptiveNote"
-                        xml:lang="eng">
-                        <p xml:id="cpfDescription1-place3-descriptiveNote-p1_ID"
-                            xml:lang="eng">cpfDescription1-place3-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-place3-descriptiveNote-p2_ID"
-                            xml:lang="fre">cpfDescription1-place3-descriptiveNote-p2</p>
+                    <descriptiveNote xml:id="cpfDescription1-place3-descriptiveNote" xml:lang="eng">
+                        <p xml:id="cpfDescription1-place3-descriptiveNote-p1_ID" xml:lang="eng"
+                            >cpfDescription1-place3-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-place3-descriptiveNote-p2_ID" xml:lang="fre"
+                            >cpfDescription1-place3-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </place>
                 <places>
                     <place>
-                        <placeEntry
-                            xml:id="cpfDescription1-places1-place4-placeEntry_ID"
+                        <placeEntry xml:id="cpfDescription1-places1-place4-placeEntry_ID"
                             xml:lang="eng"
                             localType="cpfDescription1-places1-place4-placeEntry-localType"
                             transliteration="cpfDescription1-places1-place4-placeEntry-transliteration"
@@ -2483,19 +2745,27 @@
                             altitude="cpfDescription1-places1-place4-placeEntry-altitude"
                             latitude="48.85341" longitude="2.3488"
                             >cpfDescription1-places1-place4-placeEntry</placeEntry>
-                        <address xml:id="cpfDescription1-places1-place4-address" xml:lang="eng" localType="cpfDescription1-places1-place4-address">
-                            <addressLine xml:id="cpfDescription1-places1-place4-address-addressLine1_ID" xml:lang="eng" 
-                                localType="cpfDescription1-places1-place4-address-addressLine1">cpfDescription1-places1-place4-address-addressLine1</addressLine>
-                            <addressLine xml:id="cpfDescription1-places1-place4-address-addressLine2_ID" xml:lang="eng" 
-                                localType="cpfDescription1-places1-place4-address-addressLine2">cpfDescription1-places1-place4-address-addressLine2</addressLine>
+                        <address xml:id="cpfDescription1-places1-place4-address" xml:lang="eng"
+                            localType="cpfDescription1-places1-place4-address">
+                            <addressLine
+                                xml:id="cpfDescription1-places1-place4-address-addressLine1_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-places1-place4-address-addressLine1"
+                                >cpfDescription1-places1-place4-address-addressLine1</addressLine>
+                            <addressLine
+                                xml:id="cpfDescription1-places1-place4-address-addressLine2_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-places1-place4-address-addressLine2"
+                                >cpfDescription1-places1-place4-address-addressLine2</addressLine>
                         </address>
                         <date xml:id="cpfDescription1-places1-place4-date_ID" xml:lang="eng"
                             localType="cpfDescription1-places1-place4-date-localType"
                             standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
                             >cpfDescription1-places1-place4-date</date>
                         <citation xml:id="cpfDescription1-places1-place4-citation_ID" xml:lang="eng"
-                            lastDateTimeVerified="2021-01-19" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            xlink:type="simple" xlink:href="/102"
+                            lastDateTimeVerified="2021-01-19"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                            xlink:href="/102"
                             xlink:title="cpfDescription1-places1-place4-citation-xlink:title"
                             xlink:role="cpfDescription1-places1-place4-citation-xlink:role"
                             xlink:actuate="onRequest" xlink:show="new"
@@ -2510,8 +2780,7 @@
                         </descriptiveNote>
                     </place>
                     <place>
-                        <placeEntry
-                            xml:id="cpfDescription1-places1-place5-placeEntry_ID"
+                        <placeEntry xml:id="cpfDescription1-places1-place5-placeEntry_ID"
                             xml:lang="eng"
                             localType="cpfDescription1-places1-place5-placeEntry-localType"
                             transliteration="cpfDescription1-places1-place5-placeEntry-transliteration"
@@ -2522,11 +2791,18 @@
                             altitude="cpfDescription1-places1-place5-placeEntry-altitude"
                             latitude="48.85341" longitude="2.3488"
                             >cpfDescription1-places1-place5-placeEntry</placeEntry>
-                        <address xml:id="cpfDescription1-places1-place5-address" xml:lang="eng" localType="cpfDescription1-places1-place5-address">
-                            <addressLine xml:id="cpfDescription1-places1-place5-address-addressLine1_ID" xml:lang="eng" 
-                                localType="cpfDescription1-places1-place5-address-addressLine1">cpfDescription1-places1-place5-address-addressLine1</addressLine>
-                            <addressLine xml:id="cpfDescription1-places1-place5-address-addressLine2_ID" xml:lang="eng" 
-                                localType="cpfDescription1-places1-place5-address-addressLine2">cpfDescription1-places1-place5-address-addressLine2</addressLine>
+                        <address xml:id="cpfDescription1-places1-place5-address" xml:lang="eng"
+                            localType="cpfDescription1-places1-place5-address">
+                            <addressLine
+                                xml:id="cpfDescription1-places1-place5-address-addressLine1_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-places1-place5-address-addressLine1"
+                                >cpfDescription1-places1-place5-address-addressLine1</addressLine>
+                            <addressLine
+                                xml:id="cpfDescription1-places1-place5-address-addressLine2_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-places1-place5-address-addressLine2"
+                                >cpfDescription1-places1-place5-address-addressLine2</addressLine>
                         </address>
                         <dateRange xml:id="cpfDescription1-places1-place5-dateRange" xml:lang="eng"
                             localType="cpfDescription1-places1-place5-dateRange-localType">
@@ -2542,8 +2818,9 @@
                                 >cpfDescription1-places1-place5-dateRange-toDate</toDate>
                         </dateRange>
                         <citation xml:id="cpfDescription1-places1-place5-citation_ID" xml:lang="eng"
-                            lastDateTimeVerified="2021-01-19" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            xlink:type="simple" xlink:href="/102"
+                            lastDateTimeVerified="2021-01-19"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                            xlink:href="/102"
                             xlink:title="cpfDescription1-places1-place5-citation-xlink:title"
                             xlink:role="cpfDescription1-places1-place5-citation-xlink:role"
                             xlink:actuate="onRequest" xlink:show="new"
@@ -2557,24 +2834,22 @@
                                 xml:lang="fre">cpfDescription1-places1-place5-descriptiveNote-p2</p>
                         </descriptiveNote>
                     </place>
-                    <descriptiveNote xml:id="cpfDescription1-places1-descriptiveNote"
-                        xml:lang="eng">
-                        <p xml:id="cpfDescription1-places1-descriptiveNote-p1_ID"
-                            xml:lang="eng">cpfDescription1-places1-descriptiveNote-p1</p>
-                        <p xml:id="cpfDescription1-places1-descriptiveNote-p2_ID"
-                            xml:lang="fre">cpfDescription1-places1-descriptiveNote-p2</p>
+                    <descriptiveNote xml:id="cpfDescription1-places1-descriptiveNote" xml:lang="eng">
+                        <p xml:id="cpfDescription1-places1-descriptiveNote-p1_ID" xml:lang="eng"
+                            >cpfDescription1-places1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-places1-descriptiveNote-p2_ID" xml:lang="fre"
+                            >cpfDescription1-places1-descriptiveNote-p2</p>
                     </descriptiveNote>
                 </places>
                 <places xml:id="cpfDescription1-places2" xml:lang="eng"
                     localType="cpfDescription1-places2-localType">
                     <p xml:id="cpfDescription1-places2-p1_ID" xml:lang="eng">
-                        <span style="bold" xml:id="cpfDescription1-places2-p1-span1"
-                            xml:lang="eng"
+                        <span style="bold" xml:id="cpfDescription1-places2-p1-span1" xml:lang="eng"
                             localType="cpfDescription1-places2-p1-span1-localType"
                             >cpfDescription1</span>- <span style="italic"
-                                xml:id="cpfDescription1-places2-p1-span2" xml:lang="eng"
-                                localType="cpfDescription1-places2-p1-span2-localType"
-                                >places2</span>-p1</p>
+                            xml:id="cpfDescription1-places2-p1-span2" xml:lang="eng"
+                            localType="cpfDescription1-places2-p1-span2-localType"
+                        >places2</span>-p1</p>
                     <p xml:id="cpfDescription1-places2-p2_ID" xml:lang="eng"
                         >cpfDescription1-places2-p2</p>
                     <citation xml:id="cpfDescription1-places2-citation1_ID" xml:lang="eng"
@@ -2599,15 +2874,13 @@
                         localType="cpfDescription1-places2-list1-localType">
                         <item xml:id="cpfDescription1-places2-list1-item1_ID" xml:lang="eng"
                             localType="cpfDescription1-places2-list1-item1-localType">
-                            <span style="bold"
-                                xml:id="cpfDescription1-places2-list1-item1-span1"
+                            <span style="bold" xml:id="cpfDescription1-places2-list1-item1-span1"
                                 xml:lang="eng"
                                 localType="cpfDescription1-places2-list1-item1-span1-localType"
                                 >cpfDescription1</span>- <span style="italic"
-                                    xml:id="cpfDescription1-places2-list1-item1-span2"
-                                    xml:lang="eng"
-                                    localType="cpfDescription1-places2-list1-item1-span2-localType"
-                                    >places2</span>-list1-item1</item>
+                                xml:id="cpfDescription1-places2-list1-item1-span2" xml:lang="eng"
+                                localType="cpfDescription1-places2-list1-item1-span2-localType"
+                                >places2</span>-list1-item1</item>
                         <item xml:id="cpfDescription1-places2-list1-item2_ID" xml:lang="eng"
                             localType="cpfDescription1-places2-list1-item2-localType"
                             >cpfDescription1places2-list1-item2</item>
@@ -2622,8 +2895,7 @@
                         cpfDescription1-places2-citation3</citation>
                     <outline xml:id="cpfDescription1-places2-outline1" xml:lang="eng"
                         localType="cpfDescription1-places2-outline1-localType">
-                        <level xml:id="cpfDescription1-places2-outline1-level1a"
-                            xml:lang="eng"
+                        <level xml:id="cpfDescription1-places2-outline1-level1a" xml:lang="eng"
                             localType="cpfDescription1-places2-outline1-level1a-localType">
                             <item xml:id="cpfDescription1-places2-outline1-level1a-item_ID"
                                 xml:lang="eng"
@@ -2633,15 +2905,13 @@
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline1-level1a-item-span1-localType"
                                     >cpfDescription1</span>- <span style="italic"
-                                        xml:id="cpfDescription1-places2-outline1-level1a-item-span2"
-                                        xml:lang="eng"
-                                        localType="cpfDescription1-places2-outline1-level1a-item-span2-localType"
-                                        >places2</span>-outline1-level1a-item</item>
-                            <level xml:id="cpfDescription1-places2-outline1-level2a"
-                                xml:lang="eng"
+                                    xml:id="cpfDescription1-places2-outline1-level1a-item-span2"
+                                    xml:lang="eng"
+                                    localType="cpfDescription1-places2-outline1-level1a-item-span2-localType"
+                                    >places2</span>-outline1-level1a-item</item>
+                            <level xml:id="cpfDescription1-places2-outline1-level2a" xml:lang="eng"
                                 localType="cpfDescription1-places2-outline1-level2a-localType">
-                                <item
-                                    xml:id="cpfDescription1-places2-outline1-level2a-item_ID"
+                                <item xml:id="cpfDescription1-places2-outline1-level2a-item_ID"
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline1-level2a-item-localType">
                                     <span style="bold"
@@ -2649,15 +2919,14 @@
                                         xml:lang="eng"
                                         localType="cpfDescription1-places2-outline1-level2a-item-span1-localType"
                                         >cpfDescription1</span>- <span style="italic"
-                                            xml:id="cpfDescription1-places2-outline1-level2a-item-span2"
-                                            xml:lang="eng"
-                                            localType="cpfDescription1-places2-outline1-level2a-item-span2-localType"
-                                            >places2</span> -outline1-level2a-item</item>
+                                        xml:id="cpfDescription1-places2-outline1-level2a-item-span2"
+                                        xml:lang="eng"
+                                        localType="cpfDescription1-places2-outline1-level2a-item-span2-localType"
+                                        >places2</span> -outline1-level2a-item</item>
                                 <level xml:id="cpfDescription1-places2-outline1-level3a"
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline1-level3a-localType">
-                                    <item
-                                        xml:id="cpfDescription1-places2-outline1-level3a-item_ID"
+                                    <item xml:id="cpfDescription1-places2-outline1-level3a-item_ID"
                                         xml:lang="eng"
                                         localType="cpfDescription1-places2-outline1-level3a-item-localType">
                                         <span style="bold"
@@ -2665,17 +2934,15 @@
                                             xml:lang="eng"
                                             localType="cpfDescription1-places2-outline1-level3a-item-span1-localType"
                                             >cpfDescription1</span>- <span style="italic"
-                                                xml:id="cpfDescription1-places2-outline1-level3a-item-span2"
-                                                xml:lang="eng"
-                                                localType="cpfDescription1-places2-outline1-level3a-item-span2-localType"
-                                                >places2</span> -outline1-level3a-item</item>
+                                            xml:id="cpfDescription1-places2-outline1-level3a-item-span2"
+                                            xml:lang="eng"
+                                            localType="cpfDescription1-places2-outline1-level3a-item-span2-localType"
+                                            >places2</span> -outline1-level3a-item</item>
                                 </level>
                             </level>
-                            <level xml:id="cpfDescription1-places2-outline1-level2b"
-                                xml:lang="eng"
+                            <level xml:id="cpfDescription1-places2-outline1-level2b" xml:lang="eng"
                                 localType="cpfDescription1-places2-outline1-level2b-localType">
-                                <item
-                                    xml:id="cpfDescription1-places2-outline1-level2b-item_ID"
+                                <item xml:id="cpfDescription1-places2-outline1-level2b-item_ID"
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline1-level2b-item-localType">
                                     <span style="bold"
@@ -2683,14 +2950,13 @@
                                         xml:lang="eng"
                                         localType="cpfDescription1-places2-outline1-level2b-item-span1-localType"
                                         >cpfDescription1</span>- <span style="italic"
-                                            xml:id="cpfDescription1-places2-outline1-level2b-item-span2"
-                                            xml:lang="eng"
-                                            localType="cpfDescription1-places2-outline1-level2b-item-span2-localType"
-                                            >places2</span> -outline1-level2b-item</item>
+                                        xml:id="cpfDescription1-places2-outline1-level2b-item-span2"
+                                        xml:lang="eng"
+                                        localType="cpfDescription1-places2-outline1-level2b-item-span2-localType"
+                                        >places2</span> -outline1-level2b-item</item>
                             </level>
                         </level>
-                        <level xml:id="cpfDescription1-places2-outline1-level1b"
-                            xml:lang="eng"
+                        <level xml:id="cpfDescription1-places2-outline1-level1b" xml:lang="eng"
                             localType="cpfDescription1-places2-outline1-level1b-localType">
                             <item xml:id="cpfDescription1-places2-outline1-level1b-item_ID"
                                 xml:lang="eng"
@@ -2700,33 +2966,30 @@
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline1-level1b-item-span1-localType"
                                     >cpfDescription1</span>- <span style="italic"
-                                        xml:id="cpfDescription1-places2-outline1-level1b-item-span2"
-                                        xml:lang="eng"
-                                        localType="cpfDescription1-places2-outline1-level1b-item-span2-localType"
-                                        >places2</span> -outline1-level1b-item</item>
+                                    xml:id="cpfDescription1-places2-outline1-level1b-item-span2"
+                                    xml:lang="eng"
+                                    localType="cpfDescription1-places2-outline1-level1b-item-span2-localType"
+                                    >places2</span> -outline1-level1b-item</item>
                         </level>
                     </outline>
                     <list xml:id="cpfDescription1-places2-list2" xml:lang="eng"
                         localType="cpfDescription1-places2-list2-localType">
                         <item xml:id="cpfDescription1-places2-list2-item1_ID" xml:lang="eng"
                             localType="cpfDescription1-places2-list2-item1-localType">
-                            <span style="bold"
-                                xml:id="cpfDescription1-places2-list2-item1-span1"
+                            <span style="bold" xml:id="cpfDescription1-places2-list2-item1-span1"
                                 xml:lang="eng"
                                 localType="cpfDescription1-places2-list2-item1-span1-localType"
                                 >cpfDescription1</span>- <span style="italic"
-                                    xml:id="cpfDescription1-places2-list2-item1-span2"
-                                    xml:lang="eng"
-                                    localType="cpfDescription1-places2-list2-item1-span2-localType"
-                                    >places2</span>-list2-item1</item>
+                                xml:id="cpfDescription1-places2-list2-item1-span2" xml:lang="eng"
+                                localType="cpfDescription1-places2-list2-item1-span2-localType"
+                                >places2</span>-list2-item1</item>
                         <item xml:id="cpfDescription1-places2-list2-item2_ID" xml:lang="eng"
                             localType="cpfDescription1-places2-list2-item2-localType"
                             >cpfDescription1places2-list2-item2</item>
                     </list>
                     <outline xml:id="cpfDescription1-places2-outline2" xml:lang="eng"
                         localType="cpfDescription1-places2-outline2-localType">
-                        <level xml:id="cpfDescription1-places2-outline2-level1a"
-                            xml:lang="eng"
+                        <level xml:id="cpfDescription1-places2-outline2-level1a" xml:lang="eng"
                             localType="cpfDescription1-places2-outline2-level1a-localType">
                             <item xml:id="cpfDescription1-places2-outline2-level1a-item_ID"
                                 xml:lang="eng"
@@ -2736,15 +2999,13 @@
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline2-level1a-item-span1-localType"
                                     >cpfDescription1</span>- <span style="italic"
-                                        xml:id="cpfDescription1-places2-outline2-level1a-item-span2"
-                                        xml:lang="eng"
-                                        localType="cpfDescription1-places2-outline2-level1a-item-span2-localType"
-                                        >places2</span>-outline2-level1a-item</item>
-                            <level xml:id="cpfDescription1-places2-outline2-level2a"
-                                xml:lang="eng"
+                                    xml:id="cpfDescription1-places2-outline2-level1a-item-span2"
+                                    xml:lang="eng"
+                                    localType="cpfDescription1-places2-outline2-level1a-item-span2-localType"
+                                    >places2</span>-outline2-level1a-item</item>
+                            <level xml:id="cpfDescription1-places2-outline2-level2a" xml:lang="eng"
                                 localType="cpfDescription1-places2-outline2-level2a-localType">
-                                <item
-                                    xml:id="cpfDescription1-places2-outline2-level2a-item_ID"
+                                <item xml:id="cpfDescription1-places2-outline2-level2a-item_ID"
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline2-level2a-item-localType">
                                     <span style="bold"
@@ -2752,15 +3013,14 @@
                                         xml:lang="eng"
                                         localType="cpfDescription1-places2-outline2-level2a-item-span1-localType"
                                         >cpfDescription1</span>- <span style="italic"
-                                            xml:id="cpfDescription1-places2-outline2-level2a-item-span2"
-                                            xml:lang="eng"
-                                            localType="cpfDescription1-places2-outline2-level2a-item-span2-localType"
-                                            >places2</span> -outline2-level2a-item</item>
+                                        xml:id="cpfDescription1-places2-outline2-level2a-item-span2"
+                                        xml:lang="eng"
+                                        localType="cpfDescription1-places2-outline2-level2a-item-span2-localType"
+                                        >places2</span> -outline2-level2a-item</item>
                                 <level xml:id="cpfDescription1-places2-outline2-level3a"
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline2-level3a-localType">
-                                    <item
-                                        xml:id="cpfDescription1-places2-outline2-level3a-item_ID"
+                                    <item xml:id="cpfDescription1-places2-outline2-level3a-item_ID"
                                         xml:lang="eng"
                                         localType="cpfDescription1-places2-outline2-level3a-item-localType">
                                         <span style="bold"
@@ -2768,17 +3028,15 @@
                                             xml:lang="eng"
                                             localType="cpfDescription1-places2-outline2-level3a-item-span1-localType"
                                             >cpfDescription1</span>- <span style="italic"
-                                                xml:id="cpfDescription1-places2-outline2-level3a-item-span2"
-                                                xml:lang="eng"
-                                                localType="cpfDescription1-places2-outline2-level3a-item-span2-localType"
-                                                >places2</span> -outline2-level3a-item</item>
+                                            xml:id="cpfDescription1-places2-outline2-level3a-item-span2"
+                                            xml:lang="eng"
+                                            localType="cpfDescription1-places2-outline2-level3a-item-span2-localType"
+                                            >places2</span> -outline2-level3a-item</item>
                                 </level>
                             </level>
-                            <level xml:id="cpfDescription1-places2-outline2-level2b"
-                                xml:lang="eng"
+                            <level xml:id="cpfDescription1-places2-outline2-level2b" xml:lang="eng"
                                 localType="cpfDescription1-places2-outline2-level2b-localType">
-                                <item
-                                    xml:id="cpfDescription1-places2-outline2-level2b-item_ID"
+                                <item xml:id="cpfDescription1-places2-outline2-level2b-item_ID"
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline2-level2b-item-localType">
                                     <span style="bold"
@@ -2786,14 +3044,13 @@
                                         xml:lang="eng"
                                         localType="cpfDescription1-places2-outline2-level2b-item-span1-localType"
                                         >cpfDescription1</span>- <span style="italic"
-                                            xml:id="cpfDescription1-places2-outline2-level2b-item-span2"
-                                            xml:lang="eng"
-                                            localType="cpfDescription1-places2-outline2-level2b-item-span2-localType"
-                                            >places2</span> -outline2-level2b-item</item>
+                                        xml:id="cpfDescription1-places2-outline2-level2b-item-span2"
+                                        xml:lang="eng"
+                                        localType="cpfDescription1-places2-outline2-level2b-item-span2-localType"
+                                        >places2</span> -outline2-level2b-item</item>
                             </level>
                         </level>
-                        <level xml:id="cpfDescription1-places2-outline2-level1b"
-                            xml:lang="eng"
+                        <level xml:id="cpfDescription1-places2-outline2-level1b" xml:lang="eng"
                             localType="cpfDescription1-places2-outline2-level1b-localType">
                             <item xml:id="cpfDescription1-places2-outline2-level1b-item_ID"
                                 xml:lang="eng"
@@ -2803,10 +3060,10 @@
                                     xml:lang="eng"
                                     localType="cpfDescription1-places2-outline2-level1b-item-span1-localType"
                                     >cpfDescription1</span>- <span style="italic"
-                                        xml:id="cpfDescription1-places2-outline2-level1b-item-span2"
-                                        xml:lang="eng"
-                                        localType="cpfDescription1-places2-outline2-level1b-item-span2-localType"
-                                        >places2</span> -outline2-level1b-item</item>
+                                    xml:id="cpfDescription1-places2-outline2-level1b-item-span2"
+                                    xml:lang="eng"
+                                    localType="cpfDescription1-places2-outline2-level1b-item-span2-localType"
+                                    >places2</span> -outline2-level1b-item</item>
                         </level>
                     </outline>
                 </places>
@@ -2817,6 +3074,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-legalStatus1-term-vocabularySource">
                         cpfDescription1-legalStatus1-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-legalStatus1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-legalStatus1-placeEntry1-localType"
+                        transliteration="cpfDescription1-legalStatus1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-legalStatus1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-legalStatus1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-legalStatus1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-legalStatus1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-legalStatus1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-legalStatus1-placeEntry2-localType"
+                        transliteration="cpfDescription1-legalStatus1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-legalStatus1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-legalStatus1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-legalStatus1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-legalStatus1-placeEntry2</placeEntry>
                     <date xml:id="cpfDescription1-legalStatus1-date_ID" xml:lang="eng"
                         localType="cpfDescription1-legalStatus1-date-localType"
                         standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
@@ -2844,6 +3125,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-legalStatus2-term-vocabularySource">
                         cpfDescription1-legalStatus2-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-legalStatus2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-legalStatus2-placeEntry1-localType"
+                        transliteration="cpfDescription1-legalStatus2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-legalStatus2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-legalStatus2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-legalStatus2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-legalStatus2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-legalStatus2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-legalStatus2-placeEntry2-localType"
+                        transliteration="cpfDescription1-legalStatus2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-legalStatus2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-legalStatus2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-legalStatus2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-legalStatus2-placeEntry2</placeEntry>
                     <dateRange xml:id="cpfDescription1-legalStatus2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-legalStatus2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-legalStatus2-dateRange-fromDate_ID"
@@ -2880,6 +3185,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-legalStatus3-term-vocabularySource">
                         cpfDescription1-legalStatus3-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-legalStatus3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-legalStatus3-placeEntry1-localType"
+                        transliteration="cpfDescription1-legalStatus3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-legalStatus3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-legalStatus3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-legalStatus3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-legalStatus3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-legalStatus3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-legalStatus3-placeEntry2-localType"
+                        transliteration="cpfDescription1-legalStatus3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-legalStatus3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-legalStatus3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-legalStatus3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-legalStatus3-placeEntry2</placeEntry>
                     <dateSet>
                         <date xml:id="cpfDescription1-legalStatus3-dateSet-date_ID" xml:lang="eng"
                             localType="cpfDescription1-legalStatus3-dateSet-date-localType"
@@ -3283,6 +3612,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-localDescription1-term-vocabularySource">
                         cpfDescription1-localDescription1-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-localDescription1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-localDescription1-placeEntry1-localType"
+                        transliteration="cpfDescription1-localDescription1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-localDescription1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-localDescription1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-localDescription1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-localDescription1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-localDescription1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-localDescription1-placeEntry2-localType"
+                        transliteration="cpfDescription1-localDescription1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-localDescription1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-localDescription1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-localDescription1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-localDescription1-placeEntry2</placeEntry>
                     <date xml:id="cpfDescription1-localDescription1-date_ID" xml:lang="eng"
                         localType="cpfDescription1-localDescription1-date-localType"
                         standardDate="2021-01-19" notBefore="2021-01" notAfter="2021-02"
@@ -3310,6 +3663,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-localDescription2-term-vocabularySource">
                         cpfDescription1-localDescription2-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-localDescription2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-localDescription2-placeEntry1-localType"
+                        transliteration="cpfDescription1-localDescription2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-localDescription2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-localDescription2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-localDescription2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-localDescription2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-localDescription2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-localDescription2-placeEntry2-localType"
+                        transliteration="cpfDescription1-localDescription2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-localDescription2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-localDescription2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-localDescription2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-localDescription2-placeEntry2</placeEntry>
                     <dateRange xml:id="cpfDescription1-localDescription2-dateRange" xml:lang="eng"
                         localType="cpfDescription1-localDescription2-dateRange-localType">
                         <fromDate xml:id="cpfDescription1-localDescription2-dateRange-fromDate_ID"
@@ -3346,6 +3723,30 @@
                         scriptCode="Arab" lastDateTimeVerified="2021-01-19"
                         vocabularySource="cpfDescription1-localDescription3-term-vocabularySource">
                         cpfDescription1-localDescription3-term</term>
+                    <placeEntry
+                        xml:id="cpfDescription1-localDescription3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-localDescription3-placeEntry1-localType"
+                        transliteration="cpfDescription1-localDescription3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-localDescription3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-localDescription3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-localDescription3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-localDescription3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-localDescription3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-localDescription3-placeEntry2-localType"
+                        transliteration="cpfDescription1-localDescription3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-localDescription3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-localDescription3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-localDescription3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-localDescription3-placeEntry2</placeEntry>
                     <dateSet>
                         <date xml:id="cpfDescription1-localDescription3-dateSet-date_ID"
                             xml:lang="eng"
@@ -4282,11 +4683,12 @@
                 <biogHist>
                     <abstract xml:id="cpfDescription1-biogHist1-abstract_ID" xml:lang="eng">
                         <span style="bold" xml:id="cpfDescription1-biogHist1-abstract-span1"
-                            xml:lang="eng" localType="cpfDescription1-biogHist1-abstract-span1-localType"
+                            xml:lang="eng"
+                            localType="cpfDescription1-biogHist1-abstract-span1-localType"
                             >cpfDescription1</span>- <span style="italic"
-                                xml:id="cpfDescription1-biogHist1-abstract-span2" xml:lang="eng"
-                                localType="cpfDescription1-biogHist1-abstract-span2-localType"
-                                >biogHist1</span>-abstract</abstract>
+                            xml:id="cpfDescription1-biogHist1-abstract-span2" xml:lang="eng"
+                            localType="cpfDescription1-biogHist1-abstract-span2-localType"
+                            >biogHist1</span>-abstract</abstract>
                     <p xml:id="cpfDescription1-biogHist1-p1_ID" xml:lang="eng">
                         <span style="bold" xml:id="cpfDescription1-biogHist1-p1-span1"
                             xml:lang="eng" localType="cpfDescription1-biogHist1-p1-span1-localType"
@@ -4646,11 +5048,12 @@
                 <biogHist>
                     <abstract xml:id="cpfDescription1-biogHist2-abstract_ID" xml:lang="eng">
                         <span style="bold" xml:id="cpfDescription1-biogHist2-abstract-span1"
-                            xml:lang="eng" localType="cpfDescription1-biogHist2-abstract-span1-localType"
+                            xml:lang="eng"
+                            localType="cpfDescription1-biogHist2-abstract-span1-localType"
                             >cpfDescription1</span>- <span style="italic"
-                                xml:id="cpfDescription1-biogHist2-abstract-span2" xml:lang="eng"
-                                localType="cpfDescription1-biogHist2-abstract-span2-localType"
-                                >biogHist2</span>-abstract</abstract>
+                            xml:id="cpfDescription1-biogHist2-abstract-span2" xml:lang="eng"
+                            localType="cpfDescription1-biogHist2-abstract-span2-localType"
+                            >biogHist2</span>-abstract</abstract>
                     <p xml:id="cpfDescription1-biogHist2-p1_ID" xml:lang="eng">
                         <span style="bold" xml:id="cpfDescription1-biogHist2-p1-span1"
                             xml:lang="eng" localType="cpfDescription1-biogHist2-p1-span1-localType"
@@ -5008,13 +5411,1030 @@
                     </chronList>
                 </biogHist>
             </description>
-            <relations>
-                <cpfRelation/>
-                <cpfRelation/>
-                <resourceRelation/>
-                <resourceRelation/>
-                <functionRelation/>
-                <functionRelation/>
+            <relations xml:id="cpfDescription1-relations" xml:lang="eng"
+                xml:base="https://github.com/SAA-SDT/eac-cpf-schema/issues">
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation1" xml:lang="eng"
+                    cpfRelationType="associative" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation1-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation1-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation1-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation1-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation1-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation1-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation1-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation1-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation1-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation1-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation1-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-cpfRelation1-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-cpfRelation1-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <date xml:id="cpfDescription1-relations-cpfRelation1-date_ID" xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation1-date-localType"
+                        standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                        >cpfDescription1-relations-cpfRelation1-date</date>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation1-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation1-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation1-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation1-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation1-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation1-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation1-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation2" xml:lang="eng"
+                    cpfRelationType="family" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation2-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation2-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation2-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation2-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation2-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation2-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation2-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation2-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation2-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation2-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation2-relationEntry2</relationEntry>
+                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjItb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <dateRange xml:id="cpfDescription1-relations-cpfRelation2-dateRange" xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation2-dateRange-localType">
+                        <fromDate xml:id="cpfDescription1-relations-cpfRelation2-dateRange-fromDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation2-dateRange-fromDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation2-dateRange-fromDate</fromDate>
+                        <toDate xml:id="cpfDescription1-relations-cpfRelation2-dateRange-toDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation2-dateRange-toDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation2-dateRange-toDate</toDate>
+                    </dateRange>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation2-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation2-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation2-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation2-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation2-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation2-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation2-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation3" xml:lang="eng"
+                    cpfRelationType="hierarchical" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation3-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation3-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation3-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation3-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation3-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation3-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation3-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation3-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation3-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation3-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation3-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-cpfRelation3-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-cpfRelation3-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <dateSet>
+                        <date xml:id="cpfDescription1-relations-cpfRelation3-dateSet-date_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation3-dateSet-date-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation3-dateSet-date</date>
+                        <dateRange xml:id="cpfDescription1-relations-cpfRelation3-dateSet-dateRange"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation3-dateSet-dateRange-localType">
+                            <fromDate
+                                xml:id="cpfDescription1-relations-cpfRelation3-dateSet-dateRange-fromDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-cpfRelation3-dateSet-dateRange-fromDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-cpfRelation3-dateSet-dateRange-fromDate</fromDate>
+                            <toDate
+                                xml:id="cpfDescription1-relations-cpfRelation3-dateSet-dateRange-toDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-cpfRelation3-dateSet-dateRange-toDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-cpfRelation3-dateSet-dateRange-toDate</toDate>
+                        </dateRange>
+                    </dateSet>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation3-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation3-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation3-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation3-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation3-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation3-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation3-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation3-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation4" xml:lang="eng"
+                    cpfRelationType="hierarchical-child" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation4-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation4-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation4-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation4-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation4-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation4-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation4-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation4-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation4-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation4-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation4-relationEntry2</relationEntry>
+                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjQtb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <dateRange xml:id="cpfDescription1-relations-cpfRelation4-dateRange" xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation4-dateRange-localType">
+                        <fromDate xml:id="cpfDescription1-relations-cpfRelation4-dateRange-fromDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation4-dateRange-fromDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation4-dateRange-fromDate</fromDate>
+                        <toDate xml:id="cpfDescription1-relations-cpfRelation4-dateRange-toDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation4-dateRange-toDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation4-dateRange-toDate</toDate>
+                    </dateRange>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation4-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation4-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation4-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation4-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation4-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation4-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation4-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation4-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation4-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation4-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation4-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation4-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation4-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation4-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation4-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation4-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation4-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation4-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation4-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation5" xml:lang="eng"
+                    cpfRelationType="hierarchical-parent" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation5-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation5-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation5-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation5-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation5-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation5-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation5-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation5-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation5-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation5-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation5-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-cpfRelation5-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-cpfRelation5-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <date xml:id="cpfDescription1-relations-cpfRelation5-date_ID" xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation5-date-localType"
+                        standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                        >cpfDescription1-relations-cpfRelation5-date</date>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation5-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation5-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation5-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation5-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation5-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation5-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation5-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation5-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation5-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation5-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation5-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation5-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation5-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation5-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation5-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation5-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation5-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation5-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation5-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation6" xml:lang="eng"
+                    cpfRelationType="identity" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation6-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation6-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation6-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation6-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation6-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation6-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation6-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation6-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation6-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation6-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation6-relationEntry2</relationEntry>
+                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjYtb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <dateRange xml:id="cpfDescription1-relations-cpfRelation6-dateRange" xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation6-dateRange-localType">
+                        <fromDate xml:id="cpfDescription1-relations-cpfRelation6-dateRange-fromDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation6-dateRange-fromDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation6-dateRange-fromDate</fromDate>
+                        <toDate xml:id="cpfDescription1-relations-cpfRelation6-dateRange-toDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation6-dateRange-toDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation6-dateRange-toDate</toDate>
+                    </dateRange>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation6-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation6-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation6-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation6-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation6-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation6-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation6-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation6-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation6-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation6-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation6-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation6-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation6-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation6-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation6-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation6-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation6-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation6-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation6-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation7" xml:lang="eng"
+                    cpfRelationType="temporal" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation7-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation7-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation7-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation7-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation7-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation7-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation7-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation7-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation7-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation7-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation7-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-cpfRelation7-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-cpfRelation7-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <dateSet>
+                        <date xml:id="cpfDescription1-relations-cpfRelation7-dateSet-date_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation7-dateSet-date-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation7-dateSet-date</date>
+                        <dateRange xml:id="cpfDescription1-relations-cpfRelation7-dateSet-dateRange"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation7-dateSet-dateRange-localType">
+                            <fromDate
+                                xml:id="cpfDescription1-relations-cpfRelation7-dateSet-dateRange-fromDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-cpfRelation7-dateSet-dateRange-fromDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-cpfRelation7-dateSet-dateRange-fromDate</fromDate>
+                            <toDate
+                                xml:id="cpfDescription1-relations-cpfRelation7-dateSet-dateRange-toDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-cpfRelation7-dateSet-dateRange-toDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-cpfRelation7-dateSet-dateRange-toDate</toDate>
+                        </dateRange>
+                    </dateSet>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation7-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation7-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation7-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation7-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation7-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation7-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation7-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation7-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation7-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation7-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation7-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation7-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation7-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation7-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation7-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation7-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation7-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation7-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation7-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation8" xml:lang="eng"
+                    cpfRelationType="temporal-earlier" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation8-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation8-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation8-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation8-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation8-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation8-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation8-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation8-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation8-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation8-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation8-relationEntry2</relationEntry>
+                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1jcGZSZWxhdGlvbjgtb2JqZWN0QmluV3JhcA==</objectBinWrap>
+                    <dateRange xml:id="cpfDescription1-relations-cpfRelation8-dateRange" xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation8-dateRange-localType">
+                        <fromDate xml:id="cpfDescription1-relations-cpfRelation8-dateRange-fromDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation8-dateRange-fromDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation8-dateRange-fromDate</fromDate>
+                        <toDate xml:id="cpfDescription1-relations-cpfRelation8-dateRange-toDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation8-dateRange-toDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation8-dateRange-toDate</toDate>
+                    </dateRange>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation8-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation8-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation8-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation8-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation8-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation8-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation8-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation8-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation8-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation8-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation8-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation8-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation8-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation8-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation8-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation8-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation8-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation8-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation8-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <cpfRelation xml:id="cpfDescription1-relations-cpfRelation9" xml:lang="eng"
+                    cpfRelationType="temporal-later" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-cpfRelation9-xlink:title"
+                    xlink:role="cpfDescription1-relations-cpfRelation9-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-cpfRelation9-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation9-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation9-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation9-relationEntry1-localType"
+                        >cpfDescription1-relations-cpfRelation9-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-cpfRelation9-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-cpfRelation9-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-cpfRelation9-relationEntry2-localType"
+                        >cpfDescription1-relations-cpfRelation9-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-cpfRelation9-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-cpfRelation9-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <dateSet>
+                        <date xml:id="cpfDescription1-relations-cpfRelation9-dateSet-date_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation9-dateSet-date-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-cpfRelation9-dateSet-date</date>
+                        <dateRange xml:id="cpfDescription1-relations-cpfRelation9-dateSet-dateRange"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-cpfRelation9-dateSet-dateRange-localType">
+                            <fromDate
+                                xml:id="cpfDescription1-relations-cpfRelation9-dateSet-dateRange-fromDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-cpfRelation9-dateSet-dateRange-fromDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-cpfRelation9-dateSet-dateRange-fromDate</fromDate>
+                            <toDate
+                                xml:id="cpfDescription1-relations-cpfRelation9-dateSet-dateRange-toDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-cpfRelation9-dateSet-dateRange-toDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-cpfRelation9-dateSet-dateRange-toDate</toDate>
+                        </dateRange>
+                    </dateSet>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation9-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation9-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation9-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation9-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation9-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation9-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation9-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-cpfRelation9-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-cpfRelation9-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-cpfRelation9-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-cpfRelation9-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-cpfRelation9-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-cpfRelation9-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-cpfRelation9-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-cpfRelation9-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-cpfRelation9-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-cpfRelation9-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-cpfRelation9-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-cpfRelation9-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </cpfRelation>
+                <resourceRelation xml:id="cpfDescription1-relations-resourceRelation1" xml:lang="eng"
+                    resourceRelationType="creatorOf" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-resourceRelation1-xlink:title"
+                    xlink:role="cpfDescription1-relations-resourceRelation1-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-resourceRelation1-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-resourceRelation1-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-resourceRelation1-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-resourceRelation1-relationEntry1-localType"
+                        >cpfDescription1-relations-resourceRelation1-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-resourceRelation1-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-resourceRelation1-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-resourceRelation1-relationEntry2-localType"
+                        >cpfDescription1-relations-resourceRelation1-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-resourceRelation1-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-resourceRelation1-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <date xml:id="cpfDescription1-relations-resourceRelation1-date_ID" xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation1-date-localType"
+                        standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                        >cpfDescription1-relations-resourceRelation1-date</date>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-resourceRelation1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation1-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-resourceRelation1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-resourceRelation1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-resourceRelation1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-resourceRelation1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-resourceRelation1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-resourceRelation1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation1-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-resourceRelation1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-resourceRelation1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-resourceRelation1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-resourceRelation1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-resourceRelation1-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-resourceRelation1-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-resourceRelation1-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-resourceRelation1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-resourceRelation1-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-resourceRelation1-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </resourceRelation>
+                <resourceRelation xml:id="cpfDescription1-relations-resourceRelation2" xml:lang="eng"
+                    resourceRelationType="subjectOf" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-resourceRelation2-xlink:title"
+                    xlink:role="cpfDescription1-relations-resourceRelation2-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-resourceRelation2-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-resourceRelation2-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-resourceRelation2-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-resourceRelation2-relationEntry1-localType"
+                        >cpfDescription1-relations-resourceRelation2-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-resourceRelation2-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-resourceRelation2-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-resourceRelation2-relationEntry2-localType"
+                        >cpfDescription1-relations-resourceRelation2-relationEntry2</relationEntry>
+                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1yZXNvdXJjZVJlbGF0aW9uMi1vYmplY3RCaW5XcmFw</objectBinWrap>
+                    <dateRange xml:id="cpfDescription1-relations-resourceRelation2-dateRange" xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation2-dateRange-localType">
+                        <fromDate xml:id="cpfDescription1-relations-resourceRelation2-dateRange-fromDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-resourceRelation2-dateRange-fromDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-resourceRelation2-dateRange-fromDate</fromDate>
+                        <toDate xml:id="cpfDescription1-relations-resourceRelation2-dateRange-toDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-resourceRelation2-dateRange-toDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-resourceRelation2-dateRange-toDate</toDate>
+                    </dateRange>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-resourceRelation2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation2-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-resourceRelation2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-resourceRelation2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-resourceRelation2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-resourceRelation2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-resourceRelation2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-resourceRelation2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation2-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-resourceRelation2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-resourceRelation2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-resourceRelation2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-resourceRelation2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-resourceRelation2-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-resourceRelation2-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-resourceRelation2-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-resourceRelation2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-resourceRelation2-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-resourceRelation2-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </resourceRelation>
+                <resourceRelation xml:id="cpfDescription1-relations-resourceRelation3" xml:lang="eng"
+                    resourceRelationType="other" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-resourceRelation3-xlink:title"
+                    xlink:role="cpfDescription1-relations-resourceRelation3-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-resourceRelation3-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-resourceRelation3-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-resourceRelation3-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-resourceRelation3-relationEntry1-localType"
+                        >cpfDescription1-relations-resourceRelation3-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-resourceRelation3-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-resourceRelation3-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-resourceRelation3-relationEntry2-localType"
+                        >cpfDescription1-relations-resourceRelation3-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-resourceRelation3-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-resourceRelation3-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <dateSet>
+                        <date xml:id="cpfDescription1-relations-resourceRelation3-dateSet-date_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-resourceRelation3-dateSet-date-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-resourceRelation3-dateSet-date</date>
+                        <dateRange xml:id="cpfDescription1-relations-resourceRelation3-dateSet-dateRange"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-resourceRelation3-dateSet-dateRange-localType">
+                            <fromDate
+                                xml:id="cpfDescription1-relations-resourceRelation3-dateSet-dateRange-fromDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-resourceRelation3-dateSet-dateRange-fromDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-resourceRelation3-dateSet-dateRange-fromDate</fromDate>
+                            <toDate
+                                xml:id="cpfDescription1-relations-resourceRelation3-dateSet-dateRange-toDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-resourceRelation3-dateSet-dateRange-toDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-resourceRelation3-dateSet-dateRange-toDate</toDate>
+                        </dateRange>
+                    </dateSet>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-resourceRelation3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation3-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-resourceRelation3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-resourceRelation3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-resourceRelation3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-resourceRelation3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-resourceRelation3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-resourceRelation3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-resourceRelation3-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-resourceRelation3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-resourceRelation3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-resourceRelation3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-resourceRelation3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-resourceRelation3-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-resourceRelation3-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-resourceRelation3-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-resourceRelation3-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-resourceRelation3-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-resourceRelation3-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </resourceRelation>
+                <functionRelation xml:id="cpfDescription1-relations-functionRelation1" xml:lang="eng"
+                    functionRelationType="controls" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-functionRelation1-xlink:title"
+                    xlink:role="cpfDescription1-relations-functionRelation1-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-functionRelation1-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-functionRelation1-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-functionRelation1-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-functionRelation1-relationEntry1-localType"
+                        >cpfDescription1-relations-functionRelation1-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-functionRelation1-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-functionRelation1-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-functionRelation1-relationEntry2-localType"
+                        >cpfDescription1-relations-functionRelation1-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-functionRelation1-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-functionRelation1-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <date xml:id="cpfDescription1-relations-functionRelation1-date_ID" xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation1-date-localType"
+                        standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                        >cpfDescription1-relations-functionRelation1-date</date>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-functionRelation1-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation1-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-functionRelation1-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-functionRelation1-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-functionRelation1-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-functionRelation1-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-functionRelation1-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-functionRelation1-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation1-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-functionRelation1-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-functionRelation1-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-functionRelation1-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-functionRelation1-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-functionRelation1-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-functionRelation1-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-functionRelation1-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-functionRelation1-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-functionRelation1-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-functionRelation1-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </functionRelation>
+                <functionRelation xml:id="cpfDescription1-relations-functionRelation2" xml:lang="eng"
+                    functionRelationType="owns" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-functionRelation2-xlink:title"
+                    xlink:role="cpfDescription1-relations-functionRelation2-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-functionRelation2-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-functionRelation2-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-functionRelation2-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-functionRelation2-relationEntry1-localType"
+                        >cpfDescription1-relations-functionRelation2-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-functionRelation2-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-functionRelation2-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-functionRelation2-relationEntry2-localType"
+                        >cpfDescription1-relations-functionRelation2-relationEntry2</relationEntry>
+                    <objectBinWrap>Y3BmRGVzY3JpcHRpb24xLXJlbGF0aW9ucy1mdW5jdGlvblJlbGF0aW9uMi1vYmplY3RCaW5XcmFw</objectBinWrap>
+                    <dateRange xml:id="cpfDescription1-relations-functionRelation2-dateRange" xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation2-dateRange-localType">
+                        <fromDate xml:id="cpfDescription1-relations-functionRelation2-dateRange-fromDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-functionRelation2-dateRange-fromDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-functionRelation2-dateRange-fromDate</fromDate>
+                        <toDate xml:id="cpfDescription1-relations-functionRelation2-dateRange-toDate_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-functionRelation2-dateRange-toDate-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-functionRelation2-dateRange-toDate</toDate>
+                    </dateRange>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-functionRelation2-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation2-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-functionRelation2-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-functionRelation2-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-functionRelation2-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-functionRelation2-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-functionRelation2-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-functionRelation2-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation2-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-functionRelation2-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-functionRelation2-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-functionRelation2-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-functionRelation2-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-functionRelation2-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-functionRelation2-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-functionRelation2-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-functionRelation2-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-functionRelation2-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-functionRelation2-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </functionRelation>
+                <functionRelation xml:id="cpfDescription1-relations-functionRelation3" xml:lang="eng"
+                    functionRelationType="performs" lastDateTimeVerified="2021-01-21T16:20:00+01:00"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/211"
+                    xlink:title="cpfDescription1-relations-functionRelation3-xlink:title"
+                    xlink:role="cpfDescription1-relations-functionRelation3-xlink:role"
+                    xlink:arcrole="cpfDescription1-relations-functionRelation3-xlink:arcrole"
+                    xlink:show="new" xlink:actuate="onLoad" xlink:type="simple">
+                    <relationEntry xml:id="cpfDescription1-relations-functionRelation3-relationEntry1_ID"
+                        xml:lang="eng" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-functionRelation3-relationEntry1-transliteration"
+                        localType="cpfDescription1-relations-functionRelation3-relationEntry1-localType"
+                        >cpfDescription1-relations-functionRelation3-relationEntry1</relationEntry>
+                    <relationEntry xml:id="cpfDescription1-relations-functionRelation3-relationEntry2_ID"
+                        xml:lang="fre" scriptCode="Latn"
+                        transliteration="cpfDescription1-relations-functionRelation3-relationEntry2-transliteration"
+                        localType="cpfDescription1-relations-functionRelation3-relationEntry2-localType"
+                        >cpfDescription1-relations-functionRelation3-relationEntry2</relationEntry>
+                    <objectXMLWrap xml:id="cpfDescription1-relations-functionRelation3-objectXMLWrap_ID">
+                        <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                            <mods:titleInfo>
+                                <mods:title>cpfDescription1-relations-functionRelation3-objectXMLWrap</mods:title>
+                            </mods:titleInfo>
+                        </mods:mods>
+                    </objectXMLWrap>
+                    <dateSet>
+                        <date xml:id="cpfDescription1-relations-functionRelation3-dateSet-date_ID"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-functionRelation3-dateSet-date-localType"
+                            standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                            >cpfDescription1-relations-functionRelation3-dateSet-date</date>
+                        <dateRange xml:id="cpfDescription1-relations-functionRelation3-dateSet-dateRange"
+                            xml:lang="eng"
+                            localType="cpfDescription1-relations-functionRelation3-dateSet-dateRange-localType">
+                            <fromDate
+                                xml:id="cpfDescription1-relations-functionRelation3-dateSet-dateRange-fromDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-functionRelation3-dateSet-dateRange-fromDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-functionRelation3-dateSet-dateRange-fromDate</fromDate>
+                            <toDate
+                                xml:id="cpfDescription1-relations-functionRelation3-dateSet-dateRange-toDate_ID"
+                                xml:lang="eng"
+                                localType="cpfDescription1-relations-functionRelation3-dateSet-dateRange-toDate-localType"
+                                standardDate="2021-01-21" notBefore="2021-01" notAfter="2021-02"
+                                >cpfDescription1-relations-functionRelation3-dateSet-dateRange-toDate</toDate>
+                        </dateRange>
+                    </dateSet>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-functionRelation3-placeEntry1_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation3-placeEntry1-localType"
+                        transliteration="cpfDescription1-relations-functionRelation3-placeEntry1-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-functionRelation3-placeEntry1-vocabularySource"
+                        accuracy="cpfDescription1-relations-functionRelation3-placeEntry1-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-functionRelation3-placeEntry1-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-functionRelation3-placeEntry1</placeEntry>
+                    <placeEntry
+                        xml:id="cpfDescription1-relations-functionRelation3-placeEntry2_ID"
+                        xml:lang="eng"
+                        localType="cpfDescription1-relations-functionRelation3-placeEntry2-localType"
+                        transliteration="cpfDescription1-relations-functionRelation3-placeEntry2-transliteration"
+                        scriptCode="Arab"
+                        vocabularySource="cpfDescription1-relations-functionRelation3-placeEntry2-vocabularySource"
+                        accuracy="cpfDescription1-relations-functionRelation3-placeEntry2-accuracy"
+                        countryCode="FR"
+                        altitude="cpfDescription1-relations-functionRelation3-placeEntry2-altitude"
+                        latitude="48.85341" longitude="2.3488"
+                        >cpfDescription1-relations-functionRelation3-placeEntry2</placeEntry>
+                    <descriptiveNote xml:id="cpfDescription1-relations-functionRelation3-descriptiveNote"
+                        xml:lang="eng">
+                        <p xml:id="cpfDescription1-relations-functionRelation3-descriptiveNote-p1_ID"
+                            xml:lang="eng">cpfDescription1-relations-functionRelation3-descriptiveNote-p1</p>
+                        <p xml:id="cpfDescription1-relations-functionRelation3-descriptiveNote-p2_ID"
+                            xml:lang="fre">cpfDescription1-relations-functionRelation3-descriptiveNote-p2</p>
+                    </descriptiveNote>
+                </functionRelation>
             </relations>
         </cpfDescription>
         <cpfDescription xml:id="cpfDescription2" xml:lang="fre"
