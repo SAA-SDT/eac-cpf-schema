@@ -245,10 +245,21 @@
    </xs:complexType>
    <xs:complexType name="maintenanceAgency">
       <xs:sequence>
-         <xs:element type="v2:agencyCode" name="agencyCode" minOccurs="0"/>
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:agencyName" name="agencyName"/>
-            <xs:element type="v2:otherAgencyCode" name="otherAgencyCode"/>
+         <xs:choice>
+            <xs:sequence>
+               <xs:element type="v2:agencyCode" name="agencyCode"/>
+               <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element type="v2:agencyName" name="agencyName"/>
+                  <xs:element type="v2:otherAgencyCode" name="otherAgencyCode"/>
+               </xs:choice>
+            </xs:sequence>
+            <xs:sequence>
+               <xs:element type="v2:agencyName" name="agencyName"/>
+               <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element type="v2:agencyName" name="agencyName"/>
+                  <xs:element type="v2:otherAgencyCode" name="otherAgencyCode"/>
+               </xs:choice>
+            </xs:sequence>
          </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
@@ -608,49 +619,67 @@
       </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="agencyCode" mixed="true">
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="target" type="xs:IDREFS"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="status">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="authorized"/>
-               <xs:enumeration value="alternative"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
-      <xs:attribute name="valueURI" type="xs:anyURI"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   <xs:complexType name="agencyCode">
+      <xs:simpleContent>
+         <xs:restriction base="xs:anyType">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:pattern value="(.|\n|\r)*\S(.|\n|\r)*"/>
+               </xs:restriction>
+            </xs:simpleType>
+            <xs:attribute name="audience">
+               <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                     <xs:enumeration value="external"/>
+                     <xs:enumeration value="internal"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="id" type="xs:ID"/>
+            <xs:attribute name="target" type="xs:IDREFS"/>
+            <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+            <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+            <xs:attribute name="status">
+               <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                     <xs:enumeration value="authorized"/>
+                     <xs:enumeration value="alternative"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="vocabularySource" type="xs:token"/>
+            <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+            <xs:attribute name="valueURI" type="xs:anyURI"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+         </xs:restriction>
+      </xs:simpleContent>
    </xs:complexType>
-   <xs:complexType name="agencyName" mixed="true">
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="target" type="xs:IDREFS"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="vocabularySource" type="xs:token"/>
-      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
-      <xs:attribute name="valueURI" type="xs:anyURI"/>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   <xs:complexType name="agencyName">
+      <xs:simpleContent>
+         <xs:restriction base="xs:anyType">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:pattern value="(.|\n|\r)*\S(.|\n|\r)*"/>
+               </xs:restriction>
+            </xs:simpleType>
+            <xs:attribute name="audience">
+               <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                     <xs:enumeration value="external"/>
+                     <xs:enumeration value="internal"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="id" type="xs:ID"/>
+            <xs:attribute name="target" type="xs:IDREFS"/>
+            <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+            <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+            <xs:attribute name="vocabularySource" type="xs:token"/>
+            <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+            <xs:attribute name="valueURI" type="xs:anyURI"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+         </xs:restriction>
+      </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="otherAgencyCode" mixed="true">
       <xs:attribute name="audience">
