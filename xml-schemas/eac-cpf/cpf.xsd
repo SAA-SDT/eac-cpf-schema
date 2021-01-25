@@ -228,17 +228,21 @@
          <xs:choice>
             <xs:sequence>
                <xs:element type="v2:agencyCode" name="agencyCode"/>
-               <xs:choice minOccurs="0" maxOccurs="unbounded">
-                  <xs:element type="v2:agencyName" name="agencyName"/>
-                  <xs:element type="v2:otherAgencyCode" name="otherAgencyCode"/>
-               </xs:choice>
+               <xs:element type="v2:agencyName"
+                           name="agencyName"
+                           minOccurs="0"
+                           maxOccurs="unbounded"/>
+               <xs:element type="v2:otherAgencyCode"
+                           name="otherAgencyCode"
+                           minOccurs="0"
+                           maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:sequence>
-               <xs:element type="v2:agencyName" name="agencyName"/>
-               <xs:choice minOccurs="0" maxOccurs="unbounded">
-                  <xs:element type="v2:agencyName" name="agencyName"/>
-                  <xs:element type="v2:otherAgencyCode" name="otherAgencyCode"/>
-               </xs:choice>
+               <xs:element type="v2:agencyName" name="agencyName" maxOccurs="unbounded"/>
+               <xs:element type="v2:otherAgencyCode"
+                           name="otherAgencyCode"
+                           minOccurs="0"
+                           maxOccurs="unbounded"/>
             </xs:sequence>
          </xs:choice>
          <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>

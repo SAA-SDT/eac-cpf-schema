@@ -510,19 +510,18 @@
                <group>
                   <ref name="agencyCode"/>
                   <zeroOrMore>
-                     <choice>
-                        <ref name="agencyName"/>
-                        <ref name="otherAgencyCode"/>
-                     </choice>
+                     <ref name="agencyName"/>
+                  </zeroOrMore>
+                  <zeroOrMore>
+                     <ref name="otherAgencyCode"/>
                   </zeroOrMore>
                </group>
                <group>
-                  <ref name="agencyName"/>
+                  <oneOrMore>
+                     <ref name="agencyName"/>
+                  </oneOrMore>
                   <zeroOrMore>
-                     <choice>
-                        <ref name="agencyName"/>
-                        <ref name="otherAgencyCode"/>
-                     </choice>
+                     <ref name="otherAgencyCode"/>
                   </zeroOrMore>
                </group>
             </choice>
