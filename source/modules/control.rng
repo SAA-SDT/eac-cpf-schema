@@ -14,7 +14,7 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute.status.authorized-or-alternative.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <text/>
+            <ref name="dt.non-empty-element-with-newlines-available"/>
         </element>
     </define>
     
@@ -22,7 +22,7 @@
         <element name="agencyName">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <text/>
+            <ref name="dt.non-empty-element-with-newlines-available"/>
         </element>
     </define>
 
@@ -137,15 +137,26 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute.countryCode.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <optional>
-                <ref name="element.agencyCode"/>
-            </optional>
-            <zeroOrMore>
-                <choice>
+            <choice>
+                <group>
+                    <ref name="element.agencyCode"/>
+                    <zeroOrMore>
+                        <choice>
+                            <ref name="element.agencyName"/>
+                            <ref name="element.otherAgencyCode"/>
+                        </choice>
+                    </zeroOrMore>
+                </group>
+                <group>
                     <ref name="element.agencyName"/>
-                    <ref name="element.otherAgencyCode"/>
-                </choice>
-            </zeroOrMore>
+                    <zeroOrMore>
+                        <choice>
+                            <ref name="element.agencyName"/>
+                            <ref name="element.otherAgencyCode"/>
+                        </choice>
+                    </zeroOrMore>
+                </group>
+            </choice>
             <ref name="element.descriptiveNote.optional"/>
         </element>  
     </define>
