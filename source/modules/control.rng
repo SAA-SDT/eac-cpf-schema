@@ -58,13 +58,11 @@
             <ref name="attribute.publicationStatus.optional"/>
             <!-- required -->
             <ref name="element.recordId"/>
+            <ref name="element.maintenanceAgency"/>
             <ref name="element.maintenanceHistory"/>
             <!-- optional / not repeatable -->
             <optional a:exclude-from="eac">
                 <ref name="element.fileDesc"/>
-            </optional>
-            <optional>
-                <ref name="element.maintenanceAgency"/>
             </optional>
             <optional>
                 <ref name="element.sources"/>

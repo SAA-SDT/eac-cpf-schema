@@ -51,11 +51,9 @@
          <ref name="attribute.publicationStatus.optional"/>
          <!-- required -->
          <ref name="element.recordId"/>
+         <ref name="element.maintenanceAgency"/>
          <ref name="element.maintenanceHistory"/>
          <!-- optional / not repeatable -->
-         <optional>
-            <ref name="element.maintenanceAgency"/>
-         </optional>
          <optional>
             <ref name="element.sources"/>
          </optional>
