@@ -682,8 +682,8 @@
    </xs:complexType>
    <xs:complexType name="maintenanceEvent">
       <xs:sequence>
+         <xs:element type="v2:agent" name="agent"/>
          <xs:element type="v2:eventDateTime" name="eventDateTime"/>
-         <xs:element type="v2:agent" name="agent" minOccurs="0"/>
          <xs:element type="v2:eventDescription"
                      name="eventDescription"
                      minOccurs="0"
@@ -1372,26 +1372,6 @@
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
-   <xs:complexType name="eventDateTime" mixed="true">
-      <xs:attribute name="audience">
-         <xs:simpleType>
-            <xs:restriction base="xs:token">
-               <xs:enumeration value="external"/>
-               <xs:enumeration value="internal"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:attribute name="id" type="xs:ID"/>
-      <xs:attribute name="target" type="xs:IDREFS"/>
-      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
-      <xs:attribute name="standardDateTime">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
-      <xs:anyAttribute namespace="##other" processContents="lax"/>
-   </xs:complexType>
    <xs:complexType name="agent" mixed="true">
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1415,6 +1395,26 @@
                <xs:enumeration value="machine"/>
                <xs:enumeration value="unknown"/>
             </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="eventDateTime" mixed="true">
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="target" type="xs:IDREFS"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="standardDateTime">
+         <xs:simpleType>
+            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
          </xs:simpleType>
       </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>

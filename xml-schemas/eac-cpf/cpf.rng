@@ -2035,10 +2035,8 @@
                   <value type="token" datatypeLibrary="" ns="">updated</value>
                </choice>
             </attribute>
+            <ref name="agent"/>
             <ref name="eventDateTime"/>
-            <optional>
-               <ref name="agent"/>
-            </optional>
             <zeroOrMore>
                <ref name="eventDescription"/>
             </zeroOrMore>
@@ -4410,75 +4408,6 @@
          </group>
       </element>
    </define>
-   <define name="eventDateTime">
-      <element name="eventDateTime" ns="https://archivists.org/ns/eac/v2">
-         <group>
-            <interleave>
-               <optional>
-                  <attribute name="audience" ns="">
-                     <choice>
-                        <value type="token" datatypeLibrary="" ns="">external</value>
-                        <value type="token" datatypeLibrary="" ns="">internal</value>
-                     </choice>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="id" ns="">
-                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="target" ns="">
-                     <data type="IDREFS"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <zeroOrMore>
-                  <attribute>
-                     <anyName>
-                        <except>
-                           <choice>
-                              <nsName ns="https://archivists.org/ns/eac/v2"/>
-                              <nsName ns=""/>
-                           </choice>
-                        </except>
-                     </anyName>
-                     <text/>
-                  </attribute>
-               </zeroOrMore>
-            </interleave>
-            <interleave>
-               <optional>
-                  <attribute name="languageOfElement" ns="">
-                     <data type="NMTOKEN"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-               <optional>
-                  <attribute name="scriptOfElement" ns="">
-                     <data type="NMTOKEN"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </attribute>
-               </optional>
-            </interleave>
-            <optional>
-               <attribute name="standardDateTime" ns="">
-                  <choice>
-                     <data type="gYear"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="gYearMonth"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="date"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                     <data type="dateTime"
-                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
-                  </choice>
-               </attribute>
-            </optional>
-            <text/>
-         </group>
-      </element>
-   </define>
    <define name="agent">
       <element name="agent" ns="https://archivists.org/ns/eac/v2">
          <group>
@@ -4557,6 +4486,75 @@
                   <value type="token" datatypeLibrary="" ns="">unknown</value>
                </choice>
             </attribute>
+            <text/>
+         </group>
+      </element>
+   </define>
+   <define name="eventDateTime">
+      <element name="eventDateTime" ns="https://archivists.org/ns/eac/v2">
+         <group>
+            <interleave>
+               <optional>
+                  <attribute name="audience" ns="">
+                     <choice>
+                        <value type="token" datatypeLibrary="" ns="">external</value>
+                        <value type="token" datatypeLibrary="" ns="">internal</value>
+                     </choice>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="id" ns="">
+                     <data type="ID" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="target" ns="">
+                     <data type="IDREFS"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <zeroOrMore>
+                  <attribute>
+                     <anyName>
+                        <except>
+                           <choice>
+                              <nsName ns="https://archivists.org/ns/eac/v2"/>
+                              <nsName ns=""/>
+                           </choice>
+                        </except>
+                     </anyName>
+                     <text/>
+                  </attribute>
+               </zeroOrMore>
+            </interleave>
+            <interleave>
+               <optional>
+                  <attribute name="languageOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+               <optional>
+                  <attribute name="scriptOfElement" ns="">
+                     <data type="NMTOKEN"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </attribute>
+               </optional>
+            </interleave>
+            <optional>
+               <attribute name="standardDateTime" ns="">
+                  <choice>
+                     <data type="gYear"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     <data type="gYearMonth"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     <data type="date"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                     <data type="dateTime"
+                           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+                  </choice>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>

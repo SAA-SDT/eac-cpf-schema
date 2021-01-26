@@ -144,10 +144,8 @@
       <element name="maintenanceEvent">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute.maintenanceEventType"/>
+         <ref name="element.agent"/>
          <ref name="element.eventDateTime"/>
-         <optional>
-            <ref name="element.agent"/>
-         </optional>
          <zeroOrMore>
             <ref name="element.eventDescription"/>
          </zeroOrMore>
