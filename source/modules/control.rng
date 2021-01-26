@@ -14,7 +14,7 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute.status.authorized-or-alternative.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <text/>
+            <ref name="dt.non-empty-element-with-newlines-available"/>
         </element>
     </define>
     
@@ -22,7 +22,7 @@
         <element name="agencyName">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <text/>
+            <ref name="dt.non-empty-element-with-newlines-available"/>
         </element>
     </define>
 
@@ -135,13 +135,25 @@
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute.countryCode.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <ref name="element.agencyCode"/>
-            <oneOrMore>
-                <ref name="element.agencyName"/>
-            </oneOrMore>
-            <zeroOrMore>
-                <ref name="element.otherAgencyCode"/>
-            </zeroOrMore>
+            <choice>
+                <group>
+                    <ref name="element.agencyCode"/>
+                    <zeroOrMore>
+                            <ref name="element.agencyName"/>
+                    </zeroOrMore>
+                    <zeroOrMore>
+                        <ref name="element.otherAgencyCode"/>
+                    </zeroOrMore>
+                </group>
+                <group>
+                    <oneOrMore>
+                        <ref name="element.agencyName"/>
+                    </oneOrMore>
+                    <zeroOrMore>
+                        <ref name="element.otherAgencyCode"/>
+                    </zeroOrMore>
+                </group>
+            </choice>
             <ref name="element.descriptiveNote.optional"/>
         </element>  
     </define>

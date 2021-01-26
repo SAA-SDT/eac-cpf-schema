@@ -506,13 +506,25 @@
                   </attribute>
                </optional>
             </interleave>
-            <ref name="agencyCode"/>
-            <oneOrMore>
-               <ref name="agencyName"/>
-            </oneOrMore>
-            <zeroOrMore>
-               <ref name="otherAgencyCode"/>
-            </zeroOrMore>
+            <choice>
+               <group>
+                  <ref name="agencyCode"/>
+                  <zeroOrMore>
+                     <ref name="agencyName"/>
+                  </zeroOrMore>
+                  <zeroOrMore>
+                     <ref name="otherAgencyCode"/>
+                  </zeroOrMore>
+               </group>
+               <group>
+                  <oneOrMore>
+                     <ref name="agencyName"/>
+                  </oneOrMore>
+                  <zeroOrMore>
+                     <ref name="otherAgencyCode"/>
+                  </zeroOrMore>
+               </group>
+            </choice>
             <optional>
                <ref name="descriptiveNote"/>
             </optional>
@@ -1710,7 +1722,10 @@
                   </attribute>
                </optional>
             </interleave>
-            <text/>
+            <data type="string"
+                  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+               <param name="pattern">(.|\n|\r)*\S(.|\n|\r)*</param>
+            </data>
          </group>
       </element>
    </define>
@@ -1785,7 +1800,10 @@
                   </attribute>
                </optional>
             </interleave>
-            <text/>
+            <data type="string"
+                  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+               <param name="pattern">(.|\n|\r)*\S(.|\n|\r)*</param>
+            </data>
          </group>
       </element>
    </define>
