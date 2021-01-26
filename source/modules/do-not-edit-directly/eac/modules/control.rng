@@ -11,14 +11,14 @@
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute.status.authorized-or-alternative.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
-         <ref name="dt.non-empty-element-with-newlines-available"/>
+         <text/>
       </element>
    </define>
    <define name="element.agencyName">
       <element name="agencyName">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
-         <ref name="dt.non-empty-element-with-newlines-available"/>
+         <text/>
       </element>
    </define>
    <define name="element.agent">
