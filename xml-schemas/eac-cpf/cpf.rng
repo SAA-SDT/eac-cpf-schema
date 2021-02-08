@@ -4319,10 +4319,10 @@
                <ref name="componentEntry"/>
             </zeroOrMore>
             <optional>
-               <ref name="objectXMLWrap"/>
+               <ref name="descriptiveNote"/>
             </optional>
             <optional>
-               <ref name="descriptiveNote"/>
+               <ref name="objectXMLWrap"/>
             </optional>
          </group>
       </element>
