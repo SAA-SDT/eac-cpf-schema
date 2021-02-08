@@ -1322,8 +1322,8 @@
                      name="componentEntry"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
          <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
+         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
