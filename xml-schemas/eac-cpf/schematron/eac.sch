@@ -12,7 +12,7 @@
     
     <sch:pattern>
         <sch:rule context="*[@conventionDeclarationReference]">
-            <sch:assert test="@conventionDeclarationReference[. = /*/*:control[1]/*:conventionDeclaration/@id]">
+            <sch:assert test="every $ref in tokenize(@conventionDeclarationReference, ' ') satisfies $ref = (/*/*:control[1]/*:conventionDeclaration/@id)">
                 When you use the conventionDeclarationReference attribute, it must be linked to a conventionDeclaration element.
             </sch:assert>
         </sch:rule>
@@ -20,7 +20,7 @@
     
     <sch:pattern>
         <sch:rule context="*[@localTypeDeclarationReference]">
-            <sch:assert test="@localTypeDeclarationReference[. = /*/*:control[1]/*:localTypeDeclaration/@id]">
+            <sch:assert test="every $ref in tokenize(@localTypeDeclarationReference, ' ') satisfies $ref = (/*/*:control[1]/*:localTypeDeclaration/@id)">
                 When you use the localTypeDeclarationReference attribute, it must be linked to a localTypeDeclaration element.
             </sch:assert>
         </sch:rule>  
@@ -28,7 +28,7 @@
     
     <sch:pattern>
         <sch:rule context="*[@maintenanceEventReference]">
-            <sch:assert test="@maintenanceEventReference[. = /*/*:control[1]/*:maintenanceHistory[1]/*:maintenanceEvent/@id]">
+            <sch:assert test="every $ref in tokenize(@maintenanceEventReference, ' ') satisfies $ref = (/*/*:control[1]/*:maintenanceHistory[1]/*:maintenanceEvent/@id)">
                 When you use the maintenanceEventReference attribute, it must be linked to a maintenanceEvent element.
             </sch:assert>
         </sch:rule>
@@ -36,7 +36,7 @@
     
     <sch:pattern>
         <sch:rule context="*[@sourceReference]">
-            <sch:assert test="@sourceReference[. = (/*/*:control[1]/*:sources[1]/*:source/@id, /*/*:control[1]/*:sources[1]/*:source/*:citedRange/@id)]">
+            <sch:assert test="every $ref in tokenize(@sourceReference, ' ') satisfies $ref = (/*/*:control[1]/*:sources[1]/*:source/@id, /*/*:control[1]/*:sources[1]/*:source/*:citedRange/@id)">
                 When you use the sourceReference attribute, it must be linked to a source or citedRange element.
             </sch:assert>
         </sch:rule>
@@ -44,7 +44,7 @@
     
     <sch:pattern>
         <sch:rule context="*[@target]">
-            <sch:assert test="@target[. = //*/@id]">
+            <sch:assert test="every $target in tokenize(@target, ' ') satisfies $target = (//*/@id)">
                 When you use the target attribute, it must be linked to another element by means of the id attribute.
             </sch:assert>
         </sch:rule>
@@ -52,12 +52,25 @@
     
     
     <!-- CO-OCCURENCE CONSTRAINTS -->
-    <sch:pattern id="co-occurrence-constraints">
+    <sch:pattern id="maintenanceAgency-constraints">
         <sch:rule context="*:maintenanceAgency[*:agencyCode[not(normalize-space())]] | *:maintenanceAgency[not(*:agencyCode)]">
             <sch:assert test="*:agencyName[normalize-space()]">The maintenanceAgency element requires either an agencyCode or agencyName element that cannot be empty.</sch:assert>
         </sch:rule>
         <sch:rule context="*:maintenanceAgency[*:agencyName[not(normalize-space())]] | *:maintenanceAgency[not(*:agencyName)]">
             <sch:assert test="*:agencyCode[normalize-space()]">The maintenanceAgency element requires either an agencyCode or agencyName element that cannot be empty.</sch:assert>
+        </sch:rule>
+    </sch:pattern>
+    
+    <sch:pattern id="localType-containts">
+        <sch:rule context="*[@localType]">
+            <sch:assert test="@localTypeDeclarationReference">Whenever @localType is used, then the @localTypeDeclarationReference attribute should also be used to point to the localTypeDeclaration section within control.</sch:assert>
+        </sch:rule>
+        <!-- do we need to enforce the inverse, as well? -->
+    </sch:pattern>
+    
+    <sch:pattern id="eventDateTime">
+        <sch:rule context="/*/*:control/*:maintenanceHistory/*:maintenanceEvent/*:eventDateTime[not(@standardDateTime)]">
+            <sch:assert test="normalize-space()">The eventDateTime element requires either a standardDateTime attribute or text.</sch:assert>
         </sch:rule>
     </sch:pattern>
     
