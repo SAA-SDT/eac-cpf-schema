@@ -61,12 +61,14 @@
         </sch:rule>
     </sch:pattern>
     
+    <!-- do we need to enforce the inverse, as well? -->
+    <!-- commenting this rule out for now since it makes all of the connverted documents invalid, which isn't fair :) 
     <sch:pattern id="localType-containts">
         <sch:rule context="*[@localType]">
             <sch:assert test="@localTypeDeclarationReference">Whenever @localType is used, then the @localTypeDeclarationReference attribute should also be used to point to the localTypeDeclaration section within control.</sch:assert>
         </sch:rule>
-        <!-- do we need to enforce the inverse, as well? -->
     </sch:pattern>
+    -->
     
     <sch:pattern id="eventDateTime">
         <sch:rule context="/*/*:control/*:maintenanceHistory/*:maintenanceEvent/*:eventDateTime[not(@standardDateTime)]">
