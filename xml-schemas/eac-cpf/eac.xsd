@@ -16,7 +16,33 @@
   
   *****************************************************************
   
-   What else???...
+  EDITORS: Society of American Archivists Technical Subcommittee on Encoded Archival Standards (TS-EAS)
+  
+  PUBLISHER: Society of American Archivists in collaboration with the Staatsbibliothek zu Berlin
+  
+  PURPOSE: The EAC-CPF Schema is a communication standard for the description of corporate bodies,
+  persons, and families. It is based on the International Council of Archives' International Standard 
+  Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
+  documentation on the use of the standard, see the EAC-CPF Tag Library
+  (http://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/).
+  
+  Lead schema maintainer: Mark Custer
+  
+  **********
+  Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
+  the TS-EAS (ts-eas@archivists.org)
+  
+  with subject line: Schema Comment
+  **********
+  
+  
+   This schema has been generated automatically. 
+  
+   If you would like to contribute to this project, please see:
+   https://github.com/SAA-SDT/eac-cpf-schema/blob/development/CONTRIBUTING.md
+  
+  *****************************************************************
+  *****************************************************************
   
   
   
