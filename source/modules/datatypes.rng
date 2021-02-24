@@ -3,14 +3,6 @@
     xmlns="http://relaxng.org/ns/structure/1.0"
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-
-    <define name="dt.absolute-http-URI">
-        <data type="anyURI">
-            <!-- this is probably too strict for URIs, and there are likely other protocals than http that we should support for valueURI, etc. -->
-            <!-- also, not used anyhwere currently -->
-            <param name="pattern">http[s]?://.*</param>
-        </data>
-    </define>
     
     <define name="dt.any-standard-date">
         <choice>
@@ -30,12 +22,6 @@
     <define name="dt.non-empty-element-with-newlines-available">
         <data type="string">
             <param name="pattern">(.|\n|\r)*\S(.|\n|\r)*</param>
-        </data>
-    </define>
-    
-    <define name="dt.non-empty-value">
-        <data type="token">
-            <param name="pattern">.*[\S]+.*</param>
         </data>
     </define>
     

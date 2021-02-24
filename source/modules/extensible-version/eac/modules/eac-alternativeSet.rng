@@ -2,8 +2,6 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-    
-    <!-- alternativeSet elements are here, in case we keep those -->
    <define name="element.alternativeSet">
       <element name="alternativeSet">
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>

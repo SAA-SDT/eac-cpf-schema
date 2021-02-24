@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2021 January 5                      *          
+  *                           2021 February 24                    *          
   *                                                               *
   *****************************************************************
   
@@ -26,30 +26,15 @@
   documentation on the use of the standard, see the EAC-CPF Tag Library
   (http://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/).
   
-  Lead schema maintainer: Mark Custer
-  
-  **********
-  Comments, questions, and suggestions should be sent to Katherine Wisser, Chair of
-  the TS-EAS (ts-eas@archivists.org)
-  
-  with subject line: Schema Comment
-  **********
-  
-  
-   This schema has been generated automatically. 
-  
-   If you would like to contribute to this project, please see:
-   https://github.com/SAA-SDT/eac-cpf-schema/blob/development/CONTRIBUTING.md
-  
-  *****************************************************************
   *****************************************************************
   
+  This schema has been generated automatically. 
   
+  If you would like to contribute to this project, please see:
+  https://github.com/SAA-SDT/eac-cpf-schema/blob/development/CONTRIBUTING.md
   
-   This schema has been generated automatically. 
-  
-   If you would like to contribute to this project, please see:
-   https://github.com/SAA-SDT/eac-cpf-schema/blob/development/CONTRIBUTING.md
+  Comments, questions, and suggestions may be addressed to: 
+  ts-eas@archivists.org
   
   *****************************************************************
   *****************************************************************

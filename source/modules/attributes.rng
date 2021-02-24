@@ -4,14 +4,8 @@
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
     datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
 
-     <!-- clean this up once everything is settled -->
     
-    <!-- Here be attribute definitions (if used more than once) and attribute groups.
-        Listed alphabetically, with first the standalone attributes (e.g. attribute.base)
-        then the attribute groups (e.g. attribue-group.global).
-        Note that some attributes (e.g. @id) are only defined as a group (in this case, 'global')
-        since they are used so frequently.
-    -->
+    <!-- ATTRIBUTES -->
     <define name="attribute.addressLineType.optional">
         <optional>
             <attribute name="addressLineType">
@@ -41,9 +35,6 @@
     </define>
     
     <define name="attribute.base.optional">
-        <!-- now that we're no longer using XLINK, we should be clear that 
-            base ONLY applys to "href" attributes...  not vocabularySourceURI, valueURI, etc.
-            -->
         <optional>
             <attribute name="base">
                 <data type="anyURI"/>
@@ -74,11 +65,7 @@
     <define name="attribute.countryCode.optional">
         <optional>
             <attribute name="countryCode">
-                <data type="NMTOKEN">
-                    <!--
-                    <param name="pattern">[A-Z]{2,3}|[0-9]{2,3}</param>
-                    -->
-                </data>
+                <data type="NMTOKEN"/>    
             </attribute>
         </optional>
     </define>
@@ -230,7 +217,6 @@
     <define name="attribute.targetType">
         <attribute name="targetType">
             <choice>
-                <!-- adding first just to keep things orderly, but perhaps this should go last to discourage use in XML editors? -->
                 <value>agent</value>
                 <value>corporateBody</value>
                 <value>person</value>
@@ -249,8 +235,7 @@
         </optional>
     </define>
 
-    <!-- this might get excluded from EAC, though, as the current decision is not to add it -->
-    <define name="attribute.xpointer.optional">
+    <define a:exclude-from="eac" name="attribute.xpointer.optional">
         <optional>
             <attribute name="xpointer">
                 <data type="token"/>
@@ -258,7 +243,8 @@
         </optional>
     </define>
     
-    <!-- and the attribute groups -->
+    
+    <!-- ATTRIBUTE GROUPS -->
     <define name="attribute-group.any.zeroOrMore">
         <zeroOrMore>
             <attribute>
@@ -295,7 +281,6 @@
         <optional>
             <attribute name="dateEncoding">
                 <choice>
-                    <!-- at whot point to do we need to get specific?  e.g. 8601:2019 vs. 8601:2004, which are certainly not compatible --> 
                     <value>iso8601</value>
                     <value>otherDateEncoding</value>
                 </choice>
@@ -345,8 +330,6 @@
         <ref name="attribute-group.any.zeroOrMore"/>
     </define>
     
-    <!-- 4 "global" options: audiance, id, target, and any attribute in a namespace. However, "target" will not 
-    be allowed in the EAC document element, so that one is not truly global.-->
     <define name="attribute-group.global.optional" combine="interleave">
         <ref name="attribute.audience.optional"/>
     </define>
@@ -370,7 +353,6 @@
         <ref name="attribute-group.lang-and-script.optional"/>
     </define>
     
-    <!-- do we need to add conventionReferenceDeclaration here, or would it be better to keep transliteration?? -->
     <define name="attribute-group.global-plus-lang-and-script.optional">
         <ref name="attribute-group.global.optional"/>
         <ref name="attribute-group.lang-and-script.optional"/>
@@ -385,9 +367,6 @@
         <optional>
             <attribute name="languageOfElement">
                 <data type="NMTOKEN"/>
-                <!--
-                <ref name="dt.language"/>
-                -->
             </attribute>
         </optional>
     </define>
@@ -404,7 +383,6 @@
         <ref name="attribute.conventionDeclarationReference.optional"/>
     </define>
     
-    <!-- should be able to use these two attributes as a pair in all/most cases -->
     <define name="attribute-group.localType.optional">
         <optional>
             <ref name="attribute.localType"/>
@@ -425,19 +403,12 @@
     <define name="attribute.languageCode">
         <attribute name="languageCode">
             <data type="NMTOKEN"/>
-            <!--
-            <ref name="dt.language"/>
-            -->
         </attribute>
     </define>
     
     <define name="attribute.scriptCode">
         <attribute name="scriptCode">
-            <data type="NMTOKEN">
-                <!--
-                <param name="pattern">[A-Z]{1}[a-z]{3}</param>
-                -->
-            </data>
+            <data type="NMTOKEN"/>
         </attribute>
     </define>
     
@@ -451,7 +422,6 @@
         </optional>
     </define>
  
-    <!-- should probably rename this group -->
     <define name="attribute-group.linked-data.optional">
         <interleave>
             <optional>
@@ -517,8 +487,6 @@
         </optional>
         <optional a:exclude-from="eac">
             <attribute name="numeration">
-                <!-- seems like it would be better to combine, especially since values like lower-alpha are not "numeration"s.  Also the listStyle definition 
-                taken from elsehwere, for CSS, which includes additional values beyond CSS 2.1 -->
                 <choice>
                     <value>decimal</value>
                     <value>decimal-leading-zero</value>
@@ -538,10 +506,8 @@
     </define>
     
     <define name="attribute.listStyle.optional" a:exclude-from="eac ead">
-        <!-- EAD3 has numeration and mark and listtype.  CSS just has list-style-type. -->
         <optional>
             <attribute name="listStyle">
-                <!-- seems like it would be better to combine, especially since values like lower-alpha are not "numeration"s -->
                 <choice>
                     <value a:documentation="Default value. The marker is a filled circle">disc</value>
                     <value a:documentation="The marker is traditional Armenian numbering">armenian</value>
@@ -619,13 +585,6 @@
                 <data type="token"/>
             </attribute>
         </optional>
-    </define>
-    
-    <define name="attribute-group.target-and-xpointer.optional">
-        <interleave>
-            <ref name="attribute.target.optional"/>
-            <ref name="attribute.xpointer.optional"/>
-        </interleave>
     </define>
     
 </grammar>

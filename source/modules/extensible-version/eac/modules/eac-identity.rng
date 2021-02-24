@@ -5,7 +5,6 @@
    <define name="element.entityType">
       <element name="entityType">
          <ref name="attribute-group.global.optional"/>
-         <!-- unless we can use a different attribute name than "value", we should keep this defined within the element, rather than making it extensible -->
          <attribute name="value">
             <choice>
                <value>corporateBody</value>

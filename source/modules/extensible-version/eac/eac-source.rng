@@ -3,9 +3,6 @@
          xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="https://archivists.org/ns/eac/v2">
-
-    <!-- lots still to determine, like whether we want to add documentation in the schema
-       xml:ids, etc. -->
    <include href="modules/attributes.rng"/>
    <include href="modules/datatypes.rng"/>
    <include href="modules/control.rng"/>

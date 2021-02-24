@@ -2,12 +2,6 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-     
-    <!-- EAC:DESCRIPTION / EAD CONTROLACCESS -->
-    <!-- could define function and occupation here.  
-        keeping them in eac-description for now
-        until we know which direction EAD will go. 
-    -->
     
     <!-- ELEMENTS -->
    <define name="element.abstract">
@@ -176,13 +170,11 @@
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="attribute.coordinateSystem"/>
-         <!-- might be too strict -->
          <data type="normalizedString"/>
       </element>
    </define>
    <define name="element.head.optional">
       <optional>
-            <!-- what would be the use case for embedding links in headers? (links to headers, sure). let's restrict that, for now, and adjust depending on GitHub issue created -->
          <element name="head">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.assertion-reference.optional"/>
@@ -222,7 +214,6 @@
    <define name="element.p">
       <element name="p">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <!-- current spec would add assertion reference attributes to paragraph.  do we want that? -->
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="model.mixed-content.optional"/>
       </element>
@@ -265,13 +256,9 @@
    </define>
    <define name="element.placeRole">
       <element name="placeRole">
-            <!-- placeRole did not have @localType in EAC 1.0, whereas placeName does.  is that expected?? can we remove it from placeName, as well? -->
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
          <ref name="attribute-group.linked-data.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
-         <!-- scrapping, but this attribute was available in EAC 1.  make sure the transformation considers that detail
-            <ref name="attribute.lastDateTimeVerified.optional"/>
-            -->
          <text/>
       </element>
    </define>

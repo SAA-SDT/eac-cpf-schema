@@ -5,10 +5,6 @@
     
     <include href="ead-fileDesc.rng" a:exclude-from="eac"/>
     
-    <!-- to do:
-        combine the list values, since there are repeats.  (e.g. cancelled appears in more than one list)
-     -->
-    
     <define name="element.agencyCode">
         <element name="agencyCode">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
@@ -30,7 +26,6 @@
         <element name="agent">
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.linked-data.optional"/>
-            <!-- why not juse use the RiC agent types here? -->
             <attribute name="agentType">
                 <choice>
                     <value>human</value>
@@ -56,18 +51,15 @@
             <ref name="attribute-group.control-encodings.optional"/>
             <ref name="attribute.maintenanceStatus"/>
             <ref name="attribute.publicationStatus.optional"/>
-            <!-- required -->
             <ref name="element.recordId"/>
             <ref name="element.maintenanceAgency"/>
             <ref name="element.maintenanceHistory"/>
-            <!-- optional / not repeatable -->
             <optional a:exclude-from="eac">
                 <ref name="element.fileDesc"/>
             </optional>
             <optional>
                 <ref name="element.sources"/>
             </optional>
-            <!-- optional /repeatable (might go back to a forced order, since the element is named 'control' afterall, but if so, should the order be A-Z, or just the EAC 1.0 order ?)-->
             <zeroOrMore>
                 <choice>
                     <ref name="element.conventionDeclaration"/>
@@ -226,7 +218,6 @@
     
     <define name="element.source">
         <element name="source">
-            <!-- no more localType? what is available in EAC 1?  if so, we'll need a migration strategy. -->
             <ref name="attribute-group.global-plus-lang-and-script.optional"/>
             <ref name="attribute-group.links.optional"/>
             <ref name="attribute-group.linked-data.optional"/>

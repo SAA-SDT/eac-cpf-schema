@@ -2,10 +2,6 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-    
-    <!-- Most description elements are listed here, aside from shared elements, like "place"
-         which are defined in the 'modes-and-shared-elements.rng' file.
-    -->
    <define name="element.description">
       <element name="description">
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
@@ -170,7 +166,6 @@
          <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
          <ref name="attribute-group.assertion-reference.optional"/>
          <oneOrMore>
-                <!-- defined in "modesl-and-other-shared-elements.rng" -->
             <ref name="element.place"/>
          </oneOrMore>
          <ref name="element.descriptiveNote.optional"/>

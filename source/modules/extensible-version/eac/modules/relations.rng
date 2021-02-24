@@ -15,9 +15,6 @@
    <define name="element.relation">
       <element name="relation">
          <ref name="attribute-group.global-plus-lang-and-script.optional"/>
-         <!-- are these being removed?  not listed in issue 214 
-            <ref name="attribute-group.links.optional"/>
-            -->
          <ref name="attribute-group.assertion-reference.optional"/>
          <ref name="element.targetEntity"/>
          <optional>
@@ -37,7 +34,6 @@
    <define name="element.targetEntity">
       <element name="targetEntity">
          <ref name="attribute.targetType"/>
-         <!-- no localType here, apparently -->
          <ref name="attribute-group.relation-children.optional"/>
          <oneOrMore>
             <ref name="element.part"/>
