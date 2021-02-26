@@ -40,17 +40,17 @@
   *****************************************************************
   
 -->
-<xs:schema xmlns:v2="https://archivists.org/ns/eac/v2"
+<xs:schema xmlns:eac="https://archivists.org/ns/eac/v2"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="https://archivists.org/ns/eac/v2">
    <xs:element name="eac">
       <xs:complexType>
          <xs:sequence>
-            <xs:element type="v2:control" name="control"/>
+            <xs:element type="eac:control" name="control"/>
             <xs:choice>
-               <xs:element type="v2:cpfDescription" name="cpfDescription"/>
-               <xs:element type="v2:multipleIdentities" name="multipleIdentities"/>
+               <xs:element type="eac:cpfDescription" name="cpfDescription"/>
+               <xs:element type="eac:multipleIdentities" name="multipleIdentities"/>
             </xs:choice>
          </xs:sequence>
          <xs:attribute name="audience">
@@ -70,18 +70,18 @@
    </xs:element>
    <xs:complexType name="control">
       <xs:sequence>
-         <xs:element type="v2:recordId" name="recordId"/>
-         <xs:element type="v2:maintenanceAgency" name="maintenanceAgency"/>
-         <xs:element type="v2:maintenanceHistory" name="maintenanceHistory"/>
-         <xs:element type="v2:sources" name="sources" minOccurs="0"/>
+         <xs:element type="eac:recordId" name="recordId"/>
+         <xs:element type="eac:maintenanceAgency" name="maintenanceAgency"/>
+         <xs:element type="eac:maintenanceHistory" name="maintenanceHistory"/>
+         <xs:element type="eac:sources" name="sources" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:conventionDeclaration" name="conventionDeclaration"/>
-            <xs:element type="v2:languageDeclaration" name="languageDeclaration"/>
-            <xs:element type="v2:localControl" name="localControl"/>
-            <xs:element type="v2:localTypeDeclaration" name="localTypeDeclaration"/>
-            <xs:element type="v2:otherRecordId" name="otherRecordId"/>
-            <xs:element type="v2:representation" name="representation"/>
-            <xs:element type="v2:rightsDeclaration" name="rightsDeclaration"/>
+            <xs:element type="eac:conventionDeclaration" name="conventionDeclaration"/>
+            <xs:element type="eac:languageDeclaration" name="languageDeclaration"/>
+            <xs:element type="eac:localControl" name="localControl"/>
+            <xs:element type="eac:localTypeDeclaration" name="localTypeDeclaration"/>
+            <xs:element type="eac:otherRecordId" name="otherRecordId"/>
+            <xs:element type="eac:representation" name="representation"/>
+            <xs:element type="eac:rightsDeclaration" name="rightsDeclaration"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -167,10 +167,10 @@
    </xs:complexType>
    <xs:complexType name="cpfDescription">
       <xs:sequence>
-         <xs:element type="v2:identity" name="identity"/>
-         <xs:element type="v2:description" name="description" minOccurs="0"/>
-         <xs:element type="v2:relations" name="relations" minOccurs="0"/>
-         <xs:element type="v2:alternativeSet" name="alternativeSet" minOccurs="0"/>
+         <xs:element type="eac:identity" name="identity"/>
+         <xs:element type="eac:description" name="description" minOccurs="0"/>
+         <xs:element type="eac:relations" name="relations" minOccurs="0"/>
+         <xs:element type="eac:alternativeSet" name="alternativeSet" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -192,8 +192,8 @@
    </xs:complexType>
    <xs:complexType name="multipleIdentities">
       <xs:sequence>
-         <xs:element type="v2:cpfDescription" name="cpfDescription"/>
-         <xs:element type="v2:cpfDescription"
+         <xs:element type="eac:cpfDescription" name="cpfDescription"/>
+         <xs:element type="eac:cpfDescription"
                      name="cpfDescription"
                      maxOccurs="unbounded"/>
       </xs:sequence>
@@ -238,25 +238,25 @@
       <xs:sequence>
          <xs:choice>
             <xs:sequence>
-               <xs:element type="v2:agencyCode" name="agencyCode"/>
-               <xs:element type="v2:agencyName"
+               <xs:element type="eac:agencyCode" name="agencyCode"/>
+               <xs:element type="eac:agencyName"
                            name="agencyName"
                            minOccurs="0"
                            maxOccurs="unbounded"/>
-               <xs:element type="v2:otherAgencyCode"
+               <xs:element type="eac:otherAgencyCode"
                            name="otherAgencyCode"
                            minOccurs="0"
                            maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:sequence>
-               <xs:element type="v2:agencyName" name="agencyName" maxOccurs="unbounded"/>
-               <xs:element type="v2:otherAgencyCode"
+               <xs:element type="eac:agencyName" name="agencyName" maxOccurs="unbounded"/>
+               <xs:element type="eac:otherAgencyCode"
                            name="otherAgencyCode"
                            minOccurs="0"
                            maxOccurs="unbounded"/>
             </xs:sequence>
          </xs:choice>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -278,7 +278,7 @@
    </xs:complexType>
    <xs:complexType name="maintenanceHistory">
       <xs:sequence>
-         <xs:element type="v2:maintenanceEvent"
+         <xs:element type="eac:maintenanceEvent"
                      name="maintenanceEvent"
                      maxOccurs="unbounded"/>
       </xs:sequence>
@@ -298,8 +298,8 @@
    </xs:complexType>
    <xs:complexType name="sources">
       <xs:sequence>
-         <xs:element type="v2:source" name="source" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:source" name="source" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -318,9 +318,9 @@
    </xs:complexType>
    <xs:complexType name="conventionDeclaration">
       <xs:sequence>
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:shortCode" name="shortCode" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -341,7 +341,7 @@
    </xs:complexType>
    <xs:complexType name="languageDeclaration">
       <xs:sequence>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -361,10 +361,10 @@
    </xs:complexType>
    <xs:complexType name="localControl">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -388,9 +388,9 @@
    </xs:complexType>
    <xs:complexType name="localTypeDeclaration">
       <xs:sequence>
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:shortCode" name="shortCode" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -456,9 +456,9 @@
    </xs:complexType>
    <xs:complexType name="rightsDeclaration">
       <xs:sequence>
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:shortCode" name="shortCode" minOccurs="0"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:shortCode" name="shortCode" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -479,17 +479,17 @@
    </xs:complexType>
    <xs:complexType name="identity">
       <xs:sequence>
-         <xs:element type="v2:entityType" name="entityType"/>
+         <xs:element type="eac:entityType" name="entityType"/>
          <xs:choice maxOccurs="unbounded">
-            <xs:element type="v2:nameEntry" name="nameEntry"/>
-            <xs:element type="v2:nameEntrySet" name="nameEntrySet"/>
+            <xs:element type="eac:nameEntry" name="nameEntry"/>
+            <xs:element type="eac:nameEntrySet" name="nameEntrySet"/>
          </xs:choice>
-         <xs:element type="v2:otherEntityTypes" name="otherEntityTypes" minOccurs="0"/>
-         <xs:element type="v2:identityId"
+         <xs:element type="eac:otherEntityTypes" name="otherEntityTypes" minOccurs="0"/>
+         <xs:element type="eac:identityId"
                      name="identityId"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -521,18 +521,18 @@
    </xs:complexType>
    <xs:complexType name="description">
       <xs:sequence>
-         <xs:element type="v2:functions" name="functions" minOccurs="0"/>
-         <xs:element type="v2:languagesUsed" name="languagesUsed" minOccurs="0"/>
-         <xs:element type="v2:legalStatuses" name="legalStatuses" minOccurs="0"/>
-         <xs:element type="v2:localDescriptions" name="localDescriptions" minOccurs="0"/>
-         <xs:element type="v2:mandates" name="mandates" minOccurs="0"/>
-         <xs:element type="v2:occupations" name="occupations" minOccurs="0"/>
-         <xs:element type="v2:places" name="places" minOccurs="0"/>
+         <xs:element type="eac:functions" name="functions" minOccurs="0"/>
+         <xs:element type="eac:languagesUsed" name="languagesUsed" minOccurs="0"/>
+         <xs:element type="eac:legalStatuses" name="legalStatuses" minOccurs="0"/>
+         <xs:element type="eac:localDescriptions" name="localDescriptions" minOccurs="0"/>
+         <xs:element type="eac:mandates" name="mandates" minOccurs="0"/>
+         <xs:element type="eac:occupations" name="occupations" minOccurs="0"/>
+         <xs:element type="eac:places" name="places" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:biogHist" name="biogHist"/>
-            <xs:element type="v2:existDates" name="existDates"/>
-            <xs:element type="v2:generalContext" name="generalContext"/>
-            <xs:element type="v2:structureOrGenealogy" name="structureOrGenealogy"/>
+            <xs:element type="eac:biogHist" name="biogHist"/>
+            <xs:element type="eac:existDates" name="existDates"/>
+            <xs:element type="eac:generalContext" name="generalContext"/>
+            <xs:element type="eac:structureOrGenealogy" name="structureOrGenealogy"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -555,8 +555,8 @@
    </xs:complexType>
    <xs:complexType name="relations">
       <xs:sequence>
-         <xs:element type="v2:relation" name="relation" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:relation" name="relation" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -578,7 +578,7 @@
    </xs:complexType>
    <xs:complexType name="alternativeSet">
       <xs:sequence>
-         <xs:element type="v2:setComponent" name="setComponent" maxOccurs="unbounded"/>
+         <xs:element type="eac:setComponent" name="setComponent" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -672,7 +672,7 @@
    </xs:complexType>
    <xs:complexType name="descriptiveNote">
       <xs:sequence>
-         <xs:element type="v2:p" name="p" maxOccurs="unbounded"/>
+         <xs:element type="eac:p" name="p" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -693,9 +693,9 @@
    </xs:complexType>
    <xs:complexType name="maintenanceEvent">
       <xs:sequence>
-         <xs:element type="v2:agent" name="agent"/>
-         <xs:element type="v2:eventDateTime" name="eventDateTime"/>
-         <xs:element type="v2:eventDescription"
+         <xs:element type="eac:agent" name="agent"/>
+         <xs:element type="eac:eventDateTime" name="eventDateTime"/>
+         <xs:element type="eac:eventDescription"
                      name="eventDescription"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
@@ -729,13 +729,13 @@
    </xs:complexType>
    <xs:complexType name="source">
       <xs:sequence>
-         <xs:element type="v2:reference" name="reference" maxOccurs="unbounded"/>
-         <xs:element type="v2:citedRange"
+         <xs:element type="eac:reference" name="reference" maxOccurs="unbounded"/>
+         <xs:element type="eac:citedRange"
                      name="citedRange"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
-         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -764,7 +764,7 @@
    </xs:complexType>
    <xs:complexType name="reference" mixed="true">
       <xs:sequence>
-         <xs:element type="v2:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element type="eac:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -853,10 +853,10 @@
    <xs:complexType name="dateRange">
       <xs:choice>
          <xs:sequence>
-            <xs:element type="v2:fromDate" name="fromDate"/>
-            <xs:element type="v2:toDate" name="toDate" minOccurs="0"/>
+            <xs:element type="eac:fromDate" name="fromDate"/>
+            <xs:element type="eac:toDate" name="toDate" minOccurs="0"/>
          </xs:sequence>
-         <xs:element type="v2:toDate" name="toDate"/>
+         <xs:element type="eac:toDate" name="toDate"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -901,8 +901,8 @@
    </xs:complexType>
    <xs:complexType name="nameEntry">
       <xs:sequence>
-         <xs:element type="v2:part" name="part" maxOccurs="unbounded"/>
-         <xs:element type="v2:useDates"
+         <xs:element type="eac:part" name="part" maxOccurs="unbounded"/>
+         <xs:element type="eac:useDates"
                      name="useDates"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
@@ -940,9 +940,9 @@
    </xs:complexType>
    <xs:complexType name="nameEntrySet">
       <xs:sequence>
-         <xs:element type="v2:nameEntry" name="nameEntry"/>
-         <xs:element type="v2:nameEntry" name="nameEntry" maxOccurs="unbounded"/>
-         <xs:element type="v2:useDates"
+         <xs:element type="eac:nameEntry" name="nameEntry"/>
+         <xs:element type="eac:nameEntry" name="nameEntry" maxOccurs="unbounded"/>
+         <xs:element type="eac:useDates"
                      name="useDates"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
@@ -968,10 +968,10 @@
    </xs:complexType>
    <xs:complexType name="otherEntityTypes">
       <xs:sequence>
-         <xs:element type="v2:otherEntityType"
+         <xs:element type="eac:otherEntityType"
                      name="otherEntityType"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1015,8 +1015,8 @@
    </xs:complexType>
    <xs:complexType name="functions">
       <xs:sequence>
-         <xs:element type="v2:function" name="function" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:function" name="function" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1039,8 +1039,8 @@
    </xs:complexType>
    <xs:complexType name="languagesUsed">
       <xs:sequence>
-         <xs:element type="v2:languageUsed" name="languageUsed" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:languageUsed" name="languageUsed" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1063,8 +1063,8 @@
    </xs:complexType>
    <xs:complexType name="legalStatuses">
       <xs:sequence>
-         <xs:element type="v2:legalStatus" name="legalStatus" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:legalStatus" name="legalStatus" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1087,10 +1087,10 @@
    </xs:complexType>
    <xs:complexType name="localDescriptions">
       <xs:sequence>
-         <xs:element type="v2:localDescription"
+         <xs:element type="eac:localDescription"
                      name="localDescription"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1113,8 +1113,8 @@
    </xs:complexType>
    <xs:complexType name="mandates">
       <xs:sequence>
-         <xs:element type="v2:mandate" name="mandate" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:mandate" name="mandate" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1137,8 +1137,8 @@
    </xs:complexType>
    <xs:complexType name="occupations">
       <xs:sequence>
-         <xs:element type="v2:occupation" name="occupation" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:occupation" name="occupation" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1161,8 +1161,8 @@
    </xs:complexType>
    <xs:complexType name="places">
       <xs:sequence>
-         <xs:element type="v2:place" name="place" maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:place" name="place" maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1185,12 +1185,12 @@
    </xs:complexType>
    <xs:complexType name="biogHist">
       <xs:sequence>
-         <xs:element type="v2:head" name="head" minOccurs="0"/>
-         <xs:element type="v2:abstract" name="abstract" minOccurs="0"/>
+         <xs:element type="eac:head" name="head" minOccurs="0"/>
+         <xs:element type="eac:abstract" name="abstract" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:p" name="p"/>
-            <xs:element type="v2:chronList" name="chronList"/>
+            <xs:element type="eac:list" name="list"/>
+            <xs:element type="eac:p" name="p"/>
+            <xs:element type="eac:chronList" name="chronList"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -1215,11 +1215,11 @@
    <xs:complexType name="existDates">
       <xs:sequence>
          <xs:choice>
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1242,10 +1242,10 @@
    </xs:complexType>
    <xs:complexType name="generalContext">
       <xs:sequence>
-         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:element type="eac:head" name="head" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:p" name="p"/>
+            <xs:element type="eac:list" name="list"/>
+            <xs:element type="eac:p" name="p"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -1269,10 +1269,10 @@
    </xs:complexType>
    <xs:complexType name="structureOrGenealogy">
       <xs:sequence>
-         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:element type="eac:head" name="head" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:p" name="p"/>
+            <xs:element type="eac:list" name="list"/>
+            <xs:element type="eac:p" name="p"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -1296,19 +1296,19 @@
    </xs:complexType>
    <xs:complexType name="relation">
       <xs:sequence>
-         <xs:element type="v2:targetEntity" name="targetEntity"/>
+         <xs:element type="eac:targetEntity" name="targetEntity"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:place" name="place"/>
-            <xs:element type="v2:relationType" name="relationType"/>
-            <xs:element type="v2:targetRole" name="targetRole"/>
+            <xs:element type="eac:place" name="place"/>
+            <xs:element type="eac:relationType" name="relationType"/>
+            <xs:element type="eac:targetRole" name="targetRole"/>
          </xs:choice>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
-         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1329,12 +1329,12 @@
    </xs:complexType>
    <xs:complexType name="setComponent">
       <xs:sequence>
-         <xs:element type="v2:componentEntry"
+         <xs:element type="eac:componentEntry"
                      name="componentEntry"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
-         <xs:element type="v2:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:objectXMLWrap" name="objectXMLWrap" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1363,8 +1363,8 @@
    </xs:complexType>
    <xs:complexType name="p" mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:span" name="span"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:span" name="span"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1432,8 +1432,8 @@
    </xs:complexType>
    <xs:complexType name="eventDescription" mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:span" name="span"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:span" name="span"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1467,7 +1467,7 @@
    </xs:complexType>
    <xs:complexType name="objectXMLWrap">
       <xs:complexContent>
-         <xs:extension base="v2:_1">
+         <xs:extension base="eac:_1">
             <xs:attribute name="audience">
                <xs:simpleType>
                   <xs:restriction base="xs:token">
@@ -1601,9 +1601,9 @@
    </xs:complexType>
    <xs:complexType name="useDates">
       <xs:choice>
-         <xs:element type="v2:date" name="date"/>
-         <xs:element type="v2:dateRange" name="dateRange"/>
-         <xs:element type="v2:dateSet" name="dateSet"/>
+         <xs:element type="eac:date" name="date"/>
+         <xs:element type="eac:dateRange" name="dateRange"/>
+         <xs:element type="eac:dateSet" name="dateSet"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1624,17 +1624,17 @@
    </xs:complexType>
    <xs:complexType name="otherEntityType">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:placeName"
+         <xs:element type="eac:placeName"
                      name="placeName"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1660,17 +1660,17 @@
    </xs:complexType>
    <xs:complexType name="function">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:placeName"
+         <xs:element type="eac:placeName"
                      name="placeName"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1697,10 +1697,10 @@
    <xs:complexType name="languageUsed">
       <xs:sequence>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:language" name="language"/>
-            <xs:element type="v2:writingSystem" name="writingSystem"/>
+            <xs:element type="eac:language" name="language"/>
+            <xs:element type="eac:writingSystem" name="writingSystem"/>
          </xs:choice>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1723,17 +1723,17 @@
    </xs:complexType>
    <xs:complexType name="legalStatus">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:placeName"
+         <xs:element type="eac:placeName"
                      name="placeName"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1759,17 +1759,17 @@
    </xs:complexType>
    <xs:complexType name="localDescription">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:placeName"
+         <xs:element type="eac:placeName"
                      name="placeName"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1795,17 +1795,17 @@
    </xs:complexType>
    <xs:complexType name="mandate">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:placeName"
+         <xs:element type="eac:placeName"
                      name="placeName"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1831,17 +1831,17 @@
    </xs:complexType>
    <xs:complexType name="occupation">
       <xs:sequence>
-         <xs:element type="v2:term" name="term" maxOccurs="unbounded"/>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:placeName"
+         <xs:element type="eac:placeName"
                      name="placeName"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1868,18 +1868,18 @@
    <xs:complexType name="place">
       <xs:sequence>
          <xs:choice maxOccurs="unbounded">
-            <xs:element type="v2:placeName" name="placeName"/>
-            <xs:element type="v2:placeRole" name="placeRole"/>
-            <xs:element type="v2:geographicCoordinates" name="geographicCoordinates"/>
-            <xs:element type="v2:address" name="address"/>
-            <xs:element type="v2:contact" name="contact"/>
+            <xs:element type="eac:placeName" name="placeName"/>
+            <xs:element type="eac:placeRole" name="placeRole"/>
+            <xs:element type="eac:geographicCoordinates" name="geographicCoordinates"/>
+            <xs:element type="eac:address" name="address"/>
+            <xs:element type="eac:contact" name="contact"/>
          </xs:choice>
          <xs:choice minOccurs="0">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
-         <xs:element type="v2:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1905,7 +1905,7 @@
    </xs:complexType>
    <xs:complexType name="head" mixed="true">
       <xs:sequence>
-         <xs:element type="v2:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element type="eac:span" name="span" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1926,8 +1926,8 @@
    </xs:complexType>
    <xs:complexType name="abstract" mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:span" name="span"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:span" name="span"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -1950,10 +1950,10 @@
    </xs:complexType>
    <xs:complexType name="list">
       <xs:sequence>
-         <xs:element type="v2:head" name="head" minOccurs="0"/>
+         <xs:element type="eac:head" name="head" minOccurs="0"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:list" name="list"/>
-            <xs:element type="v2:item" name="item"/>
+            <xs:element type="eac:list" name="list"/>
+            <xs:element type="eac:item" name="item"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -1986,7 +1986,7 @@
    </xs:complexType>
    <xs:complexType name="chronList">
       <xs:sequence>
-         <xs:element type="v2:chronItem" name="chronItem" maxOccurs="unbounded"/>
+         <xs:element type="eac:chronItem" name="chronItem" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -2010,12 +2010,12 @@
    <xs:complexType name="dateSet">
       <xs:sequence>
          <xs:choice>
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
          </xs:choice>
          <xs:choice maxOccurs="unbounded">
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">
@@ -2039,7 +2039,7 @@
    </xs:complexType>
    <xs:complexType name="targetEntity">
       <xs:sequence>
-         <xs:element type="v2:part" name="part" maxOccurs="unbounded"/>
+         <xs:element type="eac:part" name="part" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="targetType" use="required">
          <xs:simpleType>
@@ -2256,7 +2256,7 @@
    </xs:complexType>
    <xs:complexType name="address">
       <xs:sequence>
-         <xs:element type="v2:addressLine" name="addressLine" maxOccurs="unbounded"/>
+         <xs:element type="eac:addressLine" name="addressLine" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -2279,7 +2279,7 @@
    </xs:complexType>
    <xs:complexType name="contact">
       <xs:sequence>
-         <xs:element type="v2:contactLine" name="contactLine" maxOccurs="unbounded"/>
+         <xs:element type="eac:contactLine" name="contactLine" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -2302,8 +2302,8 @@
    </xs:complexType>
    <xs:complexType name="item" mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:span" name="span"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:span" name="span"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -2327,18 +2327,18 @@
    <xs:complexType name="chronItem">
       <xs:sequence>
          <xs:choice>
-            <xs:element type="v2:date" name="date"/>
-            <xs:element type="v2:dateRange" name="dateRange"/>
-            <xs:element type="v2:dateSet" name="dateSet"/>
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
          </xs:choice>
          <xs:choice>
             <xs:sequence>
-               <xs:element type="v2:event" name="event"/>
-               <xs:element type="v2:place" name="place" minOccurs="0"/>
+               <xs:element type="eac:event" name="event"/>
+               <xs:element type="eac:place" name="place" minOccurs="0"/>
             </xs:sequence>
-            <xs:element type="v2:chronItemSet" name="chronItemSet" maxOccurs="unbounded"/>
+            <xs:element type="eac:chronItemSet" name="chronItemSet" maxOccurs="unbounded"/>
          </xs:choice>
-         <xs:element type="v2:reference"
+         <xs:element type="eac:reference"
                      name="reference"
                      minOccurs="0"
                      maxOccurs="unbounded"/>
@@ -2437,8 +2437,8 @@
    </xs:complexType>
    <xs:complexType name="event" mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-         <xs:element type="v2:reference" name="reference"/>
-         <xs:element type="v2:span" name="span"/>
+         <xs:element type="eac:reference" name="reference"/>
+         <xs:element type="eac:span" name="span"/>
       </xs:choice>
       <xs:attribute name="audience">
          <xs:simpleType>
@@ -2464,10 +2464,10 @@
    </xs:complexType>
    <xs:complexType name="chronItemSet">
       <xs:sequence>
-         <xs:element type="v2:event" name="event" maxOccurs="unbounded"/>
+         <xs:element type="eac:event" name="event" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="v2:place" name="place"/>
-            <xs:element type="v2:reference" name="reference"/>
+            <xs:element type="eac:place" name="place"/>
+            <xs:element type="eac:reference" name="reference"/>
          </xs:choice>
       </xs:sequence>
       <xs:attribute name="audience">

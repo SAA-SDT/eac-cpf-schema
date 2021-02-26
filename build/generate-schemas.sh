@@ -19,6 +19,8 @@ java -jar $trang -o disable-abstract-elements -o any-process-contents=lax -o any
 
 java -cp $saxon net.sf.saxon.Transform -s:../xml-schemas/eac-cpf/eac.xsd -xsl:transformations/deglobalize-xsd.xsl -o:../xml-schemas/eac-cpf/eac.xsd
 
+java -cp $saxon net.sf.saxon.Transform -s:../xml-schemas/eac-cpf/eac.xsd -xsl:transformations/update-namespace-prefix-in-xsd.xsl -o:../xml-schemas/eac-cpf/eac.xsd
+
 # temporary.  will change this later in case we need to process the schematron file before moving.
 cp ../source/modules/schematron/shared-rules.sch ../xml-schemas/eac-cpf/schematron/eac.sch
 

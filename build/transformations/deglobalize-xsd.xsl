@@ -48,7 +48,7 @@
     
     <xsl:template match="@type" mode="convert-type-to-extension-element">
         <xs:complexContent>
-            <xs:extension base="{.}" />          
+            <xs:extension base="{.}"/>          
         </xs:complexContent>
     </xsl:template>
         
