@@ -63,6 +63,17 @@
          </attribute>
       </optional>
    </define>
+   <define name="attribute.detailLevel.optional">
+      <optional>
+         <attribute name="detailLevel">
+            <choice>
+               <value>minimal</value>
+               <value>basic</value>
+               <value>extended</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
    <define name="attribute.id.optional">
       <optional>
          <attribute name="id">
