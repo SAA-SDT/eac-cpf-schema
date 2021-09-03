@@ -447,11 +447,6 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="rightsDeclaration">
@@ -752,11 +747,6 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
       <xs:attribute name="valueURI" type="xs:anyURI"/>
@@ -784,11 +774,6 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="shortCode" mixed="true">
@@ -1351,11 +1336,6 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
@@ -2417,11 +2397,6 @@
       <xs:attribute name="href" type="xs:anyURI"/>
       <xs:attribute name="linkRole" type="xs:anyURI"/>
       <xs:attribute name="linkTitle" type="xs:token"/>
-      <xs:attribute name="lastDateTimeVerified">
-         <xs:simpleType>
-            <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:attribute name="contactLineType">
          <xs:simpleType>
             <xs:restriction base="xs:token">

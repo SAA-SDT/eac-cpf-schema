@@ -89,14 +89,6 @@
         </optional>
     </define>
     
-    <define name="attribute.lastDateTimeVerified.optional">
-        <optional>
-            <attribute name="lastDateTimeVerified">
-                <ref name="dt.any-standard-dateTime"/>
-            </attribute>
-        </optional>
-    </define>
-    
     <define name="attribute.localType">
         <attribute name="localType">
             <data type="token"/>
@@ -459,7 +451,6 @@
                     <data type="token"/>
                 </attribute>
             </optional>
-            <ref name="attribute.lastDateTimeVerified.optional"/>
         </interleave>
     </define>
     
