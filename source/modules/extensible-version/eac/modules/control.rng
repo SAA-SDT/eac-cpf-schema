@@ -42,6 +42,7 @@
       <element name="control">
          <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
          <ref name="attribute-group.control-encodings.optional"/>
+         <ref name="attribute.detailLevel.optional"/>
          <ref name="attribute.maintenanceStatus"/>
          <ref name="attribute.publicationStatus.optional"/>
          <ref name="element.recordId"/>

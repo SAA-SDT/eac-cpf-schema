@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2021 February 24                    *          
+  *                           2021 September 2                    *          
   *                                                               *
   *****************************************************************
   
@@ -137,6 +137,15 @@
             <xs:restriction base="xs:token">
                <xs:enumeration value="iso15511"/>
                <xs:enumeration value="otherRepositoryEncoding"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="detailLevel">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="minimal"/>
+               <xs:enumeration value="basic"/>
+               <xs:enumeration value="extended"/>
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>

@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2021 February 24                    *          
+  *                           2021 September 2                    *          
   *                                                               *
   *****************************************************************
 
@@ -198,6 +198,15 @@
                   <choice>
                      <value type="token" datatypeLibrary="" ns="">iso15511</value>
                      <value type="token" datatypeLibrary="" ns="">otherRepositoryEncoding</value>
+                  </choice>
+               </attribute>
+            </optional>
+            <optional>
+               <attribute name="detailLevel" ns="">
+                  <choice>
+                     <value type="token" datatypeLibrary="" ns="">minimal</value>
+                     <value type="token" datatypeLibrary="" ns="">basic</value>
+                     <value type="token" datatypeLibrary="" ns="">extended</value>
                   </choice>
                </attribute>
             </optional>
