@@ -10,7 +10,7 @@
   *                                                               *                
   *                            EAC-CPF 2.0                        *
   *                                                               *
-  *                           2021 September 2                    *          
+  *                           2021 November 2                     *          
   *                                                               *
   *****************************************************************
   
@@ -525,6 +525,9 @@
    </xs:complexType>
    <xs:complexType name="description">
       <xs:sequence>
+         <xs:element type="eac:demographicDescriptions"
+                     name="demographicDescriptions"
+                     minOccurs="0"/>
          <xs:element type="eac:functions" name="functions" minOccurs="0"/>
          <xs:element type="eac:languagesUsed" name="languagesUsed" minOccurs="0"/>
          <xs:element type="eac:legalStatuses" name="legalStatuses" minOccurs="0"/>
@@ -1002,6 +1005,32 @@
       <xs:attribute name="vocabularySource" type="xs:token"/>
       <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
       <xs:attribute name="valueURI" type="xs:anyURI"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
+      <xs:attribute name="sourceReference" type="xs:IDREFS"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="demographicDescriptions">
+      <xs:sequence>
+         <xs:element type="eac:demographicDescription"
+                     name="demographicDescription"
+                     maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="target" type="xs:IDREFS"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:token"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
@@ -1612,6 +1641,42 @@
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="otherEntityType">
+      <xs:sequence>
+         <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
+         <xs:choice minOccurs="0">
+            <xs:element type="eac:date" name="date"/>
+            <xs:element type="eac:dateRange" name="dateRange"/>
+            <xs:element type="eac:dateSet" name="dateSet"/>
+         </xs:choice>
+         <xs:element type="eac:placeName"
+                     name="placeName"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
+         <xs:element type="eac:descriptiveNote" name="descriptiveNote" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="audience">
+         <xs:simpleType>
+            <xs:restriction base="xs:token">
+               <xs:enumeration value="external"/>
+               <xs:enumeration value="internal"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="target" type="xs:IDREFS"/>
+      <xs:attribute name="languageOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="scriptOfElement" type="xs:NMTOKEN"/>
+      <xs:attribute name="localType" type="xs:token"/>
+      <xs:attribute name="localTypeDeclarationReference" type="xs:IDREFS"/>
+      <xs:attribute name="vocabularySource" type="xs:token"/>
+      <xs:attribute name="vocabularySourceURI" type="xs:anyURI"/>
+      <xs:attribute name="valueURI" type="xs:anyURI"/>
+      <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
+      <xs:attribute name="sourceReference" type="xs:IDREFS"/>
+      <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="demographicDescription">
       <xs:sequence>
          <xs:element type="eac:term" name="term" maxOccurs="unbounded"/>
          <xs:choice minOccurs="0">
