@@ -205,7 +205,7 @@
     <define name="attribute.style.optional">
         <optional>
             <attribute name="style">
-                <data type="token"/>
+                <data type="normalizedString"/>
             </attribute>
         </optional>
     </define>
@@ -242,7 +242,7 @@
     <define a:exclude-from="eac" name="attribute.xpointer.optional">
         <optional>
             <attribute name="xpointer">
-                <data type="token"/>
+                <data type="normalizedString"/>
             </attribute>
         </optional>
     </define>

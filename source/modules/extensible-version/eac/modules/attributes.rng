@@ -185,7 +185,7 @@
    <define name="attribute.style.optional">
       <optional>
          <attribute name="style">
-            <data type="token"/>
+            <data type="normalizedString"/>
          </attribute>
       </optional>
    </define>
