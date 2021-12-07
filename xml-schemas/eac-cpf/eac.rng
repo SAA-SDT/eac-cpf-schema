@@ -2509,6 +2509,11 @@
                   </attribute>
                </optional>
             </interleave>
+            <optional>
+               <attribute name="status" ns="">
+                  <value type="token" datatypeLibrary="" ns="">unknown</value>
+               </attribute>
+            </optional>
             <text/>
          </group>
       </element>
