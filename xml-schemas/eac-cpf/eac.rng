@@ -4871,7 +4871,7 @@
             </interleave>
             <optional>
                <attribute name="style" ns="">
-                  <data type="token"
+                  <data type="normalizedString"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>
@@ -6643,7 +6643,7 @@
             </interleave>
             <optional>
                <attribute name="style" ns="">
-                  <data type="token"
+                  <data type="normalizedString"
                         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
                </attribute>
             </optional>

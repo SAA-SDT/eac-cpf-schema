@@ -1525,7 +1525,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
-      <xs:attribute name="style" type="xs:token"/>
+      <xs:attribute name="style" type="xs:normalizedString"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
    </xs:complexType>
    <xs:complexType name="fromDate" mixed="true">
@@ -2034,7 +2034,7 @@
       <xs:attribute name="maintenanceEventReference" type="xs:IDREFS"/>
       <xs:attribute name="sourceReference" type="xs:IDREFS"/>
       <xs:attribute name="conventionDeclarationReference" type="xs:IDREFS"/>
-      <xs:attribute name="style" type="xs:token"/>
+      <xs:attribute name="style" type="xs:normalizedString"/>
       <xs:attribute name="listType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
