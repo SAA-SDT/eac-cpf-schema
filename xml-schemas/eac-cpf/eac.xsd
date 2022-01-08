@@ -2481,6 +2481,7 @@
       <xs:attribute name="contactLineType">
          <xs:simpleType>
             <xs:restriction base="xs:token">
+               <xs:enumeration value="directions"/>
                <xs:enumeration value="email"/>
                <xs:enumeration value="fax"/>
                <xs:enumeration value="homepage"/>

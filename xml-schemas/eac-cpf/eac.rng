@@ -8336,6 +8336,7 @@
             <optional>
                <attribute name="contactLineType" ns="">
                   <choice>
+                     <value type="token" datatypeLibrary="" ns="">directions</value>
                      <value type="token" datatypeLibrary="" ns="">email</value>
                      <value type="token" datatypeLibrary="" ns="">fax</value>
                      <value type="token" datatypeLibrary="" ns="">homepage</value>
