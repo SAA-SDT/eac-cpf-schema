@@ -42,6 +42,7 @@
       <optional>
          <attribute name="contactLineType">
             <choice>
+               <value>directions</value>
                <value>email</value>
                <value>fax</value>
                <value>homepage</value>
