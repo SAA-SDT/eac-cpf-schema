@@ -24,6 +24,7 @@
     
     <!-- until we have a better way with dealing with "other" as a value, etc.-->
     <sch:let name="check-language-codes" value="if (*/*:control/@languageEncoding = ('otherLanguageEncoding', 'ietf-bcp-47')) then false() else true()"/>
+    <sch:let name="check-ietf-codes" value="if (*/*:control[@languageEncoding eq 'ietf-bcp-47'][not(@scriptEncoding)]) then true() else false()"/>
     <sch:let name="check-country-codes" value="if (*/*:control/@countryEncoding eq 'otherCountryEncoding') then false() else true()"/>
     <sch:let name="check-script-codes" value="if (*/*:control/@scriptEncoding eq 'otherScriptEncoding') then false() else true()"/>
     <sch:let name="check-repository-codes" value="if (*/*:control/@repositoryEncoding eq 'otherRepositoryEncoding') then false() else true()"/>
@@ -31,12 +32,19 @@
     <!-- VARIABLE iso15511Pattern -->
     <sch:let name="iso15511Pattern" value="'(^([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})$'"/>
     
+    <sch:let name="ietfPattern" value="'^[A-Za-z]{2,4}([_-][A-Za-z]{4})?([_-]([A-Za-z]{2}|[0-9]{3}))?$'"/>
+    
     
     <!-- LANGUAGE CODE TESTS (in process) -->
     <sch:pattern>
         <sch:rule context="*[exists(@languageCode | @languageOfElement)][$check-language-codes]">
             <!-- for every @lang or @langcode attribute, test that it is equal to a value in the relevant language code list -->
             <sch:assert test="every $l in (@languageCode | @languageOfElement) satisfies normalize-space($l) = $valid-language-codes">The <sch:name/> element's lang or langcode attribute should contain a value from the <xsl:value-of select="$active-language-code-key"/> codelist.</sch:assert>
+        </sch:rule>
+        
+        <sch:rule context="*[exists(@languageCode | @languageOfElement)][$check-ietf-codes]">
+            <!-- for every @lang or @langcode attribute, test that it is equal to a value in the relevant language code list -->
+            <sch:assert test="every $l in (@languageCode | @languageOfElement) satisfies matches(normalize-space($l), $ietfPattern)">The <sch:name/> element's lang or langcode attribute should contain a value from the 'ietf-bcp-47' codelist.</sch:assert>
         </sch:rule>
     </sch:pattern>
      
