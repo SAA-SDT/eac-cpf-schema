@@ -22,6 +22,7 @@ java -cp $saxon net.sf.saxon.Transform -s:../xml-schemas/eac-cpf/eac.xsd -xsl:tr
 java -cp $saxon net.sf.saxon.Transform -s:../xml-schemas/eac-cpf/eac.xsd -xsl:transformations/update-namespace-prefix-in-xsd.xsl -o:../xml-schemas/eac-cpf/eac.xsd
 
 # temporary.  will change this later in case we need to process the schematron file before moving.
-cp ../source/modules/schematron/shared-rules.sch ../xml-schemas/eac-cpf/schematron/eac.sch
+cp -R ../source/modules/schematron ../xml-schemas/eac-cpf
+mv ../xml-schemas/eac-cpf/schematron/shared-rules.sch ../xml-schemas/eac-cpf/schematron/eac.sch
 
 echo "All done."
