@@ -28,6 +28,8 @@
     <sch:let name="check-country-codes" value="if (*/*:control/@countryEncoding eq 'otherCountryEncoding') then false() else true()"/>
     <sch:let name="check-script-codes" value="if (*/*:control/@scriptEncoding eq 'otherScriptEncoding') then false() else true()"/>
     <sch:let name="check-repository-codes" value="if (*/*:control/@repositoryEncoding eq 'otherRepositoryEncoding') then false() else true()"/>
+    <sch:let name="check-date-attributes" value="if (*/*:control/@dateEncoding eq 'otherDateEncoding') then false() else true()"/>
+    
     
     <!-- VARIABLE iso15511Pattern -->
     <sch:let name="iso15511Pattern" value="'(^([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})$'"/>
@@ -155,7 +157,7 @@
         <sch:let name="isoMM" value="'\-?(01|02|03|04|05|06|07|08|09|10|11|12)'"/>
         <sch:let name="isoDD" value="'\-?((0[1-9])|((1|2)[0-9])|(3[0-1]))'"/>
         <sch:let name="isoPattern" value="concat('^', $isoYYYY, '$','|', '^', $isoYYYY, $isoMM,'$', '|', '^', $isoYYYY, $isoMM, $isoDD,'$')"/>
-        <sch:rule context="*:date[exists(@notBefore | @notAfter | @standardDate)] | *:toDate[exists(@notBefore | @notAfter | @standardDate)] | *:fromDate[exists(@notBefore | @notAfter | @standardDate)]">
+        <sch:rule context="*:date[$check-date-attributes][exists(@notBefore | @notAfter | @standardDate)] | *:toDate[$check-date-attributes][exists(@notBefore | @notAfter | @standardDate)] | *:fromDate[$check-date-attributes][exists(@notBefore | @notAfter | @standardDate)]">
             <sch:assert test="every $d in (@notBefore, @notAfter, @standardDate) satisfies matches($d, $isoPattern)">The <sch:emph>notBefore</sch:emph>, <sch:emph>notAfter</sch:emph>, and <sch:emph>standardDate</sch:emph> attributes of <sch:name/> must be a iso8601 date.</sch:assert>
         </sch:rule>
     </sch:pattern>
