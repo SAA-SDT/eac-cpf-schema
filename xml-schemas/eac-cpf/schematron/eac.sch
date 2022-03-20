@@ -14,15 +14,15 @@
         <language value="iso639-3" filename="iso639-3.xml"/>
     </xsl:variable>
     
-    <!-- VARIABLE $language-code-key: the EAD3 document's /ead:ead/ead:control/@langencoding, with iso639-2b as a default value. -->
-    <sch:let name="active-language-code-key" value="(*/*:control/@languageEncoding[.=$supported-language-codes/@value], 'iso639-2b')[1]"/>
+    <!-- VARIABLE $language-code-key: the EAD3 document's /ead:ead/ead:control/@langencoding  -->
+    <sch:let name="active-language-code-key" value="(*/*:control/@languageEncoding[.=$supported-language-codes/@value])"/>
     
     <!-- still need to add something here to distinguish between active and deprecated codes -->
     <!-- and will also need a functional way, or ability to hit an API endpoint, to test for ietf-bcp-47 codes, most likely -->
     <sch:let name="valid-language-codes" value="document($supported-language-codes[@value = $active-language-code-key]/@filename)//(madsrdf:code | iso_639_3_entries/iso_639_3_entry/@id)"/>
     
     <!-- until we have a better way with dealing with "other" as a value, etc.-->
-    <sch:let name="check-language-codes" value="if (*/*:control/@languageEncoding = ('otherLanguageEncoding', 'ietf-bcp-47')) then false() else true()"/>
+    <sch:let name="check-language-codes" value="if (*/*:control/@languageEncoding = ('iso639-1', 'iso639-2b', 'iso639-3')) then true() else false()"/>
     <sch:let name="check-ietf-codes" value="if (*/*:control[@languageEncoding eq 'ietf-bcp-47']) then true() else false()"/>
     <sch:let name="check-country-codes" value="if (*/*:control/@countryEncoding eq 'otherCountryEncoding') then false() else true()"/>
     <sch:let name="check-script-codes" value="if (*/*:control/@scriptEncoding eq 'otherScriptEncoding') then false() else true()"/>
