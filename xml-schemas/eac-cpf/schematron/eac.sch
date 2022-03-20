@@ -12,23 +12,22 @@
         <language value="iso639-1" filename="iso639-1.rdf"/>
         <language value="iso639-2b" filename="iso639-2.rdf"/>
         <language value="iso639-3" filename="iso639-3.xml"/>
+        <!-- ietf-bcp-47 -->
     </xsl:variable>
     
-    <!-- VARIABLE $language-code-key: the EAD3 document's /ead:ead/ead:control/@langencoding  -->
-    <sch:let name="active-language-code-key" value="(*/*:control/@languageEncoding[.=$supported-language-codes/@value])"/>
+    <!-- VARIABLE $language-code-key: the EAD3 document's /ead:ead/ead:control/@langencoding, with iso639-2b as a default value. -->
+    <sch:let name="active-language-code-key" value="(*/*:control/@languageEncoding[.=$supported-language-codes/@value], 'iso639-2b')[1]"/>
     
     <!-- still need to add something here to distinguish between active and deprecated codes -->
     <!-- and will also need a functional way, or ability to hit an API endpoint, to test for ietf-bcp-47 codes, most likely -->
     <sch:let name="valid-language-codes" value="document($supported-language-codes[@value = $active-language-code-key]/@filename)//(madsrdf:code | iso_639_3_entries/iso_639_3_entry/@id)"/>
     
     <!-- until we have a better way with dealing with "other" as a value, etc.-->
-    <sch:let name="check-language-codes" value="if (*/*:control/@languageEncoding = ('iso639-1', 'iso639-2b', 'iso639-3')) then true() else false()"/>
-    <sch:let name="check-ietf-codes" value="if (*/*:control[@languageEncoding eq 'ietf-bcp-47']) then true() else false()"/>
+    <sch:let name="check-language-codes" value="if (*/*:control/@languageEncoding = ('otherLanguageEncoding', 'ietf-bcp-47')) then false() else true()"/>
+    <sch:let name="check-ietf-codes" value="if (*/*:control[@languageEncoding eq 'ietf-bcp-47'][not(@scriptEncoding)]) then true() else false()"/>
     <sch:let name="check-country-codes" value="if (*/*:control/@countryEncoding eq 'otherCountryEncoding') then false() else true()"/>
     <sch:let name="check-script-codes" value="if (*/*:control/@scriptEncoding eq 'otherScriptEncoding') then false() else true()"/>
     <sch:let name="check-repository-codes" value="if (*/*:control/@repositoryEncoding eq 'otherRepositoryEncoding') then false() else true()"/>
-    <sch:let name="check-date-attributes" value="if (*/*:control/@dateEncoding eq 'otherDateEncoding') then false() else true()"/>
-    
     
     <!-- VARIABLE iso15511Pattern -->
     <sch:let name="iso15511Pattern" value="'(^([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})$'"/>
@@ -147,36 +146,16 @@
     </sch:pattern>
     
     <!-- DATE NORMALIZATION -->
-    <!-- will need to update considerably.  iso 8601 2019 possiblities are quite different...
+    <!-- will need to update considerably, still.  iso 8601 2019 possiblities are quite different...
         also, we will need to be clear that we don't support all values of iso 8601.  
-        for instance, would need to add support for decade, week, dayo, dayk, etc.
-        as well as additional qualifiers, such as 
-            ~, %, X, ?
-        but likely should never try to add full support, unless we change the attribute names?  
-        also...
-        
-        Ranges (which negate our notAfter / notBefore attributes):
-            1978..1984
-        
-        etc.:
-            2052Y1MX*D
-        -->
-    <!-- might still want to add optional Y indicator, plus support for Years > and < 4 digits...
-        also need to state whether we support both basic and extended formats. currently we try to, but it does introduce invalid options right now.
         -->
     <sch:pattern id="dates">
-        <sch:let name="Months" value="1 to 12"/>
-        <sch:let name="Seasons" value="21 to 41"/>
-        <sch:let name="Y" value="'[+-]?([0-9u]{1}[0-9ux]{3})'"/>
-        <sch:let name="M" value="'-?(' || string-join(for $x in ($Months) return format-number($x, '00'), '|') || ')'"/>
-        <sch:let name="M_S" value="'-?(' || string-join(for $x in ($Months, $Seasons) return format-number($x, '00'), '|') || ')'"/>
-        <sch:let name="D" value="'-?((0[1-9])|((1|2)[0-9])|(3[0-1]))'"/>
-        <sch:let name="isoPattern" value="concat(
-              '^', $Y, '$','|'
-            , '^', $Y, $M_S,'$', '|'
-            , '^', $Y, $M, $D,'$'
-            )"/>
-        <sch:rule context="*:date[$check-date-attributes][exists(@notBefore | @notAfter | @standardDate)] | *:toDate[$check-date-attributes][exists(@notBefore | @notAfter | @standardDate)] | *:fromDate[$check-date-attributes][exists(@notBefore | @notAfter | @standardDate)]">
+        <!-- without using the ETDF parts of ISO 8601 2019, years are capped as such, it looks like...-->
+        <sch:let name="isoYYYY" value="'\-?(0|1|2)([0-9]{3})'"/>
+        <sch:let name="isoMM" value="'\-?(01|02|03|04|05|06|07|08|09|10|11|12)'"/>
+        <sch:let name="isoDD" value="'\-?((0[1-9])|((1|2)[0-9])|(3[0-1]))'"/>
+        <sch:let name="isoPattern" value="concat('^', $isoYYYY, '$','|', '^', $isoYYYY, $isoMM,'$', '|', '^', $isoYYYY, $isoMM, $isoDD,'$')"/>
+        <sch:rule context="*:date[exists(@notBefore | @notAfter | @standardDate)] | *:toDate[exists(@notBefore | @notAfter | @standardDate)] | *:fromDate[exists(@notBefore | @notAfter | @standardDate)]">
             <sch:assert test="every $d in (@notBefore, @notAfter, @standardDate) satisfies matches($d, $isoPattern)">The <sch:emph>notBefore</sch:emph>, <sch:emph>notAfter</sch:emph>, and <sch:emph>standardDate</sch:emph> attributes of <sch:name/> must be a iso8601 date.</sch:assert>
         </sch:rule>
     </sch:pattern>
