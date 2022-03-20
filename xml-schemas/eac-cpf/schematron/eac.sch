@@ -24,7 +24,7 @@
     
     <!-- until we have a better way with dealing with "other" as a value, etc.-->
     <sch:let name="check-language-codes" value="if (*/*:control/@languageEncoding = ('otherLanguageEncoding', 'ietf-bcp-47')) then false() else true()"/>
-    <sch:let name="check-ietf-codes" value="if (*/*:control[@languageEncoding eq 'ietf-bcp-47'][not(@scriptEncoding)]) then true() else false()"/>
+    <sch:let name="check-ietf-codes" value="if (*/*:control[@languageEncoding eq 'ietf-bcp-47']) then true() else false()"/>
     <sch:let name="check-country-codes" value="if (*/*:control/@countryEncoding eq 'otherCountryEncoding') then false() else true()"/>
     <sch:let name="check-script-codes" value="if (*/*:control/@scriptEncoding eq 'otherScriptEncoding') then false() else true()"/>
     <sch:let name="check-repository-codes" value="if (*/*:control/@repositoryEncoding eq 'otherRepositoryEncoding') then false() else true()"/>
