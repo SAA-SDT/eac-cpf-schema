@@ -48,7 +48,7 @@
             <sch:assert test="every $l in (@languageCode | @languageOfElement) satisfies matches(normalize-space($l), $ietfPattern)">The <sch:name/> element's lang or langcode attribute should contain a value from the 'ietf-bcp-47' codelist.</sch:assert>
         </sch:rule>
     </sch:pattern>
-     
+    
     <!-- COUNTRY CODES (in process) -->
     <sch:pattern>
         <sch:let name="countryCodes" value="document('iso_3166.xml')"/>
@@ -122,7 +122,7 @@
             </sch:assert>
         </sch:rule>
     </sch:pattern>
-       
+    
     <!-- CO-OCCURENCE CONSTRAINTS -->
     <sch:pattern id="maintenanceAgency-constraints">
         <sch:rule context="*:maintenanceAgency[*:agencyCode[not(normalize-space())]] | *:maintenanceAgency[not(*:agencyCode)]">
@@ -132,7 +132,7 @@
             <sch:assert test="*:agencyCode[normalize-space()]">The maintenanceAgency element requires either an agencyCode or agencyName element that cannot be empty.</sch:assert>
         </sch:rule>
     </sch:pattern>
-  
+    
     <sch:pattern id="eventDateTime">
         <sch:rule context="/*/*:control/*:maintenanceHistory/*:maintenanceEvent/*:eventDateTime[not(@standardDateTime)]">
             <sch:assert test="normalize-space()">The eventDateTime element requires either a standardDateTime attribute or text.</sch:assert>
@@ -172,7 +172,7 @@
         <sch:let name="M_S" value="'-?(' || string-join(for $x in ($Months, $Seasons) return format-number($x, '00'), '|') || ')'"/>
         <sch:let name="D" value="'-?((0[1-9])|((1|2)[0-9])|(3[0-1]))'"/>
         <sch:let name="isoPattern" value="concat(
-              '^', $Y, '$','|'
+            '^', $Y, '$','|'
             , '^', $Y, $M_S,'$', '|'
             , '^', $Y, $M, $D,'$'
             )"/>
