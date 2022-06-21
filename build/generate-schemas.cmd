@@ -29,10 +29,6 @@ java %parameters% %CP% net.sf.saxon.Transform -s:..\xml-schemas\eac-cpf\eac.xsd 
 
 java %parameters% %CP% net.sf.saxon.Transform -s:..\xml-schemas\eac-cpf\eac.xsd -xsl:transformations\update-namespace-prefix-in-xsd.xsl -o:..\xml-schemas\eac-cpf\eac.xsd -warnings:silent
 
-rem temporary.  will change this later in case we need to process the schematron file before moving.
-copy ..\source\modules\schematron ..\xml-schemas\eac-cpf
-move ..\xml-schemas\eac-cpf\schematron\shared-rules.sch ..\xml-schemas\eac-cpf\schematron\eac.sch
-
 @echo All done.
 
 pause
