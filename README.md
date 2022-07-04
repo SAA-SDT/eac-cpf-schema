@@ -2,6 +2,8 @@ EAC-CPF
 ============
 
 ## EAC-CPF Schema files
-This repository is in the process of being updated to match a new GitHub workflow to revise and publish schemas in the EAS family.
+This repository contains the official schema releases of EAC-CPF, versions 1.0, 1.1, and 2.0.
 
-More information to come after the publication process is set up.
+For more information, see https://eac.staatsbibliothek-berlin.de
+
+
