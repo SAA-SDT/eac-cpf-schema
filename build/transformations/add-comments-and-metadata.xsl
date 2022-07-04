@@ -5,8 +5,8 @@
     xmlns:rng="http://relaxng.org/ns/structure/1.0"
     exclude-result-prefixes="#all"
     version="3.0">
-    <!-- to be run on xml-schemas/{$schema} files to embed an intro, release notes, etc. -->
-    <!-- to do:  add a template to add the "version" number to both the RNG and XSD schemas.  pull from metadata.json file -->
+    <!-- during the build process, this file is ran against xml-schemas/{$schema} files to embed an intro, release notes, etc. -->
+    <!-- to do: consider adding something like a metadata.json file, instead -->
     
     <xsl:output method="xml" encoding="UTF-8" indent="true"/>
     <xsl:mode on-no-match="deep-copy"/>
