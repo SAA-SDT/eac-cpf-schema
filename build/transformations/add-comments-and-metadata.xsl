@@ -12,7 +12,7 @@
     <xsl:mode on-no-match="deep-copy"/>
     
     <xsl:param name='schema' select="'eac'"/>
-    <xsl:param name='preambles' select="document('../../source/release-info/intro.xml')/preambles" as="node()"/>
+    <xsl:param name='preambles' select="document('../../src/release-info/intro.xml')/preambles" as="node()"/>
     <xsl:variable name="intro-comment" as="node()">
         <xsl:evaluate xpath="concat($schema, '/comment()')" as="node()" context-item="$preambles"/>
     </xsl:variable>

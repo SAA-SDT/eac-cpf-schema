@@ -19,7 +19,7 @@ rem still need to update for when we switch between EAD / EAC transformations, w
 
 java %parameters% %CP% net.sf.saxon.Transform -t -xsl:transformations\prep-source-schema-files.xsl -it
 
-java -jar %jing% -s ..\source\modules\extensible-version\eac\eac-source.rng > ..\xml-schemas\eac-cpf\eac.rng
+java -jar %jing% -s ..\src\modules\extensible-version\eac\eac-source.rng > ..\xml-schemas\eac-cpf\eac.rng
 
 java %parameters% %CP% net.sf.saxon.Transform -s:..\xml-schemas\eac-cpf\eac.rng -xsl:transformations\add-comments-and-metadata.xsl -o:..\xml-schemas\eac-cpf\eac.rng -warnings:silent
 
