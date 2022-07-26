@@ -9,9 +9,7 @@
   *****************************************************************
   *                                                               *                
   *                            EAC-CPF 2.0                        *
-  *                                                               *
-  *                           2022 July 17                        *          
-  *                                                               *
+  *                                                               *       
   *****************************************************************
 
   *****************************************************************
@@ -24,7 +22,7 @@
   persons, and families. It is based on the International Council of Archives' International Standard 
   Archival Authority Record For Corporate Bodies, Persons and Families (ISAAR(CPF)). For additional
   documentation on the use of the standard, see the EAC-CPF Tag Library
-  (http://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/).
+  (https://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/).
    
   *****************************************************************
  
@@ -36,7 +34,7 @@
   Comments, questions, and suggestions may be addressed to: 
   ts-eas@archivists.org
   
-  For more information about the EAC-CPF team, see https://github.com/SAA-SDT/TS-EAS-subteam-notes/wiki/EAC-CPF-Sub-Team  
+  For more information about the EAC-CPF team, see https://github.com/SAA-SDT/TS-EAS-subteam-notes/wiki/EAC-CPF-Sub-Team 
 
   *****************************************************************
   *****************************************************************
