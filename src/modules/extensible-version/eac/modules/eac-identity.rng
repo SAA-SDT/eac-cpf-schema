@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+   <define name="element.entityType">
+      <element name="entityType">
+         <ref name="attribute-group.global.optional"/>
+         <attribute name="value">
+            <choice>
+               <value>corporateBody</value>
+               <value>person</value>
+               <value>family</value>
+            </choice>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="element.identity">
+      <element name="identity">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute.base.optional"/>
+         <ref name="attribute.identityType.optional"/>
+         <ref name="element.entityType"/>
+         <oneOrMore>
+            <choice>
+               <ref name="element.nameEntry"/>
+               <ref name="element.nameEntrySet"/>
+            </choice>
+         </oneOrMore>
+         <optional>
+            <ref name="element.otherEntityTypes"/>
+         </optional>
+         <zeroOrMore>
+            <ref name="element.identityId"/>
+         </zeroOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.identityId">
+      <element name="identityId">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.nameEntry">
+      <element name="nameEntry">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute.preferredForm.optional"/>
+         <ref name="attribute.status.authorized-or-alternative.optional"/>
+         <oneOrMore>
+            <ref name="element.part"/>
+         </oneOrMore>
+         <zeroOrMore>
+            <ref name="element.useDates"/>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.nameEntrySet">
+      <element name="nameEntrySet">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.nameEntry"/>
+         <oneOrMore>
+            <ref name="element.nameEntry"/>
+         </oneOrMore>
+         <zeroOrMore>
+            <ref name="element.useDates"/>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.otherEntityType">
+      <element name="otherEntityType">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.otherEntityTypes">
+      <element name="otherEntityTypes">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.otherEntityType"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.useDates">
+      <element name="useDates">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.all-dates.choice"/>
+      </element>
+   </define>
+</grammar>

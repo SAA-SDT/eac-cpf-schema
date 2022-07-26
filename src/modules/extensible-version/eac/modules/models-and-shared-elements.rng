@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+    <!-- ELEMENTS -->
+   <define name="element.abstract">
+      <element name="abstract">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.mixed-content.optional"/>
+      </element>
+   </define>
+   <define name="element.address">
+      <element name="address">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.addressLine"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="element.addressLine">
+      <element name="addressLine">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute.addressLineType.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.biogHist">
+      <element name="biogHist">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.head.optional"/>
+         <optional a:exclude-from="ead">
+            <ref name="element.abstract"/>
+         </optional>
+         <ref name="model.narrative-group-plus-chronList.optional"/>
+      </element>
+   </define>
+   <define name="element.chronItem">
+      <element name="chronItem">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.all-dates.choice"/>
+         <choice>
+            <group>
+               <ref name="element.event"/>
+               <optional>
+                  <ref name="element.place"/>
+               </optional>
+            </group>
+            <oneOrMore>
+               <ref name="element.chronItemSet"/>
+            </oneOrMore>
+         </choice>
+         <zeroOrMore>
+            <ref name="element.reference"/>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.chronItemSet">
+      <element name="chronItemSet">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.event"/>
+         </oneOrMore>
+         <zeroOrMore>
+            <choice>
+               <ref name="element.place"/>
+               <ref name="element.reference"/>
+            </choice>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.chronList">
+      <element name="chronList">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.chronItem"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="element.contact">
+      <element name="contact">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.contactLine"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="element.contactLine">
+      <element name="contactLine">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute-group.links.optional"/>
+         <ref name="attribute.contactLineType.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.date">
+      <element name="date">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute-group.standard-date-attributes.optional"/>
+         <ref name="attribute.status.unknown.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.dateRange">
+      <element name="dateRange">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <choice>
+            <group>
+               <ref name="element.fromDate"/>
+               <optional>
+                  <ref name="element.toDate"/>
+               </optional>
+            </group>
+            <group>
+               <ref name="element.toDate"/>
+            </group>
+         </choice>
+      </element>
+   </define>
+   <define name="element.dateSet">
+      <element name="dateSet">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.date-dateRange.choice"/>
+         <oneOrMore>
+            <ref name="model.date-dateRange.choice"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="element.descriptiveNote.optional">
+      <optional>
+         <element name="descriptiveNote">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+               <ref name="element.p"/>
+            </oneOrMore>
+         </element>
+      </optional>
+   </define>
+   <define name="element.event">
+      <element name="event">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.mixed-content.optional"/>
+      </element>
+   </define>
+   <define name="element.fromDate">
+      <element name="fromDate">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute-group.standard-date-attributes.optional"/>
+         <ref name="attribute.status.unknown.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.geographicCoordinates">
+      <element name="geographicCoordinates">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute.coordinateSystem"/>
+         <data type="normalizedString"/>
+      </element>
+   </define>
+   <define name="element.head.optional">
+      <optional>
+         <element name="head">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="model.mixed-content-no-references.optional"/>
+         </element>
+      </optional>
+   </define>
+   <define name="element.item">
+      <element name="item">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.mixed-content.optional"/>
+      </element>
+   </define>
+   <define name="element.list">
+      <element name="list">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute-group.lists.optional"/>
+         <ref name="element.head.optional"/>
+         <zeroOrMore>
+            <choice>
+               <ref name="element.list"/>
+               <ref name="element.item"/>
+            </choice>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.objectXMLWrap.optional">
+      <optional>
+         <element name="objectXMLWrap">
+            <ref name="attribute-group.global.optional"/>
+            <ref name="model.any-element"/>
+         </element>
+      </optional>
+   </define>
+   <define name="element.p">
+      <element name="p">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.mixed-content.optional"/>
+      </element>
+   </define>
+   <define name="element.part">
+      <element name="part">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="dt.non-empty-element-with-newlines-available"/>
+      </element>
+   </define>
+   <define name="element.place">
+      <element name="place">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <choice>
+               <ref name="element.placeName"/>
+               <ref name="element.placeRole"/>
+               <ref name="element.geographicCoordinates"/>
+               <ref name="element.address"/>
+               <ref name="element.contact"/>
+            </choice>
+         </oneOrMore>
+         <optional>
+            <ref name="model.all-dates.choice"/>
+         </optional>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.placeName">
+      <element name="placeName">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute.countryCode.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.placeRole">
+      <element name="placeRole">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.reference">
+      <element name="reference">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute-group.links.optional"/>
+         <zeroOrMore>
+            <choice>
+               <ref name="element.span"/>
+               <text/>
+            </choice>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.span">
+      <element name="span">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute.style.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.term">
+      <element name="term">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.toDate">
+      <element name="toDate">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="attribute-group.standard-date-attributes.optional"/>
+         <ref name="attribute.status.ongoing-or-unknown.optional"/>
+         <text/>
+      </element>
+   </define>
+   <!-- MODELS -->
+   <define name="model.all-dates.choice">
+      <choice>
+         <ref name="element.date"/>
+         <ref name="element.dateRange"/>
+         <ref name="element.dateSet"/>
+      </choice>
+   </define>
+   <define name="model.any-element">
+      <element>
+         <anyName>
+            <except>
+               <nsName ns="https://archivists.org/ns/eac/v2"/>
+            </except>
+         </anyName>
+         <zeroOrMore>
+            <attribute>
+               <anyName/>
+            </attribute>
+         </zeroOrMore>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.any-element"/>
+            </choice>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="model.date-dateRange.choice">
+      <choice>
+         <ref name="element.date"/>
+         <ref name="element.dateRange"/>
+      </choice>
+   </define>
+   <define name="model.declaration-group">
+      <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+      <ref name="attribute-group.linked-data.optional"/>
+      <ref name="element.reference"/>
+      <optional>
+         <ref name="element.shortCode"/>
+      </optional>
+      <ref name="element.descriptiveNote.optional"/>
+   </define>
+   <define name="model.mixed-content.optional">
+      <zeroOrMore>
+         <choice>
+            <ref name="element.reference"/>
+            <ref name="element.span"/>
+            <text/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="model.mixed-content-no-references.optional">
+      <zeroOrMore>
+         <choice>
+            <ref name="element.span"/>
+            <text/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="model.narrative-group.optional" combine="interleave">
+      <zeroOrMore>
+         <ref name="element.list"/>
+      </zeroOrMore>
+   </define>
+   <define name="model.narrative-group.optional" combine="interleave">
+      <zeroOrMore>
+         <ref name="element.p"/>
+      </zeroOrMore>
+   </define>
+   <define name="model.narrative-group-plus-chronList.optional">
+      <interleave>
+         <ref name="model.narrative-group.optional"/>
+         <zeroOrMore>
+            <ref name="element.chronList"/>
+         </zeroOrMore>
+      </interleave>
+   </define>
+   <define name="model.single-element-group">
+      <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+      <ref name="attribute-group.linked-data.optional"/>
+      <ref name="attribute-group.assertion-reference.optional"/>
+      <oneOrMore>
+         <ref name="element.term"/>
+      </oneOrMore>
+      <optional>
+         <ref name="model.all-dates.choice"/>
+      </optional>
+      <zeroOrMore>
+         <ref name="element.placeName"/>
+      </zeroOrMore>
+      <ref name="element.descriptiveNote.optional"/>
+   </define>
+</grammar>

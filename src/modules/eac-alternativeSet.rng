@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+    <define name="element.alternativeSet">
+        <element name="alternativeSet">
+            <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.setComponent"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.setComponent">
+        <element name="setComponent">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.links.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <zeroOrMore>
+                <ref name="element.componentEntry"/>
+            </zeroOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+            <ref name="element.objectXMLWrap.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.componentEntry">
+        <element name="componentEntry">
+            <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+            <ref name="attribute-group.linked-data.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+</grammar>

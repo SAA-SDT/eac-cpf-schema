@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    
+    <!-- ATTRIBUTES -->
+   <define name="attribute.addressLineType.optional">
+      <optional>
+         <attribute name="addressLineType">
+            <choice>
+               <value>county</value>
+               <value>country</value>
+               <value>district</value>
+               <value>municipality</value>
+               <value>postBox</value>
+               <value>postalCode</value>
+               <value>region</value>
+               <value>street</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.audience.optional">
+      <optional>
+         <attribute name="audience">
+            <choice>
+               <value>external</value>
+               <value>internal</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.base.optional">
+      <optional>
+         <attribute name="base">
+            <data type="anyURI"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.contactLineType.optional">
+      <optional>
+         <attribute name="contactLineType">
+            <choice>
+               <value>directions</value>
+               <value>email</value>
+               <value>fax</value>
+               <value>homepage</value>
+               <value>mobileNumber</value>
+               <value>phoneNumber</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.coordinateSystem">
+      <attribute name="coordinateSystem">
+         <data type="token"/>
+      </attribute>
+   </define>
+   <define name="attribute.countryCode.optional">
+      <optional>
+         <attribute name="countryCode">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.detailLevel.optional">
+      <optional>
+         <attribute name="detailLevel">
+            <choice>
+               <value>minimal</value>
+               <value>basic</value>
+               <value>extended</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.id.optional">
+      <optional>
+         <attribute name="id">
+            <data type="ID"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.identityType.optional">
+      <optional>
+         <attribute name="identityType">
+            <choice>
+               <value>given</value>
+               <value>acquired</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.localType">
+      <attribute name="localType">
+         <data type="token"/>
+      </attribute>
+   </define>
+   <define name="attribute.localTypeDeclarationReference">
+      <attribute name="localTypeDeclarationReference">
+         <data type="IDREFS"/>
+      </attribute>
+   </define>
+   <define name="attribute.maintenanceStatus">
+      <attribute name="maintenanceStatus">
+         <choice>
+            <value>revised</value>
+            <value>deleted</value>
+            <value>new</value>
+            <value>deletedSplit</value>
+            <value>deletedMerged</value>
+            <value>deletedReplaced</value>
+            <value>cancelled</value>
+            <value>derived</value>
+         </choice>
+      </attribute>
+   </define>
+   <define name="attribute.maintenanceEventType">
+      <attribute name="maintenanceEventType">
+         <choice>
+            <value>cancelled</value>
+            <value>created</value>
+            <value>deleted</value>
+            <value>derived</value>
+            <value>revised</value>
+            <value>unknown</value>
+            <value>updated</value>
+         </choice>
+      </attribute>
+   </define>
+   <define name="attribute.publicationStatus.optional">
+      <optional>
+         <attribute name="publicationStatus">
+            <choice>
+               <value>approved</value>
+               <value>published</value>
+               <value>inProcess</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.preferredForm.optional">
+      <optional>
+         <attribute name="preferredForm">
+            <data type="boolean"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.standardDateTime.optional">
+      <optional>
+         <attribute name="standardDateTime">
+            <ref name="dt.any-standard-dateTime"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.status.authorized-or-alternative.optional">
+      <optional>
+         <attribute name="status">
+            <choice>
+               <value>authorized</value>
+               <value>alternative</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.status.ongoing-or-unknown.optional">
+      <optional>
+         <attribute name="status">
+            <choice>
+               <value>ongoing</value>
+               <value>unknown</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.status.unknown.optional">
+      <optional>
+         <attribute name="status">
+            <choice>
+               <value>unknown</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.style.optional">
+      <optional>
+         <attribute name="style">
+            <data type="normalizedString"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.target.optional">
+      <optional>
+         <attribute name="target">
+            <data type="IDREFS"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.targetType">
+      <attribute name="targetType">
+         <choice>
+            <value>agent</value>
+            <value>corporateBody</value>
+            <value>person</value>
+            <value>family</value>
+            <value>function</value>
+            <value>resource</value>
+         </choice>
+      </attribute>
+   </define>
+   <define name="attribute.unit.optional">
+      <optional>
+         <attribute name="unit">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <!-- ATTRIBUTE GROUPS -->
+   <define name="attribute-group.any.zeroOrMore">
+      <zeroOrMore>
+         <attribute>
+            <anyName>
+               <except>
+                  <nsName/>
+                  <nsName ns=""/>
+               </except>
+            </anyName>
+         </attribute>
+      </zeroOrMore>
+   </define>
+   <define name="attribute-group.control-encodings.optional">
+      <optional>
+         <attribute name="languageEncoding">
+            <choice>
+               <value>iso639-1</value>
+               <value>iso639-2b</value>
+               <value>iso639-3</value>
+               <value>ietf-bcp-47</value>
+               <value>otherLanguageEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="scriptEncoding">
+            <choice>
+               <value>iso15924</value>
+               <value>otherScriptEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="dateEncoding">
+            <choice>
+               <value>iso8601</value>
+               <value>otherDateEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="countryEncoding">
+            <choice>
+               <value>iso3166-1</value>
+               <value>otherCountryEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+      <optional>
+         <attribute name="repositoryEncoding">
+            <choice>
+               <value>iso15511</value>
+               <value>otherRepositoryEncoding</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.assertion-reference.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="maintenanceEventReference">
+            <data type="IDREFS"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.assertion-reference.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="sourceReference">
+            <data type="IDREFS"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.assertion-reference.optional"
+           combine="interleave">
+      <ref name="attribute.conventionDeclarationReference.optional"/>
+   </define>
+   <define name="attribute-group.eac-document-node">
+      <ref name="attribute.audience.optional"/>
+      <ref name="attribute.base.optional"/>
+      <ref name="attribute.id.optional"/>
+      <ref name="attribute-group.lang-and-script.optional"/>
+      <ref name="attribute-group.any.zeroOrMore"/>
+   </define>
+   <define name="attribute-group.global.optional" combine="interleave">
+      <ref name="attribute.audience.optional"/>
+   </define>
+   <define name="attribute-group.global.optional" combine="interleave">
+      <ref name="attribute.id.optional"/>
+   </define>
+   <define name="attribute-group.global.optional" combine="interleave">
+      <ref name="attribute.target.optional"/>
+   </define>
+   <define name="attribute-group.global.optional" combine="interleave">
+      <ref name="attribute-group.any.zeroOrMore"/>
+   </define>
+   <define name="attribute-group.global-plus-base.optional">
+      <ref name="attribute-group.global.optional"/>
+      <ref name="attribute.base.optional"/>
+   </define>
+   <define name="attribute-group.global-plus-base-lang-and-script.optional">
+      <ref name="attribute-group.global-plus-base.optional"/>
+      <ref name="attribute-group.lang-and-script.optional"/>
+   </define>
+   <define name="attribute-group.global-plus-lang-and-script.optional">
+      <ref name="attribute-group.global.optional"/>
+      <ref name="attribute-group.lang-and-script.optional"/>
+   </define>
+   <define name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional">
+      <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+      <ref name="attribute-group.localType.optional"/>
+   </define>
+   <define name="attribute-group.lang-and-script.optional" combine="interleave">
+      <optional>
+         <attribute name="languageOfElement">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.lang-and-script.optional" combine="interleave">
+      <optional>
+         <attribute name="scriptOfElement">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.lang-and-script-and-conventionDeclarationReference.optional"
+           combine="interleave">
+      <ref name="attribute-group.lang-and-script.optional"/>
+      <ref name="attribute.conventionDeclarationReference.optional"/>
+   </define>
+   <define name="attribute-group.localType.optional">
+      <optional>
+         <ref name="attribute.localType"/>
+      </optional>
+      <optional>
+         <ref name="attribute.localTypeDeclarationReference"/>
+      </optional>
+   </define>
+   <define name="attribute.conventionDeclarationReference.optional">
+      <optional>
+         <attribute name="conventionDeclarationReference">
+            <data type="IDREFS"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute.languageCode">
+      <attribute name="languageCode">
+         <data type="NMTOKEN"/>
+      </attribute>
+   </define>
+   <define name="attribute.scriptCode">
+      <attribute name="scriptCode">
+         <data type="NMTOKEN"/>
+      </attribute>
+   </define>
+   <define name="attribute-group.language-and-script-code" combine="interleave">
+      <ref name="attribute.languageCode"/>
+   </define>
+   <define name="attribute-group.language-and-script-code" combine="interleave">
+      <optional>
+         <ref name="attribute.scriptCode"/>
+      </optional>
+   </define>
+   <define name="attribute-group.linked-data.optional">
+      <interleave>
+         <optional>
+            <attribute name="vocabularySource">
+               <data type="token"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="vocabularySourceURI">
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="valueURI">
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+      </interleave>
+   </define>
+   <define name="attribute-group.links.optional">
+      <interleave>
+         <optional>
+            <attribute name="href">
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="linkRole">
+               <data type="anyURI"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="linkTitle">
+               <data type="token"/>
+            </attribute>
+         </optional>
+      </interleave>
+   </define>
+   <define name="attribute-group.lists.optional">
+      <ref name="attribute.style.optional"/>
+      <optional>
+         <attribute name="listType">
+            <choice>
+               <value>ordered</value>
+               <value>unordered</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.relation-children.optional">
+      <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+      <ref name="attribute-group.linked-data.optional"/>
+      <ref name="attribute-group.assertion-reference.optional"/>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="calendar">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="certainty">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="era">
+            <data type="NMTOKEN"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="notAfter">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="notBefore">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="attribute-group.standard-date-attributes.optional"
+           combine="interleave">
+      <optional>
+         <attribute name="standardDate">
+            <data type="token"/>
+         </attribute>
+      </optional>
+   </define>
+</grammar>

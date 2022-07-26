@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+   <define name="element.agencyCode">
+      <element name="agencyCode">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.status.authorized-or-alternative.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.agencyName">
+      <element name="agencyName">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.agent">
+      <element name="agent">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <attribute name="agentType">
+            <choice>
+               <value>human</value>
+               <value>machine</value>
+               <value>unknown</value>
+            </choice>
+         </attribute>
+         <text/>
+      </element>
+   </define>
+   <define name="element.citedRange">
+      <element name="citedRange">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.unit.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.control">
+      <element name="control">
+         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <ref name="attribute-group.control-encodings.optional"/>
+         <ref name="attribute.detailLevel.optional"/>
+         <ref name="attribute.maintenanceStatus"/>
+         <ref name="attribute.publicationStatus.optional"/>
+         <ref name="element.recordId"/>
+         <ref name="element.maintenanceAgency"/>
+         <ref name="element.maintenanceHistory"/>
+         <optional>
+            <ref name="element.sources"/>
+         </optional>
+         <zeroOrMore>
+            <choice>
+               <ref name="element.conventionDeclaration"/>
+               <ref name="element.languageDeclaration"/>
+               <ref name="element.localControl"/>
+               <ref name="element.localTypeDeclaration"/>
+               <ref name="element.otherRecordId"/>
+               <ref name="element.representation"/>
+               <ref name="element.rightsDeclaration"/>
+            </choice>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.conventionDeclaration">
+      <element name="conventionDeclaration">
+         <ref name="model.declaration-group"/>
+      </element>
+   </define>
+   <define name="element.eventDateTime">
+      <element name="eventDateTime">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.standardDateTime.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.eventDescription">
+      <element name="eventDescription">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="model.mixed-content.optional"/>
+      </element>
+   </define>
+   <define name="element.languageDeclaration">
+      <element name="languageDeclaration">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.language-and-script-code"/>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.localControl">
+      <element name="localControl">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <oneOrMore>
+            <ref name="element.term"/>
+         </oneOrMore>
+         <optional>
+            <ref name="model.date-dateRange.choice"/>
+         </optional>
+      </element>
+   </define>
+   <define name="element.localTypeDeclaration">
+      <element name="localTypeDeclaration">
+         <ref name="model.declaration-group"/>
+      </element>
+   </define>
+   <define name="element.maintenanceAgency">
+      <element name="maintenanceAgency">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.countryCode.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <choice>
+            <group>
+               <ref name="element.agencyCode"/>
+               <zeroOrMore>
+                  <ref name="element.agencyName"/>
+               </zeroOrMore>
+               <zeroOrMore>
+                  <ref name="element.otherAgencyCode"/>
+               </zeroOrMore>
+            </group>
+            <group>
+               <oneOrMore>
+                  <ref name="element.agencyName"/>
+               </oneOrMore>
+               <zeroOrMore>
+                  <ref name="element.otherAgencyCode"/>
+               </zeroOrMore>
+            </group>
+         </choice>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.maintenanceEvent">
+      <element name="maintenanceEvent">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute.maintenanceEventType"/>
+         <ref name="element.agent"/>
+         <ref name="element.eventDateTime"/>
+         <zeroOrMore>
+            <ref name="element.eventDescription"/>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.maintenanceHistory">
+      <element name="maintenanceHistory">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <oneOrMore>
+            <ref name="element.maintenanceEvent"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="element.otherAgencyCode">
+      <element name="otherAgencyCode">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute.status.authorized-or-alternative.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.otherRecordId">
+      <element name="otherRecordId">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.recordId">
+      <element name="recordId">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="dt.non-empty-element-with-newlines-available"/>
+      </element>
+   </define>
+   <define name="element.representation">
+      <element name="representation">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.links.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.rightsDeclaration">
+      <element name="rightsDeclaration">
+         <ref name="model.declaration-group"/>
+      </element>
+   </define>
+   <define name="element.shortCode">
+      <element name="shortCode">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <text/>
+      </element>
+   </define>
+   <define name="element.source">
+      <element name="source">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.links.optional"/>
+         <ref name="attribute-group.linked-data.optional"/>
+         <oneOrMore>
+            <ref name="element.reference"/>
+         </oneOrMore>
+         <zeroOrMore>
+            <ref name="element.citedRange"/>
+         </zeroOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+         <ref name="element.objectXMLWrap.optional"/>
+      </element>
+   </define>
+   <define name="element.sources">
+      <element name="sources">
+         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <oneOrMore>
+            <ref name="element.source"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+</grammar>

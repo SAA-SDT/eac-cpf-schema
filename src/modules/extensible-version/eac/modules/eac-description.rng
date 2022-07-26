@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+   <define name="element.description">
+      <element name="description">
+         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <optional>
+            <ref name="element.demographicDescriptions"/>
+         </optional>
+         <optional>
+            <ref name="element.functions"/>
+         </optional>
+         <optional>
+            <ref name="element.languagesUsed"/>
+         </optional>
+         <optional>
+            <ref name="element.legalStatuses"/>
+         </optional>
+         <optional>
+            <ref name="element.localDescriptions"/>
+         </optional>
+         <optional>
+            <ref name="element.mandates"/>
+         </optional>
+         <optional>
+            <ref name="element.occupations"/>
+         </optional>
+         <optional>
+            <ref name="element.places"/>
+         </optional>
+         <zeroOrMore>
+            <choice>
+               <ref name="element.biogHist"/>
+               <ref name="element.existDates"/>
+               <ref name="element.generalContext"/>
+               <ref name="element.structureOrGenealogy"/>
+            </choice>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="element.demographicDescription">
+      <element name="demographicDescription">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.demographicDescriptions">
+      <element name="demographicDescriptions">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.demographicDescription"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.existDates">
+      <element name="existDates">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="model.all-dates.choice"/>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.function">
+      <element name="function">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.functions">
+      <element name="functions">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.function"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.generalContext">
+      <element name="generalContext">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.head.optional"/>
+         <ref name="model.narrative-group.optional"/>
+      </element>
+   </define>
+   <define name="element.language">
+      <element name="language">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <optional>
+            <ref name="attribute.languageCode"/>
+         </optional>
+         <text/>
+      </element>
+   </define>
+   <define name="element.languageUsed">
+      <element name="languageUsed">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <zeroOrMore>
+            <choice>
+               <ref name="element.language"/>
+               <ref name="element.writingSystem"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.languagesUsed">
+      <element name="languagesUsed">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.languageUsed"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.legalStatus">
+      <element name="legalStatus">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.legalStatuses">
+      <element name="legalStatuses">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.legalStatus"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.localDescription">
+      <element name="localDescription">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.localDescriptions">
+      <element name="localDescriptions">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.localDescription"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.mandate">
+      <element name="mandate">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.mandates">
+      <element name="mandates">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.mandate"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.occupation">
+      <element name="occupation">
+         <ref name="model.single-element-group"/>
+      </element>
+   </define>
+   <define name="element.occupations">
+      <element name="occupations">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.occupation"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.places">
+      <element name="places">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <oneOrMore>
+            <ref name="element.place"/>
+         </oneOrMore>
+         <ref name="element.descriptiveNote.optional"/>
+      </element>
+   </define>
+   <define name="element.structureOrGenealogy">
+      <element name="structureOrGenealogy">
+         <ref name="attribute-group.global-plus-lang-and-script-and-localType-pair.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.head.optional"/>
+         <ref name="model.narrative-group.optional"/>
+      </element>
+   </define>
+   <define name="element.writingSystem">
+      <element name="writingSystem">
+         <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <optional>
+            <ref name="attribute.scriptCode"/>
+         </optional>
+         <text/>
+      </element>
+   </define>
+</grammar>

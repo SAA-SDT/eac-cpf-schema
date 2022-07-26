@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    <define name="element.relations">
+        <element name="relations">
+            <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <oneOrMore>
+                <ref name="element.relation"/>
+            </oneOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.relation">
+        <element name="relation">
+            <ref name="attribute-group.global-plus-lang-and-script.optional"/>
+            <ref name="attribute-group.assertion-reference.optional"/>
+            <ref name="element.targetEntity"/>
+            <optional>
+                <ref name="model.all-dates.choice"/>
+            </optional>
+            <zeroOrMore>
+                <choice>
+                    <ref name="element.place"/>
+                    <ref name="element.relationType"/>
+                    <ref name="element.targetRole"/>
+                </choice>
+            </zeroOrMore>
+            <ref name="element.descriptiveNote.optional"/>
+            <ref name="element.objectXMLWrap.optional"/>
+        </element>
+    </define>
+    
+    <define name="element.targetEntity">
+        <element name="targetEntity">
+            <ref name="attribute.targetType"/>
+            <ref name="attribute-group.relation-children.optional"/>
+            <oneOrMore>
+                <ref name="element.part"/>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <define name="element.relationType">
+        <element name="relationType">
+            <ref name="attribute-group.relation-children.optional"/>
+            <ref name="attribute-group.localType.optional"/>
+            <text/>
+        </element>
+    </define>
+    
+    <define name="element.targetRole">
+        <element name="targetRole">
+            <ref name="attribute-group.relation-children.optional"/>
+            <ref name="attribute-group.localType.optional"/>
+            <text/>
+        </element>
+    </define>
+   
+</grammar>

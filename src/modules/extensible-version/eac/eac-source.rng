@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         ns="https://archivists.org/ns/eac/v2">
+   <include href="modules/attributes.rng"/>
+   <include href="modules/datatypes.rng"/>
+   <include href="modules/control.rng"/>
+   <include href="modules/eac-identity.rng"/>
+   <include href="modules/eac-description.rng"/>
+   <include href="modules/relations.rng/"/>
+   <include href="modules/eac-alternativeSet.rng"/>
+   <include href="modules/models-and-shared-elements.rng/"/>
+   <start>
+      <ref name="element.eac"/>
+   </start>
+   <define name="element.eac">
+      <element xml:id="eac" name="eac">
+         <ref name="attribute-group.eac-document-node"/>
+         <ref name="element.control"/>
+         <choice>
+            <ref name="element.cpfDescription"/>
+            <ref name="element.multipleIdentities"/>
+         </choice>
+      </element>
+   </define>
+   <define name="element.cpfDescription">
+      <element name="cpfDescription">
+         <ref name="attribute-group.global-plus-base-lang-and-script.optional"/>
+         <ref name="attribute-group.assertion-reference.optional"/>
+         <ref name="element.identity"/>
+         <optional>
+            <ref name="element.description"/>
+         </optional>
+         <optional>
+            <ref name="element.relations"/>
+         </optional>
+         <optional>
+            <ref name="element.alternativeSet"/>
+         </optional>
+      </element>
+   </define>
+   <define name="element.multipleIdentities">
+      <element name="multipleIdentities">
+         <ref name="attribute-group.global-plus-base.optional"/>
+         <ref name="element.cpfDescription"/>
+         <oneOrMore>
+            <ref name="element.cpfDescription"/>
+         </oneOrMore>
+      </element>
+   </define>
+</grammar>
